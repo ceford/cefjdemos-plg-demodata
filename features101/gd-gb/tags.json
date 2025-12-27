@@ -1,0 +1,110 @@
+[
+{
+    "title":"Sgìre Comhairle",
+    "alias":"council-area-gd-gb",
+    "description":"<p>Seo pàrant airson 32 raointean comhairle na h-Alba. Bheireadh gach taga sgìre comhairle fa leth cothrom àiteachan bhlàir san sgìre sin a thaghadh.</p>",
+    "parent_alias":"",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Siorrachd Obar Dheathain",
+    "alias":"aberdeenshire-gd-gb",
+    "description":"<p>Tha Siorrachd Obar Dheathain suidhichte ann an ear-thuath na h-Alba. Tha 4 làraichean bhlàir ann (1 làrach blàir treubhach).</p>",
+    "parent_alias":"council-area-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Lodainn an Ear",
+    "alias":"east-lothian-gd-gb",
+    "description":"<p>Tha Lodainn an Ear suidhichte ann an ear-dheas na h-Alba. Tha 4 làraichean bhlàir ann.</p>",
+    "parent_alias":"council-area-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"An Eaglais Bhreac",
+    "alias":"falkirk-gd-gb",
+    "description":"<p>Tha An Eaglais Bhreac (Falkirk) suidhichte ann an cridhe na h-Alba. Tha 2 làraichean bhlàir ann.</p>",
+    "parent_alias":"council-area-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Meadhan-Lodainn",
+    "alias":"midlothian-gd-gb",
+    "description":"<p>Tha Meadhan-Lodainn suidhichte ann an sgìre meadhan an ear na h-Alba. Tha 2 làraichean bhlàir ann.</p>",
+    "parent_alias":"council-area-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Sruighlea",
+    "alias":"stirling-gd-gb",
+    "description":"<p>Tha Sruighlea suidhichte ann am meadhan na h-Alba. Tha 4 làraichean bhlàir ann.</p>",
+    "parent_alias":"council-area-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Toradh",
+    "alias":"outcome-gd-gb",
+    "description":"<p>Seo pàrant airson toraidhean a’ bhlàir.</p>",
+    "parent_alias":"",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Buaidh Shasannach",
+    "alias":"english-victory-gd-gb",
+    "description":"",
+    "parent_alias":"outcome-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Buaidh Albannach",
+    "alias":"scottish-victory-gd-gb",
+    "description":"",
+    "parent_alias":"outcome-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Buaidh an Riaghaltais",
+    "alias":"government-victory-gd-gb",
+    "description":"",
+    "parent_alias":"outcome-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Buaidh Sheumasaich",
+    "alias":"jacobite-victory-gd-gb",
+    "description":"",
+    "parent_alias":"outcome-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Neo-cho-dhùinte",
+    "alias":"inconclusive-gd-gb",
+    "description":"",
+    "parent_alias":"outcome-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+}
+]

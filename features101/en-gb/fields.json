@@ -1,0 +1,40 @@
+[{
+    "title":"Date of Engagement",
+    "name":"date-of-engagement-en-gb",
+    "label":"Date of Engagement",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>The date on which the battle took place.</p>",
+    "note":"",
+    "state":1,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Battle Data"
+},
+{
+    "title":"Location",
+    "name":"location-en-gb",
+    "label":"Location",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>The latitude and longitude of the battle site.</p>",
+    "note":"",
+    "state":1,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Battle Data"
+}]

@@ -1,0 +1,59 @@
+[{
+    "title":"Historic Battlefields of Scotland",
+    "alias":"historic-battlefields-of-scotland-en-gb",
+    "level":1,
+    "path":"historic-battlefields-of-scotland-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>A list of historic battlefields in Scotland is maintained by <em>Historic Environment Scotland</em>, a Scottish Government agency. Most are marked with monuments and information boards.</p>"
+},
+{
+    "title":"Campaigns",
+    "alias":"campaigns-en-gb",
+    "level":1,
+    "path":"campaigns-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>The campaigns were periods in Scottish history when the national interests were threatened by internal or external political events.</p>"
+},
+{
+    "title":"Wars of Scottish Independence",
+    "alias":"wars-of-scottish-independence-en-gb",
+    "parent_alias":"campaigns-en-gb",
+    "level":2,
+    "path":"campaigns-en-gb/wars-of-scottish-independence-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>The Wars of Scottish Independence were a series of military campaigns in the late 13th and 14th centuries to protect the independence and sovereignty of the Kingdom of Scotland which had been threatened by the Kingdom of England.</p>"
+},
+{
+    "title":"Jacobite Risings",
+    "alias":"jacobite-risings-en-gb",
+    "parent_alias":"campaigns-en-gb",
+    "level":2,
+    "path":"campaigns-en-gb/jacobite-risings-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>The Jacobite risings were a series of attempts to restore the House of Stuart to the thrones of England and Scotland. They took place in 1689, 1715, 1719 and 1745.</p>"
+},
+{
+    "title":"1689",
+    "alias":"1689-en-gb",
+    "parent_alias":"jacobite-risings-en-gb",
+    "level":3,
+    "path":"campaigns-en-gb/jacobite-risings-en-gb/1689-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>The <strong>Jacobite rising of 1689</strong>, March 1689 to February 1692, took place primarily in the Scottish Highlands. Its purpose was to restore James II &amp; VII to the throne, following his deposition by the November 1688 Glorious Revolution.</p>"
+},
+{
+    "title":"1745",
+    "alias":"1745-en-gb",
+    "parent_alias":"jacobite-risings-en-gb",
+    "level":3,
+    "path":"campaigns-en-gb/jacobite-risings-en-gb/1745-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>The <strong>Jacobite rising of 1745</strong> was an attempt by Charles Edward Stuart to regain the British throne for his father, James Francis Edward Stuart. It took place during the War of the Austrian Succession, when the bulk of the British Army was fighting in mainland Europe, and proved to be the last in a series of revolts that began in March 1689, with major outbreaks in 1715 and 1719. </p>"
+}
+]

@@ -1,0 +1,110 @@
+[
+{
+    "title":"Council Area",
+    "alias":"council-area-en-gb",
+    "description":"<p>This is a parent for the 32 Council areas of Scotland. Each individual council area tag would allow selection of battle sites in that area.</p>",
+    "parent_alias":"",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Aberdeenshire",
+    "alias":"aberdeenshire-en-gb",
+    "description":"<p>Aberdeenshire lies in the north-east of Scotland. It has 4 battle sites (1 Clan battle site).</p>",
+    "parent_alias":"council-area-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"East Lothian",
+    "alias":"east-lothian-en-gb",
+    "description":"<p>East Lothian lies in the south-east of Scotland. It has 4 battle sites.</p>",
+    "parent_alias":"council-area-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Falkirk",
+    "alias":"falkirk-en-gb",
+    "description":"<p>Falkirk lies in central Scotland. It has 2 battle sites.</p>",
+    "parent_alias":"council-area-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Midlothian",
+    "alias":"midlothian-en-gb",
+    "description":"<p>Midlothian lies in the east central area of Scotland. It has 2 battle sites.</p>",
+    "parent_alias":"council-area-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Stirling",
+    "alias":"stirling-en-gb",
+    "description":"<p>Stirling lies in the central Scotland. It has 4 battle sites.</p>",
+    "parent_alias":"council-area-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Outcome",
+    "alias":"outcome-en-gb",
+    "description":"<p>This is a parent for the battle result.</p>",
+    "parent_alias":"",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"English victory",
+    "alias":"english-victory-en-gb",
+    "description":"",
+    "parent_alias":"outcome-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Scottish victory",
+    "alias":"scottish-victory-en-gb",
+    "description":"",
+    "parent_alias":"outcome",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Government victory",
+    "alias":"government-victory-en-gb",
+    "description":"",
+    "parent_alias":"outcome-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Jacobite victory",
+    "alias":"jacobite-victory-en-gb",
+    "description":"",
+    "parent_alias":"outcome-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Inconclusive",
+    "alias":"inconclusive-en-gb",
+    "description":"",
+    "parent_alias":"outcome-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+}
+]

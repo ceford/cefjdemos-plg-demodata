@@ -1,0 +1,89 @@
+[
+{
+    "name": "Merlin 101",
+    "username": "merlin101",
+    "email": "merlin101@example.com",
+    "groups": "Super Users",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "Arthur 101",
+    "username": "arthur101",
+    "email": "arthur101@example.com",
+    "groups": "Author",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "Eddie 101",
+    "username": "eddie101",
+    "email": "eddie101@example.com",
+    "groups": "Editor",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "Pru 101",
+    "username": "pru101",
+    "email": "pru101@example.com",
+    "groups": "Publisher",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "Alice 101",
+    "username": "alice101",
+    "email": "alice101@example.com",
+    "groups": "Chair101",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "Odd Job 101",
+    "username": "oddjob101",
+    "email": "oddjob101@example.com",
+    "groups": "Registered",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "Bob 101",
+    "username": "bob101",
+    "email": "bob101@example.com",
+    "groups": "Committee101",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "Charlie 101",
+    "username": "charlie101",
+    "email": "charlie101@example.com",
+    "groups": "Committee101",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "John Doe 101",
+    "username": "johndoe101",
+    "email": "johndoe101@example.com",
+    "groups": "Registered",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "Manny 101",
+    "username": "manny101",
+    "email": "manny101@example.com",
+    "groups": "Manager",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "Minnie 101",
+    "username": "minnie101",
+    "email": "minie101@example.com",
+    "groups": "Administrator",
+    "id": "0",
+    "block": "0"
+}]

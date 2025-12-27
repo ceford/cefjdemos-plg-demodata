@@ -1,0 +1,12 @@
+[{
+    "id":"0",
+    "title":"Battles",
+    "description":"The Battles Menu",
+    "menutype":"battles-en-gb"
+},
+{
+    "id":"0",
+    "title":"Campaigns",
+    "description":"Battlefields by Campaign",
+    "menutype":"campaigns-en-gb"
+}]

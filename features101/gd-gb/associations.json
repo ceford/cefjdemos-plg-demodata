@@ -1,0 +1,162 @@
+[{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"historic-battlefields-of-scotland-en-gb",
+        "gd-GB":"historic-battlefields-of-scotland-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"wars-of-scottish-independence-en-gb",
+        "gd-GB":"wars-of-scottish-independence-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"battle-of-stirling-bridge-1297-en-gb",
+        "gd-GB":"battle-of-stirling-bridge-1297-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"battle-of-roslin-1303-en-gb",
+        "gd-GB":"battle-of-roslin-1303-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"jacobite-risings-en-gb",
+        "gd-GB":"jacobite-risings-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"1745-en-gb",
+        "gd-GB":"1745-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"battle-of-prestonpans-1745-en-gb",
+        "gd-GB":"battle-of-prestonpans-1745-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"wars-of-scottish-independence-blog-en-gb",
+        "gd-GB":"wars-of-scottish-independence-blog-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"jacobite-risings-blog-en-gb",
+        "gd-GB":"jacobite-risings-blog-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"historic-battlefields-of-scotland-en-gb",
+        "gd-GB":"historic-battlefields-of-scotland-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"wars-of-scottish-independence-en-gb",
+        "gd-GB":"wars-of-scottish-independence-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"battle-of-stirling-bridge-en-gb",
+        "gd-GB":"battle-of-stirling-bridge-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"battle-of-roslin-en-gb",
+        "gd-GB":"battle-of-roslin-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"battle-of-prestonpans-en-gb",
+        "gd-GB":"battle-of-prestonpans-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"battle-of-dunbar-i-en-gb",
+        "gd-GB":"battle-of-dunbar-i-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"jacobite-risings-en-gb",
+        "gd-GB":"jacobite-risings-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"jacobite-rising-1745-en-gb",
+        "gd-GB":"jacobite-rising-1745-gd-gb"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"historic-battlefields-of-scotland-en-gb",
+        "gd-GB":"historic-battlefields-of-scotland-gd-gb"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"campaigns-en-gb",
+        "gd-GB":"campaigns-gd-gb"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"wars-of-scottish-independence-en-gb",
+        "gd-GB":"wars-of-scottish-independence-gd-gb"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"jacobite-risings-en-gb",
+        "gd-GB":"jacobite-risings-gd-gb"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"1689-en-gb",
+        "gd-GB":"1689-gd-gb"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"1745-en-gb",
+        "gd-GB":"1745-gd-gb"
+    }
+}
+]

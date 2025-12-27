@@ -1,0 +1,156 @@
+[{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Historic Battlefields of Scotland",
+    "alias":"historic-battlefields-of-scotland-en-gb",
+    "category_alias":"historic-battlefields-of-scotland-en-gb",
+    "language":"en-GB",
+    "text_source":"historic-battlefields-of-scotland.html"
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Wars of Scottish Independence",
+    "alias":"wars-of-scottish-independence-en-gb",
+    "category_alias":"wars-of-scottish-independence-en-gb",
+    "language":"en-GB",
+    "text_source":"wars-of-scottish-independence.html"
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Battle of Dunbar I",
+    "alias":"battle-of-dunbar-i-en-gb",
+    "category_alias":"wars-of-scottish-independence-en-gb",
+    "language":"en-GB",
+    "text_source":"battle-of-dunbar-i.html",
+    "fields": {
+        "date-of-engagement-en-gb":"27 April 1296",
+        "location-en-gb":"55.97692 -2.52119"
+    },
+    "tags": ["east-lothian","english-victory"],
+    "images": {
+        "image_intro":"images\/demodata\/en-gb\/battle-of-dunbar-i-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-dunbar-i-tn.jpg?width=200&height=200",
+        "image_intro_alt":"Memorial at the site of the Battle of Dunbar in 1296",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/en-gb\/battle-of-dunbar-i.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-dunbar-i.jpg?width=1512&height=1512",
+        "image_fulltext_alt":"Memorial at the site of the Battle of Dunbar in 1296",
+        "float_fulltext":"",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Battle of Stirling Bridge",
+    "alias":"battle-of-stirling-bridge-en-gb",
+    "category_alias":"wars-of-scottish-independence-en-gb",
+    "language":"en-GB",
+    "text_source":"battle-of-stirling-bridge.html",
+    "fields": {
+        "date-of-engagement-en-gb":"11 September 1297",
+        "location-en-gb":"56.13233 -3.93074"
+    },
+    "tags": ["stirling","scottish-victory"],
+    "images": {
+        "image_intro":"images\/demodata\/en-gb\/battle-of-stirling-bridge-wood-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-stirling-bridge-wood-tn.jpg?width=200&height=133",
+        "image_intro_alt":"Artists impression of the battle of Stirling Bridge",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/en-gb\/battle-of-stirling-bridge-wood.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-stirling-bridge-wood.jpg?width=1536&height=1024",
+        "image_fulltext_alt":"Artists impression of the battle of Stirling Bridge",
+        "float_fulltext":"",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Battle of Roslin",
+    "alias":"battle-of-roslin-en-gb",
+    "category_alias":"wars-of-scottish-independence-en-gb",
+    "language":"en-GB",
+    "text_source":"battle-of-roslin.html",
+    "fields": {
+        "date-of-engagement-en-gb":"24 February 1303",
+        "location-en-gb":"55.86574 -3.15504"
+    },
+    "tags": ["midlothian", "scottish-victory"],
+    "images": {
+        "image_intro":"images\/demodata\/en-gb\/battle-of-roslin-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-roslin-tn.jpg?width=200&height=200",
+        "image_intro_alt":"Monument at the site of the Battle of Roslin",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/en-gb\/battle-of-roslin-wide.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-roslin-wide.jpg?width=1600&height=400",
+        "image_fulltext_alt":"Monument at the site of the Battle of Roslin",
+        "float_fulltext":"",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Jacobite Risings",
+    "alias":"jacobite-risings-en-gb",
+    "category_alias":"jacobite-risings-en-gb",
+    "language":"en-GB",
+    "text_source":"jacobite-risings.html"
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Jacobite Rising 1745",
+    "alias":"jacobite-rising-1745-en-gb",
+    "category_alias":"1745-en-gb",
+    "language":"en-GB",
+    "text_source":"jacobite-rising-1745.html"
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Battle of Prestonpans",
+    "alias":"battle-of-prestonpans-en-gb",
+    "category_alias":"1745-en-gb",
+    "language":"en-GB",
+    "text_source":"battle-of-prestonpans.html",
+    "fields": {
+        "date-of-engagement-en-gb":"21 September 1745",
+        "location-en-gb":"55.95672 -2.94994"
+    },
+    "tags": ["east-lothian", "jacobite-victory"],
+    "images": {
+        "image_intro":"images\/demodata\/en-gb\/battle-of-prestonpans-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-prestonpans-tn.jpg?width=200&height=267",
+        "image_intro_alt":"Monument at the site of the Battle of Prestonpans",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/en-gb\/battle-of-prestonpans.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-prestonpans.jpg?width=480&height=640",
+        "image_fulltext_alt":"Monument at the site of the Battle of Prestonpans",
+        "float_fulltext":"right ms-2",
+        "image_fulltext_caption":""
+    }
+}]

@@ -1,0 +1,40 @@
+[{
+    "title":"Ceann-latha a’ Bhlàir",
+    "name":"date-of-engagement-gd-gb",
+    "label":"Date of Engagement",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>An ceann-latha air an do ghabh am blàr àite.</p>",
+    "note":"",
+    "state":1,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Dàta Catha"
+},
+{
+    "title":"Àite",
+    "name":"location-gd-gb",
+    "label":"Location",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>An domhan-leithead agus an domhan-fhad aig làrach a’ bhlàir.</p>",
+    "note":"",
+    "state":1,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Dàta Catha"
+}]

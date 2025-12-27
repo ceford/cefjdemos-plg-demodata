@@ -1,0 +1,59 @@
+[{
+    "title":"Raointean-Blàir Eachdraidheil na h-Alba",
+    "alias":"historic-battlefields-of-scotland-gd-gb",
+    "level":1,
+    "path":"historic-battlefields-of-scotland-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Tha liosta de raointean-blàir eachdraidheil na h-Alba air a chumail le <em>Àrainneachd Eachdraidheil na h-Alba</em>, buidheann Riaghaltas na h-Alba. Tha a’ mhòr-chuid dhiubh air an comharrachadh le carraighean-cuimhne agus bòrd-fiosrachaidh.</p>"
+},
+{
+    "title":"Iomairtean",
+    "alias":"campaigns-gd-gb",
+    "level":1,
+    "path":"campaigns-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>’S e amannan ann an eachdraidh na h-Alba a bha na h-iomairtean nuair a bha ùidhean na dùthcha fo chunnart le tachartasan poileataigeach taobh a-staigh no taobh a-muigh na dùthcha.</p>"
+},
+{
+    "title":"Cogadh Neo-eisimeileachd na h-Alba",
+    "alias":"wars-of-scottish-independence-gd-gb",
+    "parent_alias":"campaigns-gd-gb",
+    "level":2,
+    "path":"campaigns-gd-gb/wars-of-scottish-independence-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Bha Cogaidhean Neo-eisimeileachd na h-Alba nan sreath de dh’iomairtean armailteach aig deireadh an 13mh agus an 14mh linn gus neo-eisimeileachd agus àrd-uachdranas Rìoghachd na h-Alba a dhìon, an dèidh do Rìoghachd Shasainn bagairt a chur orra.</p>"
+},
+{
+    "title":"Armaichean nan Seumasach",
+    "alias":"jacobite-risings-gd-gb",
+    "parent_alias":"campaigns-gd-gb",
+    "level":2,
+    "path":"campaigns-gd-gb/jacobite-risings-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Bha Ar-a-mach nan Seumasach nan sreath oidhirpean gus Taigh Stiùbhart a thoirt air ais gu rìgh-chathrachaibh Shasainn is na h-Alba. Ghabh iad àite ann an 1689, 1715, 1719 agus 1745.</p>"
+},
+{
+    "title":"1689",
+    "alias":"1689-gd-gb",
+    "parent_alias":"jacobite-risings-gd-gb",
+    "level":3,
+    "path":"campaigns-gd-gb/jacobite-risings-gd-gb/1689-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Bha <strong>Ar-a-mach nan Seumasach ann an 1689</strong>, Màrt 1689 gu Gearran 1692, sa mhòr-chuid anns na Gàidhealtachd. B’ e an t-amas ath-shuidheachadh Sheumais II &amp; VII air an rìgh-chathair às dèidh dha a bhith air a chur sìos leis an Ar-Aois Ghloireach san t-Samhain 1688.</p>"
+},
+{
+    "title":"1745",
+    "alias":"1745-gd-gb",
+    "parent_alias":"jacobite-risings-gd-gb",
+    "level":3,
+    "path":"campaigns-gd-gb/jacobite-risings-gd-gb/1745-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>B’ e <strong>Ar-a-mach nan Seumasach ann an 1745</strong> oidhirp le Teàrlach Eideard Stiùbhart gus an rìgh-chathair Bhreatannach fhaighinn air ais airson athar, Seumas Franganas Eideard Stiùbhart. Thachair e rè Cogadh Oighreachd na h-Ostair nuair a bha mòr-chuid an Airm Bhreatannaich a’ sabaid ann an Roinn Eòrpa, agus b’ e seo an tè mu dheireadh ann an sreath de ar-a-macha a thòisich ann am Màrt 1689, le prìomh èirigh ann an 1715 agus 1719.</p>"
+}
+]

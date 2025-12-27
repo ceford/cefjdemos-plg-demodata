@@ -1,0 +1,156 @@
+[{
+    "title":"Raointean-Blàir Eachdraidheil na h-Alba",
+    "alias":"historic-battlefields-of-scotland-gd-gb",
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "category_alias":"historic-battlefields-of-scotland-gd-gb",
+    "language":"gd-GB",
+    "text_source":"historic-battlefields-of-scotland.html"
+},
+{
+    "title":"Cogadh Neo-eisimeileachd na h-Alba",
+    "alias":"wars-of-scottish-independence-gd-gb",
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "category_alias":"wars-of-scottish-independence-gd-gb",
+    "language":"gd-GB",
+    "text_source":"wars-of-scottish-independence.html"
+},
+{
+    "title":"Blàr Dhùn Bàrr I",
+    "alias":"battle-of-dunbar-i-gd-gb",
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "category_alias":"wars-of-scottish-independence-gd-gb",
+    "language":"gd-GB",
+    "text_source":"battle-of-dunbar-i.html",
+    "fields": {
+        "date-of-engagement-gd-gb":"27 Giblean 1296",
+        "location-gd-gb":"55.97692 -2.52119"
+    },
+    "tags": ["east-lothian","english-victory"],
+    "images": {
+        "image_intro":"images\/demodata\/en-gb\/battle-of-dunbar-i-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-dunbar-i-tn.jpg?width=200&height=200",
+        "image_intro_alt":"Cuimhneachan aig làrach Blàr Dhùn Bàrr ann an 1296",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/en-gb\/battle-of-dunbar-i.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-dunbar-i.jpg?width=1512&height=1512",
+        "image_fulltext_alt":"Cuimhneachan aig làrach Blàr Dhùn Bàrr ann an 1296",
+        "float_fulltext":"",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "title":"Blàr Drochaid Shruighlea",
+    "alias":"battle-of-stirling-bridge-gd-gb",
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "category_alias":"wars-of-scottish-independence-gd-gb",
+    "language":"gd-GB",
+    "text_source":"battle-of-stirling-bridge.html",
+    "fields": {
+        "date-of-engagement-gd-gb":"11 an t-Sultain 1297",
+        "location-gd-gb":"56.13233 -3.93074"
+    },
+    "tags": ["stirling","scottish-victory"],
+    "images": {
+        "image_intro":"images\/demodata\/en-gb\/battle-of-stirling-bridge-wood-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-stirling-bridge-wood-tn.jpg?width=200&height=133",
+        "image_intro_alt":"Dealbh-ealain den t-sabaid aig Drochaid Shruighlea",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/en-gb\/battle-of-stirling-bridge-wood.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-stirling-bridge-wood.jpg?width=1536&height=1024",
+        "image_fulltext_alt":"Dealbh-ealain den t-sabaid aig Drochaid Shruighlea",
+        "float_fulltext":"",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "title":"Blàr Roslinn",
+    "alias":"battle-of-roslin-gd-gb",
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "category_alias":"wars-of-scottish-independence-gd-gb",
+    "language":"gd-GB",
+    "text_source":"battle-of-roslin.html",
+    "fields": {
+        "date-of-engagement-gd-gb":"24 an Gearran 1303",
+        "location-gd-gb":"55.86574 -3.15504"
+    },
+    "tags": ["midlothian", "scottish-victory"],
+    "images": {
+        "image_intro":"images\/demodata\/en-gb\/battle-of-roslin-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-roslin-tn.jpg?width=200&height=200",
+        "image_intro_alt":"Carraighean-cuimhne aig làrach Blàr Roslinn",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/en-gb\/battle-of-roslin-wide.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-roslin-wide.jpg?width=1600&height=400",
+        "image_fulltext_alt":"Carraighean-cuimhne aig làrach Blàr Roslinn",
+        "float_fulltext":"",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "title":"Armaichean nan Seumasach",
+    "alias":"jacobite-risings-gd-gb",
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "category_alias":"jacobite-risings-gd-gb",
+    "language":"gd-GB",
+    "text_source":"jacobite-risings.html"
+},
+{
+    "title":"Aramach Sheumasaich 1745",
+    "alias":"jacobite-rising-1745-gd-gb",
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "category_alias":"1745-gd-gb",
+    "language":"gd-GB",
+    "text_source":"jacobite-rising-1745.html"
+},
+{
+    "title":"Blàr Prestonpans",
+    "alias":"battle-of-prestonpans-gd-gb",
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "category_alias":"1745-gd-gb",
+    "language":"gd-GB",
+    "text_source":"battle-of-prestonpans.html",
+    "fields": {
+        "date-of-engagement-gd-gb":"21 an t-Sultain 1745",
+        "location-gd-gb":"55.95672 -2.94994"
+    },
+    "tags": ["east-lothian", "jacobite-victory"],
+    "images": {
+        "image_intro":"images\/demodata\/en-gb\/battle-of-prestonpans-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-prestonpans-tn.jpg?width=200&height=267",
+        "image_intro_alt":"Cuimhneachan aig làrach Blàr Prestonpans",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/en-gb\/battle-of-prestonpans.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-prestonpans.jpg?width=480&height=640",
+        "image_fulltext_alt":"Cuimhneachan aig làrach Blàr Prestonpans",
+        "float_fulltext":"right ms-2",
+        "image_fulltext_caption":""
+    }
+}]
