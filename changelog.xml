@@ -1,0 +1,10 @@
+<changelogs>
+	<changelog>
+		<element>plg_demodata_features101</element>
+		<type>plugin</type>
+		<version>0.1.0</version>
+		<add>
+			<item>Added changelog.</item>
+		</add>
+	</changelog>
+</changelogs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updates>
+	<update>
+		<name>plg_demodata_features101</name>
+		<description>Plugin to add or remove demonstration data</description>
+		<element>plg_demodata_features101</element>
+		<type>module</type>
+		<version>0.1.0</version>
+		<client>administrator</client>
+		<infourl title="Demodata Plugin">https://github.com/ceford/cefjdemos-plg-demodata/blob/main/README.md</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/ceford/cefjdemos-plg-demodata/archive/refs/heads/main.zip</downloadurl>
+		</downloads>
+		<changelogurl>https://github.com/ceford/cefjdemos-plg-demodata/changelog.xml</changelogurl>
+		<targetplatform name="joomla" version="[56].[012345]" />
+		<php_minimum>8.1</php_minimum>
+	</update>
+</updates>

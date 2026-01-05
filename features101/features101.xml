@@ -168,4 +168,10 @@
 			</fieldset>
 		</fields>
 	</config>
+	<changelogurl>https://raw.githubusercontent.com/ceford/cefjdemos-plg-demodata/refs/heads/main/changelog.xml</changelogurl>
+
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="2" name="Demodata Plugin Update Site">https://raw.githubusercontent.com/ceford/cefjdemos-plg-demodata/main/updates.xml</server>
+	</updateservers>
 </extension>
