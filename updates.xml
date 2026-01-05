@@ -5,7 +5,7 @@
 		<description>Plugin to add or remove demonstration data</description>
 		<element>plg_demodata_features101</element>
 		<type>module</type>
-		<version>0.1.0</version>
+		<version>0.1.1</version>
 		<client>administrator</client>
 		<infourl title="Demodata Plugin">https://github.com/ceford/cefjdemos-plg-demodata/blob/main/README.md</infourl>
 		<downloads>

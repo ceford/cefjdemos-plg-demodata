@@ -2,6 +2,14 @@
 	<changelog>
 		<element>plg_demodata_features101</element>
 		<type>plugin</type>
+		<version>0.1.1</version>
+		<add>
+			<change>Incremented patch version for testing.</change>
+		</add>
+	</changelog>
+	<changelog>
+		<element>plg_demodata_features101</element>
+		<type>plugin</type>
 		<version>0.1.0</version>
 		<add>
 			<item>Added changelog.</item>
