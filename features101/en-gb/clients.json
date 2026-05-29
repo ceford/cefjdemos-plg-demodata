@@ -1,0 +1,33 @@
+[{
+    "id":0,
+    "name": "Joomla! Extensions",
+    "contact": "Extensions Team",
+    "email": "extensions@example.com",
+    "extrainfo": "Extensions approved by Joomla!",
+    "metakey_prefix": "abc_",
+    "state": 1,
+    "track_clicks": 1,
+    "track_impressions": 1
+},
+{
+    "id":0,
+    "name": "Joomla! Shop",
+    "contact": "Shop Manager",
+    "email": "shop@example.com",
+    "extrainfo": "Contact us for futher details.",
+    "metakey_prefix": "def_",
+    "state": 1,
+    "track_clicks": 1,
+    "track_impressions": 1
+},
+{
+    "id":0,
+    "name": "Support Joomla!",
+    "contact": "Joomla! Community",
+    "email": "community@example.com",
+    "extrainfo": "Join the Joomla! community.",
+    "metakey_prefix": "ghi_",
+    "state": 1,
+    "track_clicks": 1,
+    "track_impressions": 1
+}]

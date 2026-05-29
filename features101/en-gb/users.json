@@ -66,6 +66,7 @@
 {
     "name": "John Doe 101",
     "username": "johndoe101",
+    "password": "(johndoe123)",
     "email": "johndoe101@example.com",
     "groups": "Registered",
     "id": "0",
@@ -84,6 +85,15 @@
     "username": "minnie101",
     "email": "minie101@example.com",
     "groups": "Administrator",
+    "id": "0",
+    "block": "0"
+},
+{
+    "name": "Playwright",
+    "username": "playwright",
+    "password": "(play123456)",
+    "email": "playwright@example.com",
+    "groups": "Super Users",
     "id": "0",
     "block": "0"
 }]

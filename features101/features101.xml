@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extension type="plugin" group="demodata" method="upgrade">
 	<name>plg_demodata_features101</name>
-	<author>Joomla! Project</author>
-	<creationDate>2018-07</creationDate>
-	<copyright>(C) 2018 Open Source Matters, Inc.</copyright>
+	<author>Clifford E Ford</author>
+	<creationDate>2025-12-28</creationDate>
+	<copyright>(C) 2025 - 2026 Clifford E Ford</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>admin@joomla.org</authorEmail>
-	<authorUrl>www.joomla.org</authorUrl>
-	<version>0.1.1</version>
+	<authorEmail>cliff@ford.me.uk</authorEmail>
+	<authorUrl>jdocmanual.org</authorUrl>
+	<version>0.2.0</version>
 	<description>PLG_DEMODATA_FEATURES101_XML_DESCRIPTION</description>
 	<namespace path="src">Cefjdemos\Plugin\DemoData\Features101</namespace>
 	<files>
-		<folder>assets</folder>
-		<folder>language</folder>
+		<folder plugin="features101">en-gb</folder>
+		<folder plugin="features101">gd-gb</folder>
+		<folder plugin="features101">images</folder>
+		<folder plugin="features101">language</folder>
 		<folder plugin="features101">services</folder>
-		<folder>src</folder>
+		<folder plugin="features101">src</folder>
+		<file plugin="features101">features101.xml</file>
 	</files>
 	<config>
 		<fields name="params">
@@ -79,6 +82,13 @@
 					type="text"
 					label="PLG_DEMODATA_FEATURES101_BANNERS_LABEL"
 					description="PLG_DEMODATA_FEATURES101_BANNERS_DESC"
+					readonly="readonly"
+				/>
+				<field
+					name="clients"
+					type="text"
+					label="PLG_DEMODATA_FEATURES101_BANNER_CLIENTS_LABEL"
+					description="PLG_DEMODATA_FEATURES101_BANNER_CLIENTS_DESC"
 					readonly="readonly"
 				/>
 				<field

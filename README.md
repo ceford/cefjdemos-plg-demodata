@@ -7,8 +7,7 @@ Battlefields in English and Scottish Gaelic. The data is independent of the
 code so can be replaced with almost anything. But beware, data creation is
 a time-consuming task.
 
-This plugin is a Work in Progress. Some features need more work, specifically
-Banners, Contacts and Workflows.
+This plugin is a Work in Progress. Some features need more work, specifically Workflows.
 
 ## Setup
 

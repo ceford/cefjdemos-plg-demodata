@@ -55,5 +55,34 @@
     "extension":"com_content",
     "language":"en-GB",
     "description":"<p>The <strong>Jacobite rising of 1745</strong> was an attempt by Charles Edward Stuart to regain the British throne for his father, James Francis Edward Stuart. It took place during the War of the Austrian Succession, when the bulk of the British Army was fighting in mainland Europe, and proved to be the last in a series of revolts that began in March 1689, with major outbreaks in 1715 and 1719. </p>"
+},
+{
+    "title":"Demo Staff",
+    "alias":"demo-staff",
+    "level":1,
+    "path":"demo-staff",
+    "extension":"com_contact",
+    "language":"*",
+    "description":"<p>Parent category for Demo contacts Staff.</p>"
+},
+{
+    "title":"Demo Shop",
+    "alias":"demo-shop",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-shop",
+    "extension":"com_contact",
+    "language":"*",
+    "description":"<p>Child category for Demo contacts Shop staff.</p>"
+},
+{
+    "title":"Demo Apiary",
+    "alias":"demo-apiary",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-apiary",
+    "extension":"com_contact",
+    "language":"*",
+    "description":"<p>Child category for Demo contacts Apiary staff.</p>"
 }
 ]

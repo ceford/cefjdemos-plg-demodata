@@ -4,30 +4,19 @@
  * @package     Joomla.Plugin
  * @subpackage  Demodata.Features101
  *
- * @copyright   (C) 2025 Open Source Matters, Inc. <https://www.joomla.org>
+ * @copyright   (C) 2025 - 2026 Clifford E Ford
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
 namespace Cefjdemos\Plugin\DemoData\Features101\Extension;
 
-use Joomla\CMS\Application\ApplicationHelper;
-use Joomla\CMS\Component\ComponentHelper;
 use Joomla\CMS\Event\Plugin\AjaxEvent;
 use Joomla\Event\SubscriberInterface;
 use Joomla\Event\Event;
 use Joomla\CMS\Extension\ExtensionHelper;
-use Joomla\CMS\Factory;
-use Joomla\CMS\Installer\Installer;
-use Joomla\CMS\Language\Language;
-use Joomla\CMS\Language\LanguageHelper;
 use Joomla\CMS\Language\Text;
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\CMS\Session\Session;
-use Joomla\CMS\Table\Module;
-use Joomla\CMS\Workflow\Workflow;
-use Joomla\Component\Categories\Administrator\Table\CategoryTable;
-use Joomla\Component\Content\Administrator\Table\ArticleTable;
-use Joomla\Component\Menus\Administrator\Table\MenuTable;
 use Joomla\Database\DatabaseAwareTrait;
 use Joomla\Database\Exception\ExecutionFailureException;
 use Joomla\Database\ParameterType;
@@ -184,6 +173,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             $this->installUsers($event, 1);
             return;
         } else {
+            $this->doExtras($is_installed);
+
             $msg = "Starting uninstall: {$date}\n";
             file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $msg, FILE_APPEND);
             $this->uninstallModules($event, 16);
@@ -582,16 +573,21 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         if ($this->getApplication()->getInput()->get('type') !== $this->_name) {
             return;
         }
+
         $step = 17;
 
         // Is data to be installed or uninstalled?
         $is_installed = $this->params->get('is_installed', 0);
-        if ($is_installed) {
-            $this->params->set('is_installed', 0);
-            $msg = "Step: {$step}, Uninstallation completed\n";
-        } else {
+
+        // Add any other settings or cleanup here
+        if (empty($is_installed)) {
+            $this->doExtras($is_installed);
+
             $this->params->set('is_installed', 1);
             $msg = "Step: {$step}, Installation completed\n";
+        } else {
+            $this->params->set('is_installed', 0);
+            $msg = "Step: {$step}, Uninstallation completed\n";
         }
         $this->updateParams($this->params);
         file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $msg, FILE_APPEND);
@@ -604,6 +600,354 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
         }
         $event->setArgument('result', [$response]);
+    }
+
+    /**
+     * These items are from the Playwright notes
+     */
+    protected function doExtras($is_installed) {
+        $this->doPrivateMessages($is_installed);
+        $this->doSpecialAccess($is_installed);
+        $this->setOddjobPermissions($is_installed);
+        $this->doUsernotes($is_installed);
+        $this->doPrivacyConsents($is_installed);
+        $this->doPrivacyRequests($is_installed);
+        $this->doSchemaOrg($is_installed);
+        $this->doRedirects($is_installed);
+    }
+
+    /**
+     * Add or remove an example redirect.
+     */
+    protected function doRedirects($is_installed) {
+        $db = $this->getDatabase();
+        $query = $db->createQuery();
+        if (empty($is_installed)) {
+            // Add a record
+           $query->insert($db->quoteName('#__redirect_links'))
+                ->set($db->quoteName('old_url') . ' = ' . $db->quote('about-me.html'))
+                ->set($db->quoteName('new_url') . ' = ' . $db->quote('https://example.com/about-others.html'))
+                ->set($db->quoteName('referer') . ' = ' . $db->quote(''))
+                ->set($db->quoteName('comment') . ' = ' . $db->quote('An example redirect.'))
+                ->set($db->quoteName('hits') . ' = 7')
+                ->set($db->quoteName('published') . ' = 1')
+                ->set($db->quoteName('created_date') . ' = NOW()')
+                ->set($db->quoteName('modified_date') . ' = NOW()');
+        } else {
+            // Remove a record
+           $query->delete($db->quoteName('#__redirect_links'))
+                ->where($db->quoteName('old_url') . ' = ' . $db->quote('about-me.html'))
+                ->where($db->quoteName('new_url') . ' = ' . $db->quote('https://example.com/about-others.html'));
+        }
+        $db->setQuery($query);
+        $db->execute(); 
+    }
+
+    /**
+     * Add an organisation name to the Schema Org plugin
+     */
+    protected function doSchemaOrg($is_installed) {
+        // Only change on installation?
+        $db = $this->getDatabase();
+        $query = $db->createQuery();
+        $query->select($db->quoteName('params'))
+            ->from($db->quoteName('#__extensions'))
+            ->where($db->quoteName('name') . ' = ' . $db->quote('plg_system_schemaorg'));
+        $db->setQuery($query);
+        $params = $db->loadResult();
+        $items = json_decode($params, true);
+        
+        if (empty($is_installed)) {
+            if (empty($items['name'])) {
+                $items['name'] = 'Joomla Documentation Team';
+                $query = $db->createQuery();
+                // {"baseType":"organization","user":"0","name":"","image":"","socialmedia":[]}
+
+                $query->update($db->quoteName('#__extensions'))
+                    ->set($db->quoteName('params') . ' = ' . $db->quote(json_encode($items)))
+                    ->where($db->quoteName('name') . ' = ' . $db->quote('plg_system_schemaorg'));
+                $db->setQuery($query);
+                $db->execute();
+            }
+        } else {
+            if ($items['name'] == 'Joomla Documentation Team') {
+                $items['name'] = '';
+                $query = $db->createQuery();
+                $query->update($db->quoteName('#__extensions'))
+                    ->set($db->quoteName('params') . ' = ' . $db->quote(json_encode($items)))
+                    ->where($db->quoteName('name') . ' = ' . $db->quote('plg_system_schemaorg'));
+                $db->setQuery($query);
+                $db->execute();
+            }
+        }
+    }
+
+    /**
+     * Add or remove a Privacy Request for Jon Doe
+     */
+    protected function doPrivacyRequests($is_installed) {
+        // get the johndoe101 userid
+        $db = $this->getDatabase();
+         
+        $query = $db->createQuery();
+        $query->select($db->quoteName('email'))
+            ->from($db->quoteName('#__users'))
+            ->where($db->quoteName('username') . ' = ' . $db->quote('johndoe101'));
+        $db->setQuery($query);
+        $email = $db->loadResult();
+
+        $query = $db->createQuery();
+        if (empty($is_installed)) {
+            // Add a record
+            $query->insert($db->quoteName('#__privacy_requests'))
+                ->set($db->quoteName('email') . ' = ' . $db->quote($email))
+                ->set($db->quoteName('requested_at') . ' = NOW()')
+                ->set($db->quoteName('status') . ' = 0')
+                ->set($db->quoteName('request_type') . ' = ' . $db->quote('Export'))
+                ->set($db->quoteName('confirm_token') . ' = ' . $db->quote('xyz'));
+            $db->setQuery($query);
+            $db->execute();
+        } else {
+            // Delete the record
+            $query->delete($db->quoteName('#__privacy_requests'))
+                ->where($db->quoteName('email') . ' = ' . $db->quote($email));
+            $db->setQuery($query);
+            $db->execute();
+        }
+    }
+
+    /**
+     * Add or remove a privacy consent for John Doe
+     */
+    protected function doPrivacyConsents($is_installed) {
+        // get the johndoe101 userid
+        $db = $this->getDatabase();
+         
+        $query = $db->createQuery();
+        $query->select($db->quoteName('id'))
+            ->from($db->quoteName('#__users'))
+            ->where($db->quoteName('username') . ' = ' . $db->quote('johndoe101'));
+        $db->setQuery($query);
+        $johndoe_id = $db->loadResult();
+
+        $query = $db->createQuery();
+        if (empty($is_installed)) {
+            // Add a record
+            $pp = "<p>The user consented to storing their user information using the IP address 127.0.0.1</p>";
+            $pp .= "<p>The user agent string of the user's browser was:<br>\n";
+            $pp .= "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:151.0) Gecko/20100101 Firefox/151.0</p>\n";
+            $pp .= "<p>This information was automatically recorded when the user submitted their details on the website and checked the confirm box.</p>";
+            $query->insert($db->quoteName('#__privacy_consents'))
+                ->set($db->quoteName('user_id') . ' = ' . $db->quote($johndoe_id))
+                ->set($db->quoteName('created') . ' = NOW()')
+                ->set($db->quoteName('subject') . ' = ' . $db->quote('Privacy Policy '))
+                ->set($db->quoteName('body') . ' = ' . $db->quote($pp))
+                ->set($db->quoteName('token') . ' = ' . $db->quote('xyz'));
+            $db->setQuery($query);
+            $db->execute();
+        } else {
+            // Delete the record
+            $query->delete($db->quoteName('#__privacy_consents'))
+                ->where($db->quoteName('user_id') . ' = ' . $johndoe_id);
+            $db->setQuery($query);
+            $db->execute();
+        }
+    }
+
+    /**
+     * Add or remove a usernote
+     */
+    protected function doUsernotes($is_installed) {
+        // get the johndoe101 userid
+        $db = $this->getDatabase();
+         
+        $query = $db->createQuery();
+        $query->select($db->quoteName('id'))
+            ->from($db->quoteName('#__users'))
+            ->where($db->quoteName('username') . ' = ' . $db->quote('johndoe101'));
+        $db->setQuery($query);
+        $johndoe_id = $db->loadResult();
+
+        $query = $db->createQuery();
+        if (empty($is_installed)) {
+            // Add a record
+            $query->insert($db->quoteName('#__user_notes'))
+                ->set($db->quoteName('user_id') . ' = ' . $db->quote($johndoe_id))
+                ->set($db->quoteName('catid') . ' = 7')
+                ->set($db->quoteName('subject') . ' = ' . $db->quote('Demonstration'))
+                ->set($db->quoteName('body') . ' = ' . $db->quote('John Doe is a pseudonym for an unknown person.'))
+                ->set($db->quoteName('state') . ' = 1')
+                ->set($db->quoteName('created_time') . ' = NOW()')
+                ->set($db->quoteName('modified_time') . ' = NOW()');
+            $db->setQuery($query);
+            $db->execute();
+        } else {
+            // Delete the record
+            $query->delete($db->quoteName('#__user_notes'))
+                ->where($db->quoteName('user_id') . ' = ' . $johndoe_id);
+            $db->setQuery($query);
+            $db->execute();
+        }
+    }
+    
+    /**
+     * Edit Global Configuration: set Administrator login to Allowed for oddjob101
+     * Edit Media / Options: set Access Admin Interface, Create, Delete and Edit to Allowed.
+     */
+    protected function setOddjobPermissions($is_installed) {
+        $db = $this->getDatabase();
+         
+        // Get the id for oddjob101 group
+        $query = $db->createQuery();
+        $query->select($db->quoteName('id'))
+            ->from($db->quoteName('#__usergroups'))
+            ->where($db->quoteName('title') . ' = ' . $db->quote('Oddjob101'));
+        $db->setQuery($query);
+        $oddjob_id = $db->loadResult();
+
+        // Get the id and rules of the root asset
+        $query = $db->createQuery();
+        $query->select($db->quoteName('rules'))
+            ->from($db->quoteName('#__assets'))
+            ->where($db->quoteName('title') . ' = ' . $db->quote('Root Asset'));
+        $db->setQuery($query);
+        $rules = $db->loadResult();
+        $rules = json_decode($rules, true);
+        
+        // {"core.login.site":{"6":1,"2":1},"core.login.admin":{"6":1,"93":1},"core.login.api":{"8":1},"core.login.offline":{"6":1},"core.admin":{"8":1},"core.manage":{"7":1},"core.create":{"6":1,"3":1},"core.delete":{"6":1},"core.edit":{"6":1,"4":1},"core.edit.state":{"6":1,"5":1},"core.edit.own":{"6":1,"3":1}}
+
+        if (empty($is_installed)) {
+            // Add to the record
+            $rules['core.login.admin'][$oddjob_id] = 1;
+        } else {
+            unset($rules['core.login.admin'][$oddjob_id]);
+        }
+        // Put the update array back in the database
+        $rules = json_encode($rules);
+        $query = $db->createQuery();
+        $query->update($db->quoteName('#__assets'))
+            ->set($db->quoteName('rules') . ' = ' . $db->quote($rules))
+            ->where($db->quoteName('title') . ' = ' . $db->quote('Root Asset'));
+        $db->setQuery($query);
+        $db->execute();
+
+        // Now set the Media rules core.manage, core.create, core.delete, core.edit = not present by default
+        $query = $db->createQuery();
+        $query->select($db->quoteName('rules'))
+            ->from($db->quoteName('#__assets'))
+            ->where($db->quoteName('title') . ' = ' . $db->quote('com_media'));
+        $db->setQuery($query);
+        $rules = $db->loadResult();
+        $rules = json_decode($rules, true);
+
+        // {"core.admin":{"7":1},"core.manage":{"6":1},"core.create":{"3":1},"core.delete":{"5":1}}
+
+        if (empty($is_installed)) {
+            // Add to the record
+            $rules['core.manage'][$oddjob_id] = 1;
+            $rules['core.create'][$oddjob_id] = 1;
+            $rules['core.delete'][$oddjob_id] = 1;
+            if (!isset($rules['core.edit'])) {
+                $rules['core.edit'] = [];
+            }
+            $rules['core.edit'][$oddjob_id] = 1;
+        } else {
+            // Remove from the record
+            unset($rules['core.manage'][$oddjob_id]);
+            unset($rules['core.create'][$oddjob_id]);
+            unset($rules['core.delete'][$oddjob_id]);
+            unset($rules['core.edit'][$oddjob_id]);
+        }
+        // Put the update array back in the database
+        $rules = json_encode($rules);
+        $query = $db->createQuery();
+        $query->update($db->quoteName('#__assets'))
+            ->set($db->quoteName('rules') . ' = ' . $db->quote($rules))
+            ->where($db->quoteName('title') . ' = ' . $db->quote('com_media'));
+        $db->setQuery($query);
+        $db->execute();
+
+    }
+
+    /**
+     * Add or remove a group to those with special access
+     */ 
+    protected function doSpecialAccess($is_installed){
+        $db = $this->getDatabase();
+
+        // Get the id and rules of the special group
+        $query = $db->createQuery();
+        $query->select($db->quoteName(array('id', 'rules')))
+            ->from($db->quoteName('#__viewlevels'))
+            ->where($db->quoteName('title') . ' = ' . $db->quote('Special'));
+        $db->setQuery($query);
+        $viewlevels_row = $db->loadObject();
+
+        // Get the id of the Oddjob101 group
+        $query = $db->createQuery();
+        $query->select($db->quoteName('id'))
+            ->from($db->quoteName('#__usergroups'))
+            ->where($db->quoteName('title') . ' = ' . $db->quote('Oddjob101'));
+        $db->setQuery($query);
+        $usergroups_id = $db->loadResult();
+
+        $current = $viewlevels_row->rules;
+        if (empty($is_installed)) {
+            // Add to the record
+            str_replace(']', ",{$usergroups_id}]", $viewlevels_row->rules);
+            $replacement = str_replace(']', ',' . $usergroups_id . ']', $current);
+        } else {
+            // Remove from the record
+            str_replace(",{$usergroups_id}", '', $viewlevels_row->rules);
+            $replacement = str_replace(',' . $usergroups_id, '', $current);
+        }
+        $query = $db->createQuery();
+        $query->update($db->quoteName('#__viewlevels'))
+            ->set($db->quoteName('rules') . ' = ' . $db->quote($replacement))
+            ->where($db->quoteName('title') . ' = ' . $db->quote('Special'));
+        $db->setQuery($query);
+        $db->execute();
+    }
+
+    /**
+     * Create or delete a private message from Superman to Playwright
+     */
+    protected function doPrivateMessages($is_installed) {
+        // Get the id of Superman and Playwright
+        $db = $this->getDatabase();
+
+        $query = $db->createQuery();
+        $query->select($db->quoteName('id'))
+            ->from($db->quoteName('#__users'))
+            ->where($db->quoteName('username') . ' = ' . $db->quote('superman'));
+        $db->setQuery($query);
+        $superman_id = $db->loadResult();
+
+        $query = $db->createQuery();
+        $query->select($db->quoteName('id'))
+            ->from($db->quoteName('#__users'))
+            ->where($db->quoteName('username') . ' = ' . $db->quote('playwright'));
+        $db->setQuery($query);
+        $playwright_id = $db->loadResult();
+
+        if (empty($is_installed)) {
+            // Add a record
+            $query = $db->createQuery();
+            $query->insert($db->quoteName('#__messages'))
+                ->set($db->quoteName('user_id_from') . ' = ' . $superman_id)
+                ->set($db->quoteName('user_id_to') . ' = ' . $playwright_id)
+                ->set($db->quoteName('date_time') . ' = NOW()')
+                ->set($db->quoteName('subject') . ' = ' . $db->quote('Demonstration'))
+                ->set($db->quoteName('message') . ' = ' . $db->quote('This is a demonstration Private Message.'));
+        } else {
+            // Remove a record
+            $query = $db->createQuery();
+            $query->delete($db->quoteName('#__messages'))
+                ->where($db->quoteName('user_id_from') . ' = ' . $superman_id)
+                ->where($db->quoteName('user_id_to') . ' = ' . $playwright_id);
+        }
+        $db->setQuery($query);
+        $db->execute();
     }
 
     /**
@@ -626,29 +970,17 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
             foreach ($associations as $language => $id) {
                 $query->values(
-                    implode(
-                        ',',
-                        $query->bindArray(
-                            [
-                                $id,
-                                $context,
-                                $key,
-                            ],
-                            [
-                                ParameterType::INTEGER,
-                                ParameterType::STRING,
-                                ParameterType::STRING,
-                            ]
-                        )
+                    implode(',',
+                        $query->bindArray([$id, $context, $key], [ParameterType::INTEGER, ParameterType::STRING, ParameterType::STRING])
                     )
                 );
             }
-
+            $test = $query->__tostring();
             $db->setQuery($query);
 
             try {
                 $db->execute();
-            } catch (\RuntimeException) {
+            } catch (\RuntimeException $e) {
                 return false;
             }
         }
@@ -826,15 +1158,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $this->params->set('articles', implode(',', $article_ids));
         $this->updateParams($this->params);
 
-        // Make a symbolic link from the plugin images folder to the media folder.
-        $target = JPATH_SITE . '/plugins/demodata/features101/images';
-        $link = JPATH_SITE . '/images/demodata';
-
-        // If $link already exists, symlink() will fail — remove it first if necessary:
-        if (file_exists($link)) {
-            unlink($link);
-        }
-        symlink($target, $link);
+        // copy the images folder from the plugin to the site images folder
+        $this->deployDemoImages(JPATH_SITE . '/plugins/demodata/features101/images', JPATH_SITE . '/images/demodata');
 
         $response            = [];
         $response['success'] = true;
@@ -919,6 +1244,87 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         if ($this->checkstep($event, $step, 'banners')) {
             return;
         }
+        // Create a new db object.
+        $db    = $this->getDatabase();
+
+        // First do the clients.
+        $mvcFactory = $this->getApplication()->bootComponent('com_banners')->getMVCFactory();
+        $clientModel = $mvcFactory->createModel('Client', 'Administrator', ['ignore_request' => true]);
+        $client_ids = [];
+
+        // Get the list of languages for installation from the plugin parameters.
+        $languages = $this->getLanguages();
+
+        // Get the content articles to be installed from the $language.
+        foreach($languages as $language) {
+
+            $file = __DIR__ . "/../../{$language}/clients.json";
+            if (!is_file($file)) {
+                continue;
+            }
+            $clients_json = file_get_contents($file);
+            $clients = json_decode($clients_json, true);
+
+            foreach ($clients as $client) {
+                if (!$clientModel->save($client)) {
+                    $response            = [];
+                    $response['success'] = false;
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_BANNERS_STEP_FAILED', $step, $clientModel->getError());
+                    file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $response['message'], FILE_APPEND);
+
+                    $event->addResult($response);
+                    return;
+                }
+
+                // Get ID from client we just added
+                $id = $clientModel->getState('client.id');
+                $client_ids[] = $id;
+            }
+        }
+
+        // Store the client ids in the plugin parameters.
+        $this->params->set('clients', implode(',', $client_ids));
+        $this->updateParams($this->params);
+
+        $bannerModel = $mvcFactory->createModel('Banner', 'Administrator', ['ignore_request' => true]);
+        $banner_ids = [];
+
+        // Get the list of languages for installation from the plugin parameters.
+        $languages = $this->getLanguages();
+
+        // Get the content articles to be installed from the $language.
+        foreach($languages as $language) {
+
+            $file = __DIR__ . "/../../{$language}/banners.json";
+            if (!is_file($file)) {
+                continue;
+            }
+            $banners_json = file_get_contents($file);
+            $banners = json_decode($banners_json, true);
+
+            foreach ($banners as $i => $banner) {
+                $banner['cid'] = $client_ids[$i];
+                if (!$bannerModel->save($banner)) {
+                    $response            = [];
+                    $response['success'] = false;
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_BANNERS_STEP_FAILED', $step, $bannerModel->getError());
+                    file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $response['message'], FILE_APPEND);
+
+                    $event->addResult($response);
+                    return;
+                }
+
+                // Get ID from article we just added
+                $id = $bannerModel->getState('banner.id');
+                $banner_ids[] = $id;
+
+            }
+        }
+
+        // Store the article ids in the plugin parameters.
+        $this->params->set('banners', implode(',', $banner_ids));
+        $this->updateParams($this->params);
+
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
@@ -991,6 +1397,70 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         if ($this->checkstep($event, $step, 'contacts')) {
             return;
         }
+        // Create a new db object.
+        $db    = $this->getDatabase();
+
+        $mvcFactory = $this->getApplication()->bootComponent('com_contact')->getMVCFactory();
+        $contactModel = $mvcFactory->createModel('Contact', 'Administrator', ['ignore_request' => true]);
+        $ids = [];
+
+        // Get the list of languages for installation from the plugin parameters.
+        $languages = $this->getLanguages();
+
+        // Get the fields to be installed from the $contact.
+        foreach($languages as $language) {
+            $file = __DIR__ . "/../../{$language}/contacts.json";
+            if (!is_file($file)) {
+                continue;
+            }
+            $contacts_json = file_get_contents($file);
+            $contacts = json_decode($contacts_json, true);
+
+            foreach ($contacts as $i => $contact) {
+                // Get the category id from the category_alias
+                $query = $db->createQuery();
+                $query->select($db->quoteName('id'))
+                    ->from($db->quoteName('#__categories'))
+                    ->where($db->quoteName('alias') . ' = ' . $db->quote($contact['category_alias']));
+                $db->setQuery($query);
+                $contact['catid'] = $db->loadResult();
+                unset($contact['category_alias']);
+
+                // Get the linked user from the username
+                if (!empty($contact['username'])) {
+                    $query = $db->createQuery();
+                    $query->select($db->quoteName('id'))
+                        ->from($db->quoteName('#__users'))
+                        ->where($db->quoteName('username') . ' = ' . $db->quote($contact['username']));
+                    $db->setQuery($query);
+                    $contact['user_id'] = $db->loadResult();
+                    unset($contact['username']);
+                }
+
+                $contact['created'] = date("Y-m-d H:i:s");
+                $contact['modifid'] = $contact['created'];
+
+                try {
+                    $contactModel->save($contact);
+                } catch (\RuntimeException $e){
+                    $response            = [];
+                    $response['success'] = false;
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_USER_STEP_FAILED', $step, $contactModel->getError());
+
+                    $event->addResult($response);
+                    return;
+                }
+
+                // Get ID from user we just added
+                $ids[] = $contactModel->getState('contact.id');
+            }
+        }
+
+        // Store the user ids in the plugin parameters.
+        $this->params->set('contacts', implode(',', $ids));
+        $this->updateParams($this->params);
+
+        // The users alice101 and bob101 have already been installed
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
@@ -1300,6 +1770,9 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
+        // Need the already installed banners clients - make an array.
+        $clientslist = explode(',', $this->params->get('clients'));
+
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
             $file = __DIR__ . "/../../{$language}/modules.json";
@@ -1338,8 +1811,13 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $module['showtitle'] = 1;
                 }
 
+                // Client is admin 1 or site 0.
                 if (!isset($module['client_id'])) {
                     $module['client_id'] = 0;
+                }
+
+                if ($module['module'] == 'mod_banners') {
+                   $module['params']['cid'] = array_shift($clientslist);
                 }
 
                 if (!$moduleModel->save($module)) {
@@ -1371,6 +1849,47 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         if ($this->checkstep($event, $step, 'newsfeeds')) {
             return;
         }
+
+        // Create a new db object.
+        $db = $this->getDatabase();
+
+        $mvcFactory = $this->getApplication()->bootComponent('com_newsfeeds')->getMVCFactory();
+        $newsfeedModel = $mvcFactory->createModel('NewsFeed', 'Administrator', ['ignore_request' => true]);
+        $ids = [];
+
+        // Get the list of languages for installation from the plugin parameters.
+        $languages = $this->getLanguages();
+
+        // Get the fields to be installed from the $language.
+        foreach($languages as $language) {
+            $file = __DIR__ . "/../../{$language}/newsfeeds.json";
+            if (!is_file($file)) {
+                continue;
+            }
+            $newsfeeds_json = file_get_contents($file);
+            $newsfeeds = json_decode($newsfeeds_json, true);
+            $date = date("Y-m-d H:i:s");
+
+            foreach ($newsfeeds as $i => $newsfeed) {
+                $newsfeed['created'] = $date;
+                $newsfeed['modified'] = $date;
+                if (!$newsfeedModel->save($newsfeed)) {
+                    $response            = [];
+                    $response['success'] = false;
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_NEWSFEED_STEP_FAILED', $step, $newsfeedModel->getError());
+
+                    $event->addResult($response);
+                    return;
+                }
+                    // Get ID from newsfeed we just added
+                    $ids[] = $newsfeedModel->getState('newsfeed.id');
+            }
+        }
+
+        // Store the newsfeed ids in the plugin parameters.
+        $this->params->set('newsfeeds', implode(',', $ids));
+        $this->updateParams($this->params);
+
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
@@ -1538,8 +2057,12 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
             foreach ($users as $i => $user) {
 
-                $user['password'] = $this->generateStrongPassword(12);
-                $user['password2'] = $user['password'];
+                if(empty($user['password'])) {
+                    $user['password'] = $this->generateStrongPassword(12);
+                    $user['password2'] = $user['password'];
+                } else {
+                    $user['password2'] = $user['password'];
+                }
 
                 // Get the parent id from the parent name.
                 $query = $db->createQuery();
@@ -1632,7 +2155,6 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             $ids = explode(',', $articleslist);
 
             // The published state needs to be set to -2 to allow deletion.
-            $db    = $this->getDatabase();
             $query = $db->createQuery();
             $query
                 ->update($db->quoteName('#__content'))
@@ -1656,9 +2178,12 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             }
         }
 
-        // Remove the category ids from the plugin parameters.
+        // Remove the ids from the plugin parameters.
         $this->params->set('articles', '');
         $this->updateParams($this->params);
+
+        // Remove the images from the site images folder
+        $this->removeDemoImages(JPATH_SITE . '/plugins/demodata/features101/images', JPATH_SITE . '/images/demodata');
 
         $response            = [];
         $response['success'] = true;
@@ -1678,6 +2203,89 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
     protected function uninstallBanners($event, $step) {
         $this->loguninstallstep($step, 'banners');
+
+        // Create a new db object.
+        $db    = $this->getDatabase();
+
+        // Uninstall the banners.
+        $mvcFactory = $this->getApplication()->bootComponent('com_banners')->getMVCFactory();
+
+        $bannerslist = $this->params->get('banners');
+
+        if (!empty($bannerslist)) {
+            $bannerModel = $mvcFactory->createModel('Banner', 'Administrator', ['ignore_request' => true]);
+            $ids = explode(',', $bannerslist);
+
+            // First delete any track records for these banners
+            $query = $db->createQuery();
+            $query->delete($db->quoteName('#__banner_tracks'))
+                ->where($db->quoteName('banner_id') . ' IN (' . $bannerslist . ')');
+            $db->setQuery($query);
+            $db->execute();
+
+            // The published state needs to be set to -2 to allow deletion.
+            $query = $db->createQuery();
+            $query
+                ->update($db->quoteName('#__banners'))
+                ->set($db->quoteName('state') . ' = -2')
+                ->where($db->quoteName('id') . ' IN (' . $bannerslist . ')');
+            $db->setQuery($query);
+            try {
+                $db->execute();
+            } catch (ExecutionFailureException) {
+                return false;
+            }
+
+            foreach ($ids as $id) {
+                // If something went wrong the groups could be empty.
+                if (empty($id)) {
+                    continue;
+                }
+                if (!$bannerModel->delete($id)) {
+                    // The group may have been removed manually
+                }
+            }
+        }
+
+        // Remove the ids from the plugin parameters.
+        $this->params->set('banners', '');
+        $this->updateParams($this->params);
+
+        // Now remove the banner clients.
+        $clientslist = $this->params->get('clients');
+
+        if (!empty($clientslist)) {
+            $clientModel = $mvcFactory->createModel('Client', 'Administrator', ['ignore_request' => true]);
+            $ids = explode(',', $clientslist);
+
+            // The published state needs to be set to -2 to allow deletion.
+            $query = $db->createQuery();
+            $query
+                ->update($db->quoteName('#__banner_clients'))
+                ->set($db->quoteName('state') . ' = -2')
+                ->where($db->quoteName('id') . ' IN (' . $clientslist . ')');
+            $db->setQuery($query);
+            try {
+                $db->execute();
+            } catch (ExecutionFailureException) {
+                return false;
+            }
+
+            foreach ($ids as $id) {
+                // If something went wrong the groups could be empty.
+                if (empty($id)) {
+                    continue;
+                }
+                if (!$clientModel->delete($id)) {
+                    // The group may have been removed manually
+                }
+            }
+        }
+
+        // Remove the ids from the plugin parameters.
+        $this->params->set('clients', '');
+        $this->updateParams($this->params);
+
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
@@ -1687,9 +2295,6 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
     protected function uninstallCategories($event, $step) {
         $this->loguninstallstep($step, 'categories');
-
-        // Create a new db object.
-        $db    = $this->getDatabase();
 
         $mvcFactory = $this->getApplication()->bootComponent('com_categories')->getMVCFactory();
 
@@ -1728,12 +2333,6 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $this->params->set('categories', '');
         $this->updateParams($this->params);
 
-        // Unlink images.
-        $link = JPATH_SITE . '/images/demodata';
-        if (file_exists($link)) {
-            unlink($link);
-        }
-
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
@@ -1743,6 +2342,43 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
     protected function uninstallContacts($event, $step) {
         $this->loguninstallstep($step, 'contacts');
+
+        $mvcFactory = $this->getApplication()->bootComponent('com_contact')->getMVCFactory();
+
+        $contactsList = $this->params->get('contacts');
+
+        if (!empty($contactsList)) {
+            $contactModel = $mvcFactory->createModel('Contact', 'Administrator', ['ignore_request' => true]);
+            $ids = explode(',', $contactsList);
+            // The published state needs to be set to -2 to allow deletion.
+            $db    = $this->getDatabase();
+            $query = $db->createQuery();
+            $query
+                ->update($db->quoteName('#__contact_details'))
+                ->set($db->quoteName('published') . ' = -2')
+                ->where($db->quoteName('id') . ' IN (' . $contactsList . ')');
+            $db->setQuery($query);
+            try {
+                $db->execute();
+            } catch (ExecutionFailureException) {
+                return false;
+            }
+
+            foreach ($ids as $id) {
+                // If something went wrong the groups could be empty.
+                if (empty($id)) {
+                    continue;
+                }
+                if (!$contactModel->delete($id)) {
+                    // The field may have been removed manually
+                }
+            }
+        }
+
+        // Remove the fields ids from the plugin parameters.
+        $this->params->set('contacts', '');
+        $this->updateParams($this->params);
+
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
@@ -1970,6 +2606,42 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
     protected function uninstallNewsfeeds($event, $step) {
         $this->loguninstallstep($step, 'newsfeeds');
+
+        $mvcFactory = $this->getApplication()->bootComponent('com_newsfeeds')->getMVCFactory();
+
+        if (!empty($this->params->get('newsfeeds'))) {
+            $newsfeedModel = $mvcFactory->createModel('Newsfeed', 'Administrator', ['ignore_request' => true]);
+            $newsfeedslist = $this->params->get('newsfeeds');
+            $ids = explode(',', $newsfeedslist);
+            $newsfeedslist = "({$newsfeedslist})";
+            // The published state needs to be set to -2 to allow deletion.
+            $db    = $this->getDatabase();
+            $query = $db->createQuery();
+            $query
+                ->update($db->quoteName('#__newsfeeds'))
+                ->set($db->quoteName('published') . ' = -2')
+                ->where($db->quoteName('id') . ' IN ' . $newsfeedslist);
+            $db->setQuery($query);
+            try {
+                $db->execute();
+            } catch (ExecutionFailureException) {
+                return false;
+            }
+
+            foreach ($ids as $id) {
+                // If something went wrong the newsfeeds could be empty.
+                if (empty($id)) {
+                    continue;
+                }
+                if (!$newsfeedModel->delete($id)) {
+                }
+            }
+        }
+
+        // Remove the newsfeed ids from the plugin parameters.
+        $this->params->set('newsfeeds', '');
+        $this->updateParams($this->params);
+
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
@@ -2150,5 +2822,85 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         }
         $dash_str .= $password;
         return $dash_str;
+    }
+    
+    /**
+     * Copies temporary demo images into the Joomla images directory.
+     *
+     * @param string $src  Absolute path to plugin's source images folder
+     * @param string $dest Absolute path to Joomla's destination images folder
+     * @return bool
+     */
+    public function deployDemoImages(string $src, string $dest): bool
+    {
+        if (!is_dir($src)) {
+            return false;
+        }
+    
+        // Ensure the root destination directory exists
+        if (!is_dir($dest)) {
+            mkdir($dest, 0755, true);
+        }
+    
+        $dir = opendir($src);
+        while (($file = readdir($dir)) !== false) {
+            if ($file === '.' || $file === '..') {
+                continue;
+            }
+    
+            $srcPath  = $src . '/' . $file;
+            $destPath = $dest . '/' . $file;
+    
+            if (is_dir($srcPath)) {
+                // It's a language folder (e.g., en-GB) -> recurse into it
+                $this->deployDemoImages($srcPath, $destPath);
+            } else {
+                // It's an image file -> copy it
+                copy($srcPath, $destPath);
+            }
+        }
+        closedir($dir);
+    
+        return true;
+    }
+
+    /**
+     * Surgically removes ONLY the deployed demo images and their language subfolders.
+     *
+     * @param string $src  Absolute path to plugin's source images folder (used as a reference map)
+     * @param string $dest Absolute path to Joomla's destination images folder
+     * @return void
+     */
+    public function removeDemoImages(string $src, string $dest): void
+    {
+        if (!is_dir($src) || !is_dir($dest)) {
+            return;
+        }
+    
+        $dir = opendir($src);
+        while (($file = readdir($dir)) !== false) {
+            if ($file === '.' || $file === '..') {
+                continue;
+            }
+    
+            $srcPath  = $src . '/' . $file;
+            $destPath = $dest . '/' . $file;
+    
+            if (is_dir($srcPath)) {
+                // Recurse into the language folder first
+                $this->removeDemoImages($srcPath, $destPath);
+                
+                // If the language folder in the Joomla directory is now empty, remove it
+                if (is_dir($destPath) && count(scandir($destPath)) === 2) {
+                    rmdir($destPath);
+                }
+            } else {
+                // It's a file -> delete it from Joomla images if it exists
+                if (file_exists($destPath)) {
+                    unlink($destPath);
+                }
+            }
+        }
+        closedir($dir);
     }
 }
