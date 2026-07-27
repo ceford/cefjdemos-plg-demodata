@@ -1,0 +1,57 @@
+[{
+    "title":"en-GB",
+    "alias":"en-gb",
+    "level":1,
+    "path":"en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>Parent category for articles in English</p>"
+},
+{
+    "title":"Parasites",
+    "alias":"parasites-en-gb",
+    "level":2,
+    "path":"en-gb/parasites-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>Child category for articles on parasites in English</p>"
+},
+{
+    "title":"Diseases",
+    "alias":"diseases-en-gb",
+    "level":2,
+    "path":"en-gb/diseases-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>Child category for articles on diseases in English</p>"
+},
+{
+    "title":"Demo Staff",
+    "alias":"demo-staff",
+    "level":1,
+    "path":"demo-staff",
+    "extension":"com_contact",
+    "language":"*",
+    "description":"<p>Parent category for Demo contacts Staff.</p>"
+},
+{
+    "title":"Demo Shop",
+    "alias":"demo-shop",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-shop",
+    "extension":"com_contact",
+    "language":"*",
+    "description":"<p>Child category for Demo contacts Shop staff.</p>"
+},
+{
+    "title":"Demo Apiary",
+    "alias":"demo-apiary",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-apiary",
+    "extension":"com_contact",
+    "language":"*",
+    "description":"<p>Child category for Demo contacts Apiary staff.</p>"
+}
+]

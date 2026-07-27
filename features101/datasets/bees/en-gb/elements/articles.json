@@ -1,0 +1,110 @@
+[{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Nosema",
+    "alias":"nosema-en-gb",
+    "category_alias":"diseases-en-gb",
+    "language":"en-GB",
+    "text_source":"nosema.html",
+    "tags": ["diseases"]
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Bee Diseases",
+    "alias":"bee-diseases-en-gb",
+    "category_alias":"en-gb",
+    "language":"en-GB",
+    "text_source":"bee-diseases.html",
+    "tags": ["diseases"]
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Varroa Mites",
+    "alias":"varroa-mites-en-gb",
+    "category_alias":"parasites-en-gb",
+    "language":"en-GB",
+    "text_source":"varroa-mites.html",
+    "fields": {
+        "latin-name-en-gb":"Varroa destructor"
+    },
+    "tags": ["pests"],
+    "images": {
+        "image_intro":"images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-200.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-200.jpg?width=200&height=167",
+        "image_intro_alt":"European honey bee with varroa mite on its back",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-360.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-360.jpg?width=360&height=300",
+        "image_fulltext_alt":"European honey bee with varroa mite on its back",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Bee Pests",
+    "alias":"bee-pests-en-gb",
+    "category_alias":"en-gb",
+    "language":"en-GB",
+    "text_source":"bee-pests.html",
+    "tags": ["pests"],
+    "images": {
+        "image_intro":"images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-200.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-200.jpg?width=200&height=167",
+        "image_intro_alt":"European honey bee with varroa mite on its back",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-360.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-360.jpg?width=360&height=300",
+        "image_fulltext_alt":"European honey bee with varroa mite on its back",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Honey",
+    "alias":"honey-en-gb",
+    "category_alias":"en-gb",
+    "language":"en-GB",
+    "text_source":"honey.html"
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"The World of Bees",
+    "alias":"the-world-of-bees-en-gb",
+    "category_alias":"en-gb",
+    "language":"en-GB",
+    "text_source":"the-world-of-bees.html",
+    "images": {
+        "image_intro":"images\/demodata\/bees\/bumblebee-200.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/bumblebee-200.jpg?width=200&height=160",
+        "image_intro_alt":"A typical bumblebee",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/bees\/bumblebee-400.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/bumblebee-400.jpg?width=400&height=320",
+        "image_fulltext_alt":"A typical bumblebee",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+}
+]

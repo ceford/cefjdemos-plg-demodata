@@ -1,0 +1,12 @@
+[{
+    "id":"0",
+    "title":"Bienen",
+    "description":"Das Bienenmenü",
+    "menutype":"bees-menu-de-de"
+},
+{
+    "id":"0",
+    "title":"Honig",
+    "description":"Das Honigmenü",
+    "menutype":"honey-menu-de-de"
+}]

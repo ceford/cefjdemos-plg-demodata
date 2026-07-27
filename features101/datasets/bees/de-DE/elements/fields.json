@@ -1,0 +1,20 @@
+[{
+    "title":"Lateinischer Name",
+    "name":"latin-name-de-de",
+    "label":"Species",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>Der wissenschaftliche Name dieses Exemplars.</p>",
+    "note":"",
+    "state":1,
+    "language":"de-DE",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Bienendaten"
+}]

@@ -136,13 +136,23 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             return;
         }
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         $data              = new \stdClass();
         $data->name        = $this->_name;
         $data->title       = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_OVERVIEW_TITLE');
+        $data->title      .= ucfirst($dataset);
         $data->description = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_OVERVIEW_DESC');
         $data->icon        = 'wifi';
         $data->steps       = 17;
         $data->is_installed = $this->params->get('is_installed', 0);
+
+        // Abort if the dataset is empty or does not exist
+        if (empty($dataset) || !is_dir(__DIR__ . "/../../datasets/{$dataset}")) {
+            $data->steps            = 0;
+            $data->description = "The dataset is incorrectly specified. Check the plugin parameters.";
+        }
 
         $event->setArgument('result', [$data]);
     }
@@ -1069,13 +1079,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $articleModel = $mvcFactory->createModel('Article', 'Administrator', ['ignore_request' => true]);
         $article_ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the content articles to be installed from the $language.
         foreach($languages as $language) {
 
-            $file = __DIR__ . "/../../{$language}/articles.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/articles.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1084,7 +1097,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
             foreach ($articles as $article) {
                 // Get the article source text.
-                $content = file_get_contents(__DIR__ . '/../../' . $language . '/articles/' . $article['text_source']);
+                $content = file_get_contents(__DIR__ . "/../../datasets/{$dataset}/{$language}/articles/{$article['text_source']}");
                 list($article['introtext'], $article['fulltext']) = explode('<hr id="system-readmore">', $content);
 
                 // Get the category id from its alias.
@@ -1120,7 +1133,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$articleModel->save($article)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_FIELDS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($articleModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_ARTICLES_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($articleModel->getError()));
                     file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $response['message'], FILE_APPEND);
 
                     $event->addResult($response);
@@ -1159,7 +1172,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $this->updateParams($this->params);
 
         // copy the images folder from the plugin to the site images folder
-        $this->deployDemoImages(JPATH_SITE . '/plugins/demodata/features101/images', JPATH_SITE . '/images/demodata');
+        $this->deployDemoImages(JPATH_SITE . '/plugins/demodata/features101/datasets/' . $dataset . '/' . 'images', JPATH_SITE . '/images/demodata/' . $dataset);
 
         $response            = [];
         $response['success'] = true;
@@ -1176,13 +1189,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         // Create a new db object.
         $db    = $this->getDatabase();
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the items to be installed from the last $language.
         foreach($languages as $language) {
 
-            $file = __DIR__ . "/../../{$language}/associations.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/associations.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1224,7 +1240,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$this->addAssociations($groupedAssociations)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_FEATURES101_STEP_FAILED', $step, $groupedAssociations);
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_ASSOCIATIONS_STEP_FAILED', $step, $groupedAssociations);
 
                     $event->addResult($response);
                     return;
@@ -1252,13 +1268,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $clientModel = $mvcFactory->createModel('Client', 'Administrator', ['ignore_request' => true]);
         $client_ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the content articles to be installed from the $language.
         foreach($languages as $language) {
 
-            $file = __DIR__ . "/../../{$language}/clients.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/clients.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1269,7 +1288,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$clientModel->save($client)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_BANNERS_STEP_FAILED', $step, $clientModel->getError());
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_BANNERS_CLIENTS_STEP_FAILED', $step, $clientModel->getError());
                     file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $response['message'], FILE_APPEND);
 
                     $event->addResult($response);
@@ -1289,13 +1308,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $bannerModel = $mvcFactory->createModel('Banner', 'Administrator', ['ignore_request' => true]);
         $banner_ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the content articles to be installed from the $language.
         foreach($languages as $language) {
 
-            $file = __DIR__ . "/../../{$language}/banners.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/banners.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1344,13 +1366,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $category_ids = [];
         $parents = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the content articles to be installed from the $language.
         foreach($languages as $language) {
 
-            $file = __DIR__ . "/../../{$language}/categories.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/categories.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1370,7 +1395,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$categoryModel->save($category)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_FIELDS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($categoryModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_CATEGORIES_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($categoryModel->getError()));
 
                     $event->addResult($response);
                     return;
@@ -1404,12 +1429,15 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $contactModel = $mvcFactory->createModel('Contact', 'Administrator', ['ignore_request' => true]);
         $ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the fields to be installed from the $contact.
         foreach($languages as $language) {
-            $file = __DIR__ . "/../../{$language}/contacts.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/contacts.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1445,7 +1473,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 } catch (\RuntimeException $e){
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_USER_STEP_FAILED', $step, $contactModel->getError());
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_CONTACTS_STEP_FAILED', $step, $contactModel->getError());
 
                     $event->addResult($response);
                     return;
@@ -1480,12 +1508,15 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $fieldgroupModel = $mvcFactory->createModel('Group', 'Administrator', ['ignore_request' => true]);
         $ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the content articles to be installed from the $language.
         foreach($languages as $language) {
-            $file = __DIR__ . "/../../{$language}/fieldgroups.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/fieldgroups.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1496,7 +1527,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$fieldgroupModel->save($fieldgroup)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_FIELDS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($fieldgroupModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_FIELDGROUPS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($fieldgroupModel->getError()));
 
                     $event->addResult($response);
                     return;
@@ -1530,12 +1561,15 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $fieldModel = $mvcFactory->createModel('Field', 'Administrator', ['ignore_request' => true]);
         $ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
-            $file = __DIR__ . "/../../{$language}/fields.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/fields.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1590,12 +1624,15 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $menuModel = $mvcFactory->createModel('Menu', 'Administrator', ['ignore_request' => true]);
         $menu_ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
-            $file = __DIR__ . "/../../{$language}/menus.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/menus.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1606,7 +1643,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$menuModel->save($menu)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_FIELDS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($menuModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_MENUS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($menuModel->getError()));
 
                     $event->addResult($response);
                     return;
@@ -1641,6 +1678,9 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $menuitemModel = $mvcFactory->createModel('Item', 'Administrator', ['ignore_request' => true]);
         $menuitem_ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
@@ -1649,7 +1689,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
-            $file = __DIR__ . "/../../{$language}/menuitems.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/menuitems.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1732,7 +1772,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$menuitemModel->save($menuitem)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_FIELDS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($menuitemModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_MENUITEMS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($menuitemModel->getError()));
 
                     $event->addResult($response);
                     return;
@@ -1767,6 +1807,9 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $moduleModel = $mvcFactory->createModel('Module', 'Administrator', ['ignore_request' => true]);
         $module_ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
@@ -1775,7 +1818,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
-            $file = __DIR__ . "/../../{$language}/modules.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/modules.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1823,7 +1866,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$moduleModel->save($module)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_SAMPLEDATA_BLOG_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($moduleModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_SAMPLEDATA_MODULES_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($moduleModel->getError()));
 
                     $event->addResult($response);
                     return;
@@ -1857,12 +1900,15 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $newsfeedModel = $mvcFactory->createModel('NewsFeed', 'Administrator', ['ignore_request' => true]);
         $ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
-            $file = __DIR__ . "/../../{$language}/newsfeeds.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/newsfeeds.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1909,12 +1955,15 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $tagModel = $mvcFactory->createModel('Tag', 'Administrator', ['ignore_request' => true]);
         $ids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
-            $file = __DIR__ . "/../../{$language}/tags.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/tags.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -1928,7 +1977,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     if (!$tagModel->save($tag)) {
                         $response            = [];
                         $response['success'] = false;
-                        $response['message'] = Text::sprintf('PLG_DEMODATA_TAG_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($tagModel->getError()));
+                        $response['message'] = Text::sprintf('PLG_DEMODATA_PARENT_TAG_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($tagModel->getError()));
 
                         $event->addResult($response);
                         return;
@@ -1948,7 +1997,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     if (!$tagModel->save($tag)) {
                         $response            = [];
                         $response['success'] = false;
-                        $response['message'] = Text::sprintf('PLG_DEMODATA_TAG_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($tagModel->getError()));
+                        $response['message'] = Text::sprintf('PLG_DEMODATA_ChildTAG_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($tagModel->getError()));
 
                         $event->addResult($response);
                         return;
@@ -1981,12 +2030,15 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $groupModel = $mvcFactory->createModel('Group', 'Administrator', ['ignore_request' => true]);
         $groupids = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
-            $file = __DIR__ . "/../../{$language}/usergroups.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/usergroups.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -2007,7 +2059,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$groupModel->save($group)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_USER_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($groupModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_USERGROUPS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($groupModel->getError()));
 
                     $event->addResult($response);
                     return;
@@ -2043,12 +2095,15 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $ids = [];
         $creds = [];
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
-            $file = __DIR__ . "/../../{$language}/users.json";
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/users.json";
             if (!is_file($file)) {
                 continue;
             }
@@ -2182,8 +2237,11 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $this->params->set('articles', '');
         $this->updateParams($this->params);
 
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
         // Remove the images from the site images folder
-        $this->removeDemoImages(JPATH_SITE . '/plugins/demodata/features101/images', JPATH_SITE . '/images/demodata');
+        $this->removeDemoImages(JPATH_SITE . "/plugins/demodata/features101/datasets/{$dataset}/images", JPATH_SITE . "/images/demodata/{$dataset}");
 
         $response            = [];
         $response['success'] = true;

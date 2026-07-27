@@ -39,11 +39,11 @@
     },
     "tags": ["east-lothian","english-victory"],
     "images": {
-        "image_intro":"images\/demodata\/en-gb\/battle-of-dunbar-i-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-dunbar-i-tn.jpg?width=200&height=200",
+        "image_intro":"images\/demodata\/battlefields\/battle-of-dunbar-i-tn.jpg#joomlaImage:\/\/local-images\/demodata\/battlefields\/battle-of-dunbar-i-tn.jpg?width=200&height=200",
         "image_intro_alt":"Cuimhneachan aig làrach Blàr Dhùn Bàrr ann an 1296",
         "float_intro":"",
         "image_intro_caption":"",
-        "image_fulltext":"images\/demodata\/en-gb\/battle-of-dunbar-i.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-dunbar-i.jpg?width=1512&height=1512",
+        "image_fulltext":"images\/demodata\/battlefields\/battle-of-dunbar-i.jpg#joomlaImage:\/\/local-images\/demodata\/battlefields\/battle-of-dunbar-i.jpg?width=1512&height=1512",
         "image_fulltext_alt":"Cuimhneachan aig làrach Blàr Dhùn Bàrr ann an 1296",
         "float_fulltext":"",
         "image_fulltext_caption":""
@@ -66,11 +66,11 @@
     },
     "tags": ["stirling","scottish-victory"],
     "images": {
-        "image_intro":"images\/demodata\/en-gb\/battle-of-stirling-bridge-wood-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-stirling-bridge-wood-tn.jpg?width=200&height=133",
+        "image_intro":"images\/demodata\/battlefields\/battle-of-stirling-bridge-wood-tn.jpg#joomlaImage:\/\/local-images\/demodata\/battlefields\/battle-of-stirling-bridge-wood-tn.jpg?width=200&height=133",
         "image_intro_alt":"Dealbh-ealain den t-sabaid aig Drochaid Shruighlea",
         "float_intro":"",
         "image_intro_caption":"",
-        "image_fulltext":"images\/demodata\/en-gb\/battle-of-stirling-bridge-wood.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-stirling-bridge-wood.jpg?width=1536&height=1024",
+        "image_fulltext":"images\/demodata\/battlefields\/battle-of-stirling-bridge-wood.jpg#joomlaImage:\/\/local-images\/demodata\/battlefields\/battle-of-stirling-bridge-wood.jpg?width=1536&height=1024",
         "image_fulltext_alt":"Dealbh-ealain den t-sabaid aig Drochaid Shruighlea",
         "float_fulltext":"",
         "image_fulltext_caption":""
@@ -93,11 +93,11 @@
     },
     "tags": ["midlothian", "scottish-victory"],
     "images": {
-        "image_intro":"images\/demodata\/en-gb\/battle-of-roslin-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-roslin-tn.jpg?width=200&height=200",
+        "image_intro":"images\/demodata\/battlefields\/battle-of-roslin-tn.jpg#joomlaImage:\/\/local-images\/demodata\/battlefields\/battle-of-roslin-tn.jpg?width=200&height=200",
         "image_intro_alt":"Carraighean-cuimhne aig làrach Blàr Roslinn",
         "float_intro":"",
         "image_intro_caption":"",
-        "image_fulltext":"images\/demodata\/en-gb\/battle-of-roslin-wide.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-roslin-wide.jpg?width=1600&height=400",
+        "image_fulltext":"images\/demodata\/battlefields\/battle-of-roslin-wide.jpg#joomlaImage:\/\/local-images\/demodata\/battlefields\/battle-of-roslin-wide.jpg?width=1600&height=400",
         "image_fulltext_alt":"Carraighean-cuimhne aig làrach Blàr Roslinn",
         "float_fulltext":"",
         "image_fulltext_caption":""
@@ -144,11 +144,11 @@
     },
     "tags": ["east-lothian", "jacobite-victory"],
     "images": {
-        "image_intro":"images\/demodata\/en-gb\/battle-of-prestonpans-tn.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-prestonpans-tn.jpg?width=200&height=267",
+        "image_intro":"images\/demodata\/battlefields\/battle-of-prestonpans-tn.jpg#joomlaImage:\/\/local-images\/demodata\/battlefields\/battle-of-prestonpans-tn.jpg?width=200&height=267",
         "image_intro_alt":"Cuimhneachan aig làrach Blàr Prestonpans",
         "float_intro":"",
         "image_intro_caption":"",
-        "image_fulltext":"images\/demodata\/en-gb\/battle-of-prestonpans.jpg#joomlaImage:\/\/local-images\/demodata\/en-gb\/battle-of-prestonpans.jpg?width=480&height=640",
+        "image_fulltext":"images\/demodata\/battlefields\/battle-of-prestonpans.jpg#joomlaImage:\/\/local-images\/demodata\/battlefields\/battle-of-prestonpans.jpg?width=480&height=640",
         "image_fulltext_alt":"Cuimhneachan aig làrach Blàr Prestonpans",
         "float_fulltext":"right ms-2",
         "image_fulltext_caption":""

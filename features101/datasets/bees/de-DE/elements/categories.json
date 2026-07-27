@@ -1,0 +1,28 @@
+[{
+    "title":"de-DE",
+    "alias":"de-de",
+    "level":1,
+    "path":"de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Parent category for articles in English</p>"
+},
+{
+    "title":"Parasiten",
+    "alias":"parasites-de-de",
+    "level":2,
+    "path":"de-de/parasites-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Untergeordnete Kategorie für Artikel über Parasiten in deutscher Sprache</p>"
+},
+{
+    "title":"Krankheiten",
+    "alias":"diseases-de-de",
+    "level":2,
+    "path":"de-de/diseases-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Untergeordnete Kategorie für Artikel über Krankheiten in deutscher Sprache</p>"
+}
+]

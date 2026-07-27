@@ -1,0 +1,20 @@
+[
+{
+    "title":"Parasites",
+    "alias":"parasites-en-gb",
+    "description":"<p>Tag for articles that refer to parasites.</p>",
+    "parent_alias":"",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Fungi",
+    "alias":"fungi-en-gb",
+    "description":"<p>Tag for articles that refer to fungi.</p>",
+    "parent_alias":"council-area-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0
+}
+]

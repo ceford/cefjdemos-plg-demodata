@@ -7,13 +7,11 @@
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>cliff@ford.me.uk</authorEmail>
 	<authorUrl>jdocmanual.org</authorUrl>
-	<version>0.2.0</version>
+	<version>0.3.0</version>
 	<description>PLG_DEMODATA_FEATURES101_XML_DESCRIPTION</description>
 	<namespace path="src">Cefjdemos\Plugin\DemoData\Features101</namespace>
 	<files>
-		<folder plugin="features101">en-gb</folder>
-		<folder plugin="features101">gd-gb</folder>
-		<folder plugin="features101">images</folder>
+		<folder plugin="features101">datasets</folder>
 		<folder plugin="features101">language</folder>
 		<folder plugin="features101">services</folder>
 		<folder plugin="features101">src</folder>
@@ -28,6 +26,13 @@
 					label="PLG_DEMODATA_FEATURES101_LANGUAGES_LABEL"
 					description="PLG_DEMODATA_FEATURES101_LANGUAGES_DESC"
 					default="en-GB"
+				/>
+				<field
+					name="dataset"
+					type="text"
+					label="PLG_DEMODATA_FEATURES101_DATASETS_LABEL"
+					description="PLG_DEMODATA_FEATURES101_DATASETS_DESC"
+					default=""
 				/>
 				<field
 					name="is_installed"

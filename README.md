@@ -2,12 +2,19 @@
 
 This folder contains a plugin to install and uninstall demonstration data. There
 is a separate module named cefjdemos-mod-demodata required to show the plugins 
-in the Administrator Dashboard. The plugin contains data for Scottish
-Battlefields in English and Scottish Gaelic. The data is independent of the 
-code so can be replaced with almost anything. But beware, data creation is
-a time-consuming task.
+in the Administrator Dashboard. 
 
-This plugin is a Work in Progress. Some features need more work, specifically Workflows.
+## Version 0.3+
+
+The plugin structure has changed to provide a number of different data sets:
+
+- Data for Scottish Battlefields in English and Scottish Gaelic. 
+- Data for The World of Bees in English and German.
+
+The data is independent of the code so can be replaced with almost anything. 
+But beware, data creation is a time-consuming task.
+
+This plugin is a Work in Progress. Some features need more work.
 
 ## Setup
 
@@ -18,7 +25,8 @@ This plugin is a Work in Progress. Some features need more work, specifically Wo
 - Create a Language Switcher module.
 - Install the Demonstration Data module
 - Install and enable the Demodata plugin.
-- In the Home Dashboard select the Demo Data module Install button.
+- Configure the plugin to select one of the datasets and one or more languages.
+- In the Home Dashboard select the Demonstration Data module Install button.
 
 ## In Use
 
@@ -28,12 +36,11 @@ The site frontend may look something like the following:
 
 ## Notes
 
-- The contents are stored in language specific subfolders (en-gb and gd-gb).
+- The contents are stored in language specific subfolders in each dataset (en-gb and gd-gb).
 - The languages to use are set in the plugin Options.
 - The item specifications are stored in json files, for example articles.json.
 - The article contents are stored in html files, for example battle-of-roslin.html
-- Images are stored in language specific sub-folders.
-- Symbolic links are used to link the site images folder to the plugin folder.
+- Images are stored in language neutral sub-folders and copied to the images folder.
 
 ## References
 

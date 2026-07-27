@@ -2,6 +2,15 @@
 	<changelog>
 		<element>plg_demodata_features101</element>
 		<type>plugin</type>
+		<version>0.3.0</version>
+		<add>
+			<change>Moved installable content to datasets subfolder.</change>
+			<add>Added dataset for The World of Bees</add>
+		</add>
+	</changelog>
+	<changelog>
+		<element>plg_demodata_features101</element>
+		<type>plugin</type>
 		<version>0.2.0</version>
 		<add>
 			<change>Added more items to be installed or removed.</change>

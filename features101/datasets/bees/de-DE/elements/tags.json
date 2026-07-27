@@ -1,0 +1,20 @@
+[
+{
+    "title":"Parasiten",
+    "alias":"parasites-de-de",
+    "description":"<p>Schlagwort für Artikel über Parasiten.</p>",
+    "parent_alias":"",
+    "language":"de-DE",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Pilze",
+    "alias":"fungi-de-de",
+    "description":"<p>Schlagwort für Artikel über Pilze.</p>",
+    "parent_alias":"",
+    "language":"de-DE",
+    "published":1,
+    "id":0
+}
+]

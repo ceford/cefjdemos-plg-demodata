@@ -1,0 +1,84 @@
+[{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"all-about-bees-en-gb",
+        "de-DE":"all-about-bees-de-de"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"the-world-of-bees-en-gb",
+        "de-DE":"the-world-of-bees-de-de"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"honey-en-gb",
+        "de-DE":"honey-de-de"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"nosema-en-gb",
+        "de-DE":"nosema-de-de"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"bee-diseases-en-gb",
+        "de-DE":"bee-diseases-de-de"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"varroa-mites-en-gb",
+        "de-DE":"varroa-mites-de-de"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"bee-pests-en-gb",
+        "de-DE":"bee-pests-de-de"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"honey-en-gb",
+        "de-DE":"honey-de-de"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"the-world-of-bees-en-gb",
+        "de-DE":"the-world-of-bees-de-de"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"en-gb",
+        "de-DE":"de-de"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"parasites-en-gb",
+        "de-DE":"parasites-de-de"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"diseases-en-gb",
+        "de-DE":"diseases-de-de"
+    }
+}]

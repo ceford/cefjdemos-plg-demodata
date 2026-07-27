@@ -1,0 +1,110 @@
+[{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Nosema",
+    "alias":"nosema-de-de",
+    "category_alias":"diseases-de-de",
+    "language":"de-DE",
+    "text_source":"nosema.html",
+    "tags": ["diseases"]
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Bienenkrankheiten",
+    "alias":"bee-diseases-de-de",
+    "category_alias":"de-de",
+    "language":"de-DE",
+    "text_source":"bee-diseases.html",
+    "tags": ["diseases"]
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Varroamilben",
+    "alias":"varroa-mites-de-de",
+    "category_alias":"parasites-de-de",
+    "language":"de-DE",
+    "text_source":"varroa-mites.html",
+    "fields": {
+        "latin-name-de-de":"Varroa destructor"
+    },
+    "tags": ["pests"],
+    "images": {
+        "image_intro":"images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-200.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-200.jpg?width=200&height=167",
+        "image_intro_alt":"Europäische Honigbiene mit einer Varroamilbe auf ihrem Rücken",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-360.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-360.jpg?width=360&height=300",
+        "image_fulltext_alt":"Europäische Honigbiene mit einer Varroamilbe auf ihrem Rücken",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Bienenschädlinge",
+    "alias":"bee-pests-de-de",
+    "category_alias":"de-de",
+    "language":"de-DE",
+    "text_source":"bee-pests.html",
+    "tags": ["pests"],
+    "images": {
+        "image_intro":"images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-200.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-200.jpg?width=200&height=167",
+        "image_intro_alt":"Europäische Honigbiene mit einer Varroamilbe auf ihrem Rücken",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-360.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/apis-millifera-with-varroa-destructor-mite-360.jpg?width=360&height=300",
+        "image_fulltext_alt":"Europäische Honigbiene mit einer Varroamilbe auf ihrem Rücken",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Honig",
+    "alias":"honey-de-de",
+    "category_alias":"de-de",
+    "language":"de-DE",
+    "text_source":"honey.html"
+},
+{
+    "asset_id":0,
+    "introtext":"",
+    "fulltext":"",
+    "state":1,
+    "catid":0,
+    "title":"Die Welt der Bienen",
+    "alias":"the-world-of-bees-de-de",
+    "category_alias":"de-de",
+    "language":"de-DE",
+    "text_source":"the-world-of-bees.html",
+    "images": {
+        "image_intro":"images\/demodata\/bees\/bumblebee-200.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/bumblebee-200.jpg?width=200&height=160",
+        "image_intro_alt":"Eine typische Hummel",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/bees\/bumblebee-400.jpg#joomlaImage:\/\/local-images\/demodata\/bees\/bumblebee-400.jpg?width=400&height=320",
+        "image_fulltext_alt":"Eine typische Hummel",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+}
+]

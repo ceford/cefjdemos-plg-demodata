@@ -1,0 +1,20 @@
+[{
+    "title":"Latin Name",
+    "name":"latin-name-en-gb",
+    "label":"Species",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>The scientific name for this specimen.</p>",
+    "note":"",
+    "state":1,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Bee Data"
+}]
