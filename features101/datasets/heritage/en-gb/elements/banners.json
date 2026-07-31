@@ -1,0 +1,42 @@
+[{
+    "id":0,
+    "catid":3,
+    "name":"Joomla! Extensions",
+    "alias":"joomla-extensions",
+    "clickurl":"https://extensions.joomla.org/",
+    "description":"Find extensions for your Joomla site in the Joomla Extensions Directory, the official directory for Joomla components, modules and plugins.",
+    "custombannercode":"",
+    "metakey_prefix":"",
+    "language":"*",
+    "created_by_alias":"",
+    "params":"{\"imageurl\":\"images\/banners\/white.png#joomlaImage:\/\/local-images\/banners\/white.png?width=234&height=74\",\"width\":\"\",\"height\":\"\",\"alt\":\"\"}",
+    "state":1
+},
+{
+    "id":0,
+    "catid":3,
+    "name":"Joomla! Shop",
+    "alias":"joomla-shop",
+    "clickurl":"https://community.joomla.org/the-joomla-shop.html",
+    "description":"The Joomla Project is pleased to present the Joomla! Shop. Be smart, buy a cap, a mug, a t-shirt... and show your Joomla Love!",
+    "custombannercode":"",
+    "metakey_prefix":"",
+    "language":"*",
+    "created_by_alias":"",
+    "params":"{\"imageurl\":\"images\/banners\/white.png#joomlaImage:\/\/local-images\/banners\/white.png?width=234&height=74\",\"width\":\"\",\"height\":\"\",\"alt\":\"\"}",
+    "state":1
+},
+{
+    "id":0,
+    "catid":3,
+    "name":"Support Joomla!",
+    "alias":"support-joomla",
+    "clickurl":"https://community.joomla.org/sponsorship-campaigns.html",
+    "description":"GThe Platform Millions of Websites Are Built On",
+    "custombannercode":"",
+    "metakey_prefix":"",
+    "language":"*",
+    "created_by_alias":"",
+    "params":"{\"imageurl\":\"images\/banners\/white.png#joomlaImage:\/\/local-images\/banners\/white.png?width=234&height=74\",\"width\":\"\",\"height\":\"\",\"alt\":\"\"}",
+    "state":1
+}]

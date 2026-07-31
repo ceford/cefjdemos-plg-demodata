@@ -1,9 +1,7 @@
 [{
-    "asset_id":0,
     "introtext":"",
     "fulltext":"",
     "state":1,
-    "catid":0,
     "title":"Historic Battlefields of Scotland",
     "alias":"historic-battlefields-of-scotland-en-gb",
     "category_alias":"historic-battlefields-of-scotland-en-gb",
@@ -11,11 +9,9 @@
     "text_source":"historic-battlefields-of-scotland.html"
 },
 {
-    "asset_id":0,
     "introtext":"",
     "fulltext":"",
     "state":1,
-    "catid":0,
     "title":"Wars of Scottish Independence",
     "alias":"wars-of-scottish-independence-en-gb",
     "category_alias":"wars-of-scottish-independence-en-gb",
@@ -23,11 +19,9 @@
     "text_source":"wars-of-scottish-independence.html"
 },
 {
-    "asset_id":0,
     "introtext":"",
     "fulltext":"",
     "state":1,
-    "catid":0,
     "title":"Battle of Dunbar I",
     "alias":"battle-of-dunbar-i-en-gb",
     "category_alias":"wars-of-scottish-independence-en-gb",
@@ -50,11 +44,9 @@
     }
 },
 {
-    "asset_id":0,
     "introtext":"",
     "fulltext":"",
     "state":1,
-    "catid":0,
     "title":"Battle of Stirling Bridge",
     "alias":"battle-of-stirling-bridge-en-gb",
     "category_alias":"wars-of-scottish-independence-en-gb",
@@ -77,11 +69,9 @@
     }
 },
 {
-    "asset_id":0,
     "introtext":"",
     "fulltext":"",
     "state":1,
-    "catid":0,
     "title":"Battle of Roslin",
     "alias":"battle-of-roslin-en-gb",
     "category_alias":"wars-of-scottish-independence-en-gb",
@@ -104,11 +94,9 @@
     }
 },
 {
-    "asset_id":0,
     "introtext":"",
     "fulltext":"",
     "state":1,
-    "catid":0,
     "title":"Jacobite Risings",
     "alias":"jacobite-risings-en-gb",
     "category_alias":"jacobite-risings-en-gb",
@@ -116,11 +104,9 @@
     "text_source":"jacobite-risings.html"
 },
 {
-    "asset_id":0,
     "introtext":"",
     "fulltext":"",
     "state":1,
-    "catid":0,
     "title":"Jacobite Rising 1745",
     "alias":"jacobite-rising-1745-en-gb",
     "category_alias":"1745-en-gb",
@@ -128,11 +114,9 @@
     "text_source":"jacobite-rising-1745.html"
 },
 {
-    "asset_id":0,
     "introtext":"",
     "fulltext":"",
     "state":1,
-    "catid":0,
     "title":"Battle of Prestonpans",
     "alias":"battle-of-prestonpans-en-gb",
     "category_alias":"1745-en-gb",

@@ -1,0 +1,89 @@
+[{
+    "title":"World Heritage Sites",
+    "alias":"heritage-en-gb",
+    "level":1,
+    "path":"heritage-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>AParent category for subcategories of UNESCO World Heritage Sites.</p>"
+},
+{
+    "title":"Africa",
+    "alias":"africa-en-gb",
+    "parent_alias":"heritage-en-gb",
+    "level":2,
+    "path":"heritage/africa-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites in Africa.</p>"
+},
+{
+    "title":"Americas",
+    "alias":"americas-en-gb",
+    "parent_alias":"heritage-en-gb",
+    "level":2,
+    "path":"heritage/americas-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites in the Americas.</p>"
+},
+{
+    "title":"Asia",
+    "alias":"asia-en-gb",
+    "parent_alias":"heritage-en-gb",
+    "level":2,
+    "path":"heritage/asia-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites in Asia.</p>"
+},
+{
+    "title":"Europe",
+    "alias":"europe-en-gb",
+    "parent_alias":"heritage-en-gb",
+    "level":2,
+    "path":"heritage/europe-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites in Europe.</p>"
+},
+{
+    "title":"Oceania",
+    "alias":"oceania-en-gb",
+    "parent_alias":"heritage-en-gb",
+    "level":2,
+    "path":"heritage/oceania-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites in Oceania.</p>"
+},
+{
+    "title":"Demo Staff",
+    "alias":"demo-staff",
+    "level":1,
+    "path":"demo-staff",
+    "extension":"com_contact",
+    "language":"*",
+    "description":"<p>Parent category for Demo contacts Staff.</p>"
+},
+{
+    "title":"Demo Shop",
+    "alias":"demo-shop",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-shop",
+    "extension":"com_contact",
+    "language":"*",
+    "description":"<p>Child category for Demo contacts Shop staff.</p>"
+},
+{
+    "title":"Demo Apiary",
+    "alias":"demo-apiary",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-apiary",
+    "extension":"com_contact",
+    "language":"*",
+    "description":"<p>Child category for Demo contacts Apiary staff.</p>"
+}
+]

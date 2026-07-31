@@ -1,0 +1,19 @@
+[
+{
+    "title":"Cultural",
+    "alias":"cultural-gd-gb",
+    "description":"<p>Sites that have been classified as of value for their culture.</p>",
+    "parent_alias":"",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+},
+{
+    "title":"Natural",
+    "alias":"natural-gd-gb",
+    "description":"<p>Sites that have been classified as of value for their nature.</p>",
+    "parent_alias":"",
+    "language":"gd-GB",
+    "published":1,
+    "id":0
+}]

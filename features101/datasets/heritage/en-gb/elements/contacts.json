@@ -1,0 +1,20 @@
+[{
+    "id":0,
+    "name": "Alice the Shop",
+    "alias": "alice-the-shop",
+    "category_alias": "demo-shop",
+    "featured": 1,
+    "language": "*",
+    "published": 1,
+    "username": "alice101"
+},
+{
+    "id":0,
+    "name": "Bob the Apiary",
+    "alias": "bob-the-apiary",
+    "category_alias": "demo-apiary",
+    "featured": 0,
+    "language": "*",
+    "published": 1,
+    "username": "bob101"
+}]

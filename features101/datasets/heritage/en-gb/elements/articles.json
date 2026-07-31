@@ -1,0 +1,235 @@
+[{
+    "state":1,
+    "title":"Sydney Opera House",
+    "alias":"sydney-opera-house-en-gb",
+    "category_alias":"oceania-en-gb",
+    "language":"en-GB",
+    "text_source":"sydney-opera-house.html",
+    "fields": {
+        "location-en-gb":"S33 51 24 E151 12 55",
+        "year-of-inscription-en-gb":"2007"
+    },
+    "tags": ["cultural-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/sydney-opera-house-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-200.jpg?width=200&height=150",
+        "image_intro_alt":"An aerial view of Sydney Opera House",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/sydney-opera-house-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"An aerial view of Sydney Opera House",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Great Barrier Reef",
+    "alias":"great-barrier-reef-en-gb",
+    "category_alias":"oceania-en-gb",
+    "language":"en-GB",
+    "text_source":"great-barrier-reef.html",
+    "featured": "1",
+    "fields": {
+        "location-en-gb":"S18 17 10 E147 41 60",
+        "year-of-inscription-en-gb":"1981"
+    },
+    "tags": ["natural-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-barrier-reef-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-200.jpg?width=200&height=133",
+        "image_intro_alt":"A group of reef building corals",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-barrier-reef-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"A group of reef building corals",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Giant's Causeway",
+    "alias":"giants-causeway-en-gb",
+    "category_alias":"europe-en-gb",
+    "language":"en-GB",
+    "text_source":"giants-causeway.html",
+    "featured": "1",
+    "fields": {
+        "location-en-gb":"N55 14 27 W6 30 42",
+        "year-of-inscription-en-gb":"1986"
+    },
+    "tags": ["natural-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giants-causeway-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-200.jpg?width=200&height=143",
+        "image_intro_alt":"Basalt columns formed in a thick horizontal sheet of magma",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giants-causeway-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-400.jpg?width=400&height=286",
+        "image_fulltext_alt":"Basalt columns formed in a thick horizontal sheet of magma",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Acropolis of Athens",
+    "alias":"acropolis-of-athens-en-gb",
+    "category_alias":"europe-en-gb",
+    "language":"en-GB",
+    "text_source":"acropolis-of-athens.html",
+    "fields": {
+        "location-en-gb":" N37 58 15.132 E23 43 34.248 ",
+        "year-of-inscription-en-gb":"1987"
+    },
+    "tags": ["cultural-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/acropolis-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-200.jpg?width=200&height=133",
+        "image_intro_alt":"Ruins originally built on a commanding flat hilltop",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/acropolis-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Ruins originally built on a commanding flat hilltop",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Taj Mahal",
+    "alias":"taj-mahal-en-gb",
+    "category_alias":"asia-en-gb",
+    "language":"en-GB",
+    "featured": "1",
+    "text_source":"taj-mahal.html",
+    "fields": {
+        "location-en-gb":"N27 10 27.012 E78 2 31.992",
+        "year-of-inscription-en-gb":"1983"
+    },
+    "tags": ["cultural-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/taj-mahal-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-200.jpg?width=200&height=200",
+        "image_intro_alt":"The stunning approach to a lavish palace",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/taj-mahal-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"The stunning approach to a lavish palace",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Great Wall of China",
+    "alias":"great-wall-of-china-en-gb",
+    "category_alias":"asia-en-gb",
+    "language":"en-GB",
+    "text_source":"great-wall-of-china.html",
+    "fields": {
+        "location-en-gb":"",
+        "year-of-inscription-en-gb":"1987"
+    },
+    "tags": ["cultural-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-wall-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-200.jpg?width=200&height=279",
+        "image_intro_alt":"A section of the great wall built in stone over hilly terrain",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-wall-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-400.jpg?width=400&height=558",
+        "image_fulltext_alt":"A section of the great wall built in stone over hilly terrain",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Galapagos Islands",
+    "alias":"galapagos-islands-en-gb",
+    "category_alias":"americas-en-gb",
+    "language":"en-GB",
+    "text_source":"galapagos-islands.html",
+    "fields": {
+        "location-en-gb":"N0 41 23.496 W90 30 4.748",
+        "year-of-inscription-en-gb":"2001"
+    },
+    "tags": ["natural-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/galapagos-2-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-200.jpg?width=200&height=133",
+        "image_intro_alt":"Giant tortoises unique to Galapagos",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/galapagos-2-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Giant tortoises unique to Galapagos",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Machu Picchu",
+    "alias":"machu-picchu-en-gb",
+    "category_alias":"americas-en-gb",
+    "language":"en-GB",
+    "featured": "1",
+    "text_source":"machu-picchu.html",
+    "fields": {
+        "location-en-gb":"S13 11 5.762 W72 32 0.395",
+        "year-of-inscription-en-gb":"1983"
+    },
+    "tags": ["cultural-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/machu-picchu-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-200.jpg?width=200&height=150",
+        "image_intro_alt":"Classic view of the hilltop ruins",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/machu-picchu-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Classic view of the hilltop ruins",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Pyramids of Giza",
+    "alias":"pyramids-of-giza-en-gb",
+    "category_alias":"africa-en-gb",
+    "language":"en-GB",
+    "featured": "1",
+    "text_source":"pyramids-of-giza.html",
+    "fields": {
+        "location-en-gb":"",
+        "year-of-inscription-en-gb":"1979"
+    },
+    "tags": ["cultural-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giza-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-200.jpg?width=200&height=133",
+        "image_intro_alt":"The Sphinx with the Pyramid of Giza behind",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giza-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"The Sphinx with the Pyramid of Giza behind",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Serengeti National Park",
+    "alias":"serengeti-national-park-en-gb",
+    "category_alias":"africa-en-gb",
+    "language":"en-GB",
+    "text_source":"serengeti-national-park.html",
+    "fields": {
+        "location-en-gb":"S2 44 24 E34 51 32.4",
+        "year-of-inscription-en-gb":"1981"
+    },
+    "tags": ["natural-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Elephants and zebras",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Elephants and zebras",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+}]

@@ -1,0 +1,45 @@
+[{
+    "title":"Location",
+    "name":"location-en-gb",
+    "label":"Location",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>The latitude and longitude of the site.</p>",
+    "note":"",
+    "state":1,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Site Data"
+},
+{
+    "title":"Year of Inscription",
+    "name":"year-of-inscription-en-gb",
+    "label":"Year Inscribed",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>The year in which the site was added to the UNESCO list.</p>",
+    "note":"",
+    "state":1,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1972",
+        "last":"2026",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Site Data"
+}]

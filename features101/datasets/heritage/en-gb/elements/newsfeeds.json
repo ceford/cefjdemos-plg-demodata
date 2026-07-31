@@ -1,0 +1,68 @@
+[{
+    "id":0,
+    "name": "Joomla! Announcements",
+    "alias": "joomla-announcements",
+    "catid": 5,
+    "language": "*",
+    "published": 1,
+    "link": "https://www.joomla.org/announcements.feed?type=rss",
+    "description": "<p>Latest Joomla! Announcements.</p>",
+    "params": {
+
+    },
+    "created_by_alias": "",
+    "metadesc": "",
+    "metadata": "",
+    "images": ""
+},
+{
+    "id":0,
+    "name": "Joomla! Community",
+    "alias": "joomla-community",
+    "catid": 5,
+    "language": "*",
+    "published": 1,
+    "link": "https://community.joomla.org/blogs/community.feed",
+    "description": "<p>Community Blog.</p>",
+    "params": {
+
+    },
+    "created_by_alias": "",
+    "metadesc": "",
+    "metadata": "",
+    "images": ""
+},
+{
+    "id":0,
+    "name": "Joomla! Security News",
+    "alias": "joomla-security-news",
+    "catid": 5,
+    "language": "*",
+    "published": 1,
+    "link": "https://developer.joomla.org/security-centre.feed?type=rss",
+    "description": "<p>Security Announcements.</p>",
+    "params": {
+
+    },
+    "created_by_alias": "",
+    "metadesc": "",
+    "metadata": "",
+    "images": ""
+},
+{
+    "id":0,
+    "name": "New Joomla! Extensions",
+    "alias": "new-joomla-extensions",
+    "catid": 5,
+    "language": "*",
+    "published": 1,
+    "link": "https://extensions.joomla.org/browse/new?format=feed&type=rss",
+    "description": "<p>Newly Listed Joomla! Extensions.</p>",
+    "params": {
+
+    },
+    "created_by_alias": "",
+    "metadesc": "",
+    "metadata": "",
+    "images": ""
+}]

@@ -1,0 +1,45 @@
+[{
+    "title":"Àite",
+    "name":"location-gd-gb",
+    "label":"Àite",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>Domhan-leud agus domhan-fhad na làraich.</p>",
+    "note":"",
+    "state":1,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Dàta Làraich"
+},
+{
+    "title":"Bliadhna an Sgrìobhaidh",
+    "name":"year-of-inscription-gd-gb",
+    "label":"Bliadhna Sgrìobhte",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>A’ bhliadhna anns an deach an làrach a chur ri liosta UNESCO.</p>",
+    "note":"",
+    "state":1,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1972",
+        "last":"2026",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Dàta Làraich"
+}]

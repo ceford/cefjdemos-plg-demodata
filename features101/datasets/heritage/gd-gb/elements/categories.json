@@ -1,0 +1,60 @@
+[{
+    "title":"World Heritage Sites",
+    "alias":"heritage-gd-gb",
+    "level":1,
+    "path":"heritage-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>AParent category for subcategories of UNESCO World Heritage Sites.</p>"
+},
+{
+    "title":"Africa",
+    "alias":"africa-gd-gb",
+    "parent_alias":"heritage-gd-gb",
+    "level":2,
+    "path":"heritage/africa-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites in Africa.</p>"
+},
+{
+    "title":"Americas",
+    "alias":"americas-gd-gb",
+    "parent_alias":"heritage-gd-gb",
+    "level":2,
+    "path":"heritage/americas-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites in the Americas.</p>"
+},
+{
+    "title":"Asia",
+    "alias":"asia-gd-gb",
+    "parent_alias":"heritage-gd-gb",
+    "level":2,
+    "path":"heritage/asia-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites in Asia.</p>"
+},
+{
+    "title":"Europe",
+    "alias":"europe-gd-gb",
+    "parent_alias":"heritage-gd-gb",
+    "level":2,
+    "path":"heritage/europe-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites in Europe.</p>"
+},
+{
+    "title":"Oceania",
+    "alias":"oceania-gd-gb",
+    "parent_alias":"heritage-gd-gb",
+    "level":2,
+    "path":"heritage/oceania-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites in Oceania.</p>"
+}
+]

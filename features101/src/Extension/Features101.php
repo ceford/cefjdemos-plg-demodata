@@ -136,22 +136,23 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             return;
         }
 
-        // Get the dataset to be installed
-        $dataset = strtolower($this->params->get('dataset'));
-
         $data              = new \stdClass();
         $data->name        = $this->_name;
         $data->title       = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_OVERVIEW_TITLE');
-        $data->title      .= ucfirst($dataset);
         $data->description = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_OVERVIEW_DESC');
         $data->icon        = 'wifi';
         $data->steps       = 17;
         $data->is_installed = $this->params->get('is_installed', 0);
 
+        // Get the dataset to be installed
+        $dataset = $this->params->get('dataset');
+
         // Abort if the dataset is empty or does not exist
-        if (empty($dataset) || !is_dir(__DIR__ . "/../../datasets/{$dataset}")) {
+        if (empty($dataset) || !is_dir(__DIR__ . '/../../datasets/' . strtolower($dataset) )) {
             $data->steps            = 0;
             $data->description = "The dataset is incorrectly specified. Check the plugin parameters.";
+        } else {
+            $data->title      .= ucfirst($dataset);
         }
 
         $event->setArgument('result', [$data]);
@@ -1034,7 +1035,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             return;
         }
         if (!empty($this->params->get($asset))) {
-            $msg = "Step: {$step}, Asset: {$asset}, Action: Skip\n";
+            $msg = "Step: {$step}, Install: {$asset}, Action: Skip\n";
             file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $msg, FILE_APPEND);
             $response            = [];
             $response['success'] = true;
@@ -1042,9 +1043,20 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             $event->setArgument('result', [$response]);
             return true;
         } else {
-            $msg = "Step: {$step}, Asset: {$asset}\n";
+            $msg = "Step: {$step}, Install: {$asset} Start\n";
             file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $msg, FILE_APPEND);
         }
+    }
+
+    /**
+     * Log installation
+     *
+     * @param int       $step   The step number
+     * @param string    $asset  The asset name, for example 'tags'
+     */
+    protected function loginstallstep($step, $asset, $when = 'Start') {
+        $msg = "Step: {$step}, Install: {$asset} {$when}\n";
+        file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $msg, FILE_APPEND);
     }
 
     /**
@@ -1053,8 +1065,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
      * @param int       $step   The step number
      * @param string    $asset  The asset name, for example 'tags'
      */
-    protected function loguninstallstep($step, $asset) {
-        $msg = "Step: {$step}, Asset: {$asset}\n";
+    protected function loguninstallstep($step, $asset, $when = 'Start') {
+        $msg = "Step: {$step}, Uninstall: {$asset} {$when}\n";
         file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $msg, FILE_APPEND);
     }
 
@@ -1096,9 +1108,18 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             $articles = json_decode($articles_json, true);
 
             foreach ($articles as $article) {
+                $article['introtext'] = '';
+                $article['fulltext'] = '';
+
                 // Get the article source text.
                 $content = file_get_contents(__DIR__ . "/../../datasets/{$dataset}/{$language}/articles/{$article['text_source']}");
-                list($article['introtext'], $article['fulltext']) = explode('<hr id="system-readmore">', $content);
+
+                // If the article contains a readmore line
+                if (str_contains($content, 'id="system-readmore"')) {
+                    list($article['introtext'], $article['fulltext']) = explode('<hr id="system-readmore">', $content);
+                } else {
+                    $article['introtext'] = $content;
+                }
 
                 // Get the category id from its alias.
                 $query = $db->createQuery()
@@ -1130,6 +1151,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                         $test = 'Stop Here';
                     }
                 }
+
                 if (!$articleModel->save($article)) {
                     $response            = [];
                     $response['success'] = false;
@@ -1156,6 +1178,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                             ->bind(':alias', $field_name, ParameterType::STRING);
                         $db->setQuery($query);
                         $field_id = $db->loadResult();
+
                         $item = (object) [
                             'item_id'  => $id,
                             'field_id' => $field_id,
@@ -1179,6 +1202,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'articles', 'End');
     }
 
     protected function installAssociations($event, $step) {
@@ -1254,6 +1278,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'associations', 'End');
     }
 
     protected function installBanners($event, $step) {
@@ -1352,6 +1377,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'banners', 'End');
     }
 
     protected function installCategories($event, $step) {
@@ -1372,7 +1398,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
-        // Get the content articles to be installed from the $language.
+        // Get the categories to be installed from the $language.
         foreach($languages as $language) {
 
             $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/categories.json";
@@ -1416,6 +1442,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'categories', 'End');
     }
 
     protected function installContacts($event, $step) {
@@ -1494,6 +1521,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'contacts', 'End');
     }
 
     protected function installFieldgroups($event, $step) {
@@ -1547,6 +1575,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'fieldgroups', 'End');
     }
 
     protected function installFields($event, $step) {
@@ -1612,6 +1641,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'fields', 'End');
     }
 
     protected function installMenus($event, $step) {
@@ -1664,6 +1694,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'menus', 'End');
     }
 
     protected function installMenuitems($event, $step) {
@@ -1792,6 +1823,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'menuitems', 'End');
     }
 
     protected function installModules($event, $step) {
@@ -1886,6 +1918,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'modules', 'End');
     }
 
     protected function installNewsfeeds($event, $step) {
@@ -1941,6 +1974,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'newsfeeds', 'End');
     }
 
     protected function installTags($event, $step) {
@@ -2017,6 +2051,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'tags', 'End');
     }
 
     protected function installUsergroups($event, $step) {
@@ -2080,6 +2115,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'usergroups', 'End');
     }
 
     protected function installUsers($event, $step) {
@@ -2155,6 +2191,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'users', 'End');
     }
 
     protected function installWorkflows($event, $step) {
@@ -2166,6 +2203,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'workflows', 'End');
     }
 
     protected function installWorkflowstages($event, $step) {
@@ -2177,6 +2215,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'workflowstages', 'End');
     }
 
     protected function installWorkflowtransitions($event, $step) {
@@ -2188,6 +2227,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+        $this->loginstallstep($step, 'workflowtransations', 'End');
     }
 
     /**
@@ -2222,14 +2262,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$articleModel->delete($id)) {
-                    // The group may have been removed manually
-                }
+            if (!empty($ids)) {
+                $articleModel->delete($ids);
             }
         }
 
@@ -2248,6 +2282,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'articles', 'End');
     }
 
     protected function uninstallAssociations($event, $step) {
@@ -2257,6 +2293,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'associations', 'End');
     }
 
     protected function uninstallBanners($event, $step) {
@@ -2294,14 +2332,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$bannerModel->delete($id)) {
-                    // The group may have been removed manually
-                }
+            if (!empty($ids)) {
+                $bannerModel->delete($ids);
             }
         }
 
@@ -2329,14 +2361,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$clientModel->delete($id)) {
-                    // The group may have been removed manually
-                }
+            if (!empty($ids)) {
+                $clientModel->delete($ids);
             }
         }
 
@@ -2349,6 +2375,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'banners', 'End');
     }
 
     protected function uninstallCategories($event, $step) {
@@ -2376,14 +2404,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$categoryModel->delete($id)) {
-                    // The group may have been removed manually
-                }
+            if (!empty($ids)) {
+                $categoryModel->delete($ids);
             }
         }
 
@@ -2396,6 +2418,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'categories', 'End');
     }
 
     protected function uninstallContacts($event, $step) {
@@ -2422,14 +2446,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$contactModel->delete($id)) {
-                    // The field may have been removed manually
-                }
+            if (!empty($ids)) {
+                $contactModel->delete($ids);
             }
         }
 
@@ -2442,6 +2460,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'contacts', 'End');
     }
 
     protected function uninstallFields($event, $step) {
@@ -2468,14 +2488,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$fieldModel->delete($id)) {
-                    // The field may have been removed manually
-                }
+            if (!empty($ids)) {
+                $fieldModel->delete($ids);
             }
         }
 
@@ -2488,6 +2502,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'fields', 'End');
     }
 
     protected function uninstallFieldgroups($event, $step) {
@@ -2516,14 +2532,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$fieldgroupModel->delete($id)) {
-                    // The group may have been removed manually
-                }
+            if (!empty($ids)) {
+                $fieldgroupModel->delete($ids);
             }
         }
 
@@ -2536,6 +2546,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'fieldgroups', 'End');
     }
 
     protected function uninstallMenuitems($event, $step) {
@@ -2563,14 +2575,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$menuitemModel->delete($id)) {
-                    // The items may have been removed manually
-                }
+            if (!empty($ids)) {
+                $menuitemModel->delete($ids);
             }
         }
         // Remove the menuitems ids from the plugin parameters.
@@ -2582,6 +2588,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'menuitems', 'End');
     }
 
     protected function uninstallMenus($event, $step) {
@@ -2594,14 +2602,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         if (!empty($menuslist)) {
             $menuModel = $mvcFactory->createModel('Menu', 'Administrator', ['ignore_request' => true]);
             $ids = explode(',', $menuslist);
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$menuModel->delete($id)) {
-                    // The menu may have been removed manually
-                }
+            if (!empty($ids)) {
+                $menuModel->delete($ids);
             }
         }
         // Remove the menu ids from the plugin parameters.
@@ -2613,6 +2615,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'menuitems', 'End');
     }
 
     protected function uninstallModules($event, $step) {
@@ -2640,14 +2644,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$moduleModel->delete($id)) {
-                    // The items may have been removed manually
-                }
+            if (!empty($ids)) {
+                $moduleModel->delete($ids);
             }
         }
 
@@ -2660,6 +2658,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'modules', 'End');
     }
 
     protected function uninstallNewsfeeds($event, $step) {
@@ -2686,13 +2686,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the newsfeeds could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$newsfeedModel->delete($id)) {
-                }
+            if (!empty($ids)) {
+                $newsfeedModel->delete($ids);
             }
         }
 
@@ -2705,6 +2700,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'newsfeeds', 'End');
     }
 
     protected function uninstallTags($event, $step) {
@@ -2731,13 +2728,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 return false;
             }
 
-            foreach ($ids as $id) {
-                // If something went wrong the tags could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$tagModel->delete($id)) {
-                }
+            if (!empty($ids)) {
+                $tagModel->delete($ids);
             }
         }
 
@@ -2750,6 +2742,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'tags', 'End');
     }
 
     protected function uninstallUsers($event, $step) {
@@ -2760,14 +2754,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         if (!empty($this->params->get('users'))) {
             $userModel = $mvcFactory->createModel('User', 'Administrator', ['ignore_request' => true]);
             $ids = explode(',', $this->params->get('users'));
-            foreach ($ids as $id) {
-                // If something went wrong the user could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$userModel->delete($id)) {
-                    // The user may have been deleted manually
-                }
+            if (!empty($ids)) {
+                $userModel->delete($ids);
             }
         }
 
@@ -2778,14 +2766,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         if (!empty($this->params->get('usergroups'))) {
             $groupModel = $mvcFactory->createModel('Group', 'Administrator', ['ignore_request' => true]);
             $ids = explode(',', $this->params->get('usergroups'));
-            foreach ($ids as $id) {
-                // If something went wrong the groups could be empty.
-                if (empty($id)) {
-                    continue;
-                }
-                if (!$groupModel->delete($id)) {
-                    // The group may have been removed manually
-                }
+            if (!empty($ids)) {
+                $groupModel->delete($ids);
             }
         }
 
@@ -2800,6 +2782,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'users', 'End');
     }
 
     protected function uninstallWorkflows($event, $step) {
@@ -2809,6 +2793,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'workflows', 'End');
     }
 
     protected function uninstallWorkflowstages($event, $step) {
@@ -2818,6 +2804,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'workflowstages', 'End');
     }
 
     protected function uninstallWorkflowtransitions($event, $step) {
@@ -2827,6 +2815,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
 
         $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'workflowtransitions', 'End');
     }
 
 
