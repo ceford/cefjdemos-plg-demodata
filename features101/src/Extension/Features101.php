@@ -1179,12 +1179,20 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                         $db->setQuery($query);
                         $field_id = $db->loadResult();
 
-                        $item = (object) [
-                            'item_id'  => $id,
-                            'field_id' => $field_id,
-                            'value'    => $value,
-                        ];
-                        $this->getDatabase()->insertObject('#__fields_values', $item);
+                        //Debug
+                        if ($field_name == 'integer-en-gb') {
+                            $test = 'Stop here';
+                        }
+                        // If the field has multiple values
+                        $items = is_array($value) ? $value : [$value];
+                        foreach ($items as $item) {
+                            $item = (object) [
+                                'item_id'  => $id,
+                                'field_id' => $field_id,
+                                'value'    => $item,
+                            ];
+                            $this->getDatabase()->insertObject('#__fields_values', $item);
+                        }
                     }
                 }
             }
@@ -1194,8 +1202,11 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $this->params->set('articles', implode(',', $article_ids));
         $this->updateParams($this->params);
 
-        // copy the images folder from the plugin to the site images folder
+        // Copy the images folder from the plugin to the site images folder
         $this->deployDemoImages(JPATH_SITE . '/plugins/demodata/features101/datasets/' . $dataset . '/' . 'images', JPATH_SITE . '/images/demodata/' . $dataset);
+
+        // Copy the files folder from the plugin to the site files folder
+        $this->deployDemoImages(JPATH_SITE . '/plugins/demodata/features101/datasets/' . $dataset . '/' . 'files', JPATH_SITE . '/files/demodata/' . $dataset);
 
         $response            = [];
         $response['success'] = true;
@@ -1616,8 +1627,20 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 $index[$row->title] = $row->id;
             }
 
+            // Get a list of categories to use in creation of fields.
+            $query = $db->createQuery();
+            $query->select($db->quoteName(['id', 'alias']))
+                ->from($db->quoteName('#__categories'));
+            $db->setQuery($query);
+            $rows = $db->loadObjectList();
+            $cats = [];
+            foreach ($rows as $row) {
+                $cats[$row->alias] = $row->id;
+            }
+
             foreach ($fields as $i => $field) {
                 $field['group_id'] = $index[$field['parent_fieldgroup']] ?? 0;
+                $field['assigned_cat_ids'] = $cats[$field['category']] ?? '';
                 if (!$fieldModel->save($field)) {
                     $response            = [];
                     $response['success'] = false;
@@ -2276,6 +2299,9 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
         // Remove the images from the site images folder
         $this->removeDemoImages(JPATH_SITE . "/plugins/demodata/features101/datasets/{$dataset}/images", JPATH_SITE . "/images/demodata/{$dataset}");
+
+        // Remove the files from the site files folder
+        $this->removeDemoImages(JPATH_SITE . "/plugins/demodata/features101/datasets/{$dataset}/files", JPATH_SITE . "/files/demodata/{$dataset}");
 
         $response            = [];
         $response['success'] = true;

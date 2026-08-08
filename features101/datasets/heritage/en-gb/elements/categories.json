@@ -15,7 +15,11 @@
     "path":"heritage/africa-en-gb",
     "extension":"com_content",
     "language":"en-GB",
-    "description":"<p>A list of UNESCO World Heritage Sites in Africa.</p>"
+    "description":"<p>A list of UNESCO World Heritage Sites in Africa.</p>",
+    "params": {
+        "image": "images/demodata/heritage/serengeti-crop.jpg#joomlaImage://local-images/demodata/heritage/serengeti-crop.jpg?width=1440&height=333",
+        "imag_alt": "AI generated image of animals roaming the Serengeti"
+    }
 },
 {
     "title":"Americas",
@@ -56,6 +60,16 @@
     "extension":"com_content",
     "language":"en-GB",
     "description":"<p>A list of UNESCO World Heritage Sites in Oceania.</p>"
+},
+{
+    "title":"Demonstrations",
+    "alias":"demonstrations-en-gb",
+    "parent_alias":"",
+    "level":1,
+    "path":"demonstrations-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>A list of UNESCO World Heritage Sites Inscribed in 1978.</p>"
 },
 {
     "title":"Demo Staff",

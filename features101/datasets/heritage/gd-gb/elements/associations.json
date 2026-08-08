@@ -27,6 +27,41 @@
     }
 },
 {
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"sites-inscribed-in-1978-en-gb",
+        "gd-GB":"sites-inscribed-in-1978-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"bluebells-en-gb",
+        "gd-GB":"bluebells-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"demonstrations-en-gb",
+        "gd-GB":"demonstrations-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"archived-articles-en-gb",
+        "gd-GB":"archived-articles-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"about-unesco-sites-en-gb",
+        "gd-GB":"about-unesco-sites-gd-gb"
+    }
+},
+{
     "context":"com_content.item",
     "alias":{
         "en-GB":"serengeti-national-park-en-gb",
@@ -94,6 +129,13 @@
     "alias":{
         "en-GB":"sydney-opera-house-en-gb",
         "gd-GB":"sydney-opera-house-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"liverpool-en-gb",
+        "gd-GB":"liverpool-gd-gb"
     }
 },
 {

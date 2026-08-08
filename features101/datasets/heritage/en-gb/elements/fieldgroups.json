@@ -5,4 +5,11 @@
     "state":1,
     "id":0,
     "language":"en-GB"
+},{
+    "title":"Demonstrations",
+    "description":"<p>This is a group of fields used to demonstrate each type of field.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"en-GB"
 }]

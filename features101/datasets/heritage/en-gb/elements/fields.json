@@ -1,14 +1,16 @@
 [{
-    "title":"Location",
-    "name":"location-en-gb",
-    "label":"Location",
+    "title":"Date",
+    "category":"",
+    "name":"demo-date",
+    "label":"Date",
     "default_value":"",
     "context":"com_content.article",
-    "type":"text",
-    "description":"<p>The latitude and longitude of the site.</p>",
+    "type":"calendar",
+    "description":"<p>A general purpose date field to use in subforms.</p>",
     "note":"",
     "state":1,
-    "language":"en-GB",
+    "language":"*",
+    "only_use_in_subform":"1",
     "params":{
         "showlabel":"1"
     },
@@ -16,10 +18,59 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Site Data"
+    "parent_fieldgroup":""
+},
+{
+    "title":"W3W",
+    "category":"",
+    "name":"w3w",
+    "label":"W3W",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>The What Thee Words location of a site.</p>",
+    "note":"",
+    "state":1,
+    "language":"*",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Rating",
+    "category":"",
+    "name":"rating-en-gb",
+    "label":"Rating",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>The rating of a site on a scale of 0 to 5.</p>",
+    "note":"",
+    "state":1,
+    "language":"*",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "first":"0",
+        "last":"5",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
 },
 {
     "title":"Year of Inscription",
+    "category":"heritage-en-gb",
     "name":"year-of-inscription-en-gb",
     "label":"Year Inscribed",
     "default_value":"",
@@ -42,4 +93,509 @@
     "modified_time":"NOW()",
     "id":0,
     "parent_fieldgroup":"Site Data"
+},
+{
+    "title":"Location",
+    "category":"heritage-en-gb",
+    "name":"location-en-gb",
+    "label":"Location",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>The latitude and longitude of the site.</p>",
+    "note":"",
+    "state":1,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Site Data"
+},
+{
+    "title":"Audio: Sample Track",
+    "category":"demonstrations-en-gb",
+    "name":"audio-en-gb",
+    "label":"Audio: Sample Track",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"audio",
+    "description":"<p>An audio description.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"audios",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Calendar: Photograph Date",
+    "category":"demonstrations-en-gb",
+    "name":"calendar-en-gb",
+    "label":"Calendar: Photograph Date",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>The date a photograph was taken my be important for seasonal items.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Checkboxes: Propagation",
+    "category":"demonstrations-en-gb",
+    "name":"propagation-en-gb",
+    "label":"Checkboxes: Propagation",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"checkboxes",
+    "description":"<p>Select one or more from a number of checkbox items.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"Seed","value":"1"},
+            "options1":{"name":"Cutting","value":"2"},
+            "options2":{"name":"Bulb","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Colour: Flower Colour",
+    "category":"demonstrations-en-gb",
+    "name":"colour-en-gb",
+    "label":"Colour: Flower",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"color",
+    "description":"<p>Select a colour with a widget.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "colour":"4e3ac2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Document: Download",
+    "category":"demonstrations-en-gb",
+    "name":"document-en-gb",
+    "label":"Document: Download",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"document",
+    "description":"<p>Select a document.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:\/",
+        "preview":"",
+        "css_class":"",
+        "types":"documents"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Editor: Cultivation",
+    "category":"demonstrations-en-gb",
+    "name":"editor-en-gb",
+    "label":"Editor: Cultivation",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"editor",
+    "description":"<p>Field for cultivation notes.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "cultivation-en-gb":"Bluebells grow best in partial shade with moist, well-drained soil that's rich in organic matter."
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Integer: RHS Hardiness",
+    "category":"demonstrations-en-gb",
+    "name":"integer-en-gb",
+    "label":"Integer: RHS Hardiness",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>A number in the range 1-7 indicating the Royal Horticultural Society hardiness value for this flower.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1",
+        "last":"7",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"List: Distribution",
+    "category":"demonstrations-en-gb",
+    "name":"list-en-gb",
+    "label":"List: Distribution",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"list",
+    "description":"<p>Select one or more from a number of list items.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"Africa","value":"1"},
+            "options1":{"name":"Asia","value":"2"},
+            "options2":{"name":"Europe","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Image List: Flower Colours",
+    "category":"demonstrations-en-gb",
+    "name":"images-list-en-gb",
+    "label":"Image List: Flower Colours",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"imagelist",
+    "description":"<p>Add one or more images to a list.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"demodata/heritage",
+        "multiple":"1",
+        "image_class":"me-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Media: Typical Occurrence",
+    "category":"demonstrations-en-gb",
+    "name":"media-en-gb",
+    "label":"Media: Typical Occurrence",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"media",
+    "description":"<p>Select an item from a media folder.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-images:/demodata/heritage",
+        "image_class":"ms-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Note: Further Information",
+    "category":"demonstrations-en-gb",
+    "name":"note-en-gb",
+    "label":"Note: Further Information",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"note",
+    "description":"<p>Compose information for backend or frontend users.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1",
+        "display_frontend":"1"
+    },
+    "fieldparams":{
+        "label":"Legal Information",
+        "description":"In some legislatures picking bluebells my be a criminal offence!",
+        "class":"alert alert-info m-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Number: Seed Weight",
+    "category":"demonstrations-en-gb",
+    "name":"number-en-gb",
+    "label":"Number: Seed Weight",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"number",
+    "description":"<p>Provide the average weight of a seed.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "currency":"1",
+        "symbol":" milligrams",
+        "position":"1",
+        "decimals":"2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Radio: Life Cycle",
+    "category":"demonstrations-en-gb",
+    "name":"radio-en-gb",
+    "label":"Radio: Life Cycle",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"radio",
+    "description":"<p>Select the type of life cycle.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"- Select -","value":""},
+            "options1":{"name":"Annual","value":"annual"},
+            "options2":{"name":"Biennial","value":"biennial"},
+            "options3":{"name":"Perennial","value":"perennial"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"SQL: Native Distribution",
+    "category":"demonstrations-en-gb",
+    "name":"sql-en-gb",
+    "label":"SQL: Native Distribution",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"sql",
+    "description":"<p>Select one or more continents where this species is native.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `un81r_categories` AS `a` \r\nLEFT JOIN `un81r_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'en-GB' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},{
+    "title":"Text: Latin Name",
+    "category":"demonstrations-en-gb",
+    "name":"text-en-gb",
+    "label":"Text: Scientific Name",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>The scientific name of this specimen.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},{
+    "title":"Textarea: Classification",
+    "category":"demonstrations-en-gb",
+    "name":"textarea-en-gb",
+    "label":"Textarea: Classification",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"textarea",
+    "description":"<p>A description of the scientific classification of a specimen..</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "rows":"3",
+        "cols":"128"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"URL: Further Information",
+    "category":"demonstrations-en-gb",
+    "name":"url-en-gb",
+    "label":"URL: Further Information",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"url",
+    "description":"<p>Provide a URL for further information.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"User: Reporter",
+    "category":"demonstrations-en-gb",
+    "name":"user-en-gb",
+    "label":"User: Reporter",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"user",
+    "description":"<p>Information on the reporter of this article.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Usergrouplist: Supervisors",
+    "category":"demonstrations-en-gb",
+    "name":"usergrouplist-en-gb",
+    "label":"Usergrouplist: Supervisors",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"usergrouplist",
+    "description":"<p>Information on usergroups.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
+},
+{
+    "title":"Video: Sample Clip",
+    "category":"demonstrations-en-gb",
+    "name":"video-en-gb",
+    "label":"Video: Sample Clip",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"video",
+    "description":"<p>An example video clip.</p>",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"videos",
+        "video_poster":"1",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrations"
 }]

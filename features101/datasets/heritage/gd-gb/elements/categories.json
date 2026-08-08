@@ -5,7 +5,7 @@
     "path":"heritage-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>AParent category for subcategories of UNESCO World Heritage Sites.</p>"
+    "description":"<p>Roinn phàrant airson fo-roinnean de Làraichean Dualchas na Cruinne aig UNESCO.</p>"
 },
 {
     "title":"Africa",
@@ -15,7 +15,11 @@
     "path":"heritage/africa-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>A list of UNESCO World Heritage Sites in Africa.</p>"
+    "description":"<p>Liosta de Làraichean Dualchas na Cruinne aig UNESCO ann an Afraga.</p>",
+    "params": {
+        "image": "images/demodata/heritage/serengeti-crop.jpg#joomlaImage://local-images/demodata/heritage/serengeti-crop.jpg?width=1440&height=333",
+        "imag_alt": "Ìomhaigh air a chruthachadh le AI de bheathaichean a’ siubhal timcheall Serengeti"
+    }
 },
 {
     "title":"Americas",
@@ -25,7 +29,7 @@
     "path":"heritage/americas-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>A list of UNESCO World Heritage Sites in the Americas.</p>"
+    "description":"<p>Liosta de Làraichean Dualchas na Cruinne aig UNESCO anns na h-Ameireagan.</p>"
 },
 {
     "title":"Asia",
@@ -35,7 +39,7 @@
     "path":"heritage/asia-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>A list of UNESCO World Heritage Sites in Asia.</p>"
+    "description":"<p>Liosta de Làraichean Dualchas na Cruinne aig UNESCO ann an Àisia.</p>"
 },
 {
     "title":"Europe",
@@ -45,7 +49,7 @@
     "path":"heritage/europe-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>A list of UNESCO World Heritage Sites in Europe.</p>"
+    "description":"<p>Liosta de Làraichean Dualchas na Cruinne aig UNESCO san Roinn Eòrpa.</p>"
 },
 {
     "title":"Oceania",
@@ -55,6 +59,16 @@
     "path":"heritage/oceania-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>A list of UNESCO World Heritage Sites in Oceania.</p>"
+    "description":"<p>Liosta de Làraichean Dualchas na Cruinne aig UNESCO ann an Aigèine.</p>"
+},
+{
+    "title":"Taisbeanaidhean",
+    "alias":"demonstrations-gd-gb",
+    "parent_alias":"",
+    "level":1,
+    "path":"demonstrations-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Cruinneachadh de dh’artaigilean airson feartan Joomla a shealltainn.</p>"
 }
 ]

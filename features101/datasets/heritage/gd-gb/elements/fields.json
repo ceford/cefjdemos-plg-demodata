@@ -1,5 +1,6 @@
 [{
     "title":"Àite",
+    "category":"heritage-gd-gb",
     "name":"location-gd-gb",
     "label":"Àite",
     "default_value":"",
@@ -20,6 +21,7 @@
 },
 {
     "title":"Bliadhna an Sgrìobhaidh",
+    "category":"heritage-gd-gb",
     "name":"year-of-inscription-gd-gb",
     "label":"Bliadhna Sgrìobhte",
     "default_value":"",
@@ -38,6 +40,27 @@
         "last":"2026",
         "step":"1"
     },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Dàta Làraich"
+},
+{
+    "title":"Calendar: Photograph Date",
+    "category":"demonstrations-gd-gb",
+    "name":"calendar-gd-gb",
+    "label":"Calendar: Photograph Date",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>The date a photograph was taken my be important for seasonal items.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
