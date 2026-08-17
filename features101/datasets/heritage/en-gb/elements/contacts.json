@@ -6,7 +6,7 @@
     "featured": 1,
     "language": "*",
     "published": 1,
-    "username": "alice101"
+    "username": "alice"
 },
 {
     "id":0,
@@ -16,5 +16,5 @@
     "featured": 0,
     "language": "*",
     "published": 1,
-    "username": "bob101"
+    "username": "bob"
 }]

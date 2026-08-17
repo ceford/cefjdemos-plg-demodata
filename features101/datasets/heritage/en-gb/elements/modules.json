@@ -24,6 +24,53 @@
     }
 },
 {
+    "title"     : "Demonstrations",
+    "ordering"  : 1,
+    "position"  : "sidebar-right",
+    "module"    : "mod_menu",
+    "showtitle" : 1,
+    "menu-base-alias":"",
+    "language":"en-GB",
+    "params"    : {
+        "menutype"        : "demonstrations-en-gb",
+        "layout"          : "_:collapse-default",
+        "base"            : 0,
+        "startLevel"      : 1,
+        "endLevel"        : 0,
+        "showAllChildren" : 1,
+        "class_sfx"       : "nav-active-open",
+        "cache"           : 1,
+        "cache_time"      : 900,
+        "cachemode"       : "itemid",
+        "module_tag"      : "nav",
+        "bootstrap_size"  : 0,
+        "header_tag"      : "h3",
+        "style"           : 0
+    }
+},
+{
+    "title"     : "Login Form",
+    "ordering"  : 1,
+    "position"  : "sidebar-right",
+    "module"    : "mod_login",
+    "showtitle" : 1,
+    "language":"en-GB",
+    "access" : "5",
+    "params"    : {
+    }
+},
+{
+    "title"     : "Logout Form",
+    "ordering"  : 1,
+    "position"  : "sidebar-right",
+    "module"    : "mod_login",
+    "showtitle" : 1,
+    "language":"en-GB",
+    "access" : "2",
+    "params"    : {
+    }
+},
+{
     "title"     : "Joomla Extensions",
     "ordering"  : 1,
     "position"  : "bottom-a",

@@ -164,7 +164,7 @@
 {
     "title":"Checkboxes: Propagation",
     "category":"demonstrations-en-gb",
-    "name":"propagation-en-gb",
+    "name":"checkboxes-en-gb",
     "label":"Checkboxes: Propagation",
     "default_value":"",
     "context":"com_content.article",
@@ -289,7 +289,7 @@
 {
     "title":"List: Distribution",
     "category":"demonstrations-en-gb",
-    "name":"list-en-gb",
+    "name":"list-items-en-gb",
     "label":"List: Distribution",
     "default_value":"",
     "context":"com_content.article",

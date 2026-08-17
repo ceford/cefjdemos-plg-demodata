@@ -697,13 +697,13 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
      * Add or remove a Privacy Request for Jon Doe
      */
     protected function doPrivacyRequests($is_installed) {
-        // get the johndoe101 userid
+        // get the johndoe userid
         $db = $this->getDatabase();
          
         $query = $db->createQuery();
         $query->select($db->quoteName('email'))
             ->from($db->quoteName('#__users'))
-            ->where($db->quoteName('username') . ' = ' . $db->quote('johndoe101'));
+            ->where($db->quoteName('username') . ' = ' . $db->quote('johndoe'));
         $db->setQuery($query);
         $email = $db->loadResult();
 
@@ -731,13 +731,13 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
      * Add or remove a privacy consent for John Doe
      */
     protected function doPrivacyConsents($is_installed) {
-        // get the johndoe101 userid
+        // get the johndoe userid
         $db = $this->getDatabase();
          
         $query = $db->createQuery();
         $query->select($db->quoteName('id'))
             ->from($db->quoteName('#__users'))
-            ->where($db->quoteName('username') . ' = ' . $db->quote('johndoe101'));
+            ->where($db->quoteName('username') . ' = ' . $db->quote('johndoe'));
         $db->setQuery($query);
         $johndoe_id = $db->loadResult();
 
@@ -769,13 +769,13 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
      * Add or remove a usernote
      */
     protected function doUsernotes($is_installed) {
-        // get the johndoe101 userid
+        // get the johndoe userid
         $db = $this->getDatabase();
          
         $query = $db->createQuery();
         $query->select($db->quoteName('id'))
             ->from($db->quoteName('#__users'))
-            ->where($db->quoteName('username') . ' = ' . $db->quote('johndoe101'));
+            ->where($db->quoteName('username') . ' = ' . $db->quote('johndoe'));
         $db->setQuery($query);
         $johndoe_id = $db->loadResult();
 
@@ -898,19 +898,20 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $query = $db->createQuery();
         $query->select($db->quoteName('id'))
             ->from($db->quoteName('#__usergroups'))
-            ->where($db->quoteName('title') . ' = ' . $db->quote('Oddjob101'));
+            ->where($db->quoteName('title') . ' = ' . $db->quote('Oddjob'));
         $db->setQuery($query);
-        $usergroups_id = $db->loadResult();
+        $oddjob_id = $db->loadResult();
 
+        // Example rule: [6,3,8,933]
         $current = $viewlevels_row->rules;
         if (empty($is_installed)) {
             // Add to the record
-            str_replace(']', ",{$usergroups_id}]", $viewlevels_row->rules);
-            $replacement = str_replace(']', ',' . $usergroups_id . ']', $current);
+            str_replace(']', ",{$oddjob_id}]", $viewlevels_row->rules);
+            $replacement = str_replace(']', ',' . $oddjob_id . ']', $current);
         } else {
             // Remove from the record
-            str_replace(",{$usergroups_id}", '', $viewlevels_row->rules);
-            $replacement = str_replace(',' . $usergroups_id, '', $current);
+            str_replace(",{$oddjob_id}", '', $viewlevels_row->rules);
+            $replacement = str_replace(',' . $oddjob_id, '', $current);
         }
         $query = $db->createQuery();
         $query->update($db->quoteName('#__viewlevels'))
@@ -1166,6 +1167,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 $id = $articleModel->getState('article.id');
                 $article_ids[] = $id;
 
+                // If hits is not zero update it now
+                if (!empty($article['hits'])) {
+                    $query = $db->createQuery();
+                    $query->update($db->quoteName('#__content'))
+                        ->set($db->quoteName('hits') . ' = ' . $article['hits'])
+                        ->where($db->quoteName('id') . ' = ' . $id);
+                    $db->setQuery($query);
+                    $db->execute();
+                }
+
                 // Add the fields
                 if (!empty($article['fields'])) {
                     foreach ($article['fields'] as $field_name => $value) {
@@ -1179,10 +1190,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                         $db->setQuery($query);
                         $field_id = $db->loadResult();
 
-                        //Debug
-                        if ($field_name == 'integer-en-gb') {
-                            $test = 'Stop here';
+                        // if the field is 'user' get an id from the users table
+                        if (str_contains($field_name, 'user-')) {
+                            $query = $db->createQuery();
+                            $query->select($db->quoteName('id'))
+                                ->from($db->quoteName('#__users'))
+                                ->where($db->quoteName('username') . ' = ' . $db->quote('playwright'));
+                            $db->setQuery($query);
+                            $value = $db->loadResult();
                         }
+
                         // If the field has multiple values
                         $items = is_array($value) ? $value : [$value];
                         foreach ($items as $item) {
@@ -1276,6 +1293,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $response            = [];
                     $response['success'] = false;
                     $response['message'] = Text::sprintf('PLG_DEMODATA_ASSOCIATIONS_STEP_FAILED', $step, $groupedAssociations);
+                    $response['message'] .= "<br>Table: {$table} / ids = {$ids} / alias = {$alias}";
 
                     $event->addResult($response);
                     return;
@@ -1526,7 +1544,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $this->params->set('contacts', implode(',', $ids));
         $this->updateParams($this->params);
 
-        // The users alice101 and bob101 have already been installed
+        // The users alice and bob have already been installed
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
@@ -1641,6 +1659,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             foreach ($fields as $i => $field) {
                 $field['group_id'] = $index[$field['parent_fieldgroup']] ?? 0;
                 $field['assigned_cat_ids'] = $cats[$field['category']] ?? '';
+
                 if (!$fieldModel->save($field)) {
                     $response            = [];
                     $response['success'] = false;
@@ -1738,9 +1757,6 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         // Get the list of languages for installation from the plugin parameters.
         $languages = $this->getLanguages();
 
-        // Get the content component id - temporarily set all to com_content
-        $component_id = ExtensionHelper::getExtensionRecord('com_content', 'component')->extension_id;
-
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
             $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/menuitems.json";
@@ -1751,6 +1767,9 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             $menuitems = json_decode($menuitems_json, true);
 
             foreach ($menuitems as $menuitem) {
+                // Get the component id for the content type: com_content or com_users or ...
+                $component_id = ExtensionHelper::getExtensionRecord($menuitem['component'], 'component')->extension_id;
+
                 $menuitem['id']             = 0;
                 $menuitem['component_id']   = $component_id;
                 $menuitem['published']      = 1;
@@ -1796,6 +1815,18 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $menuitem['link'] .= $article_id;
                     unset($menuitem['article-alias']);
                 } else if($menuitem['type'] == 'Category Blog') {
+                    // Get the category id from the category alias
+                    $query = $db->createQuery();
+                    $query
+                        ->select($db->quoteName('id'))
+                        ->from($db->quoteName('#__categories'))
+                        ->where($db->quoteName('alias') . '=:alias')
+                        ->bind(':alias', $menuitem['category-alias'], ParameterType::STRING);
+                    $db->setQuery($query);
+                    $category_id = $db->loadResult();
+                    $menuitem['link'] .= $category_id;
+                    unset($menuitem['category-alias']);
+                } else if($menuitem['type'] == 'Category List') {
                     // Get the category id from the category alias
                     $query = $db->createQuery();
                     $query
@@ -2314,6 +2345,11 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
     protected function uninstallAssociations($event, $step) {
         $this->loguninstallstep($step, 'associations');
+
+        // Remove the ids from the plugin parameters.
+        $this->params->set('associations', '');
+        $this->updateParams($this->params);
+        
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');

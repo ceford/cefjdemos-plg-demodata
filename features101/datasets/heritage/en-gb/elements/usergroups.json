@@ -1,16 +1,20 @@
 [{
-    "title":"Committee101",
+    "title":"Committee",
     "parent":"Registered"
 },
 {
-    "title":"Chair101",
-    "parent":"Committee101"
+    "title":"Chair",
+    "parent":"Committee"
 },
 {
-    "title":"Secretary101",
-    "parent":"Committee101"
+    "title":"Secretary",
+    "parent":"Committee"
 },
 {
-    "title":"OddJob101",
+    "title":"OddJob",
+    "parent":"Public"
+},
+{
+    "title":"Article Administrator",
     "parent":"Public"
 }]

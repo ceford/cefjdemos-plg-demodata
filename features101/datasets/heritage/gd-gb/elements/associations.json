@@ -8,15 +8,22 @@
 {
     "context":"com_menus.item",
     "alias":{
-        "en-GB":"sites-by-continent-en-gb",
-        "gd-GB":"sites-by-continent-gd-gb"
+        "en-GB":"about-unesco-en-gb",
+        "gd-GB":"about-unesco-gd-gb"
     }
 },
 {
     "context":"com_menus.item",
     "alias":{
-        "en-GB":"africa-en-gb",
-        "gd-GB":"africa-gd-gb"
+        "en-GB":"africa-blog-en-gb",
+        "gd-GB":"africa-blog-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"africa-list-en-gb",
+        "gd-GB":"africa-list-gd-gb"
     }
 },
 {
@@ -27,14 +34,14 @@
     }
 },
 {
-    "context":"com_menus.item",
+    "context":"com_content.item",
     "alias":{
         "en-GB":"sites-inscribed-in-1978-en-gb",
         "gd-GB":"sites-inscribed-in-1978-gd-gb"
     }
 },
 {
-    "context":"com_menus.item",
+    "context":"com_content.item",
     "alias":{
         "en-GB":"bluebells-en-gb",
         "gd-GB":"bluebells-gd-gb"
@@ -43,8 +50,8 @@
 {
     "context":"com_menus.item",
     "alias":{
-        "en-GB":"demonstrations-en-gb",
-        "gd-GB":"demonstrations-gd-gb"
+        "en-GB":"category-blog-en-gb",
+        "gd-GB":"category-blog-gd-gb"
     }
 },
 {

@@ -3,4 +3,10 @@
     "title":"Heritage Sites",
     "description":"The Heritage Sites Menu",
     "menutype":"heritage-sites-en-gb"
+},
+{
+    "id":"0",
+    "title":"Demonstrations",
+    "description":"Menu for various Joomla demonstrations",
+    "menutype":"demonstrations-en-gb"
 }]

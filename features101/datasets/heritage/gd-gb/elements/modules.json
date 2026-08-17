@@ -22,4 +22,51 @@
         "header_tag"      : "h3",
         "style"           : 0
     }
+},
+{
+    "title"     : "Taisbeanaidhean",
+    "ordering"  : 1,
+    "position"  : "sidebar-right",
+    "module"    : "mod_menu",
+    "showtitle" : 1,
+    "menu-base-alias":"",
+    "language":"gd-GB",
+    "params"    : {
+        "menutype"        : "demonstrations-gd-gb",
+        "layout"          : "_:collapse-default",
+        "base"            : 0,
+        "startLevel"      : 1,
+        "endLevel"        : 0,
+        "showAllChildren" : 1,
+        "class_sfx"       : "nav-active-open",
+        "cache"           : 1,
+        "cache_time"      : 900,
+        "cachemode"       : "itemid",
+        "module_tag"      : "nav",
+        "bootstrap_size"  : 0,
+        "header_tag"      : "h3",
+        "style"           : 0
+    }
+},
+{
+    "title"     : "Foirm Log a-steach",
+    "ordering"  : 1,
+    "position"  : "sidebar-right",
+    "module"    : "mod_login",
+    "showtitle" : 1,
+    "language":"gd-GB",
+    "access" : "5",
+    "params"    : {
+    }
+},
+{
+    "title"     : "Foirm Log a-mach",
+    "ordering"  : 1,
+    "position"  : "sidebar-right",
+    "module"    : "mod_login",
+    "showtitle" : 1,
+    "language":"gd-GB",
+    "access" : "2",
+    "params"    : {
+    }
 }]

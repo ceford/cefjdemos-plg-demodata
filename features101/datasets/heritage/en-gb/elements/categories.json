@@ -1,11 +1,28 @@
 [{
+    "title":"About UNESCO",
+    "alias":"about-unesco-en-gb",
+    "level":1,
+    "path":"about-unesco-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>General information on UNESCO World Heritage Sites.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "A clipped map of the world showing a selection of World Heritage Sites sites."
+    }
+},
+{
     "title":"World Heritage Sites",
     "alias":"heritage-en-gb",
     "level":1,
     "path":"heritage-en-gb",
     "extension":"com_content",
     "language":"en-GB",
-    "description":"<p>AParent category for subcategories of UNESCO World Heritage Sites.</p>"
+    "description":"<p>A parent category for subcategories of UNESCO World Heritage Sites.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "A clipped map of the world showing a selection of World Heritage Sites sites."
+    }
 },
 {
     "title":"Africa",
@@ -69,7 +86,7 @@
     "path":"demonstrations-en-gb",
     "extension":"com_content",
     "language":"en-GB",
-    "description":"<p>A list of UNESCO World Heritage Sites Inscribed in 1978.</p>"
+    "description":"<p>Articles composed to demonstrate Joomla features.</p>"
 },
 {
     "title":"Demo Staff",

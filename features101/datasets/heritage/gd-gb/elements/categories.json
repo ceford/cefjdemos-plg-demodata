@@ -1,14 +1,31 @@
 [{
-    "title":"World Heritage Sites",
+    "title":"Mu UNESCO",
+    "alias":"about-unesco-gd-gb",
+    "level":1,
+    "path":"about-unesco-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Fiosrachadh coitcheann mu Làraichean Dualchas na Cruinne aig UNESCO.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "A clipped map of the world showing a selection of World Heritage Sites sites."
+    }
+},
+{
+    "title":"Làraichean Dualchas na Cruinne",
     "alias":"heritage-gd-gb",
     "level":1,
     "path":"heritage-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Roinn phàrant airson fo-roinnean de Làraichean Dualchas na Cruinne aig UNESCO.</p>"
+    "description":"<p>Roinn phàrant airson fo-roinnean de Làraichean Dualchas na Cruinne aig UNESCO.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "Mapa air a gheàrr-chunntas den t-saoghal a’ sealltainn taghadh de làraichean Dualchas na Cruinne."
+    }
 },
 {
-    "title":"Africa",
+    "title":"Afraga",
     "alias":"africa-gd-gb",
     "parent_alias":"heritage-gd-gb",
     "level":2,
@@ -69,6 +86,6 @@
     "path":"demonstrations-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Cruinneachadh de dh’artaigilean airson feartan Joomla a shealltainn.</p>"
+    "description":"<p>Artaigilean air an sgrìobhadh gus feartan Joomla a shealltainn.</p>"
 }
 ]

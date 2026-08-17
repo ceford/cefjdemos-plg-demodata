@@ -3,4 +3,10 @@
     "title":"Làraichean Dualchais",
     "description":"Clàr-taice nan Làraichean Dualchais",
     "menutype":"heritage-sites-gd-gb"
+},
+{
+    "id":"0",
+    "title":"Taisbeanaidhean",
+    "description":"Clàr-taice airson diofar thaisbeanaidhean Joomla.",
+    "menutype":"demonstrations-gd-gb"
 }]
