@@ -55,17 +55,6 @@
     }
 },
 {
-    "name": "Odd Job",
-    "username": "oddjob",
-    "email": "oddjob@example.com",
-    "groups": "Registered",
-    "id": "0",
-    "block": "0",
-    "params": {
-        "allowTourAutoStart":"0"
-    }
-},
-{
     "name": "Bob",
     "username": "bob",
     "email": "bob@example.com",
@@ -88,18 +77,6 @@
     }
 },
 {
-    "name": "John Doe",
-    "username": "johndoe",
-    "password": "(johndoe123)",
-    "email": "johndoe@example.com",
-    "groups": "Registered",
-    "id": "0",
-    "block": "0",
-    "params": {
-        "allowTourAutoStart":"0"
-    }
-},
-{
     "name": "Manny",
     "username": "manny",
     "email": "manny@example.com",
@@ -115,18 +92,6 @@
     "username": "minnie",
     "email": "minie@example.com",
     "groups": "Administrator",
-    "id": "0",
-    "block": "0",
-    "params": {
-        "allowTourAutoStart":"0"
-    }
-},
-{
-    "name": "Playwright",
-    "username": "playwright",
-    "password": "(play123456)",
-    "email": "playwright@example.com",
-    "groups": "Super Users",
     "id": "0",
     "block": "0",
     "params": {

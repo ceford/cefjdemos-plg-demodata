@@ -619,8 +619,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     protected function doExtras($is_installed) {
         $this->doPrivateMessages($is_installed);
         $this->doSpecialAccess($is_installed);
-        $this->setOddjobPermissions($is_installed);
-        $this->doUsernotes($is_installed);
+        //$this->setOddjobPermissions($is_installed);
+        //$this->doUsernotes($is_installed);
         $this->doPrivacyConsents($is_installed);
         $this->doPrivacyRequests($is_installed);
         $this->doSchemaOrg($is_installed);
@@ -1772,7 +1772,9 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
                 $menuitem['id']             = 0;
                 $menuitem['component_id']   = $component_id;
-                $menuitem['published']      = 1;
+                if (!isset($menuitem['published'])) {
+                    $menuitem['published']      = 1;
+                }
                 $menuitem['note']           = '';
                 $menuitem['img']            = '';
                 $menuitem['associations']   = [];
@@ -1838,6 +1840,30 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $category_id = $db->loadResult();
                     $menuitem['link'] .= $category_id;
                     unset($menuitem['category-alias']);
+                } else if ($menuitem['type'] == 'Single News Feed') {
+                    // Get the feed id from the newsfeeds alias
+                    $query = $db->createQuery();
+                    $query
+                        ->select($db->quoteName('id'))
+                        ->from($db->quoteName('#__newsfeeds'))
+                        ->where($db->quoteName('alias') . '=:alias')
+                        ->bind(':alias', $menuitem['alias'], ParameterType::STRING);
+                    $db->setQuery($query);
+                    $feed_id = $db->loadResult();
+                    $menuitem['link'] .= $feed_id;
+                    unset($menuitem['type']);
+                } else if ($menuitem['type'] == 'List News Feeds in a Category') {
+                    // Get the feed id from the newsfeeds alias
+                    $query = $db->createQuery();
+                    $query
+                        ->select($db->quoteName('id'))
+                        ->from($db->quoteName('#__categories'))
+                        ->where($db->quoteName('alias') . '=:alias')
+                        ->bind(':alias', $menuitem['alias'], ParameterType::STRING);
+                    $db->setQuery($query);
+                    $cat_id = $db->loadResult();
+                    $menuitem['link'] .= $cat_id;
+                    unset($menuitem['type']);
                 }
 
                 $menuitem['type'] = 'component';
@@ -1916,7 +1942,6 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 $module['id']         = 0;
                 $module['asset_id']   = 0;
                 $module['note']       = '';
-                $module['published']  = 1;
 
                 // Get the id of the menu item containing the menu-base-alias
                 $query = $db->createQuery();
@@ -1949,6 +1974,10 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                    $module['params']['cid'] = array_shift($clientslist);
                 }
 
+                if (!isset($module['published'])) {
+                    $module['published'] = 1;
+                }
+                
                 if (!$moduleModel->save($module)) {
                     $response            = [];
                     $response['success'] = false;

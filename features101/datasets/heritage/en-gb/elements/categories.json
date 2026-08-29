@@ -89,6 +89,16 @@
     "description":"<p>Articles composed to demonstrate Joomla features.</p>"
 },
 {
+    "title":"Joomla News",
+    "alias":"joomla-news-en-gb",
+    "parent_alias":"",
+    "level":1,
+    "path":"joomla-news-en-gb",
+    "extension":"com_newsfeeds",
+    "language":"en-GB",
+    "description":"<p>A category for multiple Joomla news feeds.</p>"
+},
+{
     "title":"Demo Staff",
     "alias":"demo-staff",
     "level":1,

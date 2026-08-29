@@ -458,7 +458,7 @@
         "showlabel":"1"
     },
     "fieldparams":{
-        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `un81r_categories` AS `a` \r\nLEFT JOIN `un81r_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'en-GB' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
+        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `lje7b_categories` AS `a` \r\nLEFT JOIN `lje7b_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'en-GB' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
     },
     "created_time":"NOW()",
     "modified_time":"NOW()",

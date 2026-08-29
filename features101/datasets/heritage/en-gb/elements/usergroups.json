@@ -11,10 +11,6 @@
     "parent":"Committee"
 },
 {
-    "title":"OddJob",
-    "parent":"Public"
-},
-{
     "title":"Article Administrator",
     "parent":"Public"
 }]

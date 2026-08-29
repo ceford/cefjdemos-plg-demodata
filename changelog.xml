@@ -2,6 +2,14 @@
 	<changelog>
 		<element>plg_demodata_features101</element>
 		<type>plugin</type>
+		<version>0.3.1</version>
+		<remove>
+			<change>Removed users with specified login credentials. Add manually if needed.</change>
+		</remove>
+	</changelog>
+	<changelog>
+		<element>plg_demodata_features101</element>
+		<type>plugin</type>
 		<version>0.3.0</version>
 		<add>
 			<change>Moved installable content to datasets subfolder.</change>

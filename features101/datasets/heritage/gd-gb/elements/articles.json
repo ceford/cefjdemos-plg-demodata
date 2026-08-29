@@ -1,5 +1,23 @@
 [{
     "state":1,
+    "title":"Pàrtaidh Fàgail",
+    "alias":"leaving-party-gd-gb",
+    "category_alias":"demonstrations-en-gb",
+    "language":"gd-GB",
+    "text_source":"leaving-party.html",
+    "metadesc":"Beagan luachan is dhealbhan bho phàrtaidh fàgail Iain."
+},
+{
+    "state":1,
+    "title":"Staitistig Àireamh-shluaigh",
+    "alias":"pop-stats-gd-gb",
+    "category_alias":"demonstrations-gd-gb",
+    "language":"gd-GB",
+    "text_source":"pop-stats.html",
+    "metadesc": "Tuairisgeul goirid air staitistig sluaigh a rèir mòr-thìr."
+},
+{
+    "state":1,
     "title":"Cluig-ghorma",
     "alias":"bluebells-gd-gb",
     "category_alias":"demonstrations-gd-gb",

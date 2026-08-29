@@ -9,8 +9,4 @@
 {
     "title":"Secretary",
     "parent":"Committee"
-},
-{
-    "title":"OddJob",
-    "parent":"Public"
 }]

@@ -8,8 +8,9 @@ in the Administrator Dashboard.
 
 The plugin structure has changed to provide a number of different data sets:
 
+- Data for UNESCO World Heritage Sites which is now the preferred data set.
 - Data for Scottish Battlefields in English and Scottish Gaelic. 
-- Data for The World of Bees in English and German.
+- Data for The World of Bees in English and German. - incomplete/abandoned
 
 The data is independent of the code so can be replaced with almost anything. 
 But beware, data creation is a time-consuming task.
@@ -44,4 +45,5 @@ The site frontend may look something like the following:
 
 ## References
 
-https://en.wikipedia.org/wiki/Inventory_of_Historic_Battlefields_in_Scotland
+[UNESCO World Heritage List](https://whc.unesco.org/en/list/)
+[Inventory of Historic Battlefields in Scotland](https://en.wikipedia.org/wiki/Inventory_of_Historic_Battlefields_in_Scotland)

@@ -1,5 +1,22 @@
 [{
     "state":1,
+    "title":"Leaving Party",
+    "alias":"leaving-party-en-gb",
+    "category_alias":"demonstrations-en-gb",
+    "language":"en-GB",
+    "text_source":"leaving-party.html",
+    "metadesc":"Some quotes and photographs from John's leaving party."
+},
+{
+    "state":1,
+    "title":"Population Statistics",
+    "alias":"pop-stats-en-gb",
+    "category_alias":"demonstrations-en-gb",
+    "language":"en-GB",
+    "text_source":"pop-stats.html",
+    "metadesc":"A brief description of population statistics by continent."
+},{
+    "state":1,
     "title":"Bluebells",
     "alias":"bluebells-en-gb",
     "category_alias":"demonstrations-en-gb",

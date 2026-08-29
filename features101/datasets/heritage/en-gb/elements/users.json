@@ -74,39 +74,4 @@
     "params": {
         "allowTourAutoStart":"0"
     }
-},
-{
-    "name": "John Doe",
-    "username": "johndoe",
-    "password": "(johndoe123)",
-    "email": "johndoe@example.com",
-    "groups": "Registered",
-    "id": "0",
-    "block": "0",
-    "params": {
-        "allowTourAutoStart":"0"
-    }
-},
-{
-    "name": "Odd Job",
-    "username": "oddjob",
-    "email": "oddjob@example.com",
-    "groups": "Registered",
-    "id": "0",
-    "block": "0",
-    "params": {
-        "allowTourAutoStart":"0"
-    }
-},
-{
-    "name": "Playwright",
-    "username": "playwright",
-    "password": "(play123456)",
-    "email": "playwright@example.com",
-    "groups": "Super Users",
-    "id": "0",
-    "block": "0",
-    "params": {
-        "allowTourAutoStart":"0"
-    }
 }]
