@@ -62,6 +62,20 @@
     }
 },
 {
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"edit-user-profile-en-gb",
+        "gd-GB":"edit-user-profile-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"privacy-request-en-gb",
+        "gd-GB":"privacy-request-gd-gb"
+    }
+},
+{
     "context":"com_content.item",
     "alias":{
         "en-GB":"about-unesco-sites-en-gb",

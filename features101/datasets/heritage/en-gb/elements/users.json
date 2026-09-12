@@ -1,15 +1,4 @@
 [{
-    "name": "Article Administrator",
-    "username": "articleadmin",
-    "email": "articleadmin@example.com",
-    "groups": "Article Administrator",
-    "id": "0",
-    "block": "0",
-    "params": {
-        "allowTourAutoStart":"0"
-    }
-},
-{
     "name": "Arthur",
     "username": "arthur",
     "email": "arthur@example.com",
@@ -57,7 +46,7 @@
     "name": "Bob",
     "username": "bob",
     "email": "bob@example.com",
-    "groups": "Committee",
+    "groups": "Secretary",
     "id": "0",
     "block": "0",
     "params": {

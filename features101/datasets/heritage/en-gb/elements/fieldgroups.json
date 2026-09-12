@@ -12,4 +12,20 @@
     "state":1,
     "id":0,
     "language":"en-GB"
+},
+{
+    "title":"Nature",
+    "description":"<p>Group for aspects of nature that apply to all animals and plants.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"en-GB"
+},
+{
+    "title":"Flowers",
+    "description":"<p>Fields that only apply to flowering plants.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"en-GB"
 }]

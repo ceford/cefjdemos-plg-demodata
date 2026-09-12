@@ -1,6 +1,7 @@
 [{
     "title":"Committee",
-    "parent":"Registered"
+    "parent":"Registered",
+    "access_level":"Committee"
 },
 {
     "title":"Chair",
@@ -9,8 +10,4 @@
 {
     "title":"Secretary",
     "parent":"Committee"
-},
-{
-    "title":"Article Administrator",
-    "parent":"Public"
 }]

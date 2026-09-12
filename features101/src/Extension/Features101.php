@@ -35,23 +35,22 @@ use Joomla\Database\ParameterType;
  * Steps:
  * - public static function getSubscribedEvents - called to set up the plugin events
  * - public function onDemodataGetOverview - initialises the Install / Uninstall button
- * - public function onAjaxDemodataApplyStep1 - Install Users / Remove Modules
- * - public function onAjaxDemodataApplyStep2 - Install Categories / Uninstall Associations
- * - public function onAjaxDemodataApplyStep3 - Install Tags / Remove Menuitems
- * - public function onAjaxDemodataApplyStep4 - Install Banners / Remove Menus
- * - public function onAjaxDemodataApplyStep5 - Install Field Groups / Uninstall Newsfeeds
- * - public function onAjaxDemodataApplyStep6 - Install Fields / Uninstall Contacts
- * - public function onAjaxDemodataApplyStep7 - Install Workflows / Uninstall Articles
- * - public function onAjaxDemodataApplyStep8 - Install Stages / Uninstall Transitions
- * - public function onAjaxDemodataApplyStep9 - Install Transitions / Uninstall Stages
- * - public function onAjaxDemodataApplyStep10 - Install Articles / Uninstall Workflows
- * - public function onAjaxDemodataApplyStep11 - Install Contacts / Uninstall Fields
- * - public function onAjaxDemodataApplyStep12 - Install Newsfeeds / Uninstall Field Groups
- * - public function onAjaxDemodataApplyStep13 - Install Menus / Uninstall Banners
- * - public function onAjaxDemodataApplyStep14 - Install Menuitems / Uninstall Tags
- * - public function onAjaxDemodataApplyStep15 - Install Associations / Uninstall Categories
- * - public function onAjaxDemodataApplyStep16 - Install Modules / Uninstall Users
- * - public function onAjaxDemodataApplyStep17 - Completion
+ * - public function onAjaxDemodataApplyStep1 - Install Workflows / Uninstall Modules
+ * - public function onAjaxDemodataApplyStep2 - Install UserGroups / Uninstall Associations
+ * - public function onAjaxDemodataApplyStep3 - Install Users / Uninstall Menuitems
+ * - public function onAjaxDemodataApplyStep4 - Install Categories / Uninstall Menus
+ * - public function onAjaxDemodataApplyStep5 - Install Tags / Uninstall Newsfeeds
+ * - public function onAjaxDemodataApplyStep6 - Install Banners / Uninstall Contacts
+ * - public function onAjaxDemodataApplyStep7 - Install Field Groups / Uninstall Articles
+ * - public function onAjaxDemodataApplyStep8 - Install Fields / Uninstall Fields
+ * - public function onAjaxDemodataApplyStep9 - Install Articles / Uninstall Field Groups
+ * - public function onAjaxDemodataApplyStep10 - Install Contacts / Uninstall Banners
+ * - public function onAjaxDemodataApplyStep11 - Install Newsfeeds / Uninstall Tags
+ * - public function onAjaxDemodataApplyStep12 - Install Menus / Uninstall Categories
+ * - public function onAjaxDemodataApplyStep13 - Install Menuitems / Uninstall Users
+ * - public function onAjaxDemodataApplyStep14 - Install Associations / Uninstall UserGroups
+ * - public function onAjaxDemodataApplyStep15 - Install Modules / Uninstall Workflows
+ * - public function onAjaxDemodataApplyStep16 - Completion
  *
  * Each stage, except the last, calls a function to install or uninstall one of the stages.
  *
@@ -117,7 +116,6 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             'onAjaxDemodataApplyStep14' => 'onAjaxDemodataApplyStep14',
             'onAjaxDemodataApplyStep15' => 'onAjaxDemodataApplyStep15',
             'onAjaxDemodataApplyStep16' => 'onAjaxDemodataApplyStep16',
-            'onAjaxDemodataApplyStep17' => 'onAjaxDemodataApplyStep17',
         ];
     }
 
@@ -141,7 +139,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $data->title       = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_OVERVIEW_TITLE');
         $data->description = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_OVERVIEW_DESC');
         $data->icon        = 'wifi';
-        $data->steps       = 17;
+        $data->steps       = 16;
         $data->is_installed = $this->params->get('is_installed', 0);
 
         // Get the dataset to be installed
@@ -159,7 +157,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     }
 
     /**
-     * Step to install users or uninstall modules.
+     * Step 1.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -180,21 +178,20 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         if (empty($is_installed)) {
             $msg = "Starting install: {$date}\n";
             file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $msg);
-            $this->installUsergroups($event, 1);
-            $this->installUsers($event, 1);
+            $this->installWorkflows($event, 1);
             return;
         } else {
             $this->doExtras($is_installed);
 
             $msg = "Starting uninstall: {$date}\n";
             file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $msg, FILE_APPEND);
-            $this->uninstallModules($event, 16);
+            $this->uninstallModules($event, 15);
             return;
         }
     }
 
     /**
-     * Step to install tags or uninstall associations.
+     * Step 2.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -210,7 +207,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installCategories($event, 2);
+            $this->installUsergroups($event, 2);
             return;
         } else {
             $this->uninstallAssociations($event, 2);
@@ -219,7 +216,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     }
 
     /**
-     * Step to install banners or uninstall menuitems.
+     * Step 3.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -235,7 +232,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installTags($event, 3);
+            $this->installUsers($event, 3);
             return;
         } else {
             $this->uninstallMenuitems($event, 3);
@@ -244,7 +241,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     }
 
     /**
-     * Step to install fieldgroups or uninstall menus.
+     * Step 4.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -261,7 +258,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
         // Install Step 4: Content
         if (empty($is_installed)) {
-            $this->installBanners($event, 4);
+            $this->installCategories($event, 4);
             return;
         } else {
             $this->uninstallMenus($event, 4);
@@ -270,7 +267,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     }
 
     /**
-     * Step to install fields or uninstall newsfeeds.
+     * Step 5.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -287,7 +284,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
         // Install Step 5: Menus
         if (empty($is_installed)) {
-            $this->installFieldgroups($event, 5);
+            $this->installTags($event, 5);
             return;
         } else {
             $this->uninstallNewsfeeds($event, 5);
@@ -296,7 +293,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     }
 
     /**
-     * Step to install workflows or uninstall contacts.
+     * Step 6.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -312,7 +309,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installFields($event, 6);
+            $this->installBanners($event, 6);
             return;
         } else {
             $this->uninstallContacts($event, 6);
@@ -321,7 +318,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     }
 
     /**
-     * Step to install stages or uninstall articles.
+     * Step 7.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -337,7 +334,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installWorkflows($event, 7);
+            $this->installFieldgroups($event, 7);
             return;
         } else {
             $this->uninstallArticles($event, 7);
@@ -346,7 +343,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     }
 
     /**
-     * Step to install transitions or uninstall categories.
+     * Step 8.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -362,16 +359,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installWorkflowstages($event, 8);
+            $this->installFields($event, 8);
             return;
         } else {
-            $this->uninstallWorkflowtransitions($event, 8);
+            $this->uninstallFields($event, 8);
             return;
         }
     }
 
     /**
-     * Step to install categories or uninstall transitions.
+     * Step 9.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -387,16 +384,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installWorkflowtransitions($event, 9);
+            $this->installArticles($event, 9);
             return;
         } else {
-            $this->uninstallWorkflowstages($event, 9);
+            $this->uninstallFieldgroups($event, 9);
             return;
         }
     }
 
     /**
-     * Step to install articles or uninstall stages.
+     * Step 10.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -412,16 +409,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installArticles($event, 10);
+            $this->installContacts($event, 10);
             return;
         } else {
-            $this->uninstallWorkflows($event, 10);
+            $this->uninstallBanners($event, 10);
             return;
         }
     }
 
     /**
-     * Step to install contacts or uninstall workflows.
+     * Step 11.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -437,16 +434,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installContacts($event, 11);
+            $this->installNewsfeeds($event, 11);
             return;
         } else {
-            $this->uninstallFields($event, 11);
+            $this->uninstallTags($event, 11);
             return;
         }
     }
 
     /**
-     * Step to install newsfeeds or uninstall fields.
+     * Step 12.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -462,16 +459,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installNewsfeeds($event, 12);
+            $this->installMenus($event, 12);
             return;
         } else {
-            $this->uninstallFieldgroups($event, 12);
+            $this->uninstallCategories($event, 12);
             return;
         }
     }
 
     /**
-     * Step to install menus or uninstall fieldgroups.
+     * Step 13.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -487,16 +484,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installMenus($event, 13);
+            $this->installMenuitems($event, 13);
             return;
         } else {
-            $this->uninstallBanners($event, 13);
+            $this->uninstallUsers($event, 13);
             return;
         }
     }
 
     /**
-     * Step to install menuitems or uninstall banners.
+     * Step 14.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -512,16 +509,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installMenuitems($event, 14);
+            $this->installAssociations($event, 14);
             return;
         } else {
-            $this->uninstallTags($event, 14);
+            $this->uninstallUsergroups($event, 14);
             return;
         }
     }
 
     /**
-     * Step to install associations or uninstall tags.
+     * Step 15.
      *
      * @param   AjaxEvent $event Event instance
      *
@@ -537,35 +534,10 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $is_installed = $this->params->get('is_installed', 0);
 
         if (empty($is_installed)) {
-            $this->installAssociations($event, 15);
+            $this->installModules($event, 15);
             return;
         } else {
-            $this->uninstallCategories($event, 15);
-            return;
-        }
-    }
-
-    /**
-     * Step to install modules or uninstall users.
-     *
-     * @param   AjaxEvent $event Event instance
-     *
-     * @return  void
-     */
-    public function onAjaxDemodataApplyStep16(AjaxEvent $event): void
-    {
-        if (!Session::checkToken('get') || $this->getApplication()->getInput()->get('type') != $this->_name) {
-            return;
-        }
-
-        // Is data to be installed or uninstalled?
-        $is_installed = $this->params->get('is_installed', 0);
-
-        if (empty($is_installed)) {
-            $this->installModules($event, 16);
-            return;
-        } else {
-            $this->uninstallUsers($event, 16);
+            $this->uninstallWorkflows($event, 15);
             return;
         }
     }
@@ -579,13 +551,13 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
      *
      * @since  4.0.0
      */
-    public function onAjaxDemodataApplyStep17(AjaxEvent $event): void
+    public function onAjaxDemodataApplyStep16(AjaxEvent $event): void
     {
         if ($this->getApplication()->getInput()->get('type') !== $this->_name) {
             return;
         }
 
-        $step = 17;
+        $step = 16;
 
         // Is data to be installed or uninstalled?
         $is_installed = $this->params->get('is_installed', 0);
@@ -1112,6 +1084,48 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 $article['introtext'] = '';
                 $article['fulltext'] = '';
 
+                // Is there a user specified
+                $uid = 0;
+                // If there is an author name get the author id
+                if (!empty($article['created_by_name'])) {
+                    $query = $db->createQuery()
+                        ->select($db->quoteName('id'))
+                        ->from($db->quotename('#__users'))
+                        ->where($db->quoteName('name') . '=' . $db->quote($article['created_by_name']));
+                    $db->setQuery($query);
+                    $uid = $db->loadResult();
+                    unset($article['created_by_name']);
+                }
+
+                // Set the created_by_alias value to something suitable
+                if (empty($article['created_by_alias'])) {
+                    $article['created_by_alias'] = 'Cinderella';
+                }
+
+                // Is there a workflow and stage specified?
+                $wfsid = 0;
+                if (!empty($article['workflow'])) {
+                    if (!empty($article['stage'])) {
+                        // Get the workflow id
+                        $query = $db->createQuery();
+                        $query->select($db->quoteName('id'))
+                            ->from($db->quoteName('#__workflows'))
+                            ->where($db->quoteName('title') . ' = ' . $db->quote($article['workflow']));
+                        $db->setQuery($query);
+                        $wfid = $db->loadResult();
+
+                        $query = $db->createQuery();
+                        $query->select($db->quoteName('id'))
+                            ->from($db->quoteName('#__workflow_stages'))
+                            ->where($db->quoteName('workflow_id') . ' = ' . $wfid)
+                            ->where($db->quoteName('title') . ' = ' . $db->quote($article['stage']));
+                        $db->setQuery($query);
+                        $wfsid = $db->loadResult();
+                    }
+                    unset ($article['workflow']);
+                    unset ($article['stage']);
+                }
+
                 // Get the article source text.
                 $content = file_get_contents(__DIR__ . "/../../datasets/{$dataset}/{$language}/articles/{$article['text_source']}");
 
@@ -1133,9 +1147,6 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 // If empty, set to 2.
                 $article['catid'] = $article['catid'] ?? 2;
                 $article['id'] = 0;
-
-                // Set the created_by_alias value to something suitable
-                $article['created_by_alias'] = 'Cinderella';
 
                 // Set the tag ids, example: "tags": ["east-lothian"],
                 if (!empty($article['tags'])) {
@@ -1167,6 +1178,26 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 $id = $articleModel->getState('article.id');
                 $article_ids[] = $id;
 
+                // Change the author id
+                if (!empty($uid)) {
+                    $query = $db->createQuery()
+                        ->update($db->quotename('#__content'))
+                        ->set($db->quoteName('created_by') . ' = ' . $uid)
+                        ->where($db->quoteName('id') . ' = ' . $id);
+                    $db->setQuery($query);
+                    $db->execute();
+                }
+
+                // If there is a workflow set it now.
+                if (!empty($wfsid)) {
+                    $query = $db->createQuery()
+                        ->update($db->quotename('#__workflow_associations'))
+                        ->set($db->quoteName('stage_id') . ' = ' . $wfsid)
+                        ->where($db->quoteName('item_id') . ' = ' . $id);
+                    $db->setQuery($query);
+                    $db->execute();
+                }
+
                 // If hits is not zero update it now
                 if (!empty($article['hits'])) {
                     $query = $db->createQuery();
@@ -1180,6 +1211,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 // Add the fields
                 if (!empty($article['fields'])) {
                     foreach ($article['fields'] as $field_name => $value) {
+                        $field_value = '';
                         // get the field_id from its name
                         $query = $db->createQuery();
                         $query
@@ -1197,11 +1229,36 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                                 ->from($db->quoteName('#__users'))
                                 ->where($db->quoteName('username') . ' = ' . $db->quote('playwright'));
                             $db->setQuery($query);
-                            $value = $db->loadResult();
+
+                            // Keep the user id in $value and use it later.
+                            $field_value = $db->loadResult();
+                        }
+
+                        // If the field is a subform
+                        if (str_starts_with($field_name, 'subform-')) {
+                            // $value should be an array of options
+                            // Get the titles from row0
+                            $names = [];
+                            $newoptions = [];
+                            foreach ($value['row0'] as $option => $field_value) {
+                                // Get the field id from its name
+                                $query = $db->createQuery();
+                                $query->select($db->quoteName('id'))
+                                    ->from($db->quoteName('#__fields'))
+                                    ->where($db->quoteName('name') . ' = ' . $db->quote($option));
+                                $db->setQuery($query);
+                                $names[$option] = $db->loadResult();
+                            }
+
+                            $field_value = json_encode($value);
+                            foreach ($names as $key => $myvalue) {
+                                $field_value = str_replace($key, 'field' . $myvalue, $field_value);
+                            }
+                            $test = 1;
                         }
 
                         // If the field has multiple values
-                        $items = is_array($value) ? $value : [$value];
+                        $items = is_array($field_value) ? $field_value : [$field_value];
                         foreach ($items as $item) {
                             $item = (object) [
                                 'item_id'  => $id,
@@ -1447,6 +1504,36 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 }
                 $category['id'] = 0;
                 $category['published'] = 1;
+
+                // If there is a wrokflow, get its id
+                if (!empty($category['workflow_title'])) {
+                    $query = $db->createQuery();
+                    $query->select($db->quoteName('id'))
+                        ->from($db->quoteName('#__workflows'))
+                        ->where($db->quoteName('title') . ' = ' . $db->quote($category['workflow_title']));
+                    $db->setQuery($query);
+                    $wfid = $db->loadResult();
+
+                    $category['params']['workflow_id'] = $wfid;
+                }
+
+                // If there are permission rules look up the id from the title
+                $rules = '';
+                if (!empty($category['rules'])) {
+                    $rules = json_encode($category['rules']);
+                    $query = $db->createQuery();
+                    $query
+                        ->select($db->quoteName('id'))
+                        ->select($db->quoteName('title'))
+                        ->from($db->quoteName('#__usergroups'));
+                    $db->setQuery($query);
+                    $rows = $db->loadObjectList();
+
+                    foreach ($rows as $row) {
+                        $rules = str_replace($row->title, $row->id, $rules);
+                    }
+                }
+
                 if (!$categoryModel->save($category)) {
                     $response            = [];
                     $response['success'] = false;
@@ -1460,6 +1547,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 $id = $categoryModel->getState('category.id');
                 $category_ids[] = $id;
                 $parents[$category['alias']] = $id;
+
+                // Save the rules
+                if (!empty($rules)) {
+                    $query = $db->createQuery();
+                    $query->update($db->quoteName('#__assets'))
+                        ->set($db->quoteName('rules') . ' = ' . $db->quote($rules))
+                        ->where($db->quotename('name') . ' LIKE ' . $db->quote('%' . $id . '%'));
+                    $db->setQuery($query);
+                    $db->execute();
+                }
             }
         }
         // Store the category ids in the plugin parameters.
@@ -1660,6 +1757,20 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 $field['group_id'] = $index[$field['parent_fieldgroup']] ?? 0;
                 $field['assigned_cat_ids'] = $cats[$field['category']] ?? '';
 
+                // If type is a subform get the field id from the field params
+                if ($field['type'] === 'subform') {
+                    foreach ($field['fieldparams']['options'] as $key => $option) {
+                        $lookup = $option['customfield'];
+                        $query = $db->createQuery();
+                        $query->select($db->quoteName('id'))
+                            ->from($db->quoteName('#__fields'))
+                            ->where($db->quoteName('title') . ' = ' . $db->quote($lookup));
+                        $db->setQuery($query);
+                        $field['fieldparams']['options'][$key]['customfield'] = $db->loadResult();
+                    }
+
+                }
+
                 if (!$fieldModel->save($field)) {
                     $response            = [];
                     $response['success'] = false;
@@ -1794,6 +1905,21 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $menuitem['access'] = $access;
                 }
 
+                // Set the view level to a named level
+                if (isset($menuitem['view-level'])) {
+                    // Look up the group id
+                    $query = $db->createQuery();
+                    $query->select($db->quoteName('id'))
+                        ->from($db->quoteName('#__viewlevels'))
+                        ->where($db->quoteName('title') . ' = ' . $db->quote($menuitem['view-level']));
+                    $db->setQuery($query);
+                    $vlid = $db->loadResult();
+                    if (!empty($vlid)) {
+                        $menuitem['access'] = $vlid;
+                    }
+                    unset($menuitem['view-level']);
+                }
+
                 // Set template_style_id to global if not set
                 if (!isset($menuitem['template_style_id'])) {
                     $menuitem['template_style_id'] = 0;
@@ -1864,6 +1990,18 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $cat_id = $db->loadResult();
                     $menuitem['link'] .= $cat_id;
                     unset($menuitem['type']);
+                } else if ($menuitem['type'] == 'List All Categories in a Contact Category Tree') {
+                    //Get the Category id from the given alias
+                    $query = $db->createQuery();
+                    $query
+                        ->select($db->quoteName('id'))
+                        ->from($db->quoteName('#__categories'))
+                        ->where($db->quoteName('alias') . '=:alias')
+                        ->bind(':alias', $menuitem['category-alias'], ParameterType::STRING);
+                    $test = $query->__tostring();
+                    $db->setQuery($query);
+                    $cat_id = $db->loadResult();
+                    $menuitem['link'] .= $cat_id;
                 }
 
                 $menuitem['type'] = 'component';
@@ -2186,6 +2324,33 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 // Get ID of the group just added.
                 $id = $groupModel->getState('group.id');
                 $groupids[]  = $id;
+
+                // Was an access level specified?
+                if (!empty($group['access_level'])) {
+                    // Get the rules for the level
+                    $query = $db->createQuery();
+                    $query->select($db->quoteName('rules'))
+                        ->from($db->quoteName('#__viewlevels'))
+                        ->where($db->quoteName('title') . ' = ' . $db->quote($group['access_level']));
+                    $db->setQuery($query);
+                    $rules = $db->loadResult();
+
+                    // The rules will be something like '[296,6,3,8]'
+                    if (!empty($rules)) {
+                        $array = json_decode($rules, true);
+                        if (!in_array($id, $array)) {
+                            $array[] = $id;
+                        }
+                        $newrules = json_encode($array);
+
+                        $query = $db->createQuery();
+                        $query->update($db->quoteName('#__viewlevels'))
+                            ->set($db->quoteName('rules') . ' = ' . $db->quote($newrules))
+                            ->where($db->quoteName('title') . ' = ' . $db->quote($group['access_level']));
+                        $db->setQuery($query);
+                        $db->execute();
+                    }
+                }
             }
         }
 
@@ -2281,6 +2446,97 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         if ($this->checkstep($event, $step, 'workflows')) {
             return;
         }
+        // Create a new db object.
+        $db    = $this->getDatabase();
+
+        $mvcFactory = $this->getApplication()->bootComponent('com_workflow')->getMVCFactory();
+        $wfModel = $mvcFactory->createModel('Workflow', 'Administrator', ['ignore_request' => true]);
+        $stageModel = $mvcFactory->createModel('Stage', 'Administrator', ['ignore_request' => true]);
+        $transitionModel = $mvcFactory->createModel('Transition', 'Administrator', ['ignore_request' => true]);
+        $ids = [];
+
+        // Get the dataset to be installed
+        $dataset = strtolower($this->params->get('dataset'));
+
+        // Get the list of languages for installation from the plugin parameters.
+        $languages = $this->getLanguages();
+
+        // Get the fields to be installed from the $language.
+        foreach($languages as $language) {
+            $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/workflows.json";
+            if (!is_file($file)) {
+                continue;
+            }
+            $workflows_json = file_get_contents($file);
+            $workflows = json_decode($workflows_json, true);
+
+            // The Workflow, Stages and Transitions are in one file
+            foreach ($workflows as $i => $workflow) {
+
+                $stages = $workflow['stages'];
+                unset ($workflow['stages']);
+
+                $transitions = $workflow['transitions'];
+                unset ($workflow['transitions']);
+
+                $workflow['id'] = 0;
+
+                if (!$wfModel->save($workflow)) {
+                    $response            = [];
+                    $response['success'] = false;
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_USER_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($wfModel->getError()));
+
+                    $event->addResult($response);
+                    return;
+                }
+
+                // Get ID from user we just added
+                $wfid = $wfModel->getState('workflow.id');
+                $ids[] = $wfid;
+                $stage_ids = [];
+
+                // Add the stages
+                foreach ($stages as $stage) {
+                    $stage['workflow_id'] = $wfid;
+                    $stage['published'] = 1;
+                    $stage['id'] = 0;
+                    $stageModel->save($stage);
+                    $stage_ids[$stage['title']] = $stageModel->getState('stage.id');
+                }
+
+                // Delete the Basic Stage that gets created when the workflow is created
+                $query = $db->createQuery();
+                $query->select($db->quoteName('id'))
+                    ->from($db->quoteName('#__workflow_stages'))
+                    ->where($db->quoteName('workflow_id') . ' = ' . $wfid);
+                $db->setQuery($query);
+                $st = $db->loadColumn();
+                $toremove = array_diff($st, $stage_ids);
+
+                $query = $db->createQuery();
+                $query->delete($db->quoteName('#__workflow_stages'))
+                    ->where($db->quoteName('id') . ' IN (' . implode(',', $toremove) . ')');
+                $db->setQuery($query);
+                $db->execute();
+
+                foreach ($transitions as $transition) {
+                    $transition['workflow_id'] = $wfid;
+                    $transition['id'] = 0;
+                    $transition['to_stage_id'] = $stage_ids[$transition['to_stage_id']];
+                    if ($transition['from_stage_id'] === 'All') {
+                        $transition['from_stage_id'] = -1;
+                    } else {
+                        $transition['from_stage_id'] = $stage_ids[$transition['from_stage_id']];
+                    }
+                    $transitionModel->save($transition);
+                }
+            }
+        }
+
+        // Store the wf ids in the plugin parameters.
+        $this->params->set('workflows', implode(',', $ids));
+        $this->updateParams($this->params);
+
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_INSTALL_SUCCESS');
@@ -2684,7 +2940,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     }
 
     protected function uninstallMenus($event, $step) {
-        $this->loguninstallstep($step, 'menuitems');
+        $this->loguninstallstep($step, 'menus');
 
         $mvcFactory = $this->getApplication()->bootComponent('com_menus')->getMVCFactory();
 
@@ -2707,7 +2963,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
         $event->setArgument('result', [$response]);
 
-        $this->loguninstallstep($step, 'menuitems', 'End');
+        $this->loguninstallstep($step, 'menus', 'End');
     }
 
     protected function uninstallModules($event, $step) {
@@ -2853,19 +3109,6 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         // Remove the user ids from the plugin parameters.
         $this->params->set('users', '');
         $this->params->set('credentials', '');
-
-        if (!empty($this->params->get('usergroups'))) {
-            $groupModel = $mvcFactory->createModel('Group', 'Administrator', ['ignore_request' => true]);
-            $ids = explode(',', $this->params->get('usergroups'));
-            if (!empty($ids)) {
-                $groupModel->delete($ids);
-            }
-        }
-
-        $this->loguninstallstep($step, 'usergroups');
-
-        // Remove the group ids from the plugin parameters.
-        $this->params->set('usergroups', '');
         $this->updateParams($this->params);
 
         $response            = [];
@@ -2877,8 +3120,53 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $this->loguninstallstep($step, 'users', 'End');
     }
 
+    protected function uninstallUsergroups($event, $step) {
+        $this->loguninstallstep($step, 'usergroups');
+
+        $mvcFactory = $this->getApplication()->bootComponent('com_users')->getMVCFactory();
+        if (!empty($this->params->get('usergroups'))) {
+            $groupModel = $mvcFactory->createModel('Group', 'Administrator', ['ignore_request' => true]);
+            $ids = explode(',', $this->params->get('usergroups'));
+            if (!empty($ids)) {
+                $groupModel->delete($ids);
+            }
+        }
+
+        // Remove the group ids from the plugin parameters.
+        $this->params->set('usergroups', '');
+        $this->updateParams($this->params);
+
+        $response            = [];
+        $response['success'] = true;
+        $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');
+
+        $event->setArgument('result', [$response]);
+
+        $this->loguninstallstep($step, 'usergroups', 'End');
+    }
+
     protected function uninstallWorkflows($event, $step) {
         $this->loguninstallstep($step, 'workflows');
+
+        $mvcFactory = $this->getApplication()->bootComponent('com_workflow')->getMVCFactory();
+        $wfModel = $mvcFactory->createModel('Workflow', 'Administrator', ['ignore_request' => true]);
+
+        if (!empty($this->params->get('workflows'))) {
+            $ids = explode(',', $this->params->get('workflows'));
+            
+            // publised values need to be changed to -2 to aallow deletion
+            if (!empty($ids)) {
+                // Trash the workflows
+                $wfModel->publish($ids, -2);
+                // Then delete them
+                $wfModel->delete($ids);
+            }
+        }
+
+        // Remove the workflow ids from the plugin parameters.
+        $this->params->set('workflows', '');
+        $this->updateParams($this->params);
+
         $response            = [];
         $response['success'] = true;
         $response['message'] = $this->getApplication()->getLanguage()->_('PLG_DEMODATA_FEATURES101_STEP' . $step . '_UNINSTALL_SUCCESS');

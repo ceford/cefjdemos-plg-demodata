@@ -1,4 +1,162 @@
 [{
+    "title":"Blog",
+    "alias":"blog",
+    "level":1,
+    "path":"blog",
+    "extension":"com_content",
+    "language":"*",
+    "description":"<p>A category for blog posts to use in a workflow.</p>",
+    "params": {
+    }
+},
+{
+    "title":"Newsletter",
+    "alias":"newsletter-en-gb",
+    "level":1,
+    "path":"newsletter-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>A category for newsletter articles.</p>",
+    "workflow_title":"Newsletter Workflow",
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
+    "title":"Committee",
+    "alias":"committee-en-gb",
+    "level":1,
+    "path":"committee-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>A category for committee articles.</p>",
+    "workflow_title":"Committee Workflow",
+    "rules":{
+        "core.create":{
+            "Manager":0,"Author":0,"Chair":1,"Secretary":1
+        },
+        "core.delete":{
+            "Manager":0
+        },
+        "core.edit":{
+            "Manager":0,"Editor":0,"Publisher":0,"Chair":1,"Secretary":1
+        },
+        "core.edit.state":{
+            "Manager":0,"Publisher":0,"Chair":1
+        },
+        "core.edit.own":{
+            "Manager":0,"Author":0,"Chair":1,"Secretary":1
+        }
+    },
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
+    "title":"Parliament",
+    "alias":"parliament-en-gb",
+    "level":1,
+    "path":"parliament-en-gb",
+    "extension":"com_contact",
+    "language":"en-GB",
+    "description":"<p>A parent category for Parliamentary contacts.</p>",
+    "rules":{
+        "core.create":{
+            "Manager":0,"Author":0,"Chair":1,"Secretary":1
+        },
+        "core.delete":{
+            "Manager":0
+        },
+        "core.edit":{
+            "Manager":0,"Editor":0,"Publisher":0,"Chair":1,"Secretary":1
+        },
+        "core.edit.state":{
+            "Manager":0,"Publisher":0,"Chair":1
+        },
+        "core.edit.own":{
+            "Manager":0,"Author":0,"Chair":1,"Secretary":1
+        }
+    },
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
+    "title":"Business Committee",
+    "alias":"business-committee-en-gb",
+    "level":2,
+    "parent_alias":"parliament-en-gb",
+    "path":"parliament-en-gb/business-committee-en-gb",
+    "extension":"com_contact",
+    "language":"en-GB",
+    "description":"<p>A category for Parliamentary Business Committee contacts.</p>",
+    "rules":{
+        "core.create":{
+            "Manager":0,"Author":0,"Chair":1,"Secretary":1
+        },
+        "core.delete":{
+            "Manager":0
+        },
+        "core.edit":{
+            "Manager":0,"Editor":0,"Publisher":0,"Chair":1,"Secretary":1
+        },
+        "core.edit.state":{
+            "Manager":0,"Publisher":0,"Chair":1
+        },
+        "core.edit.own":{
+            "Manager":0,"Author":0,"Chair":1,"Secretary":1
+        }
+    },
+    "params": {
+        "category_layout":"cassiopeia:mydefault",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
+    "title":"Culture Committee",
+    "alias":"culture-committee-en-gb",
+    "level":2,
+    "parent_alias":"parliament-en-gb",
+    "path":"parliament-en-gb/culture-committee-en-gb",
+    "extension":"com_contact",
+    "language":"en-GB",
+    "description":"<p>A category for Parliamentary Culture Committee contacts.</p>",
+    "rules":{
+        "core.create":{
+            "Manager":0,"Author":0,"Chair":1,"Secretary":1
+        },
+        "core.delete":{
+            "Manager":0
+        },
+        "core.edit":{
+            "Manager":0,"Editor":0,"Publisher":0,"Chair":1,"Secretary":1
+        },
+        "core.edit.state":{
+            "Manager":0,"Publisher":0,"Chair":1
+        },
+        "core.edit.own":{
+            "Manager":0,"Author":0,"Chair":1,"Secretary":1
+        }
+    },
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
     "title":"About UNESCO",
     "alias":"about-unesco-en-gb",
     "level":1,
@@ -126,5 +284,54 @@
     "extension":"com_contact",
     "language":"*",
     "description":"<p>Child category for Demo contacts Apiary staff.</p>"
+},
+{
+    "title":"Nature",
+    "alias":"nature-en-gb",
+    "level":1,
+    "path":"nature-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>Parent category for articles about the living world.</p>"
+},
+{
+    "title":"Birds",
+    "alias":"nature-birds-en-gb",
+    "parent_alias":"nature-en-gb",
+    "level":2,
+    "path":"nature-en-gb/nature-birds-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>Category for articles about birds.</p>"
+},
+{
+    "title":"Flowers",
+    "alias":"nature-flowers-en-gb",
+    "parent_alias":"nature-en-gb",
+    "level":2,
+    "path":"nature-en-gb/nature-flowers-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>Category for articles about flowers.</p>"
+},
+{
+    "title":"Mammals",
+    "alias":"nature-mammals-en-gb",
+    "parent_alias":"nature-en-gb",
+    "level":2,
+    "path":"nature-en-gb/nature-mammals-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>Category for articles about mammals.</p>"
+},
+{
+    "title":"Trees",
+    "alias":"nature-trees-en-gb",
+    "parent_alias":"nature-en-gb",
+    "level":2,
+    "path":"nature-en-gb/nature-trees-en-gb",
+    "extension":"com_content",
+    "language":"en-GB",
+    "description":"<p>Category for articles about trees.</p>"
 }
 ]

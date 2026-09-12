@@ -1,4 +1,29 @@
-[{
+[
+{
+    "menutype":"demonstrations-en-gb",
+    "title":"Parliamentary Committees",
+    "alias":"parliament-committees-en-gb",
+    "category-alias":"parliament-en-gb",
+    "component":"com_contact",
+    "link":"index.php?option=com_contact&view=categories&id=",
+    "top-level-category": "Parliament (en-GB)",
+    "type":"List All Categories in a Contact Category Tree",
+    "language":"en-GB",
+    "params": {
+    }
+},
+{
+    "menutype":"demonstrations-en-gb",
+    "title":"Featured Contacts",
+    "alias":"featured-contacts-en-gb",
+    "component":"com_contact",
+    "link":"index.php?option=com_contact&view=featured",
+    "type":"Featured Contacts",
+    "language":"en-GB",
+    "params": {
+    }
+},
+{
     "menutype":"heritage-sites-en-gb",
     "title":"About UNESCO",
     "alias":"about-unesco-en-gb",
@@ -391,6 +416,22 @@
 },
 {
     "menutype":"demonstrations-en-gb",
+    "title":"Newsletter",
+    "alias":"newsletter-en-gb",
+    "category-alias":"newsletter-en-gb",
+    "component":"com_content",
+    "link":"index.php?option=com_content&view=category&id=",
+    "component_id":"",
+    "parent_id":"1",
+    "level":"1",
+    "type":"Category List",
+    "language":"en-GB",
+    "access":"1",
+    "params": {
+    }
+},
+{
+    "menutype":"demonstrations-en-gb",
     "title":"Edit User Profile",
     "alias":"edit-user-profile-en-gb",
     "category-alias":"demonstrations-en-gb",
@@ -401,6 +442,39 @@
     "level":"1",
     "type":"Edit User Profile",
     "language":"en-GB",
+    "access":"2",
+    "params": {
+    }
+},
+{
+    "menutype":"demonstrations-en-gb",
+    "title":"Privacy Request",
+    "alias":"privacy-request-en-gb",
+    "category-alias":"demonstrations-en-gb",
+    "component":"com_privacy",
+    "link":"index.php?option=com_privacy&view=request",
+    "component_id":"",
+    "parent_id":"1",
+    "level":"1",
+    "type":"Create Request",
+    "language":"en-GB",
+    "access":"2",
+    "params": {
+    }
+},
+{
+    "menutype":"demonstrations-en-gb",
+    "title":"Committee Papers",
+    "alias":"committee-papers-en-gb",
+    "category-alias":"committee-en-gb",
+    "component":"com_content",
+    "link":"index.php?option=com_content&view=category&id=",
+    "component_id":"",
+    "parent_id":"1",
+    "level":"1",
+    "type":"Category List",
+    "language":"en-GB",
+    "view-level":"Committee",
     "params": {
     }
 },

@@ -1,7 +1,8 @@
-[{
+[
+{
     "title":"Date",
     "category":"",
-    "name":"demo-date",
+    "name":"demo-date-en-gb",
     "label":"Date",
     "default_value":"",
     "context":"com_content.article",
@@ -9,7 +10,7 @@
     "description":"<p>A general purpose date field to use in subforms.</p>",
     "note":"",
     "state":1,
-    "language":"*",
+    "language":"en-GB",
     "only_use_in_subform":"1",
     "params":{
         "showlabel":"1"
@@ -23,7 +24,7 @@
 {
     "title":"W3W",
     "category":"",
-    "name":"w3w",
+    "name":"w3w-en-gb",
     "label":"W3W",
     "default_value":"",
     "context":"com_content.article",
@@ -31,7 +32,7 @@
     "description":"<p>The What Thee Words location of a site.</p>",
     "note":"",
     "state":1,
-    "language":"*",
+    "language":"en-GB",
     "only_use_in_subform":"1",
     "params":{
         "showlabel":"1"
@@ -53,7 +54,7 @@
     "description":"<p>The rating of a site on a scale of 0 to 5.</p>",
     "note":"",
     "state":1,
-    "language":"*",
+    "language":"en-GB",
     "only_use_in_subform":"1",
     "params":{
         "showlabel":"1"
@@ -63,6 +64,91 @@
         "last":"5",
         "step":"1"
     },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Subform Field: Locations",
+    "category":"",
+    "name":"subform-field-locations-en-gb",
+    "label":"Subform Field: Locations",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"subform",
+    "description":"A field to record data from different locations.",
+    "note":"",
+    "state":0,
+    "language":"en-GB",
+    "params":{
+        "hint":"","class":"",
+        "label_class":"",
+        "show_on":"",
+        "showon":"",
+        "render_class":"",
+        "value_render_class":"",
+        "showlabel":"1",
+        "label_render_class":"",
+        "display":"2",
+        "prefix":"",
+        "suffix":"",
+        "layout":"",
+        "display_readonly":"2",
+        "searchindex":"0",
+        "form_layout":""
+    },
+    "fieldparams":{
+        "repeat":"1",
+        "max_rows":"",
+        "options":{
+            "option0":{"customfield":"Date","render_values":"1"},
+            "option1":{"customfield":"W3W","render_values":"1"},
+            "option2":{"customfield":"Rating","render_values":"1"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Nature"
+},
+{
+    "title":"Party",
+    "category":"",
+    "name":"party",
+    "label":"Party",
+    "default_value":"",
+    "context":"com_contact.contact",
+    "type":"text",
+    "description":"<p>The members party affiliation.</p>",
+    "note":"",
+    "state":1,
+    "language":"*",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Constituency",
+    "category":"",
+    "name":"constituency",
+    "label":"Constituency",
+    "default_value":"",
+    "context":"com_contact.contact",
+    "type":"text",
+    "description":"<p>The members constituency.</p>",
+    "note":"",
+    "state":1,
+    "language":"*",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
@@ -186,7 +272,7 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Flowers"
 },
 {
     "title":"Colour: Flower Colour",
@@ -209,7 +295,7 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Flowers"
 },
 {
     "title":"Document: Download",
@@ -284,7 +370,7 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Flowers"
 },
 {
     "title":"List: Distribution",
@@ -483,7 +569,7 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Nature"
 },{
     "title":"Textarea: Classification",
     "category":"demonstrations-en-gb",

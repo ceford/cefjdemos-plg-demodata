@@ -1,0 +1,352 @@
+[{
+    "title":"Blog Workflow",
+    "description":"Blog writing workflow from idea until published and online. Roles: Content Strategist, Copywriter, Graphic Designer, Subject Expert, Content Editor",
+    "published":"1",
+    "access":"1",
+    "extension": "com_content.article",
+    "stages": [
+        {
+            "title" : "Idea",
+            "description" :"Basic stage. Every newly submitted article for Blog.",
+            "default": "1"
+        },
+        {
+            "title" : "Copywriting",
+            "description" :"Copywriter is at work."
+        },
+        {
+            "title" : "Graphic Design",
+            "description" :"Graphic Designer is at work."
+        },
+        {
+            "title" : "Fact Check",
+            "description" :"Fact Checker is at work."
+        },
+        {
+            "title" : "Content Review",
+            "description" :"The article is reviewed, checked for text, illustration, HTML."
+        },
+        {
+            "title" : "Article published!",
+            "description" :"Online and Published."
+        },
+        {
+            "title" : "On Hold",
+            "description" :"On hold, waiting."
+        },
+        {
+            "title" : "Trashed",
+            "description" :"Not accepted"
+        },
+        {
+            "title" : "Unpublished",
+            "description" :"A published article is unpublished and unfeatured"
+        }
+    ],
+    "transitions" : [
+        {
+            "title" : "Write Article",
+            "description":"The content strategist checks any idea which is submitted in category blog.",
+            "from_stage_id" : "Idea",
+            "to_stage_id"   : "Copywriting"
+        },
+        {
+            "title" : "Graphic Design",
+            "description":"The Graphic Designer can now add any illustrations.",
+            "from_stage_id" : "Copywriting",
+            "to_stage_id"   : "Graphic Design"
+        },
+        {
+            "title" : "Check Facts",
+            "description":"The article is complete and must be checked by a subject expert.",
+            "from_stage_id" : "Graphic Design",
+            "to_stage_id"   : "Fact Check"
+        },
+        {
+            "title" : "Review Content",
+            "description":"The complete article is reviewed.",
+            "from_stage_id" : "Fact Check",
+            "to_stage_id"   : "Content Review"
+        },
+        {
+            "title" : "Edit",
+            "description":"The article must be reviewed.",
+            "from_stage_id" : "Content Review",
+            "to_stage_id"   : "Copywriting"
+        },
+        {
+            "title" : "Publish and Feature",
+            "description":"",
+            "from_stage_id" : "Content Review",
+            "to_stage_id"   : "Published",
+            "options" : {
+                "publishing" : "1",
+                "featuring" : "1",
+                "notification_send_mail" : "true",
+                "notification_text" : "Article published!",
+                "notification_groups" : ["7"]
+            }
+        },
+        {
+            "title" : "Set on Hold",
+            "description":"",
+            "from_stage_id" : "-1",
+            "to_stage_id"   : "On Hold",
+            "options" : {
+                "publishing" : "2",
+                "featuring" : "0",
+                "notification_send_mail" : "false"
+            }
+        },
+        {
+            "title" : "Trash",
+            "description":"",
+            "from_stage_id" : "Idea",
+            "to_stage_id"   : "Trashed",
+            "options" : {
+                "publishing" : "-2",
+                "featuring" : "0",
+                "notification_send_mail" : "false"
+            }
+        },
+        {
+            "title" : "Resume Idea",
+            "description":"An article on hold can be resumed as idea.",
+            "from_stage_id" : "On Hold",
+            "to_stage_id"   : "Idea",
+            "options" : {
+            }
+        },
+        {
+            "title" : "Unpublish",
+            "description":"A published article is unpublished.",
+            "from_stage_id" : "Article published!",
+            "to_stage_id"   : "Trashed",
+            "options" : {
+            }
+        },
+        {
+            "title" : "Trash",
+            "description":"Trash a published article.",
+            "from_stage_id" : "Published",
+            "to_stage_id"   : "Not accepted",
+            "options" : {
+            }
+        },
+        {
+            "title" : "Publish again",
+            "description":"Re-activate an unpublished article.",
+            "from_stage_id" : "Unpublished",
+            "to_stage_id"   : "Published",
+            "options" : {
+                "publishing" : "1",
+                "featuring" : "0",
+                "notification_send_mail" : "true",
+                "notification_text" : "Article published!",
+                "notification_groups" : ["7"]
+            }
+        }
+    ]
+},
+{
+    "title":"Committee Workflow",
+    "description":"Workflow for preparation of Committee papers.",
+    "published":"1",
+    "access":"1",
+    "extension": "com_content.article",
+    "stages": [
+        {
+            "title" : "Draft",
+            "description" :"Papers in preparation.",
+            "default": "1"
+        },
+        {
+            "title" : "Review",
+            "description" :"Papers awaiting approval."
+        },
+        {
+            "title" : "Publish",
+            "description" :"Papers published."
+        }
+    ],
+    "transitions" : [
+        {
+            "title" : "Draft to Review",
+            "description":"The Chair checks the papers are accurate.",
+            "from_stage_id" : "Draft",
+            "to_stage_id"   : "Review",
+            "published":1,
+            "options" : {
+                "publishing" : "0",
+                "featuring" : "0"
+            }
+        },
+        {
+            "title" : "Review to Draft",
+            "description":"The Chair requires corrections.",
+            "from_stage_id" : "Review",
+            "to_stage_id"   : "Draft",
+            "published":1,
+            "options" : {
+                "publishing" : "0",
+                "featuring" : "0"
+            }
+        },
+        {
+            "title" : "Review to Publish",
+            "description":"The Chair approves the papers for publication.",
+            "from_stage_id" : "Review",
+            "to_stage_id"   : "Publish",
+            "published":1,
+            "options" : {
+                "publishing" : "1",
+                "featuring" : "0",
+                "notification_send_mail" : "true",
+                "notification_text" : "A committee paper has been published and is now available to view.",
+                "notification_groups" : ["7"]
+            }
+        },
+        {
+            "title" : "Publish to Review",
+            "description":"The Chair requires corrections.",
+            "from_stage_id" : "Publish",
+            "published":1,
+            "to_stage_id"   : "Review",
+            "options" : {
+                "publishing" : "0",
+                "featuring" : "0"
+            }
+        },
+        {
+            "title" : "Publish to Archive",
+            "description":"Change item state from Published to Archived.",
+            "from_stage_id" : "Publish",
+            "to_stage_id"   : "Publish",
+            "published":1,
+            "options" : {
+                "publishing" : "2",
+                "featuring" : "0"
+            }
+        }
+    ]
+},
+{
+    "title":"Newsletter Workflow",
+    "description":"A Workflow for our Newletter.",
+    "published":"1",
+    "access":"1",
+    "extension": "com_content.article",
+    "stages": [
+        {
+            "title" : "Draft",
+            "description" :"Initial article composition.",
+            "default": "1"
+        },
+        {
+            "title" : "Review",
+            "description" :"Fix accuracy, grammar, readability and length."
+        },
+        {
+            "title" : "Approve",
+            "description" :"Final check before publication."
+        },
+        {
+            "title" : "Publish",
+            "description" :"The article is published."
+        },
+        {
+            "title" : "Archive",
+            "description" :"The article is no longer current but needed for reference."
+        },
+        {
+            "title" : "Trash",
+            "description" :"The article is not published and ready for deletion."
+        }
+    ],
+    "transitions" : [
+        {
+            "title" : "Draft to Review",
+            "description":"The Editor checks that the article seems acceptable.",
+            "from_stage_id" : "Draft",
+            "to_stage_id"   : "Review"
+        },
+        {
+            "title" : "Review to Draft",
+            "description":"There Reviewer decides something is wrong - back to author for corrections.",
+            "from_stage_id" : "Review",
+            "to_stage_id"   : "Draft"
+        },
+        {
+            "title" : "Review to Approve",
+            "description":"The reviewer approves the article for publication.",
+            "from_stage_id" : "Review",
+            "to_stage_id"   : "Approve",
+            "options" : {
+                "publishing" : "0",
+                "featuring" : "0",
+                "notification_send_mail" : "true",
+                "notification_text" : "An article has been approved and is now pending publication.",
+                "notification_groups" : ["7"]
+            }
+        },
+        {
+            "title" : "Approve to Review",
+            "description":"The Editor wants the Reviewer to deal with a problem.",
+            "from_stage_id" : "Approve",
+            "to_stage_id"   : "Review",
+            "options" : {
+                "publishing" : "0",
+                "featuring" : "0",
+                "notification_send_mail" : "true",
+                "notification_text" : "An article has been approved but still has problems.",
+                "notification_groups" : ["7"]
+            }
+        },
+        {
+            "title" : "Approve to Publish",
+            "description":"The Editor approves the article for publication.",
+            "from_stage_id" : "Approve",
+            "to_stage_id"   : "Publish",
+            "options" : {
+                "publishing" : "1",
+                "featuring" : "0",
+                "notification_send_mail" : "true",
+                "notification_text" : "An article has been approved and published.",
+                "notification_groups" : ["7"]
+            }
+        },
+        {
+            "title" : "Publish to Approve",
+            "description":"There is a problem with a published article.",
+            "from_stage_id" : "Publish",
+            "to_stage_id"   : "Approve",
+            "options" : {
+                "publishing" : "0",
+                "featuring" : "0",
+                "notification_send_mail" : "true",
+                "notification_text" : "An article has been approved and was published but has been unpublished. Please check the problem.",
+                "notification_groups" : ["7"]
+            }
+        },
+        {
+            "title" : "Publish to Archive",
+            "description":"Change item state from Published to Archived.",
+            "from_stage_id" : "Publish",
+            "to_stage_id"   : "Archive",
+            "options" : {
+                "publishing" : "2",
+                "featuring" : "0"
+            }
+        },
+        {
+            "title" : "All to Trash",
+            "description":"Change item from any state to Trashed pending deletion.",
+            "from_stage_id" : "All",
+            "to_stage_id"   : "Trash",
+            "options" : {
+                "publishing" : "-2",
+                "featuring" : "0"
+            }
+        }
+    ]
+}]

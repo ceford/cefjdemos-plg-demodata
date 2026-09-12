@@ -1,5 +1,70 @@
 [{
     "state":1,
+    "title":"Committee Agenda",
+    "alias":"committee-agenda-en-gb",
+    "category_alias":"committee-en-gb",
+    "language":"en-GB",
+    "text_source":"committee-agenda.html",
+    "metadesc":"Agenda for the AGM.",
+    "created_by_name":"Bob",
+    "created_by_alias":"Bob",
+    "workflow":"Committee Workflow",
+    "stage":"Publish"
+},
+{
+    "state":0,
+    "title":"Committee Minutes",
+    "alias":"committee-minutes-en-gb",
+    "category_alias":"committee-en-gb",
+    "language":"en-GB",
+    "text_source":"committee-minutes.html",
+    "metadesc":"Minutes of the AGM.",
+    "created_by_name":"Bob",
+    "created_by_alias":"Bob",
+    "workflow":"Committee Workflow",
+    "stage":"Draft"
+},
+{
+    "state":1,
+    "title":"October: Water Turns to Blood",
+    "alias":"newsletter-water-turns-to-blood-en-gb",
+    "category_alias":"newsletter-en-gb",
+    "language":"en-GB",
+    "text_source":"october-water-turns-to-blood.html",
+    "metadesc":"An account of the first of 10 plagues to affect ancient Egypt in the time of Moses.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":1,
+    "title":"November: Frogs",
+    "alias":"newsletter-frogs-en-gb",
+    "category_alias":"newsletter-en-gb",
+    "language":"en-GB",
+    "text_source":"november-frogs.html",
+    "metadesc":"An account of the second of 10 plagues to affect ancient Egypt in the time of Moses.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":0,
+    "title":"December: Gnats or Lice",
+    "alias":"newsletter-gnats-or-lice-en-gb",
+    "category_alias":"newsletter-en-gb",
+    "language":"en-GB",
+    "text_source":"december-gnats-or-lice.html",
+    "metadesc":"An account of the third of 10 plagues to affect ancient Egypt in the time of Moses.",
+    "created_by_name":"Eddie",
+    "created_by_alias":"Miriam",
+    "workflow":"Newsletter Workflow",
+    "stage":"Draft"
+},
+{
+    "state":1,
     "title":"Leaving Party",
     "alias":"leaving-party-en-gb",
     "category_alias":"demonstrations-en-gb",
@@ -15,7 +80,8 @@
     "language":"en-GB",
     "text_source":"pop-stats.html",
     "metadesc":"A brief description of population statistics by continent."
-},{
+},
+{
     "state":1,
     "title":"Bluebells",
     "alias":"bluebells-en-gb",
@@ -37,6 +103,18 @@
         "number-en-gb":"7.5",
         "radio-en-gb":"perennial",
         "sql-en-gb":"europe-en-gb",
+        "subform-field-locations-en-gb": {
+            "row0": {
+                    "demo-date-en-gb":"2026-05-12 14:27:17",
+                    "w3w-en-gb":"///camper.bandaged.slower (Dalkeith Country Park)",
+                    "rating-en-gb":"5"
+                },
+            "row1": {
+                "demo-date-en-gb":"2025-06-01 14:27:17",
+                "w3w-en-gb":"ne///vehicle.cubic.played (Roslin Glen)",
+                "rating-en-gb":"4"
+            }
+        },
         "text-en-gb":"Hyacinthoides non-scripta",
         "textarea-en-gb":"Bluebells are a species of flowering plants in the genus Hyacinthoides of the family Asparagaceae.",
         "url-en-gb":"https://en.wikipedia.org/wiki/Hyacinthoides_non-scripta",

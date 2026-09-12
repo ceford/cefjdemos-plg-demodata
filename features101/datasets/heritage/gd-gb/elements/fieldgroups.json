@@ -13,4 +13,20 @@
     "state":1,
     "id":0,
     "language":"gd-GB"
+},
+{
+    "title":"Nàdar",
+    "description":"<p>Buidhnean airson taobhan de nàdar a tha a’ buntainn ri gach beathach is lus.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"gd-GB"
+},
+{
+    "title":"Flùraichean",
+    "description":"<p>Buidhnean airson feartan a tha a’ buntainn ri lusan flùranach a-mhàin.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"gd-GB"
 }]

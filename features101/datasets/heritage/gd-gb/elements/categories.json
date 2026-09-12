@@ -87,5 +87,54 @@
     "extension":"com_content",
     "language":"gd-GB",
     "description":"<p>Artaigilean air an sgrìobhadh gus feartan Joomla a shealltainn.</p>"
+},
+{
+    "title":"Nàdar",
+    "alias":"nature-gd-gb",
+    "level":1,
+    "path":"nature-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Roinn-seòrsa phàrantan airson artaigilean mun t-saoghal bheò.</p>"
+},
+{
+    "title":"Eòin",
+    "alias":"nature-birds-gd-gb",
+    "parent_alias":"nature-gd-gb",
+    "level":2,
+    "path":"nature-gd-gb/nature-birds-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Roinn-seòrsa airson artaigilean mu dheidhinn eòin.</p>"
+},
+{
+    "title":"Flùraichean",
+    "alias":"nature-flowers-gd-gb",
+    "parent_alias":"nature-gd-gb",
+    "level":2,
+    "path":"nature-gd-gb/nature-flowers-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Roinn-seòrsa airson artaigilean mu dheidhinn flùraichean.</p>"
+},
+{
+    "title":"Mamalan",
+    "alias":"nature-mammals-gd-gb",
+    "parent_alias":"nature-gd-gb",
+    "level":2,
+    "path":"nature-gd-gb/nature-mammals-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Roinn-seòrsa airson artaigilean mu mamalan.</p>"
+},
+{
+    "title":"Craobhan",
+    "alias":"nature-trees-gd-gb",
+    "parent_alias":"nature-gd-gb",
+    "level":2,
+    "path":"nature-gd-gb/nature-trees-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Roinn-seòrsa airson artaigilean mu chraobhan.</p>"
 }
 ]

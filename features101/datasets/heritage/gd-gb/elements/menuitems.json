@@ -400,6 +400,22 @@
 },
 {
     "menutype":"demonstrations-gd-gb",
+    "title":"Iarrtas Prìobhaideachd",
+    "alias":"privacy-request-gd-gb",
+    "category-alias":"demonstrations-gd-gb",
+    "component":"com_privacy",
+    "link":"index.php?option=com_privacy&view=request",
+    "component_id":"",
+    "parent_id":"1",
+    "level":"1",
+    "type":"Create Request",
+    "language":"gd-GB",
+    "access":"2",
+    "params": {
+    }
+},
+{
+    "menutype":"demonstrations-gd-gb",
     "title":"Foirm Clàraidh a-steach",
     "alias":"login-form-gd-gb",
     "category-alias":"demonstrations-gd-gb",
