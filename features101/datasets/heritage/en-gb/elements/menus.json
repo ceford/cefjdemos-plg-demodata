@@ -9,4 +9,10 @@
     "title":"Demonstrations",
     "description":"Menu for various Joomla demonstrations",
     "menutype":"demonstrations-en-gb"
+},
+{
+    "id":"0",
+    "title":"Menu Tree",
+    "description":"Demonstration of a permanently open menu tree",
+    "menutype":"menu-tree-en-gb"
 }]

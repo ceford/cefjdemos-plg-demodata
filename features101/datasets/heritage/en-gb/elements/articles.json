@@ -83,6 +83,15 @@
 },
 {
     "state":1,
+    "title":"Bluebell Poetry",
+    "alias":"bluebell-poetry-en-gb",
+    "category_alias":"demonstrations-en-gb",
+    "language":"en-GB",
+    "text_source":"bluebell-poetry.html",
+    "hits":"17"
+},
+{
+    "state":1,
     "title":"Bluebells",
     "alias":"bluebells-en-gb",
     "category_alias":"demonstrations-en-gb",
@@ -152,7 +161,7 @@
         "location-en-gb":"N53 24 24 W2 59 40",
         "year-of-inscription-en-gb":"2004"
     },
-    "tags": ["cultural-en-gb"],
+    "tags": ["cultural-site-en-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/liverpool-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-200.jpg?width=200&height=123",
         "image_intro_alt":"The Liverpool waterfront and Liver Building",
@@ -175,7 +184,7 @@
         "location-en-gb":"S33 51 24 E151 12 55",
         "year-of-inscription-en-gb":"2007"
     },
-    "tags": ["cultural-en-gb"],
+    "tags": ["cultural-site-en-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/sydney-opera-house-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-200.jpg?width=200&height=150",
         "image_intro_alt":"An aerial view of Sydney Opera House",
@@ -199,7 +208,7 @@
         "location-en-gb":"S18 17 10 E147 41 60",
         "year-of-inscription-en-gb":"1981"
     },
-    "tags": ["natural-en-gb"],
+    "tags": ["natural-site-en-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/great-barrier-reef-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-200.jpg?width=200&height=133",
         "image_intro_alt":"A group of reef building corals",
@@ -207,30 +216,6 @@
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/great-barrier-reef-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-400.jpg?width=400&height=267",
         "image_fulltext_alt":"A group of reef building corals",
-        "float_fulltext":"float-end ms-3",
-        "image_fulltext_caption":""
-    }
-},
-{
-    "state":1,
-    "title":"Giant's Causeway",
-    "alias":"giants-causeway-en-gb",
-    "category_alias":"europe-en-gb",
-    "language":"en-GB",
-    "text_source":"giants-causeway.html",
-    "featured": "1",
-    "fields": {
-        "location-en-gb":"N55 14 27 W6 30 42",
-        "year-of-inscription-en-gb":"1986"
-    },
-    "tags": ["natural-en-gb"],
-    "images": {
-        "image_intro":"images\/demodata\/heritage\/giants-causeway-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-200.jpg?width=200&height=143",
-        "image_intro_alt":"Basalt columns formed in a thick horizontal sheet of magma",
-        "float_intro":"",
-        "image_intro_caption":"",
-        "image_fulltext":"images\/demodata\/heritage\/giants-causeway-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-400.jpg?width=400&height=286",
-        "image_fulltext_alt":"Basalt columns formed in a thick horizontal sheet of magma",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
@@ -246,7 +231,7 @@
         "location-en-gb":" N37 58 15.132 E23 43 34.248 ",
         "year-of-inscription-en-gb":"1987"
     },
-    "tags": ["cultural-en-gb"],
+    "tags": ["cultural-site-en-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/acropolis-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-200.jpg?width=200&height=133",
         "image_intro_alt":"Ruins originally built on a commanding flat hilltop",
@@ -270,7 +255,7 @@
         "location-en-gb":"N27 10 27.012 E78 2 31.992",
         "year-of-inscription-en-gb":"1983"
     },
-    "tags": ["cultural-en-gb"],
+    "tags": ["cultural-site-en-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/taj-mahal-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-200.jpg?width=200&height=200",
         "image_intro_alt":"The stunning approach to a lavish palace",
@@ -293,7 +278,7 @@
         "location-en-gb":"",
         "year-of-inscription-en-gb":"1987"
     },
-    "tags": ["cultural-en-gb"],
+    "tags": ["cultural-site-en-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/great-wall-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-200.jpg?width=200&height=279",
         "image_intro_alt":"A section of the great wall built in stone over hilly terrain",
@@ -316,7 +301,7 @@
         "location-en-gb":"N0 41 23.496 W90 30 4.748",
         "year-of-inscription-en-gb":"2001"
     },
-    "tags": ["natural-en-gb"],
+    "tags": ["natural-site-en-gb", "volcanic-site-en-gb", "wildlife-site-en-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/galapagos-2-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-200.jpg?width=200&height=133",
         "image_intro_alt":"Giant tortoises unique to Galapagos",
@@ -340,7 +325,7 @@
         "location-en-gb":"S13 11 5.762 W72 32 0.395",
         "year-of-inscription-en-gb":"1983"
     },
-    "tags": ["cultural-en-gb"],
+    "tags": ["cultural-site-en-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/machu-picchu-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-200.jpg?width=200&height=150",
         "image_intro_alt":"Classic view of the hilltop ruins",
@@ -354,17 +339,41 @@
 },
 {
     "state":1,
+    "title":"Giant's Causeway",
+    "alias":"giants-causeway-en-gb",
+    "category_alias":"europe-en-gb",
+    "language":"en-GB",
+    "text_source":"giants-causeway.html",
+    "featured": "1",
+    "fields": {
+        "location-en-gb":"N55 14 27 W6 30 42",
+        "year-of-inscription-en-gb":"1986"
+    },
+    "tags": ["natural-site-en-gb", "volcanic-site-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giants-causeway-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-200.jpg?width=200&height=143",
+        "image_intro_alt":"Basalt columns formed in a thick horizontal sheet of magma",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giants-causeway-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-400.jpg?width=400&height=286",
+        "image_fulltext_alt":"Basalt columns formed in a thick horizontal sheet of magma",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
     "title":"Pyramids of Giza",
     "alias":"pyramids-of-giza-en-gb",
     "category_alias":"africa-en-gb",
     "language":"en-GB",
-    "featured": "1",
+    "featured": "0",
     "text_source":"pyramids-of-giza.html",
     "fields": {
         "location-en-gb":"",
         "year-of-inscription-en-gb":"1979"
     },
-    "tags": ["cultural-en-gb"],
+    "tags": ["cultural-site-en-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/giza-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-200.jpg?width=200&height=133",
         "image_intro_alt":"The Sphinx with the Pyramid of Giza behind",
@@ -387,7 +396,7 @@
         "location-en-gb":"S2 44 24 E34 51 32.4",
         "year-of-inscription-en-gb":"1981"
     },
-    "tags": ["natural-en-gb"],
+    "tags": ["natural-site-en-gb", "wildlife-site-en-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
         "image_intro_alt":"Elephants and zebras",
@@ -401,12 +410,37 @@
 },
 {
     "state":1,
+    "title":"Ngorongoro Conservation Area",
+    "alias":"ngorongoro-conservation-area-en-gb",
+    "category_alias":"africa-en-gb",
+    "language":"en-GB",
+    "text_source":"ngorongoro-conservation-area.html",
+    "featured": "1",
+    "fields": {
+        "location-en-gb":"S S3 11 13.992 E35 32 26.988",
+        "year-of-inscription-en-gb":"1979"
+    },
+    "tags": ["natural-site-en-gb", "volcanic-site-en-gb", "wildlife-site-en-gb"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/ngorongoro-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-200.jpg?width=200&height=133",
+        "image_intro_alt":"Animals roam the crater floor with the crater wall in the distance",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/ngorongoro-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Animals roam the crater floor with the crater wall in the distance",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
     "title":"About UNESCO Sites",
     "alias":"about-unesco-sites-en-gb",
     "category_alias":"about-unesco-en-gb",
     "language":"en-GB",
     "text_source":"about-unesco-sites.html",
     "hits":"135",
+    "metadesc":"A brief introduction to the UNESCO World Heritage Sites.",
     "images": {
         "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
         "image_intro_alt":"Elephants and zebras",

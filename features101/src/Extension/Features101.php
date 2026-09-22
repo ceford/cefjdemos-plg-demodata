@@ -1164,6 +1164,14 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     }
                 }
 
+                // Set some dates
+                $start = strtotime('-2 year');
+                $end   = strtotime('-1 year');
+                $timestamp = random_int($start, $end);
+                $random_date = date('Y-m-d H:i:s', $timestamp);
+                $article['publish_up'] = $random_date;
+                $article['created'] = $random_date;
+
                 if (!$articleModel->save($article)) {
                     $response            = [];
                     $response['success'] = false;
@@ -1198,20 +1206,19 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $db->execute();
                 }
 
-                // If hits is not zero update it now
-                if (!empty($article['hits'])) {
-                    $query = $db->createQuery();
-                    $query->update($db->quoteName('#__content'))
-                        ->set($db->quoteName('hits') . ' = ' . $article['hits'])
-                        ->where($db->quoteName('id') . ' = ' . $id);
-                    $db->setQuery($query);
-                    $db->execute();
-                }
+                // Set a random number of hits
+                $hits = random_int(50, 1000);
+                $query = $db->createQuery();
+                $query->update($db->quoteName('#__content'))
+                    ->set($db->quoteName('hits') . ' = ' . $hits)
+                    ->where($db->quoteName('id') . ' = ' . $id);
+                $db->setQuery($query);
+                $db->execute();
 
                 // Add the fields
                 if (!empty($article['fields'])) {
                     foreach ($article['fields'] as $field_name => $value) {
-                        $field_value = '';
+                        $field_value = $value;
                         // get the field_id from its name
                         $query = $db->createQuery();
                         $query
@@ -1925,10 +1932,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $menuitem['template_style_id'] = 0;
                 }
 
-                // Set parent_id to root (1) if not set
-                if (!isset($menuitem['parent_id'])) {
-                    $menuitem['parent_id'] = 1;
-                }
+                // Set the params to default values if not set
 
                 if ($menuitem['type'] == 'Single Article') {
                     // If a single article get the article id from the article alias
@@ -1998,13 +2002,29 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                         ->from($db->quoteName('#__categories'))
                         ->where($db->quoteName('alias') . '=:alias')
                         ->bind(':alias', $menuitem['category-alias'], ParameterType::STRING);
-                    $test = $query->__tostring();
                     $db->setQuery($query);
                     $cat_id = $db->loadResult();
                     $menuitem['link'] .= $cat_id;
+                } else if ($menuitem['type'] == 'Menu Item Alias') {
+                    // Get the id of the aliased menu item
+                    $query = $db->createQuery();
+                    $query
+                        ->select($db->quoteName('id'))
+                        ->from($db->quoteName('#__menu'))
+                        ->where($db->quoteName('title') . '=:alias')
+                        ->bind(':alias', $menuitem['params']['aliasoptions'], ParameterType::STRING);
+                    $db->setQuery($query);
+                    $mi_id = $db->loadResult();
+                    $menuitem['params']['aliasoptions'] = $mi_id;
                 }
-
-                $menuitem['type'] = 'component';
+                
+                if (!empty($menuitem['type']) && $menuitem['type'] == 'Menu Heading') {
+                    $menuitem['type'] = 'heading';
+                } else if (!empty($menuitem['type']) && $menuitem['type'] == 'Menu Item Alias') {
+                    $menuitem['type'] = 'alias';
+                } else {
+                    $menuitem['type'] = 'component';
+                }
 
                 // If the parent_id is 0 get the parent from its alias
                 if (empty($menuitem['parent_id'])) {
@@ -2013,7 +2033,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                         ->select($db->quoteName('id'))
                         ->from($db->quoteName('#__menu'))
                         ->where($db->quoteName('alias') . '=:alias')
-                        ->bind(':alias', $menuitem['parent-alias'], ParameterType::STRING);
+                        ->bind(':alias', $menuitem['parent_alias'], ParameterType::STRING);
                     $db->setQuery($query);
                     $menuitem['parent_id'] = $db->loadResult();
                 }
@@ -2116,6 +2136,20 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $module['published'] = 1;
                 }
                 
+                if (isset($module['module']) && $module['module'] == 'mod_tags_popular') {
+                    // Look up the id of the parent tag using its alias - only allows for one tag
+                    $query = $db->createQuery();
+                    $query
+                        ->select($db->quoteName('id'))
+                        ->from($db->quoteName('#__tags'))
+                        ->where($db->quoteName('alias') . '=:alias')
+                        ->bind(':alias', $module['parent_tag_alias'], ParameterType::STRING);
+                    $db->setQuery($query);
+                    $tag_id = $db->loadResult();
+                    $module['params']['parentTag'] = [$tag_id];
+                    unset($module['parent_tag_alias']);
+                }
+
                 if (!$moduleModel->save($module)) {
                     $response            = [];
                     $response['success'] = false;

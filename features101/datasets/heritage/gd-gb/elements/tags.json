@@ -1,19 +1,65 @@
-[
-{
-    "title":"Cultarach",
-    "alias":"cultural-gd-gb",
-    "description":"<p>Làraichean a chaidh a sheòrsachadh mar làraichean luachmhor air sgàth an cultar.</p>",
+[{
+    "title":"Tagaichean Gàidhlig",
+    "alias":"tags-gd-gb",
+    "description":"<p>Pàrant airson tagaichean Gàidhlig airson an cleachdadh ann am modalan.</p>",
     "parent_alias":"",
     "language":"gd-GB",
     "published":1,
-    "id":0
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
 },
 {
-    "title":"Nàdarra",
-    "alias":"natural-gd-gb",
-    "description":"<p>Làraichean a chaidh a sheòrsachadh mar làraichean luachmhor air sgàth an nàdair.</p>",
-    "parent_alias":"",
+    "title":"Làrach Cultarach",
+    "alias":"cultural-site-gd-gb",
+    "description":"<p>Làraichean a chaidh a sheòrsachadh mar làraichean luachmhor air sgàth an cultar.</p>",
+    "parent_alias":"tags-gd-gb",
     "language":"gd-GB",
     "published":1,
-    "id":0
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"Làrach Nàdarra",
+    "alias":"natural-site-gd-gb",
+    "description":"<p>Làraichean a chaidh a sheòrsachadh mar làraichean luachmhor air sgàth an nàdair.</p>",
+    "parent_alias":"tags-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"Làrach Bholcànach",
+    "alias":"volcanic-site-gd-gb",
+    "description":"<p>Làraichean a tha co-cheangailte ri gnìomhachd bholcànach an-dràsta no san àm a dh'fhalbh.</p>",
+    "parent_alias":"tags-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"Fiadh-bheatha",
+    "alias":"wildlife-site-gd-gb",
+    "description":"<p>Làraichean a tha ainmeil airson am beathaichean fiadhaich.</p>",
+    "parent_alias":"tags-gd-gb",
+    "language":"gd-GB",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
 }]

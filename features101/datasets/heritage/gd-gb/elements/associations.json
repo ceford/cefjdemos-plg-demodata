@@ -64,6 +64,13 @@
 {
     "context":"com_menus.item",
     "alias":{
+        "en-GB":"sites-inscribed-in-1978-en-gb",
+        "gd-GB":"sites-inscribed-in-1978-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
         "en-GB":"edit-user-profile-en-gb",
         "gd-GB":"edit-user-profile-gd-gb"
     }
@@ -87,6 +94,13 @@
     "alias":{
         "en-GB":"serengeti-national-park-en-gb",
         "gd-GB":"serengeti-national-park-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"ngorongoro-conservation-area-en-gb",
+        "gd-GB":"ngorongoro-conservation-area-gd-gb"
     }
 },
 {

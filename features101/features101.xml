@@ -47,11 +47,28 @@
 					<option value="0">JNO</option>
 					<option value="1">JYES</option>
 				</field>
+
+
+
 				<field
-					name="users"
+					name="workflows"
 					type="text"
-					label="PLG_DEMODATA_FEATURES101_USERS_LABEL"
-					description="PLG_DEMODATA_FEATURES101_USERS_DESC"
+					label="PLG_DEMODATA_FEATURES101_WORKFLOWS_LABEL"
+					description="PLG_DEMODATA_FEATURES101_WORKFLOWS_DESC"
+					readonly="readonly"
+				/>
+				<field
+					name="workflowstages"
+					type="text"
+					label="PLG_DEMODATA_FEATURES101_WORKFLOWSTAGES_LABEL"
+					description="PLG_DEMODATA_FEATURES101_WORKFLOWSTAGES_DESC"
+					readonly="readonly"
+				/>
+				<field
+					name="workflowtransitions"
+					type="text"
+					label="PLG_DEMODATA_FEATURES101_WORKFLOWTRANSITIONS_LABEL"
+					description="PLG_DEMODATA_FEATURES101_WORKFLOWTRANSITIONS_DESC"
 					readonly="readonly"
 				/>
 				<field
@@ -59,6 +76,13 @@
 					type="text"
 					label="PLG_DEMODATA_FEATURES101_USERGROUPS_LABEL"
 					description="PLG_DEMODATA_FEATURES101_USERGROUPS_DESC"
+					readonly="readonly"
+				/>
+				<field
+					name="users"
+					type="text"
+					label="PLG_DEMODATA_FEATURES101_USERS_LABEL"
+					description="PLG_DEMODATA_FEATURES101_USERS_DESC"
 					readonly="readonly"
 				/>
 				<field
@@ -108,27 +132,6 @@
 					type="text"
 					label="PLG_DEMODATA_FEATURES101_FIELDS_LABEL"
 					description="PLG_DEMODATA_FEATURES101_FIELDS_DESC"
-					readonly="readonly"
-				/>
-				<field
-					name="workflows"
-					type="text"
-					label="PLG_DEMODATA_FEATURES101_WORKFLOWS_LABEL"
-					description="PLG_DEMODATA_FEATURES101_WORKFLOWS_DESC"
-					readonly="readonly"
-				/>
-				<field
-					name="workflowstages"
-					type="text"
-					label="PLG_DEMODATA_FEATURES101_WORKFLOWSTAGES_LABEL"
-					description="PLG_DEMODATA_FEATURES101_WORKFLOWSTAGES_DESC"
-					readonly="readonly"
-				/>
-				<field
-					name="workflowtransitions"
-					type="text"
-					label="PLG_DEMODATA_FEATURES101_WORKFLOWTRANSITIONS_LABEL"
-					description="PLG_DEMODATA_FEATURES101_WORKFLOWTRANSITIONS_DESC"
 					readonly="readonly"
 				/>
 				<field

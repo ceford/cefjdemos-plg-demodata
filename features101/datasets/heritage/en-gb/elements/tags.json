@@ -1,19 +1,66 @@
 [
 {
-    "title":"Cultural",
-    "alias":"cultural-en-gb",
-    "description":"<p>Sites that have been classified as of value for their culture.</p>",
+    "title":"English Tags",
+    "alias":"tags-en-gb",
+    "description":"<p>A parent for English tags for use in modules.</p>",
     "parent_alias":"",
     "language":"en-GB",
     "published":1,
-    "id":0
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
 },
 {
-    "title":"Natural",
-    "alias":"natural-en-gb",
-    "description":"<p>Sites that have been classified as of value for their nature.</p>",
-    "parent_alias":"",
+    "title":"Cultural Site",
+    "alias":"cultural-site-en-gb",
+    "description":"<p>Sites that have been classified as of value for their culture.</p>",
+    "parent_alias":"tags-en-gb",
     "language":"en-GB",
     "published":1,
-    "id":0
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"Natural Site",
+    "alias":"natural-site-en-gb",
+    "description":"<p>Sites that have been classified as of value for their nature.</p>",
+    "parent_alias":"tags-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"Volcanic Site",
+    "alias":"volcanic-site-en-gb",
+    "description":"<p>Sites that are related to current or past volcanic activity.</p>",
+    "parent_alias":"tags-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"Wildlife",
+    "alias":"wildlife-site-en-gb",
+    "description":"<p>Sites that are noted for their animal wildlife.</p>",
+    "parent_alias":"tags-en-gb",
+    "language":"en-GB",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
 }]

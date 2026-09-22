@@ -63,4 +63,15 @@
     "params": {
         "allowTourAutoStart":"0"
     }
+},
+{
+    "name": "Maggie",
+    "username": "maggie",
+    "email": "maggie@example.com",
+    "groups": "Magazine Reviewers",
+    "id": "0",
+    "block": "0",
+    "params": {
+        "allowTourAutoStart":"0"
+    }
 }]
