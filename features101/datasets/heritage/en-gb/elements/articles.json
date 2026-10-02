@@ -1,9 +1,9 @@
 [{
     "state":1,
     "title":"Committee Agenda",
-    "alias":"committee-agenda-en-gb",
-    "category_alias":"committee-en-gb",
-    "language":"en-GB",
+    "alias":"committee-agenda",
+    "category_alias":"committee",
+    "language":"*",
     "text_source":"committee-agenda.html",
     "metadesc":"Agenda for the AGM.",
     "created_by_name":"Bob",
@@ -14,9 +14,9 @@
 {
     "state":0,
     "title":"Committee Minutes",
-    "alias":"committee-minutes-en-gb",
-    "category_alias":"committee-en-gb",
-    "language":"en-GB",
+    "alias":"committee-minutes",
+    "category_alias":"committee",
+    "language":"*",
     "text_source":"committee-minutes.html",
     "metadesc":"Minutes of the AGM.",
     "created_by_name":"Bob",
@@ -88,7 +88,8 @@
     "category_alias":"demonstrations-en-gb",
     "language":"en-GB",
     "text_source":"bluebell-poetry.html",
-    "hits":"17"
+    "hits":"17",
+    "metadesc":"A poem about bluebells by John Clare (1793-1864)."
 },
 {
     "state":1,
@@ -98,11 +99,12 @@
     "language":"en-GB",
     "text_source":"bluebells.html",
     "hits":"17",
+    "metadesc":"A brief description of the appearance, distribution and social role of bluebell flowers.",
     "fields": {
         "audio-en-gb":"{\"file\":\"files\/demodata\/heritage\/one-summer.mp3\"}",
         "calendar-en-gb":"2024-04-01",
         "checkboxes-en-gb":{"0":"1","1":"3"},
-        "colour-en-gb":"#4e3ac2",
+        "color-en-gb":"#4e3ac2",
         "document-en-gb":"{\"file\":\"files\/demodata\/heritage\/lorem-ipsum.txt\"}",
         "editor-en-gb":"Bluebells grow best in partial shade with moist, well-drained soil that's rich in organic matter.",
         "integer-en-gb":"5",
@@ -157,6 +159,7 @@
     "category_alias":"europe-en-gb",
     "language":"en-GB",
     "text_source":"liverpool.html",
+    "metadesc":"The docklands area of the City of Liverpool",
     "fields": {
         "location-en-gb":"N53 24 24 W2 59 40",
         "year-of-inscription-en-gb":"2004"
@@ -204,6 +207,7 @@
     "language":"en-GB",
     "text_source":"great-barrier-reef.html",
     "featured": "1",
+    "metadesc":"A brief description of a site remarkable variety and beauty on the north-east coast of Australia",
     "fields": {
         "location-en-gb":"S18 17 10 E147 41 60",
         "year-of-inscription-en-gb":"1981"
@@ -227,6 +231,7 @@
     "category_alias":"europe-en-gb",
     "language":"en-GB",
     "text_source":"acropolis-of-athens.html",
+    "metadesc":"An outline of universal symbols of the classical spirit and civilization.",
     "fields": {
         "location-en-gb":" N37 58 15.132 E23 43 34.248 ",
         "year-of-inscription-en-gb":"1987"
@@ -251,6 +256,7 @@
     "language":"en-GB",
     "featured": "1",
     "text_source":"taj-mahal.html",
+    "metadesc":"An immense mausoleum of white marble...",
     "fields": {
         "location-en-gb":"N27 10 27.012 E78 2 31.992",
         "year-of-inscription-en-gb":"1983"
@@ -274,6 +280,7 @@
     "category_alias":"asia-en-gb",
     "language":"en-GB",
     "text_source":"great-wall-of-china.html",
+    "metadesc":"An introduction to an enormous defensive military structure.",
     "fields": {
         "location-en-gb":"",
         "year-of-inscription-en-gb":"1987"
@@ -297,6 +304,7 @@
     "category_alias":"americas-en-gb",
     "language":"en-GB",
     "text_source":"galapagos-islands.html",
+    "metadesc":"The 19 islands and the surrounding marine reserve have been called a unique <em>living museum and showcase of evolution</em>.",
     "fields": {
         "location-en-gb":"N0 41 23.496 W90 30 4.748",
         "year-of-inscription-en-gb":"2001"
@@ -321,6 +329,7 @@
     "language":"en-GB",
     "featured": "1",
     "text_source":"machu-picchu.html",
+    "metadesc":"A brief description of this site standing 2,430m above sea-level, in the middle of a tropical mountain forest.",
     "fields": {
         "location-en-gb":"S13 11 5.762 W72 32 0.395",
         "year-of-inscription-en-gb":"1983"
@@ -345,6 +354,7 @@
     "language":"en-GB",
     "text_source":"giants-causeway.html",
     "featured": "1",
+    "metadesc":"Explore the basalt cliffs along the sea coast on the edge of the Antrim plateau in Northern Ireland",
     "fields": {
         "location-en-gb":"N55 14 27 W6 30 42",
         "year-of-inscription-en-gb":"1986"
@@ -369,6 +379,7 @@
     "language":"en-GB",
     "featured": "0",
     "text_source":"pyramids-of-giza.html",
+    "metadesc":"Marvel at the extraordinary funerary monuments in the Old Kingdom of Egypt.",
     "fields": {
         "location-en-gb":"",
         "year-of-inscription-en-gb":"1979"
@@ -392,6 +403,7 @@
     "category_alias":"africa-en-gb",
     "language":"en-GB",
     "text_source":"serengeti-national-park.html",
+    "metadesc":"Explore the vast plains of the Serengeti and watch the annual migration of vast herds of herbivores followed by their predators.",
     "fields": {
         "location-en-gb":"S2 44 24 E34 51 32.4",
         "year-of-inscription-en-gb":"1981"
@@ -416,6 +428,7 @@
     "language":"en-GB",
     "text_source":"ngorongoro-conservation-area.html",
     "featured": "1",
+    "metadesc":"Vast expanses of highland plains, savanna, woodlands and forests with wildlife coexisting with semi-nomadic Maasai pastoralists.",
     "fields": {
         "location-en-gb":"S S3 11 13.992 E35 32 26.988",
         "year-of-inscription-en-gb":"1979"

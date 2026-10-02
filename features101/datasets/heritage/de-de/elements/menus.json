@@ -1,0 +1,18 @@
+[{
+    "id":"0",
+    "title":"Welterbestätten",
+    "description":"Das Welterbestätten-Menü",
+    "menutype":"heritage-sites-de-de"
+},
+{
+    "id":"0",
+    "title":"Demonstrationen",
+    "description":"Menü für verschiedene Joomla-Demonstrationszwecke",
+    "menutype":"demonstrations-de-de"
+},
+{
+    "id":"0",
+    "title":"Menübaum",
+    "description":"Demonstration eines permanent geöffneten Menübaums",
+    "menutype":"menu-tree-de-de"
+}]

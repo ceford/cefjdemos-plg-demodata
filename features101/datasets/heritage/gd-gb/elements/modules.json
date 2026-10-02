@@ -1,4 +1,53 @@
 [{
+    "title"     : "Teachdaireachd an t-siostaim",
+    "client_id" : 1,
+    "ordering"  : 1,
+    "position"  : "top",
+    "module"    : "mod_custom",
+    "showtitle" : 1,
+    "language":"en-GB",
+    "published":0,
+    "content":"<p class=\"p1-2\">A Houston, tha trioblaid againn!</p>",
+    "params": {
+        "prepare_content":0,
+        "backgroundimage":"",
+        "layout":"_:default",
+        "moduleclass_sfx":"w-50 ms-auto me-auto text-danger text-center border border-danger border-1 bg-warning-subtle",
+        "cache":1,
+        "cache_time":900,
+        "cachemode":"static",
+        "module_tag":"div",
+        "bootstrap_size":"0",
+        "header_tag":"h3",
+        "header_class":"text-danger border-bottom border-danger bg-danger-subtle pt-3 pb-3",
+        "style":"0"
+    }
+},
+{
+    "title"     : "Teachdaireachd na Làraich",
+    "ordering"  : 1,
+    "position"  : "sidebar-left",
+    "module"    : "mod_custom",
+    "showtitle" : 1,
+    "language":"gd-GB",
+    "published":0,
+    "content":"<p>Dùinidh an làrach seo bho 13:00 gu 14:00 an-diugh airson cumail suas an t-siostaim.</p>",
+    "params": {
+        "prepare_content":0,
+        "backgroundimage":"",
+        "layout":"_:default",
+        "moduleclass_sfx":"text-green border border-success border-1 bg-light-subtle",
+        "cache":1,
+        "cache_time":900,
+        "cachemode":"static",
+        "module_tag":"div",
+        "bootstrap_size":"0",
+        "header_tag":"h3",
+        "header_class":"blue border-bottom border-success bg-success-subtle",
+        "style":"0"
+    }
+},
+{
     "title"     : "Ìomhaigh air thuaiream",
     "ordering"  : 1,
     "position"  : "sidebar-left",
@@ -13,11 +62,11 @@
         "width":200,
         "height":"",
         "layout":"_:default",
-        "moduleclass_sfx":"",
+        "moduleclass_sfx":"text-green border border-success border-1 bg-light-subtle",
         "module_tag":"div",
         "bootstrap_size":"0",
         "header_tag":"h3",
-        "header_class":"",
+        "header_class":"blue border-bottom border-success bg-success-subtle",
         "style":"0"
     }
 },

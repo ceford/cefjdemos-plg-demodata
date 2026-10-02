@@ -1176,10 +1176,11 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $response            = [];
                     $response['success'] = false;
                     $response['message'] = Text::sprintf('PLG_DEMODATA_ARTICLES_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($articleModel->getError()));
-                    file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $response['message'], FILE_APPEND);
+                    file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $response['message'] . "\n", FILE_APPEND);
+                    file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $article['alias'] . "\n", FILE_APPEND);
 
                     $event->addResult($response);
-                    return;
+                    continue;
                 }
 
                 // Get ID from article we just added
@@ -1313,6 +1314,11 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
         // Get the items to be installed from the last $language.
         foreach($languages as $language) {
+
+            // Do not install Associations for en-GB, but present to help create translation
+            if ($language == 'en-gb') {
+                continue;
+            }
 
             $file = __DIR__ . "/../../datasets/{$dataset}/{$language}/elements/associations.json";
             if (!is_file($file)) {
@@ -2072,7 +2078,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $db    = $this->getDatabase();
         $access  = (int) $this->getApplication()->get('access', 1);
 
-        // Install the Menus
+        // Install the Modules
         $mvcFactory = $this->getApplication()->bootComponent('com_modules')->getMVCFactory();
         $moduleModel = $mvcFactory->createModel('Module', 'Administrator', ['ignore_request' => true]);
         $module_ids = [];
@@ -2085,6 +2091,13 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
         // Need the already installed banners clients - make an array.
         $clientslist = explode(',', $this->params->get('clients'));
+
+        // Get the current maximum order number
+        $query = $db->createQuery()
+            ->select('MAX(' . $db->quoteName('ordering') . ')')
+            ->from($db->quoteName('#__modules'));
+        $db->setQuery($query);
+        $max = $db->loadResult();
 
         // Get the fields to be installed from the $language.
         foreach($languages as $language) {
@@ -2100,6 +2113,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 $module['id']         = 0;
                 $module['asset_id']   = 0;
                 $module['note']       = '';
+                $max += 1;
+                $module['ordering'] = $max;
 
                 // Get the id of the menu item containing the menu-base-alias
                 $query = $db->createQuery();

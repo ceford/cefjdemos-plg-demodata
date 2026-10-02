@@ -1,0 +1,31 @@
+[{
+    "title":"தளத் தரவு",
+    "description":"<p>பாரம்பரியத் தளத் தரவைக் கொண்ட புலங்களின் குழு.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"ta-IN"
+},{
+    "title":"விளக்கங்கள்",
+    "description":"<p>ஒவ்வொரு வகை புலத்தையும் விளக்குவதற்குப் பயன்படுத்தப்படும் புலங்களின் குழு.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"ta-IN"
+},
+{
+    "title":"இயற்கை",
+    "description":"<p>அனைத்து விலங்குகள் மற்றும் தாவரங்களுக்கும் பொருந்தும் இயற்கையின் அம்சங்களுக்கான குழு.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"ta-IN"
+},
+{
+    "title":"மலர்கள்",
+    "description":"<p>பூக்கும் தாவரங்களுக்கு மட்டுமே பொருந்தும் புலங்கள்.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"ta-IN"
+}]

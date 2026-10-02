@@ -1,0 +1,31 @@
+[{
+    "title":"Stättendaten",
+    "description":"<p>Dies ist eine Gruppe von Feldern, die Daten zur Welterbestätte enthalten.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"de-DE"
+},{
+    "title":"Demonstrationen",
+    "description":"<p>Dies ist eine Gruppe von Feldern zur Demonstration der einzelnen Feldtypen.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"de-DE"
+},
+{
+    "title":"Natur",
+    "description":"<p>Gruppe für Aspekte der Natur, die für alle Tiere und Pflanzen gelten.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"de-DE"
+},
+{
+    "title":"Blumen",
+    "description":"<p>Felder, die nur für Blütenpflanzen gelten.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"de-DE"
+}]

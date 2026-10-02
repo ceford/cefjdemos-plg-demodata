@@ -1,0 +1,18 @@
+[{
+    "id":"0",
+    "title":"பாரம்பரியத் தளங்கள்",
+    "description":"பாரம்பரியத் தளங்கள் மெனு",
+    "menutype":"heritage-sites-ta-in"
+},
+{
+    "id":"0",
+    "title":"விளக்கங்கள்",
+    "description":"பல்வேறு ஜூம்லா விளக்கங்களுக்கான மெனு",
+    "menutype":"demonstrations-ta-in"
+},
+{
+    "id":"0",
+    "title":"மெனு மரம்",
+    "description":"எப்போதும் திறந்திருக்கும் மெனு மரத்தின் விளக்கம்",
+    "menutype":"menu-tree-ta-in"
+}]

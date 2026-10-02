@@ -1,13 +1,13 @@
 [{
-    "title"     : "System Message",
+    "title"     : "Systemnachricht",
     "client_id" : 1,
     "ordering"  : 1,
     "position"  : "top",
     "module"    : "mod_custom",
     "showtitle" : 1,
-    "language":"en-GB",
+    "language":"de-DE",
     "published":0,
-    "content":"<p class=\"p1-2\">Houston, we have a problem!</p>",
+    "content":"<p class=\"p1-2\">Houston, wir haben ein Problem!</p>",
     "params": {
         "prepare_content":0,
         "backgroundimage":"",
@@ -24,14 +24,14 @@
     }
 },
 {
-    "title"     : "Site Message",
+    "title"     : "Website-Hinweis",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_custom",
     "showtitle" : 1,
-    "language":"en-GB",
+    "language":"de-DE",
     "published":0,
-    "content":"<p>This site will close from 13:00 to 14:00 today for system maintenance.</p>",
+    "content":"<p>Diese Website ist heute von 13:00 bis 14:00 Uhr wegen Systemwartungsarbeiten geschlossen.</p>",
     "params": {
         "prepare_content":0,
         "backgroundimage":"",
@@ -48,12 +48,12 @@
     }
 },
 {
-    "title"     : "Random Image",
+    "title"     : "Zufallsbild",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_random_image",
     "showtitle" : 1,
-    "language":"en-GB",
+    "language":"de-DE",
     "published":0,
     "params": {
         "type":"jpg",
@@ -71,14 +71,14 @@
     }
 },
 {
-    "title"     : "Popular Tags",
+    "title"     : "Beliebte Schlagwörter",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_tags_popular",
-    "parent_tag_alias": "tags-en-gb",
+    "parent_tag_alias": "tags-de-de",
     "showtitle" : 1,
     "menu-base-alias":"",
-    "language":"en-GB",
+    "language":"de-DE",
     "published":0,
     "params": {
         "parentTag":[1104],
@@ -102,12 +102,12 @@
     }
 },
 {
-    "title"     : "Similar Tags",
+    "title"     : "Ähnliche Schlagwörter",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_tags_similar",
     "showtitle" : 1,
-    "language":"en-GB",
+    "language":"de-DE",
     "published":0,
     "params": {
         "maximum":5,
@@ -125,13 +125,13 @@
     }
 },
 {
-    "title"     : "Syndication Feeds",
+    "title"     : "Syndication-Feeds",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_syndicate",
     "showtitle" : 1,
     "menu-base-alias":"",
-    "language":"en-GB",
+    "language":"de-DE",
     "published":0,
     "params"    : {
         "text":"",
@@ -147,13 +147,13 @@
     }
 },
 {
-    "title"     : "Feed Display",
+    "title"     : "Feed-Anzeige",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_feed",
     "showtitle" : 1,
     "menu-base-alias":"",
-    "language":"en-GB",
+    "language":"de-DE",
     "published":0,
     "params"    : {
         "rssurl":"https:\/\/www.joomla.org\/announcements.feed?type=rss",
@@ -177,13 +177,13 @@
     }
 },
 {
-    "title"     : "Search",
+    "title"     : "Suche",
     "ordering"  : 1,
     "position"  : "sidebar-right",
     "module"    : "mod_finder",
     "showtitle" : 1,
     "menu-base-alias":"",
-    "language":"en-GB",
+    "language":"de-DE",
     "params"    : {
         "show_autosuggest":1,
         "show_advanced":0,
@@ -196,15 +196,15 @@
     }
  },
  {
-    "title"     : "Heritage Sites",
+    "title"     : "Welterbestätten",
     "ordering"  : 1,
     "position"  : "sidebar-right",
     "module"    : "mod_menu",
     "showtitle" : 1,
     "menu-base-alias":"",
-    "language":"en-GB",
+    "language":"de-DE",
     "params"    : {
-        "menutype"        : "heritage-sites-en-gb",
+        "menutype"        : "heritage-sites-de-de",
         "layout"          : "_:collapse-default",
         "base"            : 0,
         "startLevel"      : 1,
@@ -221,16 +221,16 @@
     }
 },
 {
-    "title"     : "Demonstrations",
+    "title"     : "Demonstrationen",
     "ordering"  : 1,
     "position"  : "sidebar-right",
     "module"    : "mod_menu",
     "showtitle" : 1,
     "menu-base-alias":"",
-    "language":"en-GB",
+    "language":"de-DE",
     "published": 1,
     "params"    : {
-        "menutype"        : "demonstrations-en-gb",
+        "menutype"        : "demonstrations-de-de",
         "layout"          : "_:collapse-default",
         "base"            : 0,
         "startLevel"      : 1,
@@ -247,16 +247,16 @@
     }
 },
 {
-    "title"     : "Menu Tree",
+    "title"     : "Menübaum",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_menu",
     "showtitle" : 1,
     "menu-base-alias":"",
-    "language":"en-GB",
+    "language":"de-DE",
     "published": 0,
     "params"    : {
-        "menutype"        : "menu-tree-en-gb",
+        "menutype"        : "menu-tree-de-de",
         "layout"          : "cassiopeia:treedefault",
         "base"            : 0,
         "startLevel"      : 1,
@@ -273,34 +273,34 @@
     }
 },
 {
-    "title"     : "Login Form",
+    "title"     : "Anmeldeformular",
     "ordering"  : 1,
     "position"  : "sidebar-right",
     "module"    : "mod_login",
     "showtitle" : 1,
-    "language":"en-GB",
+    "language":"de-DE",
     "access" : "5",
     "params"    : {
     }
 },
 {
-    "title"     : "Logout Form",
+    "title"     : "Abmeldeformular",
     "ordering"  : 1,
     "position"  : "sidebar-right",
     "module"    : "mod_login",
     "showtitle" : 1,
-    "language":"en-GB",
+    "language":"de-DE",
     "access" : "2",
     "params"    : {
     }
 },
 {
-    "title"     : "Archived Articles",
+    "title"     : "Archivierte Artikel",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_articles",
     "showtitle" : 1,
-    "language":"en-GB",
+    "language":"de-DE",
     "access" : "1",
     "published":0,
     "params"    : {
@@ -363,85 +363,5 @@
         "header_class":"",
         "style":"0"
     }
-},
-{
-    "title"     : "Joomla Extensions",
-    "ordering"  : 1,
-    "position"  : "bottom-a",
-    "module"    : "mod_banners",
-    "showtitle" : 1,
-    "menu-base-alias":"",
-    "language":"*",
-    "params"    : {
-        "target":1,
-        "count":5,
-        "cid":0,
-        "tag_search":0,
-        "ordering":"0",
-        "header_text":"",
-        "footer_text":"",
-        "layout":"_:default",
-        "moduleclass_sfx":"",
-        "cache":1,
-        "cache_time":900,
-        "module_tag":"div",
-        "bootstrap_size":"0",
-        "header_tag":"h3",
-        "header_class":"",
-        "style":"0"
-    }
-},
-{
-    "title"     : "Joomla Shop",
-    "ordering"  : 1,
-    "position"  : "bottom-a",
-    "module"    : "mod_banners",
-    "showtitle" : 1,
-    "menu-base-alias":"",
-    "language":"*",
-    "params"    : {
-        "target":1,
-        "count":5,
-        "cid":0,
-        "tag_search":0,
-        "ordering":"0",
-        "header_text":"",
-        "footer_text":"",
-        "layout":"_:default",
-        "moduleclass_sfx":"",
-        "cache":1,
-        "cache_time":900,
-        "module_tag":"div",
-        "bootstrap_size":"0",
-        "header_tag":"h3",
-        "header_class":"",
-        "style":"0"
-    }
-},
-{
-    "title"     : "Support Joomla!",
-    "ordering"  : 1,
-    "position"  : "bottom-a",
-    "module"    : "mod_banners",
-    "showtitle" : 1,
-    "menu-base-alias":"",
-    "language":"*",
-    "params"    : {
-        "target":1,
-        "count":5,
-        "cid":0,
-        "tag_search":0,
-        "ordering":"0",
-        "header_text":"",
-        "footer_text":"",
-        "layout":"_:default",
-        "moduleclass_sfx":"",
-        "cache":1,
-        "cache_time":900,
-        "module_tag":"div",
-        "bootstrap_size":"0",
-        "header_tag":"h3",
-        "header_class":"",
-        "style":"0"
-    }
-}]
+}
+]

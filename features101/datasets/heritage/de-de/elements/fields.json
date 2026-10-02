@@ -1,16 +1,16 @@
 [
 {
-    "title":"Date",
+    "title":"Datum",
     "category":"",
-    "name":"demo-date-en-gb",
-    "label":"Date",
+    "name":"demo-date-de-de",
+    "label":"Datum",
     "default_value":"",
     "context":"com_content.article",
     "type":"calendar",
-    "description":"<p>A general purpose date field to use in subforms.</p>",
+    "description":"<p>Ein allgemeines Datumsfeld zur Verwendung in Unterformularen.</p>",
     "note":"",
     "state":1,
-    "language":"en-GB",
+    "language":"de-DE",
     "only_use_in_subform":"1",
     "params":{
         "showlabel":"1"
@@ -24,15 +24,15 @@
 {
     "title":"W3W",
     "category":"",
-    "name":"w3w-en-gb",
+    "name":"w3w-de-de",
     "label":"W3W",
     "default_value":"",
     "context":"com_content.article",
     "type":"text",
-    "description":"<p>The What Thee Words location of a site.</p>",
+    "description":"<p>Der What3Words-Standort einer Stätte.</p>",
     "note":"",
     "state":1,
-    "language":"en-GB",
+    "language":"de-DE",
     "only_use_in_subform":"1",
     "params":{
         "showlabel":"1"
@@ -44,17 +44,17 @@
     "parent_fieldgroup":""
 },
 {
-    "title":"Rating",
+    "title":"Bewertung",
     "category":"",
-    "name":"rating-en-gb",
-    "label":"Rating",
+    "name":"rating-de-de",
+    "label":"Bewertung",
     "default_value":"",
     "context":"com_content.article",
     "type":"integer",
-    "description":"<p>The rating of a site on a scale of 0 to 5.</p>",
+    "description":"<p>Die Bewertung einer Stätte auf einer Skala von 0 bis 5.</p>",
     "note":"",
     "state":1,
-    "language":"en-GB",
+    "language":"de-DE",
     "only_use_in_subform":"1",
     "params":{
         "showlabel":"1"
@@ -70,17 +70,17 @@
     "parent_fieldgroup":""
 },
 {
-    "title":"Subform Field: Locations",
+    "title":"Unterformular-Feld: Standorte",
     "category":"",
-    "name":"subform-field-locations-en-gb",
-    "label":"Subform Field: Locations",
+    "name":"subform-field-locations-de-de",
+    "label":"Unterformular-Feld: Standorte",
     "default_value":"",
     "context":"com_content.article",
     "type":"subform",
-    "description":"A field to record data from different locations.",
+    "description":"Ein Feld zur Erfassung von Daten von verschiedenen Standorten.",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "hint":"","class":"",
         "label_class":"",
@@ -102,70 +102,28 @@
         "repeat":"1",
         "max_rows":"",
         "options":{
-            "option0":{"customfield":"Date","render_values":"1"},
+            "option0":{"customfield":"Datum","render_values":"1"},
             "option1":{"customfield":"W3W","render_values":"1"},
-            "option2":{"customfield":"Rating","render_values":"1"}
+            "option2":{"customfield":"Bewertung","render_values":"1"}
         }
     },
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Nature"
+    "parent_fieldgroup":"Natur"
 },
 {
-    "title":"Party",
-    "category":"",
-    "name":"party",
-    "label":"Party",
-    "default_value":"",
-    "context":"com_contact.contact",
-    "type":"text",
-    "description":"<p>The members party affiliation.</p>",
-    "note":"",
-    "state":1,
-    "language":"*",
-    "params":{
-        "showlabel":"1"
-    },
-    "fieldparams":"",
-    "created_time":"NOW()",
-    "modified_time":"NOW()",
-    "id":0,
-    "parent_fieldgroup":""
-},
-{
-    "title":"Constituency",
-    "category":"",
-    "name":"constituency",
-    "label":"Constituency",
-    "default_value":"",
-    "context":"com_contact.contact",
-    "type":"text",
-    "description":"<p>The members constituency.</p>",
-    "note":"",
-    "state":1,
-    "language":"*",
-    "params":{
-        "showlabel":"1"
-    },
-    "fieldparams":"",
-    "created_time":"NOW()",
-    "modified_time":"NOW()",
-    "id":0,
-    "parent_fieldgroup":""
-},
-{
-    "title":"Year of Inscription",
-    "category":"heritage-en-gb",
-    "name":"year-of-inscription-en-gb",
+    "title":"Jahr der Aufnahme",
+    "category":"heritage-de-de",
+    "name":"year-of-inscription-de-de",
     "label":"Year Inscribed",
     "default_value":"",
     "context":"com_content.article",
     "type":"integer",
-    "description":"<p>The year in which the site was added to the UNESCO list.</p>",
+    "description":"<p>Das Jahr, in dem die Stätte in die UNESCO-Liste aufgenommen wurde.</p>",
     "note":"",
     "state":1,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -178,20 +136,20 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Site Data"
+    "parent_fieldgroup":"Stättendaten"
 },
 {
-    "title":"Location",
-    "category":"heritage-en-gb",
-    "name":"location-en-gb",
-    "label":"Location",
+    "title":"Standort",
+    "category":"heritage-de-de",
+    "name":"location-de-de",
+    "label":"Standort",
     "default_value":"",
     "context":"com_content.article",
     "type":"text",
-    "description":"<p>The latitude and longitude of the site.</p>",
+    "description":"<p>Breiten- und Längengrad des Standorts.</p>",
     "note":"",
     "state":1,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -199,20 +157,20 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Site Data"
+    "parent_fieldgroup":"Stättendaten"
 },
 {
-    "title":"Audio: Sample Track",
-    "category":"demonstrations-en-gb",
-    "name":"audio-en-gb",
-    "label":"Audio: Sample Track",
+    "title":"Audio: Beispielschnitt",
+    "category":"demonstrations-de-de",
+    "name":"audio-de-de",
+    "label":"Audio: Beispielschnitt",
     "default_value":"",
     "context":"com_content.article",
     "type":"audio",
-    "description":"<p>An audio description.</p>",
+    "description":"<p>Eine Audiobeschreibung.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -224,20 +182,20 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Calendar: Photograph Date",
-    "category":"demonstrations-en-gb",
-    "name":"calendar-en-gb",
-    "label":"Calendar: Photograph Date",
+    "title":"Kalender: Aufnahmedatum",
+    "category":"demonstrations-de-de",
+    "name":"calendar-de-de",
+    "label":"Kalender: Aufnahmedatum",
     "default_value":"",
     "context":"com_content.article",
     "type":"calendar",
-    "description":"<p>The date a photograph was taken my be important for seasonal items.</p>",
+    "description":"<p>Das Aufnahmedatum eines Fotos kann für saisonale Elemente wichtig sein.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -245,39 +203,39 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Checkboxes: Propagation",
-    "category":"demonstrations-en-gb",
-    "name":"checkboxes-en-gb",
-    "label":"Checkboxes: Propagation",
+    "title":"Kontrollkästchen: Vermehrung",
+    "category":"demonstrations-de-de",
+    "name":"checkboxes-de-de",
+    "label":"Kontrollkästchen: Vermehrung",
     "default_value":"",
     "context":"com_content.article",
     "type":"checkboxes",
-    "description":"<p>Select one or more from a number of checkbox items.</p>",
+    "description":"<p>Wählen Sie eine oder mehrere Optionen aus einer Reihe von Kontrollkästchen aus.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
     "fieldparams":{
         "options":{
-            "options0":{"name":"Seed","value":"1"},
-            "options1":{"name":"Cutting","value":"2"},
-            "options2":{"name":"Bulb","value":"3"}
+            "options0":{"name":"Samen","value":"1"},
+            "options1":{"name":"Steckling","value":"2"},
+            "options2":{"name":"Zwiebel","value":"3"}
         }
     },
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Flowers"
+    "parent_fieldgroup":"Blumen"
 },
 {
-    "title":"Colour: Flower Colour",
-    "category":"demonstrations-en-gb",
-    "name":"color-en-gb",
+    "title":"Farbe: Blütenfarbe",
+    "category":"demonstrations-de-de",
+    "name":"color-de-de",
     "label":"Colour: Flower",
     "default_value":"",
     "context":"com_content.article",
@@ -285,7 +243,7 @@
     "description":"<p>Select a colour with a widget.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -295,20 +253,20 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Flowers"
+    "parent_fieldgroup":"Blumen"
 },
 {
-    "title":"Document: Download",
-    "category":"demonstrations-en-gb",
-    "name":"document-en-gb",
-    "label":"Document: Download",
+    "title":"Dokument: Download",
+    "category":"demonstrations-de-de",
+    "name":"document-de-de",
+    "label":"Dokument: Download",
     "default_value":"",
     "context":"com_content.article",
     "type":"document",
-    "description":"<p>Select a document.</p>",
+    "description":"<p>Wählen Sie ein Dokument aus.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -321,43 +279,43 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Editor: Cultivation",
-    "category":"demonstrations-en-gb",
-    "name":"editor-en-gb",
-    "label":"Editor: Cultivation",
+    "title":"Editor: Kultivierung",
+    "category":"demonstrations-de-de",
+    "name":"editor-de-de",
+    "label":"Editor: Kultivierung",
     "default_value":"",
     "context":"com_content.article",
     "type":"editor",
-    "description":"<p>Field for cultivation notes.</p>",
+    "description":"<p>Feld für Kultivierungshinweise.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
     "fieldparams":{
-        "cultivation-en-gb":"Bluebells grow best in partial shade with moist, well-drained soil that's rich in organic matter."
+        "cultivation-de-de":"Hasenglöckchen wachsen am besten im Halbschatten auf feuchtem, gut durchlässigem Boden, der reich an organischer Substanz ist."
     },
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Integer: RHS Hardiness",
-    "category":"demonstrations-en-gb",
-    "name":"integer-en-gb",
-    "label":"Integer: RHS Hardiness",
+    "title":"Ganzzahl: RHS-Winterhärte",
+    "category":"demonstrations-de-de",
+    "name":"integer-de-de",
+    "label":"Ganzzahl: RHS-Winterhärte",
     "default_value":"",
     "context":"com_content.article",
     "type":"integer",
-    "description":"<p>A number in the range 1-7 indicating the Royal Horticultural Society hardiness value for this flower.</p>",
+    "description":"<p>Eine Zahl im Bereich 1–7, die den Winterhärte-Wert der Royal Horticultural Society für diese Blume angibt.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -370,47 +328,47 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Flowers"
+    "parent_fieldgroup":"Blumen"
 },
 {
-    "title":"List: Distribution",
-    "category":"demonstrations-en-gb",
-    "name":"list-items-en-gb",
-    "label":"List: Distribution",
+    "title":"Liste: Verbreitung",
+    "category":"demonstrations-de-de",
+    "name":"list-items-de-de",
+    "label":"Liste: Verbreitung",
     "default_value":"",
     "context":"com_content.article",
     "type":"list",
     "description":"<p>Select one or more from a number of list items.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
     "fieldparams":{
         "options":{
-            "options0":{"name":"Africa","value":"1"},
-            "options1":{"name":"Asia","value":"2"},
-            "options2":{"name":"Europe","value":"3"}
+            "options0":{"name":"Afrika","value":"1"},
+            "options1":{"name":"Asien","value":"2"},
+            "options2":{"name":"Europa","value":"3"}
         }
     },
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Image List: Flower Colours",
-    "category":"demonstrations-en-gb",
-    "name":"images-list-en-gb",
-    "label":"Image List: Flower Colours",
+    "title":"Bilderliste: Blütenfarben",
+    "category":"demonstrations-de-de",
+    "name":"images-list-de-de",
+    "label":"Bilderliste: Blütenfarben",
     "default_value":"",
     "context":"com_content.article",
     "type":"imagelist",
-    "description":"<p>Add one or more images to a list.</p>",
+    "description":"<p>Fügen Sie eine oder mehrere Bilder zu einer Liste hinzu.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -422,20 +380,20 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Media: Typical Occurrence",
-    "category":"demonstrations-en-gb",
-    "name":"media-en-gb",
-    "label":"Media: Typical Occurrence",
+    "title":"Medien: Typisches Vorkommen",
+    "category":"demonstrations-de-de",
+    "name":"media-de-de",
+    "label":"Medien: Typisches Vorkommen",
     "default_value":"",
     "context":"com_content.article",
     "type":"media",
-    "description":"<p>Select an item from a media folder.</p>",
+    "description":"<p>Wählen Sie ein Element aus einem Medienordner aus.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -446,46 +404,46 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Note: Further Information",
-    "category":"demonstrations-en-gb",
-    "name":"note-en-gb",
-    "label":"Note: Further Information",
+    "title":"Hinweis: Weitere Informationen",
+    "category":"demonstrations-de-de",
+    "name":"note-de-de",
+    "label":"Hinweis: Weitere Informationen",
     "default_value":"",
     "context":"com_content.article",
     "type":"note",
-    "description":"<p>Compose information for backend or frontend users.</p>",
+    "description":"<p>Erstellen Sie Informationen für Backend- oder Frontend-Benutzer.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1",
         "display_frontend":"1"
     },
     "fieldparams":{
-        "label":"Legal Information",
-        "description":"In some legislatures picking bluebells my be a criminal offence!",
+        "label":"Rechtliche Informationen",
+        "description":"In einigen Rechtsordnungen kann das Pflücken von Hasenglöckchen eine Straftat darstellen!",
         "class":"alert alert-info m-2"
     },
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Number: Seed Weight",
-    "category":"demonstrations-en-gb",
-    "name":"number-en-gb",
-    "label":"Number: Seed Weight",
+    "title":"Zahl: Samengewicht",
+    "category":"demonstrations-de-de",
+    "name":"number-de-de",
+    "label":"Zahl: Samengewicht",
     "default_value":"",
     "context":"com_content.article",
     "type":"number",
-    "description":"<p>Provide the average weight of a seed.</p>",
+    "description":"<p>Geben Sie das durchschnittliche Gewicht eines Samens an.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -498,70 +456,71 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Radio: Life Cycle",
-    "category":"demonstrations-en-gb",
-    "name":"radio-en-gb",
-    "label":"Radio: Life Cycle",
+    "title":"Optionsfeld: Lebenszyklus",
+    "category":"demonstrations-de-de",
+    "name":"radio-de-de",
+    "label":"Optionsfeld: Lebenszyklus",
     "default_value":"",
     "context":"com_content.article",
     "type":"radio",
-    "description":"<p>Select the type of life cycle.</p>",
+    "description":"<p>Wählen Sie den Typ des Lebenszyklus aus.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
     "fieldparams":{
         "options":{
-            "options0":{"name":"- Select -","value":""},
-            "options1":{"name":"Annual","value":"annual"},
-            "options2":{"name":"Biennial","value":"biennial"},
-            "options3":{"name":"Perennial","value":"perennial"}
+            "options0":{"name":"- Auswählen -","value":""},
+            "options1":{"name":"Einjährig","value":"annual"},
+            "options2":{"name":"Zweijährig","value":"biennial"},
+            "options3":{"name":"Mehrjährig","value":"perennial"}
         }
     },
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"SQL: Native Distribution",
-    "category":"demonstrations-en-gb",
-    "name":"sql-en-gb",
-    "label":"SQL: Native Distribution",
+    "title":"SQL: Heimische Verbreitung",
+    "category":"demonstrations-de-de",
+    "name":"sql-de-de",
+    "label":"SQL: Heimische Verbreitung",
     "default_value":"",
     "context":"com_content.article",
     "type":"sql",
-    "description":"<p>Select one or more continents where this species is native.</p>",
+    "description":"<p>Wählen Sie einen oder mehrere Kontinente aus, auf denen diese Art heimisch ist.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
     "fieldparams":{
-        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `lje7b_categories` AS `a` \r\nLEFT JOIN `lje7b_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'en-GB' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
+        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `lje7b_categories` AS `a` \r\nLEFT JOIN `lje7b_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'de-DE' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
     },
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
-},{
-    "title":"Text: Latin Name",
-    "category":"demonstrations-en-gb",
-    "name":"text-en-gb",
+    "parent_fieldgroup":"Demonstrationen"
+},
+{
+    "title":"Text: Lateinischer Name",
+    "category":"demonstrations-de-de",
+    "name":"text-de-de",
     "label":"Text: Scientific Name",
     "default_value":"",
     "context":"com_content.article",
     "type":"text",
-    "description":"<p>The scientific name of this specimen.</p>",
+    "description":"<p>Der wissenschaftliche Name dieses Exemplars.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -569,19 +528,20 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Nature"
-},{
-    "title":"Textarea: Classification",
-    "category":"demonstrations-en-gb",
-    "name":"textarea-en-gb",
-    "label":"Textarea: Classification",
+    "parent_fieldgroup":"Natur"
+},
+{
+    "title":"Textbereich: Klassifikation",
+    "category":"demonstrations-de-de",
+    "name":"textarea-de-de",
+    "label":"Textbereich: Klassifikation",
     "default_value":"",
     "context":"com_content.article",
     "type":"textarea",
-    "description":"<p>A description of the scientific classification of a specimen..</p>",
+    "description":"<p>Eine Beschreibung der wissenschaftlichen Klassifikation eines Exemplars.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -592,20 +552,20 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"URL: Further Information",
-    "category":"demonstrations-en-gb",
-    "name":"url-en-gb",
-    "label":"URL: Further Information",
+    "title":"URL: Weitere Informationen",
+    "category":"demonstrations-de-de",
+    "name":"url-de-de",
+    "label":"URL: Weitere Informationen",
     "default_value":"",
     "context":"com_content.article",
     "type":"url",
-    "description":"<p>Provide a URL for further information.</p>",
+    "description":"<p>Geben Sie eine URL für weitere Informationen an.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -613,20 +573,20 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"User: Reporter",
-    "category":"demonstrations-en-gb",
-    "name":"user-en-gb",
-    "label":"User: Reporter",
+    "title":"Benutzer: Berichterstatter",
+    "category":"demonstrations-de-de",
+    "name":"user-de-de",
+    "label":"Benutzer: Berichterstatter",
     "default_value":"",
     "context":"com_content.article",
     "type":"user",
-    "description":"<p>Information on the reporter of this article.</p>",
+    "description":"<p>Informationen zum Autor/Berichterstatter dieses Artikels.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -634,20 +594,20 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Usergrouplist: Supervisors",
-    "category":"demonstrations-en-gb",
-    "name":"usergrouplist-en-gb",
-    "label":"Usergrouplist: Supervisors",
+    "title":"Benutzergruppenliste: Vorgesetzte",
+    "category":"demonstrations-de-de",
+    "name":"usergrouplist-de-de",
+    "label":"Benutzergruppenliste: Vorgesetzte",
     "default_value":"",
     "context":"com_content.article",
     "type":"usergrouplist",
-    "description":"<p>Information on usergroups.</p>",
+    "description":"<p>Informationen zu Benutzergruppen.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -657,20 +617,20 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 },
 {
-    "title":"Video: Sample Clip",
-    "category":"demonstrations-en-gb",
-    "name":"video-en-gb",
-    "label":"Video: Sample Clip",
+    "title":"Video: Beispielclip",
+    "category":"demonstrations-de-de",
+    "name":"video-de-de",
+    "label":"Video: Beispielclip",
     "default_value":"",
     "context":"com_content.article",
     "type":"video",
-    "description":"<p>An example video clip.</p>",
+    "description":"<p>Ein Beispiel-Videoclip.</p>",
     "note":"",
     "state":0,
-    "language":"en-GB",
+    "language":"de-DE",
     "params":{
         "showlabel":"1"
     },
@@ -683,5 +643,5 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Demonstrations"
+    "parent_fieldgroup":"Demonstrationen"
 }]

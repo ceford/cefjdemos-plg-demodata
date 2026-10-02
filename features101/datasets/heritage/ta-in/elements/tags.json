@@ -1,0 +1,66 @@
+[
+{
+    "title":"ஆங்கிலக் குறிச்சொற்கள்",
+    "alias":"tags-ta-in",
+    "description":"<p>தொகுதிகளில் பயன்படுத்தப்படும் ஆங்கிலக் குறிச்சொற்களுக்கான முதன்மை வகை.</p>",
+    "parent_alias":"",
+    "language":"ta-IN",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
+},
+{
+    "title":"கலாச்சாரத் தளம்",
+    "alias":"cultural-site-ta-in",
+    "description":"<p>கலாச்சார மதிப்புடையதாக வகைப்படுத்தப்பட்ட தளங்கள்.</p>",
+    "parent_alias":"tags-ta-in",
+    "language":"ta-IN",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"இயற்கைத் தளம்",
+    "alias":"natural-site-ta-in",
+    "description":"<p>இயற்கை மதிப்புடையதாக வகைப்படுத்தப்பட்ட தளங்கள்.</p>",
+    "parent_alias":"tags-ta-in",
+    "language":"ta-IN",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"எரிமலைத் தளம்",
+    "alias":"volcanic-site-ta-in",
+    "description":"<p>தற்போதைய அல்லது கடந்தகால எரிமலைச் செயல்பாடுகளுடன் தொடர்புடைய தளங்கள்.</p>",
+    "parent_alias":"tags-ta-in",
+    "language":"ta-IN",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"வனவிலங்கு",
+    "alias":"wildlife-site-ta-in",
+    "description":"<p>விலங்குகளின் வனவாழ்வுக்காக குறிப்பிடத்தக்க தளங்கள்.</p>",
+    "parent_alias":"tags-ta-in",
+    "language":"ta-IN",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
+}]

@@ -1,0 +1,442 @@
+[
+{
+    "state":1,
+    "title":"Oktober: Wasser wird zu Blut",
+    "alias":"newsletter-water-turns-to-blood-de-de",
+    "category_alias":"newsletter-de-de",
+    "language":"de-DE",
+    "text_source":"october-water-turns-to-blood.html",
+    "metadesc":"Ein Bericht über die erste der 10 Plagen, die das alte Ägypten zur Zeit von Mose trafen.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":1,
+    "title":"November: Frösche",
+    "alias":"newsletter-frogs-de-de",
+    "category_alias":"newsletter-de-de",
+    "language":"de-DE",
+    "text_source":"november-frogs.html",
+    "metadesc":"Ein Bericht über die zweite der 10 Plagen, die das alte Ägypten zur Zeit von Mose trafen.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":0,
+    "title":"Dezember: Stechmücken oder Läuse",
+    "alias":"newsletter-gnats-or-lice-de-de",
+    "category_alias":"newsletter-de-de",
+    "language":"de-DE",
+    "text_source":"december-gnats-or-lice.html",
+    "metadesc":"Ein Bericht über die dritte der 10 Plagen, die das alte Ägypten zur Zeit von Mose trafen.",
+    "created_by_name":"Eddie",
+    "created_by_alias":"Miriam",
+    "workflow":"Newsletter Workflow",
+    "stage":"Draft"
+},
+{
+    "state":1,
+    "title":"Abschiedsfeier",
+    "alias":"leaving-party-de-de",
+    "category_alias":"demonstrations-de-de",
+    "language":"de-DE",
+    "text_source":"leaving-party.html",
+    "metadesc":"Zitate und Fotos von Johns Abschiedsfeier."
+},
+{
+    "state":1,
+    "title":"Bevölkerungsstatistik",
+    "alias":"pop-stats-de-de",
+    "category_alias":"demonstrations-de-de",
+    "language":"de-DE",
+    "text_source":"pop-stats.html",
+    "metadesc":"Eine kurze Beschreibung der Bevölkerungsstatistiken nach Kontinent."
+},
+{
+    "state":1,
+    "title":"Hasenglöckchen-Poesie",
+    "alias":"bluebell-poetry-de-de",
+    "category_alias":"demonstrations-de-de",
+    "language":"de-DE",
+    "text_source":"bluebell-poetry.html",
+    "hits":"17",
+    "metadesc":"Ein Gedicht über Hasenglöckchen von John Clare (1793–1864)."
+},
+{
+    "state":1,
+    "title":"Hasenglöckchen",
+    "alias":"bluebells-de-de",
+    "category_alias":"demonstrations-de-de",
+    "language":"de-DE",
+    "text_source":"bluebells.html",
+    "hits":"17",
+    "metadesc":"Eine kurze Beschreibung des Aussehens, der Verbreitung und der gesellschaftlichen Rolle von Hasenglöckchen.",
+    "fields": {
+        "audio-de-de":"{\"file\":\"files\/demodata\/heritage\/one-summer.mp3\"}",
+        "calendar-de-de":"2024-04-01",
+        "checkboxes-de-de":{"0":"1","1":"3"},
+        "color-de-de":"#4e3ac2",
+        "document-de-de":"{\"file\":\"files\/demodata\/heritage\/lorem-ipsum.txt\"}",
+        "editor-de-de":"Hasenglöckchen wachsen am besten im Halbschatten auf feuchtem, gut durchlässigem Boden, der reich an organischer Substanz ist.",
+        "integer-de-de":"5",
+        "list-items-de-de":"3",
+        "images-list-de-de":{"0":"bluebell-flower-blue-128.png","1":"bluebell-flower-pink-128.png"},
+        "media-de-de":"{\"imagefile\":\"images\/demodata\/heritage\/bluebells-150.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-150.jpg?width=150&height=150\",\"alt_text\":\"Woodland scene with carpet of bluebells.\"}",
+        "number-de-de":"7.5",
+        "radio-de-de":"perennial",
+        "sql-de-de":"europe-de-de",
+        "subform-field-locations-de-de": {
+            "row0": {
+                    "demo-date-de-de":"2026-05-12 14:27:17",
+                    "w3w-de-de":"///camper.bandaged.slower (Dalkeith Country Park)",
+                    "rating-de-de":"5"
+                },
+            "row1": {
+                "demo-date-de-de":"2025-06-01 14:27:17",
+                "w3w-de-de":"ne///vehicle.cubic.played (Roslin Glen)",
+                "rating-de-de":"4"
+            }
+        },
+        "text-de-de":"Hyacinthoides non-scripta",
+        "textarea-de-de":"Bluebells are a species of flowering plants in the genus Hyacinthoides of the family Asparagaceae.",
+        "url-de-de":"https://en.wikipedia.org/wiki/Hyacinthoides_non-scripta",
+        "user-de-de":"playwright",
+        "usergrouplist-de-de":{"0":"7","1":"5"},
+        "video-de-de":"{\"file\":\"files\/demodata\/heritage\/badger-vs-fox-400-silent.mp4\", \"poster\":\"files\/demodata\/heritage\/badger-vs-fox-400.jpg#joomlaImage:\/\/local-files\/demodata\/heritage\/badger-vs-fox-400.jpg?width=400&height=226\"}"
+    },
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/bluebells-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-200.jpg?width=200&height=200",
+        "image_intro_alt":"Eine Waldszene mit Teppichen aus Hasenglöckchen",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/bluebells-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"Eine Waldszene mit Teppichen aus Hasenglöckchen",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"1978 eingetragene Stätten",
+    "alias":"sites-inscribed-in-1978-de-de",
+    "category_alias":"demonstrations-de-de",
+    "language":"de-DE",
+    "text_source":"sites-table-1978.html"
+},
+{
+    "state":2,
+    "title":"Liverpool – Handelsstadt der Seefahrt",
+    "alias":"liverpool-de-de",
+    "category_alias":"europe-de-de",
+    "language":"de-DE",
+    "text_source":"liverpool.html",
+    "metadesc":"Das Hafengebiet der Stadt Liverpool",
+    "fields": {
+        "location-de-de":"N53 24 24 W2 59 40",
+        "year-of-inscription-de-de":"2004"
+    },
+    "tags": ["cultural-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/liverpool-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-200.jpg?width=200&height=123",
+        "image_intro_alt":"Die Uferpromenade von Liverpool und das Liver Building",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/liverpool-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-400.jpg?width=400&height=246",
+        "image_fulltext_alt":"Die Uferpromenade von Liverpool und das Liver Building",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Sydney Opera House",
+    "alias":"sydney-opera-house-de-de",
+    "category_alias":"oceania-de-de",
+    "language":"de-DE",
+    "text_source":"sydney-opera-house.html",
+    "fields": {
+        "location-de-de":"S33 51 24 E151 12 55",
+        "year-of-inscription-de-de":"2007"
+    },
+    "tags": ["cultural-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/sydney-opera-house-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-200.jpg?width=200&height=150",
+        "image_intro_alt":"Eine Luftaufnahme des Sydney Opera House",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/sydney-opera-house-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Eine Luftaufnahme des Sydney Opera House",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Great Barrier Reef",
+    "alias":"great-barrier-reef-de-de",
+    "category_alias":"oceania-de-de",
+    "language":"de-DE",
+    "text_source":"great-barrier-reef.html",
+    "featured": "1",
+    "metadesc":"Eine kurze Beschreibung einer Stätte von bemerkenswerter Vielfalt und Schönheit an der Nordostküste Australiens",
+    "fields": {
+        "location-de-de":"S18 17 10 E147 41 60",
+        "year-of-inscription-de-de":"1981"
+    },
+    "tags": ["natural-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-barrier-reef-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-200.jpg?width=200&height=133",
+        "image_intro_alt":"Eine Gruppe von Riffkorallen",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-barrier-reef-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Eine Gruppe von Riffkorallen",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Akropolis von Athen",
+    "alias":"acropolis-of-athens-de-de",
+    "category_alias":"europe-de-de",
+    "language":"de-DE",
+    "text_source":"acropolis-of-athens.html",
+    "metadesc":"Ein Überblick über die universellen Symbole des klassischen Geistes und der Zivilisation.",
+    "fields": {
+        "location-de-de":" N37 58 15.132 E23 43 34.248 ",
+        "year-of-inscription-de-de":"1987"
+    },
+    "tags": ["cultural-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/acropolis-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-200.jpg?width=200&height=133",
+        "image_intro_alt":"Ruinen auf einem imposanten, flachen Hügel",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/acropolis-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Ruinen auf einem imposanten, flachen Hügel",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Taj Mahal",
+    "alias":"taj-mahal-de-de",
+    "category_alias":"asia-de-de",
+    "language":"de-DE",
+    "featured": "1",
+    "text_source":"taj-mahal.html",
+    "metadesc":"Ein immenses Mausoleum aus weißem Marmor...",
+    "fields": {
+        "location-de-de":"N27 10 27.012 E78 2 31.992",
+        "year-of-inscription-de-de":"1983"
+    },
+    "tags": ["cultural-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/taj-mahal-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-200.jpg?width=200&height=200",
+        "image_intro_alt":"Der beeindruckende Zugang zu einem prachtvollen Palast",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/taj-mahal-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"Der beeindruckende Zugang zu einem prachtvollen Palast",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Chinesische Mauer",
+    "alias":"great-wall-of-china-de-de",
+    "category_alias":"asia-de-de",
+    "language":"de-DE",
+    "text_source":"great-wall-of-china.html",
+    "metadesc":"Eine Einführung in ein enormes militärisches Verteidigungsbauwerk.",
+    "fields": {
+        "location-de-de":"",
+        "year-of-inscription-de-de":"1987"
+    },
+    "tags": ["cultural-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-wall-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-200.jpg?width=200&height=279",
+        "image_intro_alt":"Ein Abschnitt der Großen Mauer aus Stein in hügeligem Gelände",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-wall-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-400.jpg?width=400&height=558",
+        "image_fulltext_alt":"Ein Abschnitt der Großen Mauer aus Stein in hügeligem Gelände",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Galápagos-Inseln",
+    "alias":"galapagos-islands-de-de",
+    "category_alias":"americas-de-de",
+    "language":"de-DE",
+    "text_source":"galapagos-islands.html",
+    "metadesc":"Die 19 Inseln und das umgebende Meeresreservat wurden als einzigartiges <em>lebendiges Museum und Schaufenster der Evolution</em> bezeichnet.",
+    "fields": {
+        "location-de-de":"N0 41 23.496 W90 30 4.748",
+        "year-of-inscription-de-de":"2001"
+    },
+    "tags": ["natural-site-de-de", "volcanic-site-de-de", "wildlife-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/galapagos-2-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-200.jpg?width=200&height=133",
+        "image_intro_alt":"Riesenschildkröten, die einzigartig auf den Galápagos-Inseln sind",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/galapagos-2-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Riesenschildkröten, die einzigartig auf den Galápagos-Inseln sind",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Machu Picchu",
+    "alias":"machu-picchu-de-de",
+    "category_alias":"americas-de-de",
+    "language":"de-DE",
+    "featured": "1",
+    "text_source":"machu-picchu.html",
+    "metadesc":"Eine kurze Beschreibung dieser Stätte, die 2.430 m über dem Meeresspiegel inmitten eines tropischen Bergwaldes liegt.",
+    "fields": {
+        "location-de-de":"S13 11 5.762 W72 32 0.395",
+        "year-of-inscription-de-de":"1983"
+    },
+    "tags": ["cultural-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/machu-picchu-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-200.jpg?width=200&height=150",
+        "image_intro_alt":"Klassische Aussicht auf die Ruinen auf dem Berggipfel",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/machu-picchu-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Klassische Aussicht auf die Ruinen auf dem Berggipfel",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Giant's Causeway",
+    "alias":"giants-causeway-de-de",
+    "category_alias":"europe-de-de",
+    "language":"de-DE",
+    "text_source":"giants-causeway.html",
+    "featured": "1",
+    "metadesc":"Erkunden Sie die Basaltklippen entlang der Meeresküste am Rande des Antrim-Plateaus in Nordirland",
+    "fields": {
+        "location-de-de":"N55 14 27 W6 30 42",
+        "year-of-inscription-de-de":"1986"
+    },
+    "tags": ["natural-site-de-de", "volcanic-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giants-causeway-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-200.jpg?width=200&height=143",
+        "image_intro_alt":"Basaltsäulen, die sich in einer dicken horizontalen Magmaschicht gebildet haben",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giants-causeway-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-400.jpg?width=400&height=286",
+        "image_fulltext_alt":"Basaltsäulen, die sich in einer dicken horizontalen Magmaschicht gebildet haben",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Pyramiden von Gizeh",
+    "alias":"pyramids-of-giza-de-de",
+    "category_alias":"africa-de-de",
+    "language":"de-DE",
+    "featured": "0",
+    "text_source":"pyramids-of-giza.html",
+    "metadesc":"Bestaunen Sie die aussergewöhnlichen Grabdenkmäler aus dem Alten Reich Ägyptens.",
+    "fields": {
+        "location-de-de":"",
+        "year-of-inscription-de-de":"1979"
+    },
+    "tags": ["cultural-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giza-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-200.jpg?width=200&height=133",
+        "image_intro_alt":"Die Sphinx mit der Pyramide von Gizeh im Hintergrund",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giza-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Die Sphinx mit der Pyramide von Gizeh im Hintergrund",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Serengeti-Nationalpark",
+    "alias":"serengeti-national-park-de-de",
+    "category_alias":"africa-de-de",
+    "language":"de-DE",
+    "text_source":"serengeti-national-park.html",
+    "metadesc":"Erkunden Sie die weiten Ebenen der Serengeti und beobachten Sie die jährliche Wanderung riesiger Herden von Pflanzenfressern, gefolgt von ihren Raubtieren.",
+    "fields": {
+        "location-de-de":"S2 44 24 E34 51 32.4",
+        "year-of-inscription-de-de":"1981"
+    },
+    "tags": ["natural-site-de-de", "wildlife-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Elefanten und Zebras",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Elefanten und Zebras",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Naturschutzgebiet Ngorongoro",
+    "alias":"ngorongoro-conservation-area-de-de",
+    "category_alias":"africa-de-de",
+    "language":"de-DE",
+    "text_source":"ngorongoro-conservation-area.html",
+    "featured": "1",
+    "metadesc":"Riesige Weiten aus Hochlandebenen, Savannen, Wäldern und Wildtieren, die mit halbnomadischen Maasai-Hirten koexistieren.",
+    "fields": {
+        "location-de-de":"S S3 11 13.992 E35 32 26.988",
+        "year-of-inscription-de-de":"1979"
+    },
+    "tags": ["natural-site-de-de", "volcanic-site-de-de", "wildlife-site-de-de"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/ngorongoro-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-200.jpg?width=200&height=133",
+        "image_intro_alt":"Tiere streifen über den Kraterboden mit der Kraterwand in der Ferne",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/ngorongoro-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Tiere streifen über den Kraterboden mit der Kraterwand in der Ferne",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Über UNESCO-Stätten",
+    "alias":"about-unesco-sites-de-de",
+    "category_alias":"about-unesco-de-de",
+    "language":"de-DE",
+    "text_source":"about-unesco-sites.html",
+    "hits":"135",
+    "metadesc":"Eine kurze Einführung in die UNESCO-Welterbestätten.",
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Elefanten und Zebras",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Elefanten und Zebras",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+}]

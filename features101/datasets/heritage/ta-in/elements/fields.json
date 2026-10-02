@@ -1,0 +1,647 @@
+[
+{
+    "title":"தேதி",
+    "category":"",
+    "name":"demo-date-ta-in",
+    "label":"தேதி",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>துணைப் படிவங்களில் பயன்படுத்துவதற்கான பொதுப் பயன்பாட்டு தேதி புலம்.</p>",
+    "note":"",
+    "state":1,
+    "language":"ta-IN",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"W3W",
+    "category":"",
+    "name":"w3w-ta-in",
+    "label":"W3W",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>ஒரு தளத்தின் What3words இருப்பிடம்.</p>",
+    "note":"",
+    "state":1,
+    "language":"ta-IN",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"மதிப்பீடு",
+    "category":"",
+    "name":"rating-ta-in",
+    "label":"மதிப்பீடு",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>0 முதல் 5 வரையிலான அளவில் ஒரு தளத்திற்கான மதிப்பீடு.</p>",
+    "note":"",
+    "state":1,
+    "language":"ta-IN",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "first":"0",
+        "last":"5",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"துணைப் படிவப் புலம்: இடங்கள்",
+    "category":"",
+    "name":"subform-field-locations-ta-in",
+    "label":"துணைப் படிவப் புலம்: இடங்கள்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"subform",
+    "description":"வெவ்வேறு இடங்களிலிருந்து தரவைப் பதிவு செய்வதற்கான புலம்.",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "hint":"","class":"",
+        "label_class":"",
+        "show_on":"",
+        "showon":"",
+        "render_class":"",
+        "value_render_class":"",
+        "showlabel":"1",
+        "label_render_class":"",
+        "display":"2",
+        "prefix":"",
+        "suffix":"",
+        "layout":"",
+        "display_readonly":"2",
+        "searchindex":"0",
+        "form_layout":""
+    },
+    "fieldparams":{
+        "repeat":"1",
+        "max_rows":"",
+        "options":{
+            "option0":{"customfield":"தேதி","render_values":"1"},
+            "option1":{"customfield":"W3W","render_values":"1"},
+            "option2":{"customfield":"மதிப்பீடு","render_values":"1"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"இயற்கை"
+},
+{
+    "title":"பட்டியலிடப்பட்ட ஆண்டு",
+    "category":"heritage-ta-in",
+    "name":"year-of-inscription-ta-in",
+    "label":"Year Inscribed",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>தளம் யுனெஸ்கோ பட்டியலில் சேர்க்கப்பட்ட ஆண்டு.</p>",
+    "note":"",
+    "state":1,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1972",
+        "last":"2026",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"தளத் தரவு"
+},
+{
+    "title":"இருப்பிடம்",
+    "category":"heritage-ta-in",
+    "name":"location-ta-in",
+    "label":"இருப்பிடம்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>தளத்தின் அட்சரேகை மற்றும் தீர்க்கரேகை.</p>",
+    "note":"",
+    "state":1,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"தளத் தரவு"
+},
+{
+    "title":"ஒலி: மாதிரித் தடம்",
+    "category":"demonstrations-ta-in",
+    "name":"audio-ta-in",
+    "label":"ஒலி: மாதிரித் தடம்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"audio",
+    "description":"<p>ஒலிவழி விளக்கம்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"audios",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"நாட்காட்டி: புகைப்படத் தேதி",
+    "category":"demonstrations-ta-in",
+    "name":"calendar-ta-in",
+    "label":"நாட்காட்டி: புகைப்படத் தேதி",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>பருவகாலப் பொருட்களுக்கு புகைப்படம் எடுக்கப்பட்ட தேதி முக்கியமானதாக இருக்கலாம்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"தேர்வுப்பெட்டிகள்: இனப்பெருக்கம்",
+    "category":"demonstrations-ta-in",
+    "name":"checkboxes-ta-in",
+    "label":"தேர்வுப்பெட்டிகள்: இனப்பெருக்கம்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"checkboxes",
+    "description":"<p>பல தேர்வுப்பெட்டி உருப்படிகளில் ஒன்றை அல்லது அதற்கு மேற்பட்டவற்றைத் தேர்ந்தெடுக்கவும்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"விதை","value":"1"},
+            "options1":{"name":"வெட்டுத்தண்டு","value":"2"},
+            "options2":{"name":"கிழங்கு","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"மலர்கள்"
+},
+{
+    "title":"வண்ணம்: மலர் வண்ணம்",
+    "category":"demonstrations-ta-in",
+    "name":"color-ta-in",
+    "label":"Colour: Flower",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"color",
+    "description":"<p>Select a colour with a widget.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "colour":"4e3ac2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"மலர்கள்"
+},
+{
+    "title":"ஆவணம்: பதிவிறக்கம்",
+    "category":"demonstrations-ta-in",
+    "name":"document-ta-in",
+    "label":"ஆவணம்: பதிவிறக்கம்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"document",
+    "description":"<p>ஒரு ஆவணத்தைத் தேர்ந்தெடுக்கவும்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:\/",
+        "preview":"",
+        "css_class":"",
+        "types":"documents"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"திருத்தி: சாகுபடி",
+    "category":"demonstrations-ta-in",
+    "name":"editor-ta-in",
+    "label":"திருத்தி: சாகுபடி",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"editor",
+    "description":"<p>சாகுபடிக் குறிப்புகளுக்கான புலம்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "cultivation-ta-in":"ஈரப்பதமும் நல்ல வடிகால் வசதியும் கொண்ட, கரிமப் பொருட்கள் நிறைந்த பகுதி நிழலில் நீலமணிப் பூக்கள் சிறப்பாக வளரும்."
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"முழு எண்: RHS கடினத்தன்மை",
+    "category":"demonstrations-ta-in",
+    "name":"integer-ta-in",
+    "label":"முழு எண்: RHS கடினத்தன்மை",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>இந்த மலரின் ராயல் தோட்டக்கலைச் சங்க கடினத்தன்மை மதிப்பைக் குறிக்கும் 1–7 வரம்பிலான எண்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1",
+        "last":"7",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"மலர்கள்"
+},
+{
+    "title":"பட்டியல்: பரவல்",
+    "category":"demonstrations-ta-in",
+    "name":"list-items-ta-in",
+    "label":"பட்டியல்: பரவல்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"list",
+    "description":"<p>Select one or more from a number of list items.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"ஆப்பிரிக்கா","value":"1"},
+            "options1":{"name":"ஆசியா","value":"2"},
+            "options2":{"name":"ஐரோப்பா","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"படப் பட்டியல்: மலர் வண்ணங்கள்",
+    "category":"demonstrations-ta-in",
+    "name":"images-list-ta-in",
+    "label":"படப் பட்டியல்: மலர் வண்ணங்கள்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"imagelist",
+    "description":"<p>ஒரு பட்டியலில் ஒன்று அல்லது அதற்கு மேற்பட்ட படங்களைச் சேர்க்கவும்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"demodata/heritage",
+        "multiple":"1",
+        "image_class":"me-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"ஊடகம்: வழக்கமான நிகழ்வு",
+    "category":"demonstrations-ta-in",
+    "name":"media-ta-in",
+    "label":"ஊடகம்: வழக்கமான நிகழ்வு",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"media",
+    "description":"<p>ஊடகக் கோப்புறையிலிருந்து ஒரு உருப்படியைத் தேர்ந்தெடுக்கவும்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-images:/demodata/heritage",
+        "image_class":"ms-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"குறிப்பு: கூடுதல் தகவல்",
+    "category":"demonstrations-ta-in",
+    "name":"note-ta-in",
+    "label":"குறிப்பு: கூடுதல் தகவல்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"note",
+    "description":"<p>பின்தள அல்லது முன்தளப் பயனர்களுக்கான தகவலை உருவாக்கவும்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1",
+        "display_frontend":"1"
+    },
+    "fieldparams":{
+        "label":"சட்டத் தகவல்",
+        "description":"சில சட்டமன்றங்களில் நீலமணிப் பூக்களைப் பறிப்பது குற்றமாக இருக்கலாம்!",
+        "class":"alert alert-info m-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"எண்: விதை எடை",
+    "category":"demonstrations-ta-in",
+    "name":"number-ta-in",
+    "label":"எண்: விதை எடை",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"number",
+    "description":"<p>ஒரு விதையின் சராசரி எடையை வழங்கவும்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "currency":"1",
+        "symbol":" milligrams",
+        "position":"1",
+        "decimals":"2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"ரேடியோ: வாழ்க்கைச் சுழற்சி",
+    "category":"demonstrations-ta-in",
+    "name":"radio-ta-in",
+    "label":"ரேடியோ: வாழ்க்கைச் சுழற்சி",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"radio",
+    "description":"<p>வாழ்க்கைச் சுழற்சியின் வகையைத் தேர்ந்தெடுக்கவும்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"- தேர்ந்தெடுக்கவும் -","value":""},
+            "options1":{"name":"ஓராண்டுத் தாவரம்","value":"annual"},
+            "options2":{"name":"ஈராண்டுத் தாவரம்","value":"biennial"},
+            "options3":{"name":"பல ஆண்டுத் தாவரம்","value":"perennial"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"SQL: தாயகப் பரவல்",
+    "category":"demonstrations-ta-in",
+    "name":"sql-ta-in",
+    "label":"SQL: தாயகப் பரவல்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"sql",
+    "description":"<p>இந்த இனத்திற்குத் தாயகமாக உள்ள ஒன்று அல்லது அதற்கு மேற்பட்ட கண்டங்களைத் தேர்ந்தெடுக்கவும்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `lje7b_categories` AS `a` \r\nLEFT JOIN `lje7b_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'ta-IN' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"உரை: லத்தீன் பெயர்",
+    "category":"demonstrations-ta-in",
+    "name":"text-ta-in",
+    "label":"Text: Scientific Name",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>இந்த மாதிரியின் அறிவியல் பெயர்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"இயற்கை"
+},
+{
+    "title":"உரைப்பகுதி: வகைப்பாடு",
+    "category":"demonstrations-ta-in",
+    "name":"textarea-ta-in",
+    "label":"உரைப்பகுதி: வகைப்பாடு",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"textarea",
+    "description":"<p>ஒரு மாதிரியின் அறிவியல் வகைப்பாட்டின் விளக்கம்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "rows":"3",
+        "cols":"128"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"URL: கூடுதல் தகவல்",
+    "category":"demonstrations-ta-in",
+    "name":"url-ta-in",
+    "label":"URL: கூடுதல் தகவல்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"url",
+    "description":"<p>கூடுதல் தகவலுக்கான URL-ஐ வழங்கவும்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"பயனர்: புகாரளித்தவர்",
+    "category":"demonstrations-ta-in",
+    "name":"user-ta-in",
+    "label":"பயனர்: புகாரளித்தவர்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"user",
+    "description":"<p>இந்தக் கட்டுரையைப் புகாரளித்தவர் பற்றிய தகவல்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"பயனர் குழுப் பட்டியல்: மேற்பார்வையாளர்கள்",
+    "category":"demonstrations-ta-in",
+    "name":"usergrouplist-ta-in",
+    "label":"பயனர் குழுப் பட்டியல்: மேற்பார்வையாளர்கள்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"usergrouplist",
+    "description":"<p>பயனர் குழுக்கள் பற்றிய தகவல்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+},
+{
+    "title":"வீடியோ: மாதிரிக் கிளிப்",
+    "category":"demonstrations-ta-in",
+    "name":"video-ta-in",
+    "label":"வீடியோ: மாதிரிக் கிளிப்",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"video",
+    "description":"<p>மாதிரி வீடியோ கிளிப்.</p>",
+    "note":"",
+    "state":0,
+    "language":"ta-IN",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"videos",
+        "video_poster":"1",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"விளக்கங்கள்"
+}]

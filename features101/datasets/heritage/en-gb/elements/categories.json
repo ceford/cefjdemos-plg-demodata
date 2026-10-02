@@ -27,9 +27,9 @@
 },
 {
     "title":"Committee",
-    "alias":"committee-en-gb",
+    "alias":"committee",
     "level":1,
-    "path":"committee-en-gb",
+    "path":"committee",
     "extension":"com_content",
     "language":"en-GB",
     "description":"<p>A category for committee articles.</p>",
@@ -60,11 +60,11 @@
 },
 {
     "title":"Parliament",
-    "alias":"parliament-en-gb",
+    "alias":"parliament",
     "level":1,
-    "path":"parliament-en-gb",
+    "path":"parliament",
     "extension":"com_contact",
-    "language":"en-GB",
+    "language":"*",
     "description":"<p>A parent category for Parliamentary contacts.</p>",
     "rules":{
         "core.create":{
@@ -92,12 +92,12 @@
 },
 {
     "title":"Business Committee",
-    "alias":"business-committee-en-gb",
+    "alias":"business-committee",
     "level":2,
-    "parent_alias":"parliament-en-gb",
-    "path":"parliament-en-gb/business-committee-en-gb",
+    "parent_alias":"parliament",
+    "path":"parliament/business-committee",
     "extension":"com_contact",
-    "language":"en-GB",
+    "language":"*",
     "description":"<p>A category for Parliamentary Business Committee contacts.</p>",
     "rules":{
         "core.create":{
@@ -125,12 +125,12 @@
 },
 {
     "title":"Culture Committee",
-    "alias":"culture-committee-en-gb",
+    "alias":"culture-committee",
     "level":2,
-    "parent_alias":"parliament-en-gb",
-    "path":"parliament-en-gb/culture-committee-en-gb",
+    "parent_alias":"parliament",
+    "path":"parliament/culture-committee",
     "extension":"com_contact",
-    "language":"en-GB",
+    "language":"*",
     "description":"<p>A category for Parliamentary Culture Committee contacts.</p>",
     "rules":{
         "core.create":{

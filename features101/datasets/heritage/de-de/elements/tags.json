@@ -1,0 +1,66 @@
+[
+{
+    "title":"Englische Schlagwörter",
+    "alias":"tags-de-de",
+    "description":"<p>Eine übergeordnete Kategorie für englische Schlagwörter zur Verwendung in Modulen.</p>",
+    "parent_alias":"",
+    "language":"de-DE",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
+},
+{
+    "title":"Kulturstätte",
+    "alias":"cultural-site-de-de",
+    "description":"<p>Stätten, die aufgrund ihres kulturellen Wertes eingestuft wurden.</p>",
+    "parent_alias":"tags-de-de",
+    "language":"de-DE",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"Naturstätte",
+    "alias":"natural-site-de-de",
+    "description":"<p>Stätten, die aufgrund ihres Naturwertes eingestuft wurden.</p>",
+    "parent_alias":"tags-de-de",
+    "language":"de-DE",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"Vulkanische Stätte",
+    "alias":"volcanic-site-de-de",
+    "description":"<p>Stätten, die mit gegenwärtiger oder vergangener vulkanischer Aktivität in Verbindung stehen.</p>",
+    "parent_alias":"tags-de-de",
+    "language":"de-DE",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"Tierwelt",
+    "alias":"wildlife-site-de-de",
+    "description":"<p>Stätten, die für ihre Tierwelt bekannt sind.</p>",
+    "parent_alias":"tags-de-de",
+    "language":"de-DE",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
+}]

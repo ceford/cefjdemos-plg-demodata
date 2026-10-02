@@ -23,7 +23,8 @@
     "category_alias":"demonstrations-en-gb",
     "language":"gd-GB",
     "text_source":"bluebell-poetry.html",
-    "hits":"17"
+    "hits":"17",
+    "metadesc":"Dàn mu chluig-ghorm le John Clare (1793-1864)."
 },
 {
     "state":1,
@@ -33,6 +34,7 @@
     "language":"gd-GB",
     "text_source":"bluebells.html",
     "hits":"13",
+    "metadesc":"Tuairisgeul goirid air coltas, sgaoileadh agus àite sòisealta fhlùraichean nan clag-gorm.",
     "images": {
         "image_intro":"images\/demodata\/heritage\/bluebells-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-200.jpg?width=200&height=200",
         "image_intro_alt":"Sealladh coille le brat-ùrlair de chluig-ghorma",
@@ -59,6 +61,7 @@
     "category_alias":"europe-gd-gb",
     "language":"gd-GB",
     "text_source":"liverpool.html",
+    "metadesc":"Sgìre nan docaichean ann am Baile Liverpool",
     "fields": {
         "location-gd-gb":"N53 24 24 W2 59 40",
         "year-of-inscription-gd-gb":"2004"
@@ -106,6 +109,7 @@
     "language":"gd-GB",
     "text_source":"great-barrier-reef.html",
     "featured": "1",
+    "metadesc":"Tuairisgeul goirid air làrach a tha sònraichte airson a h-iomadachd agus a bòidhchead air costa ear-thuath Astràilia",
     "fields": {
         "location-gd-gb":"S18 17 10 E147 41 60",
         "year-of-inscription-gd-gb":"1981"
@@ -129,6 +133,7 @@
     "category_alias":"europe-gd-gb",
     "language":"gd-GB",
     "text_source":"acropolis-of-athens.html",
+    "metadesc":"Sealladh farsaing air samhlaidhean uile-choitcheann de spiorad agus sìobhaltachd chlasaigeach.",
     "fields": {
         "location-gd-gb":" N37 58 15.132 E23 43 34.248 ",
         "year-of-inscription-gd-gb":"1987"
@@ -153,6 +158,7 @@
     "language":"gd-GB",
     "text_source":"taj-mahal.html",
     "featured": "1",
+    "metadesc":"Mausoleum mòr de mhàrbal geal...",
     "fields": {
         "location-gd-gb":"N27 10 27.012 E78 2 31.992",
         "year-of-inscription-gd-gb":"1983"
@@ -176,6 +182,7 @@
     "category_alias":"asia-gd-gb",
     "language":"gd-GB",
     "text_source":"great-wall-of-china.html",
+    "metadesc":"Ro-ràdh do structar dìon armailteach mòr.",
     "fields": {
         "location-gd-gb":"",
         "year-of-inscription-gd-gb":"1987"
@@ -199,6 +206,7 @@
     "category_alias":"americas-gd-gb",
     "language":"gd-GB",
     "text_source":"galapagos-islands.html",
+    "metadesc":"Chaidh na 19 eileanan agus an tèarmann mara mun cuairt orra ainmeachadh mar <em>thaigh-tasgaidh beò sònraichte agus taisbeanadh air mean-fhàs</em>.",
     "fields": {
         "location-gd-gb":"N0 41 23.496 W90 30 4.748",
         "year-of-inscription-gd-gb":"2001"
@@ -223,6 +231,7 @@
     "language":"gd-GB",
     "text_source":"machu-picchu.html",
     "featured": "1",
+    "metadesc":"Tuairisgeul goirid air an làrach seo, 2,430m os cionn ìre na mara, ann am meadhan coille bheanntach thropaigeach.",
     "fields": {
         "location-gd-gb":"S13 11 5.762 W72 32 0.395",
         "year-of-inscription-gd-gb":"1983"
@@ -247,6 +256,7 @@
     "language":"gd-GB",
     "text_source":"giants-causeway.html",
     "featured": "1",
+    "metadesc":"Rannsaich na bearraidhean basalt air oirthir na mara aig oir àrdchlàr Aontroma ann an Èirinn a Tuath",
     "fields": {
         "location-gd-gb":"N55 14 27 W6 30 42",
         "year-of-inscription-gd-gb":"1986"
@@ -271,6 +281,7 @@
     "language":"gd-GB",
     "featured": "0",
     "text_source":"pyramids-of-giza.html",
+    "metadesc":"Thoir sùil air na carraighean tiodhlacaidh iongantach ann an Seann Rìoghachd na h-Èiphit.",
     "fields": {
         "location-gd-gb":"",
         "year-of-inscription-gd-gb":"1979"
@@ -295,6 +306,7 @@
     "language":"gd-GB",
     "text_source":"serengeti-national-park.html",
     "featured": "0",
+    "metadesc":"Rannsaich raointean mòra an Serengeti agus coimhead air imrich bhliadhnail nan treudan mòra de bheathaichean a bhios ag ithe lusan, agus an creachadairean gan leantainn.",
     "fields": {
         "location-gd-gb":"S2 44 24 E34 51 32.4",
         "year-of-inscription-gd-gb":"1981"
@@ -319,6 +331,7 @@
     "language":"gd-GB",
     "text_source":"ngorongoro-conservation-area.html",
     "featured": "1",
+    "metadesc":"Raointean mòra de raointean àrda, savanna, coilltean agus coilltean dùmhail far a bheil fiadh-bheatha a’ fuireach còmhla ri buachaillean Maasai leth-nomadach.",
     "fields": {
         "location-gd-gb":"S S3 11 13.992 E35 32 26.988",
         "year-of-inscription-gd-gb":"1979"

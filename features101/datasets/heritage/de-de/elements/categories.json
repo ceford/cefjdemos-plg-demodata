@@ -1,0 +1,206 @@
+[{
+    "title":"Blog",
+    "alias":"blog-de-de",
+    "level":1,
+    "path":"blog",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Eine Kategorie für Blog-Beiträge zur Verwendung in einem Workflow.</p>",
+    "params": {
+    }
+},
+{
+    "title":"Newsletter",
+    "alias":"newsletter-de-de",
+    "level":1,
+    "path":"newsletter-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Eine Kategorie für Newsletter-Artikel.</p>",
+    "workflow_title":"Newsletter Workflow",
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
+    "title":"Über UNESCO",
+    "alias":"about-unesco-de-de",
+    "level":1,
+    "path":"about-unesco-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Allgemeine Informationen zu UNESCO-Welterbestätten.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "Ein Kartenausschnitt der Welt mit einer Auswahl an Welterbestätten."
+    }
+},
+{
+    "title":"Welterbestätten",
+    "alias":"heritage-de-de",
+    "level":1,
+    "path":"heritage-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Eine übergeordnete Kategorie für Unterkategorien von UNESCO-Welterbestätten.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "Ein Kartenausschnitt der Welt mit einer Auswahl an Welterbestätten."
+    }
+},
+{
+    "title":"Afrika",
+    "alias":"africa-de-de",
+    "parent_alias":"heritage-de-de",
+    "level":2,
+    "path":"heritage/africa-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Eine Liste der UNESCO-Welterbestätten in Afrika.</p>",
+    "params": {
+        "image": "images/demodata/heritage/serengeti-crop.jpg#joomlaImage://local-images/demodata/heritage/serengeti-crop.jpg?width=1440&height=333",
+        "imag_alt": "KI-generiertes Bild von Tieren, die durch die Serengeti streifen"
+    }
+},
+{
+    "title":"Americas",
+    "alias":"americas-de-de",
+    "parent_alias":"heritage-de-de",
+    "level":2,
+    "path":"heritage/americas-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Eine Liste der UNESCO-Welterbestätten in Amerika.</p>"
+},
+{
+    "title":"Asien",
+    "alias":"asia-de-de",
+    "parent_alias":"heritage-de-de",
+    "level":2,
+    "path":"heritage/asia-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Eine Liste der UNESCO-Welterbestätten in Asien.</p>"
+},
+{
+    "title":"Europa",
+    "alias":"europe-de-de",
+    "parent_alias":"heritage-de-de",
+    "level":2,
+    "path":"heritage/europe-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Eine Liste der UNESCO-Welterbestätten in Europa.</p>"
+},
+{
+    "title":"Ozeanien",
+    "alias":"oceania-de-de",
+    "parent_alias":"heritage-de-de",
+    "level":2,
+    "path":"heritage/oceania-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Eine Liste der UNESCO-Welterbestätten in Ozeanien.</p>"
+},
+{
+    "title":"Demonstrationen",
+    "alias":"demonstrations-de-de",
+    "parent_alias":"",
+    "level":1,
+    "path":"demonstrations-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Artikel zur Demonstration von Joomla-Funktionen.</p>"
+},
+{
+    "title":"Joomla-Nachrichten",
+    "alias":"joomla-news-de-de",
+    "parent_alias":"",
+    "level":1,
+    "path":"joomla-news-de-de",
+    "extension":"com_newsfeeds",
+    "language":"de-DE",
+    "description":"<p>Eine Kategorie für mehrere Joomla-Newsfeeds.</p>"
+},
+{
+    "title":"Demo-Personal",
+    "alias":"demo-staff-de-de",
+    "level":1,
+    "path":"demo-staff",
+    "extension":"com_contact",
+    "language":"de-DE",
+    "description":"<p>Übergeordnete Kategorie für Demo-Personal-Kontakte.</p>"
+},
+{
+    "title":"Demo-Shop",
+    "alias":"demo-shop-de-de",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-shop",
+    "extension":"com_contact",
+    "language":"de-DE",
+    "description":"<p>Unterkategorie für Demo-Kontakte des Shop-Personals.</p>"
+},
+{
+    "title":"Demo Apiary",
+    "alias":"demo-apiary-de-de",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-apiary",
+    "extension":"com_contact",
+    "language":"de-DE",
+    "description":"<p>Unterkategorie für Demo-Kontakte des Imkerei-Personals.</p>"
+},
+{
+    "title":"Natur",
+    "alias":"nature-de-de",
+    "level":1,
+    "path":"nature-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Parent category for articles about the living world.</p>"
+},
+{
+    "title":"Birds",
+    "alias":"nature-birds-de-de",
+    "parent_alias":"nature-de-de",
+    "level":2,
+    "path":"nature-de-de/nature-birds-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Category for articles about birds.</p>"
+},
+{
+    "title":"Blumen",
+    "alias":"nature-flowers-de-de",
+    "parent_alias":"nature-de-de",
+    "level":2,
+    "path":"nature-de-de/nature-flowers-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Category for articles about flowers.</p>"
+},
+{
+    "title":"Mammals",
+    "alias":"nature-mammals-de-de",
+    "parent_alias":"nature-de-de",
+    "level":2,
+    "path":"nature-de-de/nature-mammals-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Category for articles about mammals.</p>"
+},
+{
+    "title":"Trees",
+    "alias":"nature-trees-de-de",
+    "parent_alias":"nature-de-de",
+    "level":2,
+    "path":"nature-de-de/nature-trees-de-de",
+    "extension":"com_content",
+    "language":"de-DE",
+    "description":"<p>Category for articles about trees.</p>"
+}
+]

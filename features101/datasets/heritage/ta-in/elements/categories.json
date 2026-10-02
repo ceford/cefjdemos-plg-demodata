@@ -1,0 +1,206 @@
+[{
+    "title":"வலைப்பதிவு",
+    "alias":"blog-ta-in",
+    "level":1,
+    "path":"blog",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>பணிப்பாய்வில் பயன்படுத்தப்படும் வலைப்பதிவு இடுகைகளுக்கான வகை.</p>",
+    "params": {
+    }
+},
+{
+    "title":"செய்திமடல்",
+    "alias":"newsletter-ta-in",
+    "level":1,
+    "path":"newsletter-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>செய்திமடல் கட்டுரைகளுக்கான வகை.</p>",
+    "workflow_title":"Newsletter Workflow",
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
+    "title":"யுனெஸ்கோ பற்றி",
+    "alias":"about-unesco-ta-in",
+    "level":1,
+    "path":"about-unesco-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>யுனெஸ்கோ உலக பாரம்பரியத் தளங்கள் பற்றிய பொதுவான தகவல்கள்.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "உலக பாரம்பரியத் தளங்களின் தேர்ந்தெடுக்கப்பட்ட சிலவற்றைக் காட்டும் உலக வரைபடத்தின் வெட்டப்பட்ட பகுதி."
+    }
+},
+{
+    "title":"உலக பாரம்பரியத் தளங்கள்",
+    "alias":"heritage-ta-in",
+    "level":1,
+    "path":"heritage-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>யுனெஸ்கோ உலக பாரம்பரியத் தளங்களின் துணை வகைகளுக்கான முதன்மை வகை.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "உலக பாரம்பரியத் தளங்களின் தேர்ந்தெடுக்கப்பட்ட சிலவற்றைக் காட்டும் உலக வரைபடத்தின் வெட்டப்பட்ட பகுதி."
+    }
+},
+{
+    "title":"ஆப்பிரிக்கா",
+    "alias":"africa-ta-in",
+    "parent_alias":"heritage-ta-in",
+    "level":2,
+    "path":"heritage/africa-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>ஆப்பிரிக்காவில் உள்ள யுனெஸ்கோ உலக பாரம்பரியத் தளங்களின் பட்டியல்.</p>",
+    "params": {
+        "image": "images/demodata/heritage/serengeti-crop.jpg#joomlaImage://local-images/demodata/heritage/serengeti-crop.jpg?width=1440&height=333",
+        "imag_alt": "செரெங்கெட்டியில் சுற்றித் திரியும் விலங்குகளின் செயற்கை நுண்ணறிவால் உருவாக்கப்பட்ட படம்"
+    }
+},
+{
+    "title":"Americas",
+    "alias":"americas-ta-in",
+    "parent_alias":"heritage-ta-in",
+    "level":2,
+    "path":"heritage/americas-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>அமெரிக்கக் கண்டங்களில் உள்ள யுனெஸ்கோ உலக பாரம்பரியத் தளங்களின் பட்டியல்.</p>"
+},
+{
+    "title":"ஆசியா",
+    "alias":"asia-ta-in",
+    "parent_alias":"heritage-ta-in",
+    "level":2,
+    "path":"heritage/asia-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>ஆசியாவில் உள்ள யுனெஸ்கோ உலக பாரம்பரியத் தளங்களின் பட்டியல்.</p>"
+},
+{
+    "title":"ஐரோப்பா",
+    "alias":"europe-ta-in",
+    "parent_alias":"heritage-ta-in",
+    "level":2,
+    "path":"heritage/europe-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>ஐரோப்பாவில் உள்ள யுனெஸ்கோ உலக பாரம்பரியத் தளங்களின் பட்டியல்.</p>"
+},
+{
+    "title":"ஓசியானியா",
+    "alias":"oceania-ta-in",
+    "parent_alias":"heritage-ta-in",
+    "level":2,
+    "path":"heritage/oceania-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>ஓசியானியாவில் உள்ள யுனெஸ்கோ உலக பாரம்பரியத் தளங்களின் பட்டியல்.</p>"
+},
+{
+    "title":"விளக்கங்கள்",
+    "alias":"demonstrations-ta-in",
+    "parent_alias":"",
+    "level":1,
+    "path":"demonstrations-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>ஜூம்லா அம்சங்களை விளக்குவதற்காக உருவாக்கப்பட்ட கட்டுரைகள்.</p>"
+},
+{
+    "title":"ஜூம்லா செய்திகள்",
+    "alias":"joomla-news-ta-in",
+    "parent_alias":"",
+    "level":1,
+    "path":"joomla-news-ta-in",
+    "extension":"com_newsfeeds",
+    "language":"ta-IN",
+    "description":"<p>பல ஜூம்லா செய்தி ஊட்டங்களுக்கான வகை.</p>"
+},
+{
+    "title":"டெமோ பணியாளர்கள்",
+    "alias":"demo-staff-ta-in",
+    "level":1,
+    "path":"demo-staff",
+    "extension":"com_contact",
+    "language":"ta-IN",
+    "description":"<p>டெமோ தொடர்புகள் பணியாளர்களுக்கான முதன்மை வகை.</p>"
+},
+{
+    "title":"டெமோ கடை",
+    "alias":"demo-shop-ta-in",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-shop",
+    "extension":"com_contact",
+    "language":"ta-IN",
+    "description":"<p>டெமோ தொடர்புகள் கடைப் பணியாளர்களுக்கான துணை வகை.</p>"
+},
+{
+    "title":"Demo Apiary",
+    "alias":"demo-apiary-ta-in",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-apiary",
+    "extension":"com_contact",
+    "language":"ta-IN",
+    "description":"<p>டெமோ தொடர்புகள் தேனீ வளர்ப்பு பணியாளர்களுக்கான துணை வகை.</p>"
+},
+{
+    "title":"இயற்கை",
+    "alias":"nature-ta-in",
+    "level":1,
+    "path":"nature-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>Parent category for articles about the living world.</p>"
+},
+{
+    "title":"Birds",
+    "alias":"nature-birds-ta-in",
+    "parent_alias":"nature-ta-in",
+    "level":2,
+    "path":"nature-ta-in/nature-birds-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>Category for articles about birds.</p>"
+},
+{
+    "title":"மலர்கள்",
+    "alias":"nature-flowers-ta-in",
+    "parent_alias":"nature-ta-in",
+    "level":2,
+    "path":"nature-ta-in/nature-flowers-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>Category for articles about flowers.</p>"
+},
+{
+    "title":"Mammals",
+    "alias":"nature-mammals-ta-in",
+    "parent_alias":"nature-ta-in",
+    "level":2,
+    "path":"nature-ta-in/nature-mammals-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>Category for articles about mammals.</p>"
+},
+{
+    "title":"Trees",
+    "alias":"nature-trees-ta-in",
+    "parent_alias":"nature-ta-in",
+    "level":2,
+    "path":"nature-ta-in/nature-trees-ta-in",
+    "extension":"com_content",
+    "language":"ta-IN",
+    "description":"<p>Category for articles about trees.</p>"
+}
+]
