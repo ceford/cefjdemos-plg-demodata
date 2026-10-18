@@ -1,0 +1,206 @@
+[{
+    "title":"Blog",
+    "alias":"blog-es-es",
+    "level":1,
+    "path":"blog",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Una categoría para publicaciones de blog que se utilizarán en un flujo de trabajo.</p>",
+    "params": {
+    }
+},
+{
+    "title":"Boletín",
+    "alias":"newsletter-es-es",
+    "level":1,
+    "path":"newsletter-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Una categoría para artículos del boletín.</p>",
+    "workflow_title":"Newsletter Workflow",
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
+    "title":"Acerca de la UNESCO",
+    "alias":"about-unesco-es-es",
+    "level":1,
+    "path":"about-unesco-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Información general sobre los sitios del Patrimonio Mundial de la UNESCO.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "Un mapa recortado del mundo que muestra una selección de sitios del Patrimonio Mundial."
+    }
+},
+{
+    "title":"Sitios del Patrimonio Mundial",
+    "alias":"heritage-es-es",
+    "level":1,
+    "path":"heritage-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Una categoría principal para las subcategorías de sitios del Patrimonio Mundial de la UNESCO.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "Un mapa recortado del mundo que muestra una selección de sitios del Patrimonio Mundial."
+    }
+},
+{
+    "title":"África",
+    "alias":"africa-es-es",
+    "parent_alias":"heritage-es-es",
+    "level":2,
+    "path":"heritage/africa-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Una lista de sitios del Patrimonio Mundial de la UNESCO en África.</p>",
+    "params": {
+        "image": "images/demodata/heritage/serengeti-crop.jpg#joomlaImage://local-images/demodata/heritage/serengeti-crop.jpg?width=1440&height=333",
+        "imag_alt": "Imagen generada por IA de animales recorriendo el Serengueti"
+    }
+},
+{
+    "title":"Americas",
+    "alias":"americas-es-es",
+    "parent_alias":"heritage-es-es",
+    "level":2,
+    "path":"heritage/americas-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Una lista de sitios del Patrimonio Mundial de la UNESCO en América.</p>"
+},
+{
+    "title":"Asia",
+    "alias":"asia-es-es",
+    "parent_alias":"heritage-es-es",
+    "level":2,
+    "path":"heritage/asia-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Una lista de sitios del Patrimonio Mundial de la UNESCO en Asia.</p>"
+},
+{
+    "title":"Europa",
+    "alias":"europe-es-es",
+    "parent_alias":"heritage-es-es",
+    "level":2,
+    "path":"heritage/europe-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Una lista de sitios del Patrimonio Mundial de la UNESCO en Europa.</p>"
+},
+{
+    "title":"Oceanía",
+    "alias":"oceania-es-es",
+    "parent_alias":"heritage-es-es",
+    "level":2,
+    "path":"heritage/oceania-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Una lista de sitios del Patrimonio Mundial de la UNESCO en Oceanía.</p>"
+},
+{
+    "title":"Demostraciones",
+    "alias":"demonstrations-es-es",
+    "parent_alias":"",
+    "level":1,
+    "path":"demonstrations-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Artículos creados para demostrar las funciones de Joomla.</p>"
+},
+{
+    "title":"Noticias de Joomla",
+    "alias":"joomla-news-es-es",
+    "parent_alias":"",
+    "level":1,
+    "path":"joomla-news-es-es",
+    "extension":"com_newsfeeds",
+    "language":"es-ES",
+    "description":"<p>Una categoría para múltiples fuentes de noticias de Joomla.</p>"
+},
+{
+    "title":"Personal de demostración",
+    "alias":"demo-staff-es-es",
+    "level":1,
+    "path":"demo-staff",
+    "extension":"com_contact",
+    "language":"es-ES",
+    "description":"<p>Categoría principal para el personal de los contactos de demostración.</p>"
+},
+{
+    "title":"Tienda de demostración",
+    "alias":"demo-shop-es-es",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-shop",
+    "extension":"com_contact",
+    "language":"es-ES",
+    "description":"<p>Categoría secundaria para el personal de la tienda de los contactos de demostración.</p>"
+},
+{
+    "title":"Demo Apiary",
+    "alias":"demo-apiary-es-es",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-apiary",
+    "extension":"com_contact",
+    "language":"es-ES",
+    "description":"<p>Categoría secundaria para el personal de Apiary de los contactos de demostración.</p>"
+},
+{
+    "title":"Naturaleza",
+    "alias":"nature-es-es",
+    "level":1,
+    "path":"nature-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Parent category for articles about the living world.</p>"
+},
+{
+    "title":"Birds",
+    "alias":"nature-birds-es-es",
+    "parent_alias":"nature-es-es",
+    "level":2,
+    "path":"nature-es-es/nature-birds-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Category for articles about birds.</p>"
+},
+{
+    "title":"Flores",
+    "alias":"nature-flowers-es-es",
+    "parent_alias":"nature-es-es",
+    "level":2,
+    "path":"nature-es-es/nature-flowers-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Category for articles about flowers.</p>"
+},
+{
+    "title":"Mammals",
+    "alias":"nature-mammals-es-es",
+    "parent_alias":"nature-es-es",
+    "level":2,
+    "path":"nature-es-es/nature-mammals-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Category for articles about mammals.</p>"
+},
+{
+    "title":"Trees",
+    "alias":"nature-trees-es-es",
+    "parent_alias":"nature-es-es",
+    "level":2,
+    "path":"nature-es-es/nature-trees-es-es",
+    "extension":"com_content",
+    "language":"es-ES",
+    "description":"<p>Category for articles about trees.</p>"
+}
+]

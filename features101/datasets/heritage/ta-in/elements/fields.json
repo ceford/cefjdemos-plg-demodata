@@ -513,7 +513,7 @@
     "title":"உரை: லத்தீன் பெயர்",
     "category":"demonstrations-ta-in",
     "name":"text-ta-in",
-    "label":"Text: Scientific Name",
+    "label":"உரை: அறிவியல் பெயர்",
     "default_value":"",
     "context":"com_content.article",
     "type":"text",

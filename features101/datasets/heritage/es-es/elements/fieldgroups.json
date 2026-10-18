@@ -1,0 +1,31 @@
+[{
+    "title":"Datos del sitio",
+    "description":"<p>Este es un grupo de campos que contiene datos sobre sitios del patrimonio.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"es-ES"
+},{
+    "title":"Demostraciones",
+    "description":"<p>Este es un grupo de campos utilizado para demostrar cada tipo de campo.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"es-ES"
+},
+{
+    "title":"Naturaleza",
+    "description":"<p>Grupo para aspectos de la naturaleza aplicables a todos los animales y plantas.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"es-ES"
+},
+{
+    "title":"Flores",
+    "description":"<p>Campos que solo se aplican a las plantas con flores.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"es-ES"
+}]

@@ -1,0 +1,31 @@
+[{
+    "title":"Données du site",
+    "description":"<p>Groupe de champs contenant les données des sites patrimoniaux.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"fr-FR"
+},{
+    "title":"Démonstrations",
+    "description":"<p>Groupe de champs utilisé pour présenter chaque type de champ.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"fr-FR"
+},
+{
+    "title":"Nature",
+    "description":"<p>Groupe consacré aux aspects de la nature qui s’appliquent à tous les animaux et les plantes.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"fr-FR"
+},
+{
+    "title":"Fleurs",
+    "description":"<p>Champs qui s’appliquent uniquement aux plantes à fleurs.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"fr-FR"
+}]

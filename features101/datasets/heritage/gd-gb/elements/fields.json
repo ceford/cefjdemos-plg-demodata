@@ -1,15 +1,17 @@
-[{
-    "title":"Àite",
-    "category":"heritage-gd-gb",
-    "name":"location-gd-gb",
-    "label":"Àite",
+[
+{
+    "title":"Ceann-latha",
+    "category":"",
+    "name":"demo-date-gd-gb",
+    "label":"Ceann-latha",
     "default_value":"",
     "context":"com_content.article",
-    "type":"text",
-    "description":"<p>Domhan-leud agus domhan-fhad na làraich.</p>",
+    "type":"calendar",
+    "description":"<p>Raon ceann-latha coitcheann airson a chleachdadh ann am fo-fhoirmean.</p>",
     "note":"",
     "state":1,
     "language":"gd-GB",
+    "only_use_in_subform":"1",
     "params":{
         "showlabel":"1"
     },
@@ -17,13 +19,104 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Dàta Làraich"
+    "parent_fieldgroup":""
 },
 {
-    "title":"Bliadhna an Sgrìobhaidh",
+    "title":"W3W",
+    "category":"",
+    "name":"w3w-gd-gb",
+    "label":"W3W",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>Àite What Three Words làraich.</p>",
+    "note":"",
+    "state":1,
+    "language":"gd-GB",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Ìre",
+    "category":"",
+    "name":"rating-gd-gb",
+    "label":"Ìre",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>Ìre làraich air sgèile 0 gu 5.</p>",
+    "note":"",
+    "state":1,
+    "language":"gd-GB",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "first":"0",
+        "last":"5",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Raon Fo-fhoirm: Àiteachan",
+    "category":"",
+    "name":"subform-field-locations-gd-gb",
+    "label":"Raon Fo-fhoirm: Àiteachan",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"subform",
+    "description":"Raon airson dàta bho dhiofar àiteachan a chlàradh.",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "hint":"","class":"",
+        "label_class":"",
+        "show_on":"",
+        "showon":"",
+        "render_class":"",
+        "value_render_class":"",
+        "showlabel":"1",
+        "label_render_class":"",
+        "display":"2",
+        "prefix":"",
+        "suffix":"",
+        "layout":"",
+        "display_readonly":"2",
+        "searchindex":"0",
+        "form_layout":""
+    },
+    "fieldparams":{
+        "repeat":"1",
+        "max_rows":"",
+        "options":{
+            "option0":{"customfield":"Ceann-latha","render_values":"1"},
+            "option1":{"customfield":"W3W","render_values":"1"},
+            "option2":{"customfield":"Ìre","render_values":"1"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Nàdar"
+},
+{
+    "title":"Bliadhna an Liostaidh",
     "category":"heritage-gd-gb",
     "name":"year-of-inscription-gd-gb",
-    "label":"Bliadhna Sgrìobhte",
+    "label":"Year Inscribed",
     "default_value":"",
     "context":"com_content.article",
     "type":"integer",
@@ -46,14 +139,60 @@
     "parent_fieldgroup":"Dàta Làraich"
 },
 {
-    "title":"Calendar: Photograph Date",
+    "title":"Àite",
+    "category":"heritage-gd-gb",
+    "name":"location-gd-gb",
+    "label":"Àite",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>Domhan-leud agus domhan-fhad na làraich.</p>",
+    "note":"",
+    "state":1,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Dàta Làraich"
+},
+{
+    "title":"Fuaim: Eisimpleir de Shlighe",
+    "category":"demonstrations-gd-gb",
+    "name":"audio-gd-gb",
+    "label":"Fuaim: Eisimpleir de Shlighe",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"audio",
+    "description":"<p>Tuairisgeul fuaim.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"audios",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Mìosachan: Ceann-latha an Deilbh",
     "category":"demonstrations-gd-gb",
     "name":"calendar-gd-gb",
-    "label":"Calendar: Photograph Date",
+    "label":"Mìosachan: Ceann-latha an Deilbh",
     "default_value":"",
     "context":"com_content.article",
     "type":"calendar",
-    "description":"<p>The date a photograph was taken my be important for seasonal items.</p>",
+    "description":"<p>Dh’fhaodadh an ceann-latha a chaidh dealbh a thogail a bhith cudromach airson nithean ràitheil.</p>",
     "note":"",
     "state":0,
     "language":"gd-GB",
@@ -64,5 +203,445 @@
     "created_time":"NOW()",
     "modified_time":"NOW()",
     "id":0,
-    "parent_fieldgroup":"Dàta Làraich"
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Bogsaichean-seic: Iomadachadh",
+    "category":"demonstrations-gd-gb",
+    "name":"checkboxes-gd-gb",
+    "label":"Bogsaichean-seic: Iomadachadh",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"checkboxes",
+    "description":"<p>Tagh aon no barrachd à grunn roghainnean bogsa-seic.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"Sìol","value":"1"},
+            "options1":{"name":"Gearradh","value":"2"},
+            "options2":{"name":"Bolg","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Flùraichean"
+},
+{
+    "title":"Dath: Dath an Fhlùir",
+    "category":"demonstrations-gd-gb",
+    "name":"color-gd-gb",
+    "label":"Colour: Flower",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"color",
+    "description":"<p>Select a colour with a widget.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "colour":"4e3ac2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Flùraichean"
+},
+{
+    "title":"Sgrìobhainn: Luchdaich a-nuas",
+    "category":"demonstrations-gd-gb",
+    "name":"document-gd-gb",
+    "label":"Sgrìobhainn: Luchdaich a-nuas",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"document",
+    "description":"<p>Tagh sgrìobhainn.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:\/",
+        "preview":"",
+        "css_class":"",
+        "types":"documents"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Deasaiche: Àiteachadh",
+    "category":"demonstrations-gd-gb",
+    "name":"editor-gd-gb",
+    "label":"Deasaiche: Àiteachadh",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"editor",
+    "description":"<p>Raon airson notaichean mu àiteachadh.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "cultivation-gd-gb":"Bidh clagan-gorma a’ fàs as fheàrr ann an dubhar pàirteach le ùir tais, air a dheagh dhrèanadh, a tha beairteach ann an stuth organach."
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Slàn-àireamh: Cruas RHS",
+    "category":"demonstrations-gd-gb",
+    "name":"integer-gd-gb",
+    "label":"Slàn-àireamh: Cruas RHS",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>Àireamh anns an raon 1-7 a’ sealltainn luach cruas Comann Gàrradaireachd Rìoghail an fhlùir seo.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1",
+        "last":"7",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Flùraichean"
+},
+{
+    "title":"Liosta: Sgaoileadh",
+    "category":"demonstrations-gd-gb",
+    "name":"list-items-gd-gb",
+    "label":"Liosta: Sgaoileadh",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"list",
+    "description":"<p>Select one or more from a number of list items.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"Afraga","value":"1"},
+            "options1":{"name":"Àisia","value":"2"},
+            "options2":{"name":"An Roinn Eòrpa","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Liosta Dhealbhan: Dathan Flùraichean",
+    "category":"demonstrations-gd-gb",
+    "name":"images-list-gd-gb",
+    "label":"Liosta Dhealbhan: Dathan Flùraichean",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"imagelist",
+    "description":"<p>Cuir aon no barrachd dhealbhan ri liosta.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"demodata/heritage",
+        "multiple":"1",
+        "image_class":"me-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Meadhanan: Tachartas àbhaisteach",
+    "category":"demonstrations-gd-gb",
+    "name":"media-gd-gb",
+    "label":"Meadhanan: Tachartas àbhaisteach",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"media",
+    "description":"<p>Tagh nì à pasgan mheadhanan.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-images:/demodata/heritage",
+        "image_class":"ms-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Nota: Tuilleadh Fiosrachaidh",
+    "category":"demonstrations-gd-gb",
+    "name":"note-gd-gb",
+    "label":"Nota: Tuilleadh Fiosrachaidh",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"note",
+    "description":"<p>Sgrìobh fiosrachadh airson luchd-cleachdaidh backend no frontend.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1",
+        "display_frontend":"1"
+    },
+    "fieldparams":{
+        "label":"Fiosrachadh Laghail",
+        "description":"Ann an cuid de phàrlamaidean, dh’fhaodadh togail chlagan-gorma a bhith na eucoir!",
+        "class":"alert alert-info m-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Àireamh: Cuideam Sìl",
+    "category":"demonstrations-gd-gb",
+    "name":"number-gd-gb",
+    "label":"Àireamh: Cuideam Sìl",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"number",
+    "description":"<p>Thoir seachad cuideam cuibheasach sìl.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "currency":"1",
+        "symbol":" milligrams",
+        "position":"1",
+        "decimals":"2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Rèidio: Cearcall-beatha",
+    "category":"demonstrations-gd-gb",
+    "name":"radio-gd-gb",
+    "label":"Rèidio: Cearcall-beatha",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"radio",
+    "description":"<p>Tagh an seòrsa cearcall-beatha.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"- Tagh -","value":""},
+            "options1":{"name":"Bliadhnail","value":"annual"},
+            "options2":{"name":"Dà-bhliadhnail","value":"biennial"},
+            "options3":{"name":"Ioma-bhliadhnail","value":"perennial"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"SQL: Sgaoileadh Dùthchasach",
+    "category":"demonstrations-gd-gb",
+    "name":"sql-gd-gb",
+    "label":"SQL: Sgaoileadh Dùthchasach",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"sql",
+    "description":"<p>Tagh aon no barrachd mòr-thìrean far a bheil an gnè seo dùthchasach.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `lje7b_categories` AS `a` \r\nLEFT JOIN `lje7b_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'gd-GB' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Teacsa: Ainm Laideann",
+    "category":"demonstrations-gd-gb",
+    "name":"text-gd-gb",
+    "label":"Teacsa: Ainm Saidheansail",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>Ainm saidheansail an t-sampaill seo.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Nàdar"
+},
+{
+    "title":"Raon-teacsa: Seòrsachadh",
+    "category":"demonstrations-gd-gb",
+    "name":"textarea-gd-gb",
+    "label":"Raon-teacsa: Seòrsachadh",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"textarea",
+    "description":"<p>Tuairisgeul air seòrsachadh saidheansail sampaill.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "rows":"3",
+        "cols":"128"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"URL: Tuilleadh Fiosrachaidh",
+    "category":"demonstrations-gd-gb",
+    "name":"url-gd-gb",
+    "label":"URL: Tuilleadh Fiosrachaidh",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"url",
+    "description":"<p>Thoir seachad URL airson tuilleadh fiosrachaidh.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Cleachdaiche: Neach-aithris",
+    "category":"demonstrations-gd-gb",
+    "name":"user-gd-gb",
+    "label":"Cleachdaiche: Neach-aithris",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"user",
+    "description":"<p>Fiosrachadh mun neach-aithris air an artaigil seo.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Liosta Buidhne Luchd-cleachdaidh: Luchd-stiùiridh",
+    "category":"demonstrations-gd-gb",
+    "name":"usergrouplist-gd-gb",
+    "label":"Liosta Buidhne Luchd-cleachdaidh: Luchd-stiùiridh",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"usergrouplist",
+    "description":"<p>Fiosrachadh mu bhuidhnean luchd-cleachdaidh.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
+},
+{
+    "title":"Bhidio: Eisimpleir de Chriomag",
+    "category":"demonstrations-gd-gb",
+    "name":"video-gd-gb",
+    "label":"Bhidio: Eisimpleir de Chriomag",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"video",
+    "description":"<p>Eisimpleir de chriomag bhidio.</p>",
+    "note":"",
+    "state":0,
+    "language":"gd-GB",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"videos",
+        "video_poster":"1",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Taisbeanaidhean"
 }]

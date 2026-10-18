@@ -1,0 +1,206 @@
+[{
+    "title":"Блог",
+    "alias":"blog-ru-ru",
+    "level":1,
+    "path":"blog",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Категория для записей блога, используемых в рабочем процессе.</p>",
+    "params": {
+    }
+},
+{
+    "title":"Информационный бюллетень",
+    "alias":"newsletter-ru-ru",
+    "level":1,
+    "path":"newsletter-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Категория для статей информационного бюллетеня.</p>",
+    "workflow_title":"Newsletter Workflow",
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
+    "title":"О ЮНЕСКО",
+    "alias":"about-unesco-ru-ru",
+    "level":1,
+    "path":"about-unesco-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Общая информация об объектах Всемирного наследия ЮНЕСКО.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "Фрагмент карты мира с изображениями некоторых объектов Всемирного наследия."
+    }
+},
+{
+    "title":"Объекты Всемирного наследия",
+    "alias":"heritage-ru-ru",
+    "level":1,
+    "path":"heritage-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Родительская категория для подкатегорий объектов Всемирного наследия ЮНЕСКО.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "Фрагмент карты мира с изображениями некоторых объектов Всемирного наследия."
+    }
+},
+{
+    "title":"Африка",
+    "alias":"africa-ru-ru",
+    "parent_alias":"heritage-ru-ru",
+    "level":2,
+    "path":"heritage/africa-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Список объектов Всемирного наследия ЮНЕСКО в Африке.</p>",
+    "params": {
+        "image": "images/demodata/heritage/serengeti-crop.jpg#joomlaImage://local-images/demodata/heritage/serengeti-crop.jpg?width=1440&height=333",
+        "imag_alt": "Изображение животных, созданное ИИ, в саванне Серенгети"
+    }
+},
+{
+    "title":"Americas",
+    "alias":"americas-ru-ru",
+    "parent_alias":"heritage-ru-ru",
+    "level":2,
+    "path":"heritage/americas-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Список объектов Всемирного наследия ЮНЕСКО в Америке.</p>"
+},
+{
+    "title":"Азия",
+    "alias":"asia-ru-ru",
+    "parent_alias":"heritage-ru-ru",
+    "level":2,
+    "path":"heritage/asia-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Список объектов Всемирного наследия ЮНЕСКО в Азии.</p>"
+},
+{
+    "title":"Европа",
+    "alias":"europe-ru-ru",
+    "parent_alias":"heritage-ru-ru",
+    "level":2,
+    "path":"heritage/europe-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Список объектов Всемирного наследия ЮНЕСКО в Европе.</p>"
+},
+{
+    "title":"Океания",
+    "alias":"oceania-ru-ru",
+    "parent_alias":"heritage-ru-ru",
+    "level":2,
+    "path":"heritage/oceania-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Список объектов Всемирного наследия ЮНЕСКО в Океании.</p>"
+},
+{
+    "title":"Демонстрации",
+    "alias":"demonstrations-ru-ru",
+    "parent_alias":"",
+    "level":1,
+    "path":"demonstrations-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Статьи, созданные для демонстрации возможностей Joomla.</p>"
+},
+{
+    "title":"Новости Joomla",
+    "alias":"joomla-news-ru-ru",
+    "parent_alias":"",
+    "level":1,
+    "path":"joomla-news-ru-ru",
+    "extension":"com_newsfeeds",
+    "language":"ru-RU",
+    "description":"<p>Категория для нескольких новостных лент Joomla.</p>"
+},
+{
+    "title":"Демонстрационный персонал",
+    "alias":"demo-staff-ru-ru",
+    "level":1,
+    "path":"demo-staff",
+    "extension":"com_contact",
+    "language":"ru-RU",
+    "description":"<p>Родительская категория для контактов демонстрационного персонала.</p>"
+},
+{
+    "title":"Демонстрационный магазин",
+    "alias":"demo-shop-ru-ru",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-shop",
+    "extension":"com_contact",
+    "language":"ru-RU",
+    "description":"<p>Дочерняя категория для контактов сотрудников демонстрационного магазина.</p>"
+},
+{
+    "title":"Demo Apiary",
+    "alias":"demo-apiary-ru-ru",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-apiary",
+    "extension":"com_contact",
+    "language":"ru-RU",
+    "description":"<p>Дочерняя категория для контактов сотрудников демонстрационной пасеки.</p>"
+},
+{
+    "title":"Природа",
+    "alias":"nature-ru-ru",
+    "level":1,
+    "path":"nature-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Parent category for articles about the living world.</p>"
+},
+{
+    "title":"Birds",
+    "alias":"nature-birds-ru-ru",
+    "parent_alias":"nature-ru-ru",
+    "level":2,
+    "path":"nature-ru-ru/nature-birds-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Category for articles about birds.</p>"
+},
+{
+    "title":"Цветы",
+    "alias":"nature-flowers-ru-ru",
+    "parent_alias":"nature-ru-ru",
+    "level":2,
+    "path":"nature-ru-ru/nature-flowers-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Category for articles about flowers.</p>"
+},
+{
+    "title":"Mammals",
+    "alias":"nature-mammals-ru-ru",
+    "parent_alias":"nature-ru-ru",
+    "level":2,
+    "path":"nature-ru-ru/nature-mammals-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Category for articles about mammals.</p>"
+},
+{
+    "title":"Trees",
+    "alias":"nature-trees-ru-ru",
+    "parent_alias":"nature-ru-ru",
+    "level":2,
+    "path":"nature-ru-ru/nature-trees-ru-ru",
+    "extension":"com_content",
+    "language":"ru-RU",
+    "description":"<p>Category for articles about trees.</p>"
+}
+]

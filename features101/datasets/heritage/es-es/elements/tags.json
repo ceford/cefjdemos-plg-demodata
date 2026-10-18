@@ -1,0 +1,66 @@
+[
+{
+    "title":"Etiquetas en inglés",
+    "alias":"tags-es-es",
+    "description":"<p>Categoría principal para etiquetas en inglés que se utilizarán en módulos.</p>",
+    "parent_alias":"",
+    "language":"es-ES",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
+},
+{
+    "title":"Sitio cultural",
+    "alias":"cultural-site-es-es",
+    "description":"<p>Sitios clasificados como valiosos por su cultura.</p>",
+    "parent_alias":"tags-es-es",
+    "language":"es-ES",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"Sitio natural",
+    "alias":"natural-site-es-es",
+    "description":"<p>Sitios clasificados como valiosos por su naturaleza.</p>",
+    "parent_alias":"tags-es-es",
+    "language":"es-ES",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"Sitio volcánico",
+    "alias":"volcanic-site-es-es",
+    "description":"<p>Sitios relacionados con la actividad volcánica actual o pasada.</p>",
+    "parent_alias":"tags-es-es",
+    "language":"es-ES",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"Fauna",
+    "alias":"wildlife-site-es-es",
+    "description":"<p>Sitios destacados por su fauna.</p>",
+    "parent_alias":"tags-es-es",
+    "language":"es-ES",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
+}]

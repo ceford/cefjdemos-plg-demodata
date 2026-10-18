@@ -1,0 +1,18 @@
+[{
+    "id":"0",
+    "title":"Sítios patrimoniais",
+    "description":"O menu dos sítios patrimoniais",
+    "menutype":"heritage-sites-pt-pt"
+},
+{
+    "id":"0",
+    "title":"Demonstrações",
+    "description":"Menu para várias demonstrações do Joomla",
+    "menutype":"demonstrations-pt-pt"
+},
+{
+    "id":"0",
+    "title":"Árvore de menus",
+    "description":"Demonstração de uma árvore de menus permanentemente aberta",
+    "menutype":"menu-tree-pt-pt"
+}]

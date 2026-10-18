@@ -1,0 +1,206 @@
+[{
+    "title":"Blog",
+    "alias":"blog-nl-nl",
+    "level":1,
+    "path":"blog",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Een categorie voor blogberichten die in een workflow kunnen worden gebruikt.</p>",
+    "params": {
+    }
+},
+{
+    "title":"Nieuwsbrief",
+    "alias":"newsletter-nl-nl",
+    "level":1,
+    "path":"newsletter-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Een categorie voor nieuwsbriefartikelen.</p>",
+    "workflow_title":"Newsletter Workflow",
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
+    "title":"Over UNESCO",
+    "alias":"about-unesco-nl-nl",
+    "level":1,
+    "path":"about-unesco-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Algemene informatie over UNESCO-werelderfgoedlocaties.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "Een uitgesneden wereldkaart met een selectie van werelderfgoedlocaties."
+    }
+},
+{
+    "title":"Werelderfgoedlocaties",
+    "alias":"heritage-nl-nl",
+    "level":1,
+    "path":"heritage-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Een bovenliggende categorie voor subcategorieën van UNESCO-werelderfgoedlocaties.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "Een uitgesneden wereldkaart met een selectie van werelderfgoedlocaties."
+    }
+},
+{
+    "title":"Afrika",
+    "alias":"africa-nl-nl",
+    "parent_alias":"heritage-nl-nl",
+    "level":2,
+    "path":"heritage/africa-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Een lijst van UNESCO-werelderfgoedlocaties in Afrika.</p>",
+    "params": {
+        "image": "images/demodata/heritage/serengeti-crop.jpg#joomlaImage://local-images/demodata/heritage/serengeti-crop.jpg?width=1440&height=333",
+        "imag_alt": "Door AI gegenereerde afbeelding van dieren die door de Serengeti trekken"
+    }
+},
+{
+    "title":"Americas",
+    "alias":"americas-nl-nl",
+    "parent_alias":"heritage-nl-nl",
+    "level":2,
+    "path":"heritage/americas-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Een lijst van UNESCO-werelderfgoedlocaties in Noord- en Zuid-Amerika.</p>"
+},
+{
+    "title":"Azië",
+    "alias":"asia-nl-nl",
+    "parent_alias":"heritage-nl-nl",
+    "level":2,
+    "path":"heritage/asia-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Een lijst van UNESCO-werelderfgoedlocaties in Azië.</p>"
+},
+{
+    "title":"Europa",
+    "alias":"europe-nl-nl",
+    "parent_alias":"heritage-nl-nl",
+    "level":2,
+    "path":"heritage/europe-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Een lijst van UNESCO-werelderfgoedlocaties in Europa.</p>"
+},
+{
+    "title":"Oceanië",
+    "alias":"oceania-nl-nl",
+    "parent_alias":"heritage-nl-nl",
+    "level":2,
+    "path":"heritage/oceania-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Een lijst van UNESCO-werelderfgoedlocaties in Oceanië.</p>"
+},
+{
+    "title":"Demonstraties",
+    "alias":"demonstrations-nl-nl",
+    "parent_alias":"",
+    "level":1,
+    "path":"demonstrations-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Artikelen die zijn samengesteld om Joomla-functies te demonstreren.</p>"
+},
+{
+    "title":"Joomla-nieuws",
+    "alias":"joomla-news-nl-nl",
+    "parent_alias":"",
+    "level":1,
+    "path":"joomla-news-nl-nl",
+    "extension":"com_newsfeeds",
+    "language":"nl-NL",
+    "description":"<p>Een categorie voor meerdere Joomla-nieuwsfeeds.</p>"
+},
+{
+    "title":"Demomedewerkers",
+    "alias":"demo-staff-nl-nl",
+    "level":1,
+    "path":"demo-staff",
+    "extension":"com_contact",
+    "language":"nl-NL",
+    "description":"<p>Bovenliggende categorie voor demonstratiecontacten van medewerkers.</p>"
+},
+{
+    "title":"Demo-shop",
+    "alias":"demo-shop-nl-nl",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-shop",
+    "extension":"com_contact",
+    "language":"nl-NL",
+    "description":"<p>Subcategorie voor medewerkers van de demonstratiecontacten van de shop.</p>"
+},
+{
+    "title":"Demo Apiary",
+    "alias":"demo-apiary-nl-nl",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-apiary",
+    "extension":"com_contact",
+    "language":"nl-NL",
+    "description":"<p>Subcategorie voor medewerkers van de demonstratiecontacten van Apiary.</p>"
+},
+{
+    "title":"Natuur",
+    "alias":"nature-nl-nl",
+    "level":1,
+    "path":"nature-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Parent category for articles about the living world.</p>"
+},
+{
+    "title":"Birds",
+    "alias":"nature-birds-nl-nl",
+    "parent_alias":"nature-nl-nl",
+    "level":2,
+    "path":"nature-nl-nl/nature-birds-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Category for articles about birds.</p>"
+},
+{
+    "title":"Bloemen",
+    "alias":"nature-flowers-nl-nl",
+    "parent_alias":"nature-nl-nl",
+    "level":2,
+    "path":"nature-nl-nl/nature-flowers-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Category for articles about flowers.</p>"
+},
+{
+    "title":"Mammals",
+    "alias":"nature-mammals-nl-nl",
+    "parent_alias":"nature-nl-nl",
+    "level":2,
+    "path":"nature-nl-nl/nature-mammals-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Category for articles about mammals.</p>"
+},
+{
+    "title":"Trees",
+    "alias":"nature-trees-nl-nl",
+    "parent_alias":"nature-nl-nl",
+    "level":2,
+    "path":"nature-nl-nl/nature-trees-nl-nl",
+    "extension":"com_content",
+    "language":"nl-NL",
+    "description":"<p>Category for articles about trees.</p>"
+}
+]

@@ -1,0 +1,442 @@
+[
+{
+    "state":1,
+    "title":"Oktober: Water verandert in bloed",
+    "alias":"newsletter-water-turns-to-blood-nl-nl",
+    "category_alias":"newsletter-nl-nl",
+    "language":"nl-NL",
+    "text_source":"october-water-turns-to-blood.html",
+    "metadesc":"Een verslag van de eerste van de tien plagen die het oude Egypte ten tijde van Mozes troffen.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":1,
+    "title":"November: Kikkers",
+    "alias":"newsletter-frogs-nl-nl",
+    "category_alias":"newsletter-nl-nl",
+    "language":"nl-NL",
+    "text_source":"november-frogs.html",
+    "metadesc":"Een verslag van de tweede van de tien plagen die het oude Egypte ten tijde van Mozes troffen.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":0,
+    "title":"December: Muggen of luizen",
+    "alias":"newsletter-gnats-or-lice-nl-nl",
+    "category_alias":"newsletter-nl-nl",
+    "language":"nl-NL",
+    "text_source":"december-gnats-or-lice.html",
+    "metadesc":"Een verslag van de derde van de tien plagen die het oude Egypte ten tijde van Mozes troffen.",
+    "created_by_name":"Eddie",
+    "created_by_alias":"Miriam",
+    "workflow":"Newsletter Workflow",
+    "stage":"Draft"
+},
+{
+    "state":1,
+    "title":"Afscheidsfeest",
+    "alias":"leaving-party-nl-nl",
+    "category_alias":"demonstrations-nl-nl",
+    "language":"nl-NL",
+    "text_source":"leaving-party.html",
+    "metadesc":"Enkele citaten en foto's van het afscheidsfeest van John."
+},
+{
+    "state":1,
+    "title":"Bevolkingsstatistieken",
+    "alias":"pop-stats-nl-nl",
+    "category_alias":"demonstrations-nl-nl",
+    "language":"nl-NL",
+    "text_source":"pop-stats.html",
+    "metadesc":"Een korte beschrijving van bevolkingsstatistieken per continent."
+},
+{
+    "state":1,
+    "title":"Poëzie over boshyacinten",
+    "alias":"bluebell-poetry-nl-nl",
+    "category_alias":"demonstrations-nl-nl",
+    "language":"nl-NL",
+    "text_source":"bluebell-poetry.html",
+    "hits":"17",
+    "metadesc":"Een gedicht over boshyacinten van John Clare (1793-1864)."
+},
+{
+    "state":1,
+    "title":"Boshyacinten",
+    "alias":"bluebells-nl-nl",
+    "category_alias":"demonstrations-nl-nl",
+    "language":"nl-NL",
+    "text_source":"bluebells.html",
+    "hits":"17",
+    "metadesc":"Een korte beschrijving van het uiterlijk, de verspreiding en de sociale rol van boshyacinten.",
+    "fields": {
+        "audio-nl-nl":"{\"file\":\"files\/demodata\/heritage\/one-summer.mp3\"}",
+        "calendar-nl-nl":"2024-04-01",
+        "checkboxes-nl-nl":{"0":"1","1":"3"},
+        "color-nl-nl":"#4e3ac2",
+        "document-nl-nl":"{\"file\":\"files\/demodata\/heritage\/lorem-ipsum.txt\"}",
+        "editor-nl-nl":"Boshyacinten groeien het best in halfschaduw met vochtige, goed doorlatende grond die rijk is aan organisch materiaal.",
+        "integer-nl-nl":"5",
+        "list-items-nl-nl":"3",
+        "images-list-nl-nl":{"0":"bluebell-flower-blue-128.png","1":"bluebell-flower-pink-128.png"},
+        "media-nl-nl":"{\"imagefile\":\"images\/demodata\/heritage\/bluebells-150.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-150.jpg?width=150&height=150\",\"alt_text\":\"Woodland scene with carpet of bluebells.\"}",
+        "number-nl-nl":"7.5",
+        "radio-nl-nl":"perennial",
+        "sql-nl-nl":"europe-nl-nl",
+        "subform-field-locations-nl-nl": {
+            "row0": {
+                    "demo-date-nl-nl":"2026-05-12 14:27:17",
+                    "w3w-nl-nl":"///camper.bandaged.slower (Dalkeith Country Park)",
+                    "rating-nl-nl":"5"
+                },
+            "row1": {
+                "demo-date-nl-nl":"2025-06-01 14:27:17",
+                "w3w-nl-nl":"ne///vehicle.cubic.played (Roslin Glen)",
+                "rating-nl-nl":"4"
+            }
+        },
+        "text-nl-nl":"Hyacinthoides non-scripta",
+        "textarea-nl-nl":"Boshyacinten zijn een soort bloeiende planten uit het geslacht Hyacinthoides van de aspergefamilie.",
+        "url-nl-nl":"https://en.wikipedia.org/wiki/Hyacinthoides_non-scripta",
+        "user-nl-nl":"playwright",
+        "usergrouplist-nl-nl":{"0":"7","1":"5"},
+        "video-nl-nl":"{\"file\":\"files\/demodata\/heritage\/badger-vs-fox-400-silent.mp4\", \"poster\":\"files\/demodata\/heritage\/badger-vs-fox-400.jpg#joomlaImage:\/\/local-files\/demodata\/heritage\/badger-vs-fox-400.jpg?width=400&height=226\"}"
+    },
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/bluebells-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-200.jpg?width=200&height=200",
+        "image_intro_alt":"Een boslandschap met tapijten van boshyacinten",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/bluebells-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"Een boslandschap met tapijten van boshyacinten",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Locaties ingeschreven in 1978",
+    "alias":"sites-inscribed-in-1978-nl-nl",
+    "category_alias":"demonstrations-nl-nl",
+    "language":"nl-NL",
+    "text_source":"sites-table-1978.html"
+},
+{
+    "state":2,
+    "title":"Liverpool – Maritieme handelsstad",
+    "alias":"liverpool-nl-nl",
+    "category_alias":"europe-nl-nl",
+    "language":"nl-NL",
+    "text_source":"liverpool.html",
+    "metadesc":"Het havengebied van de stad Liverpool",
+    "fields": {
+        "location-nl-nl":"N53 24 24 W2 59 40",
+        "year-of-inscription-nl-nl":"2004"
+    },
+    "tags": ["cultural-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/liverpool-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-200.jpg?width=200&height=123",
+        "image_intro_alt":"De waterkant van Liverpool en het Liver Building",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/liverpool-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-400.jpg?width=400&height=246",
+        "image_fulltext_alt":"De waterkant van Liverpool en het Liver Building",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Sydney Opera House",
+    "alias":"sydney-opera-house-nl-nl",
+    "category_alias":"oceania-nl-nl",
+    "language":"nl-NL",
+    "text_source":"sydney-opera-house.html",
+    "fields": {
+        "location-nl-nl":"S33 51 24 E151 12 55",
+        "year-of-inscription-nl-nl":"2007"
+    },
+    "tags": ["cultural-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/sydney-opera-house-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-200.jpg?width=200&height=150",
+        "image_intro_alt":"Een luchtfoto van het Sydney Opera House",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/sydney-opera-house-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Een luchtfoto van het Sydney Opera House",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Great Barrier Reef",
+    "alias":"great-barrier-reef-nl-nl",
+    "category_alias":"oceania-nl-nl",
+    "language":"nl-NL",
+    "text_source":"great-barrier-reef.html",
+    "featured": "1",
+    "metadesc":"Een korte beschrijving van een locatie met een opmerkelijke verscheidenheid en schoonheid aan de noordoostkust van Australië",
+    "fields": {
+        "location-nl-nl":"S18 17 10 E147 41 60",
+        "year-of-inscription-nl-nl":"1981"
+    },
+    "tags": ["natural-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-barrier-reef-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-200.jpg?width=200&height=133",
+        "image_intro_alt":"Een groep rifvormende koralen",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-barrier-reef-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Een groep rifvormende koralen",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Akropolis van Athene",
+    "alias":"acropolis-of-athens-nl-nl",
+    "category_alias":"europe-nl-nl",
+    "language":"nl-NL",
+    "text_source":"acropolis-of-athens.html",
+    "metadesc":"Een overzicht van universele symbolen van de klassieke geest en beschaving.",
+    "fields": {
+        "location-nl-nl":" N37 58 15.132 E23 43 34.248 ",
+        "year-of-inscription-nl-nl":"1987"
+    },
+    "tags": ["cultural-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/acropolis-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-200.jpg?width=200&height=133",
+        "image_intro_alt":"Ruïnes die oorspronkelijk op een dominante vlakke heuveltop zijn gebouwd",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/acropolis-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Ruïnes die oorspronkelijk op een dominante vlakke heuveltop zijn gebouwd",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Taj Mahal",
+    "alias":"taj-mahal-nl-nl",
+    "category_alias":"asia-nl-nl",
+    "language":"nl-NL",
+    "featured": "1",
+    "text_source":"taj-mahal.html",
+    "metadesc":"Een immens mausoleum van wit marmer...",
+    "fields": {
+        "location-nl-nl":"N27 10 27.012 E78 2 31.992",
+        "year-of-inscription-nl-nl":"1983"
+    },
+    "tags": ["cultural-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/taj-mahal-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-200.jpg?width=200&height=200",
+        "image_intro_alt":"De indrukwekkende toegangsweg naar een weelderig paleis",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/taj-mahal-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"De indrukwekkende toegangsweg naar een weelderig paleis",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Chinese Muur",
+    "alias":"great-wall-of-china-nl-nl",
+    "category_alias":"asia-nl-nl",
+    "language":"nl-NL",
+    "text_source":"great-wall-of-china.html",
+    "metadesc":"Een inleiding tot een enorm verdedigingswerk.",
+    "fields": {
+        "location-nl-nl":"",
+        "year-of-inscription-nl-nl":"1987"
+    },
+    "tags": ["cultural-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-wall-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-200.jpg?width=200&height=279",
+        "image_intro_alt":"Een deel van de Chinese Muur, gebouwd van steen over heuvelachtig terrein",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-wall-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-400.jpg?width=400&height=558",
+        "image_fulltext_alt":"Een deel van de Chinese Muur, gebouwd van steen over heuvelachtig terrein",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Galapagoseilanden",
+    "alias":"galapagos-islands-nl-nl",
+    "category_alias":"americas-nl-nl",
+    "language":"nl-NL",
+    "text_source":"galapagos-islands.html",
+    "metadesc":"De 19 eilanden en het omliggende zeereservaat worden een uniek <em>levend museum en etalage van de evolutie</em> genoemd.",
+    "fields": {
+        "location-nl-nl":"N0 41 23.496 W90 30 4.748",
+        "year-of-inscription-nl-nl":"2001"
+    },
+    "tags": ["natural-site-nl-nl", "volcanic-site-nl-nl", "wildlife-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/galapagos-2-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-200.jpg?width=200&height=133",
+        "image_intro_alt":"Reuzenschildpadden die uniek zijn voor de Galapagoseilanden",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/galapagos-2-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Reuzenschildpadden die uniek zijn voor de Galapagoseilanden",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Machu Picchu",
+    "alias":"machu-picchu-nl-nl",
+    "category_alias":"americas-nl-nl",
+    "language":"nl-NL",
+    "featured": "1",
+    "text_source":"machu-picchu.html",
+    "metadesc":"Een korte beschrijving van deze locatie op 2.430 m boven zeeniveau, midden in een tropisch bergwoud.",
+    "fields": {
+        "location-nl-nl":"S13 11 5.762 W72 32 0.395",
+        "year-of-inscription-nl-nl":"1983"
+    },
+    "tags": ["cultural-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/machu-picchu-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-200.jpg?width=200&height=150",
+        "image_intro_alt":"Klassiek uitzicht op de ruïnes op de heuveltop",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/machu-picchu-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Klassiek uitzicht op de ruïnes op de heuveltop",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Giant's Causeway",
+    "alias":"giants-causeway-nl-nl",
+    "category_alias":"europe-nl-nl",
+    "language":"nl-NL",
+    "text_source":"giants-causeway.html",
+    "featured": "1",
+    "metadesc":"Verken de basaltkliffen langs de kust aan de rand van het Antrimplateau in Noord-Ierland",
+    "fields": {
+        "location-nl-nl":"N55 14 27 W6 30 42",
+        "year-of-inscription-nl-nl":"1986"
+    },
+    "tags": ["natural-site-nl-nl", "volcanic-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giants-causeway-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-200.jpg?width=200&height=143",
+        "image_intro_alt":"Basaltzuilen die zijn gevormd in een dikke horizontale laag magma",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giants-causeway-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-400.jpg?width=400&height=286",
+        "image_fulltext_alt":"Basaltzuilen die zijn gevormd in een dikke horizontale laag magma",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Piramides van Gizeh",
+    "alias":"pyramids-of-giza-nl-nl",
+    "category_alias":"africa-nl-nl",
+    "language":"nl-NL",
+    "featured": "0",
+    "text_source":"pyramids-of-giza.html",
+    "metadesc":"Bewonder de buitengewone grafmonumenten uit het Oude Rijk van Egypte.",
+    "fields": {
+        "location-nl-nl":"",
+        "year-of-inscription-nl-nl":"1979"
+    },
+    "tags": ["cultural-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giza-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-200.jpg?width=200&height=133",
+        "image_intro_alt":"De Sfinx met de piramide van Gizeh op de achtergrond",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giza-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"De Sfinx met de piramide van Gizeh op de achtergrond",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Nationaal park Serengeti",
+    "alias":"serengeti-national-park-nl-nl",
+    "category_alias":"africa-nl-nl",
+    "language":"nl-NL",
+    "text_source":"serengeti-national-park.html",
+    "metadesc":"Verken de uitgestrekte vlaktes van de Serengeti en bekijk de jaarlijkse trek van enorme kuddes herbivoren, gevolgd door hun roofdieren.",
+    "fields": {
+        "location-nl-nl":"S2 44 24 E34 51 32.4",
+        "year-of-inscription-nl-nl":"1981"
+    },
+    "tags": ["natural-site-nl-nl", "wildlife-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Olifanten en zebra's",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Olifanten en zebra's",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Ngorongoro-natuurgebied",
+    "alias":"ngorongoro-conservation-area-nl-nl",
+    "category_alias":"africa-nl-nl",
+    "language":"nl-NL",
+    "text_source":"ngorongoro-conservation-area.html",
+    "featured": "1",
+    "metadesc":"Uitgestrekte hoogvlakten, savannes, bosgebieden en wouden waar wilde dieren samenleven met semi-nomadische Maasai-herders.",
+    "fields": {
+        "location-nl-nl":"S S3 11 13.992 E35 32 26.988",
+        "year-of-inscription-nl-nl":"1979"
+    },
+    "tags": ["natural-site-nl-nl", "volcanic-site-nl-nl", "wildlife-site-nl-nl"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/ngorongoro-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-200.jpg?width=200&height=133",
+        "image_intro_alt":"Dieren trekken over de kraterbodem met de kraterrand in de verte",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/ngorongoro-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Dieren trekken over de kraterbodem met de kraterrand in de verte",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Over UNESCO-locaties",
+    "alias":"about-unesco-sites-nl-nl",
+    "category_alias":"about-unesco-nl-nl",
+    "language":"nl-NL",
+    "text_source":"about-unesco-sites.html",
+    "hits":"135",
+    "metadesc":"Een korte inleiding tot de UNESCO-werelderfgoedlocaties.",
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Olifanten en zebra's",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Olifanten en zebra's",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+}]

@@ -1,0 +1,647 @@
+[
+{
+    "title":"Дата",
+    "category":"",
+    "name":"demo-date-ru-ru",
+    "label":"Дата",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>Универсальное поле даты для использования во вложенных формах.</p>",
+    "note":"",
+    "state":1,
+    "language":"ru-RU",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"W3W",
+    "category":"",
+    "name":"w3w-ru-ru",
+    "label":"W3W",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>Местоположение объекта в формате What3Words.</p>",
+    "note":"",
+    "state":1,
+    "language":"ru-RU",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Оценка",
+    "category":"",
+    "name":"rating-ru-ru",
+    "label":"Оценка",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>Оценка объекта по шкале от 0 до 5.</p>",
+    "note":"",
+    "state":1,
+    "language":"ru-RU",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "first":"0",
+        "last":"5",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Поле вложенной формы: местоположения",
+    "category":"",
+    "name":"subform-field-locations-ru-ru",
+    "label":"Поле вложенной формы: местоположения",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"subform",
+    "description":"Поле для записи данных из разных мест.",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "hint":"","class":"",
+        "label_class":"",
+        "show_on":"",
+        "showon":"",
+        "render_class":"",
+        "value_render_class":"",
+        "showlabel":"1",
+        "label_render_class":"",
+        "display":"2",
+        "prefix":"",
+        "suffix":"",
+        "layout":"",
+        "display_readonly":"2",
+        "searchindex":"0",
+        "form_layout":""
+    },
+    "fieldparams":{
+        "repeat":"1",
+        "max_rows":"",
+        "options":{
+            "option0":{"customfield":"Дата","render_values":"1"},
+            "option1":{"customfield":"W3W","render_values":"1"},
+            "option2":{"customfield":"Оценка","render_values":"1"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Природа"
+},
+{
+    "title":"Год включения",
+    "category":"heritage-ru-ru",
+    "name":"year-of-inscription-ru-ru",
+    "label":"Year Inscribed",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>Год включения объекта в список ЮНЕСКО.</p>",
+    "note":"",
+    "state":1,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1972",
+        "last":"2026",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Данные об объекте"
+},
+{
+    "title":"Местоположение",
+    "category":"heritage-ru-ru",
+    "name":"location-ru-ru",
+    "label":"Местоположение",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>Широта и долгота объекта.</p>",
+    "note":"",
+    "state":1,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Данные об объекте"
+},
+{
+    "title":"Аудио: пример дорожки",
+    "category":"demonstrations-ru-ru",
+    "name":"audio-ru-ru",
+    "label":"Аудио: пример дорожки",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"audio",
+    "description":"<p>Аудиоописание.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"audios",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Календарь: дата фотографии",
+    "category":"demonstrations-ru-ru",
+    "name":"calendar-ru-ru",
+    "label":"Календарь: дата фотографии",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>Дата создания фотографии может быть важна для сезонных объектов.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Флажки: размножение",
+    "category":"demonstrations-ru-ru",
+    "name":"checkboxes-ru-ru",
+    "label":"Флажки: размножение",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"checkboxes",
+    "description":"<p>Выберите один или несколько вариантов из списка.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"Семя","value":"1"},
+            "options1":{"name":"Черенок","value":"2"},
+            "options2":{"name":"Луковица","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Цветы"
+},
+{
+    "title":"Цвет: цветок",
+    "category":"demonstrations-ru-ru",
+    "name":"color-ru-ru",
+    "label":"Colour: Flower",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"color",
+    "description":"<p>Select a colour with a widget.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "colour":"4e3ac2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Цветы"
+},
+{
+    "title":"Документ: загрузка",
+    "category":"demonstrations-ru-ru",
+    "name":"document-ru-ru",
+    "label":"Документ: загрузка",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"document",
+    "description":"<p>Выберите документ.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:\/",
+        "preview":"",
+        "css_class":"",
+        "types":"documents"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Редактор: выращивание",
+    "category":"demonstrations-ru-ru",
+    "name":"editor-ru-ru",
+    "label":"Редактор: выращивание",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"editor",
+    "description":"<p>Поле для заметок по выращиванию.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "cultivation-ru-ru":"Колокольчики лучше всего растут в полутени, во влажной, хорошо дренированной почве, богатой органическими веществами."
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Целое число: зимостойкость RHS",
+    "category":"demonstrations-ru-ru",
+    "name":"integer-ru-ru",
+    "label":"Целое число: зимостойкость RHS",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>Число от 1 до 7, обозначающее показатель зимостойкости этого цветка по классификации Королевского садоводческого общества.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1",
+        "last":"7",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Цветы"
+},
+{
+    "title":"Список: распространение",
+    "category":"demonstrations-ru-ru",
+    "name":"list-items-ru-ru",
+    "label":"Список: распространение",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"list",
+    "description":"<p>Select one or more from a number of list items.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"Африка","value":"1"},
+            "options1":{"name":"Азия","value":"2"},
+            "options2":{"name":"Европа","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Список изображений: цвета цветов",
+    "category":"demonstrations-ru-ru",
+    "name":"images-list-ru-ru",
+    "label":"Список изображений: цвета цветов",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"imagelist",
+    "description":"<p>Добавьте одно или несколько изображений в список.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"demodata/heritage",
+        "multiple":"1",
+        "image_class":"me-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Мультимедиа: типичное произрастание",
+    "category":"demonstrations-ru-ru",
+    "name":"media-ru-ru",
+    "label":"Мультимедиа: типичное произрастание",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"media",
+    "description":"<p>Выберите элемент из папки мультимедиа.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-images:/demodata/heritage",
+        "image_class":"ms-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Примечание: дополнительная информация",
+    "category":"demonstrations-ru-ru",
+    "name":"note-ru-ru",
+    "label":"Примечание: дополнительная информация",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"note",
+    "description":"<p>Составьте информацию для пользователей административной или внешней части сайта.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1",
+        "display_frontend":"1"
+    },
+    "fieldparams":{
+        "label":"Правовая информация",
+        "description":"В некоторых странах сбор колокольчиков может быть уголовным преступлением!",
+        "class":"alert alert-info m-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Число: вес семени",
+    "category":"demonstrations-ru-ru",
+    "name":"number-ru-ru",
+    "label":"Число: вес семени",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"number",
+    "description":"<p>Укажите средний вес семени.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "currency":"1",
+        "symbol":" milligrams",
+        "position":"1",
+        "decimals":"2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Переключатели: жизненный цикл",
+    "category":"demonstrations-ru-ru",
+    "name":"radio-ru-ru",
+    "label":"Переключатели: жизненный цикл",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"radio",
+    "description":"<p>Выберите тип жизненного цикла.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"- Выберите -","value":""},
+            "options1":{"name":"Однолетнее","value":"annual"},
+            "options2":{"name":"Двулетнее","value":"biennial"},
+            "options3":{"name":"Многолетнее","value":"perennial"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"SQL: естественный ареал",
+    "category":"demonstrations-ru-ru",
+    "name":"sql-ru-ru",
+    "label":"SQL: естественный ареал",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"sql",
+    "description":"<p>Выберите один или несколько континентов, где этот вид является аборигенным.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `lje7b_categories` AS `a` \r\nLEFT JOIN `lje7b_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'ru-RU' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Текст: латинское название",
+    "category":"demonstrations-ru-ru",
+    "name":"text-ru-ru",
+    "label":"Текст: Научное название",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>Научное название этого образца.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Природа"
+},
+{
+    "title":"Текстовая область: классификация",
+    "category":"demonstrations-ru-ru",
+    "name":"textarea-ru-ru",
+    "label":"Текстовая область: классификация",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"textarea",
+    "description":"<p>Описание научной классификации образца.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "rows":"3",
+        "cols":"128"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"URL: дополнительная информация",
+    "category":"demonstrations-ru-ru",
+    "name":"url-ru-ru",
+    "label":"URL: дополнительная информация",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"url",
+    "description":"<p>Укажите URL с дополнительной информацией.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Пользователь: автор",
+    "category":"demonstrations-ru-ru",
+    "name":"user-ru-ru",
+    "label":"Пользователь: автор",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"user",
+    "description":"<p>Информация об авторе этой статьи.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Список групп пользователей: руководители",
+    "category":"demonstrations-ru-ru",
+    "name":"usergrouplist-ru-ru",
+    "label":"Список групп пользователей: руководители",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"usergrouplist",
+    "description":"<p>Информация о группах пользователей.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+},
+{
+    "title":"Видео: пример клипа",
+    "category":"demonstrations-ru-ru",
+    "name":"video-ru-ru",
+    "label":"Видео: пример клипа",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"video",
+    "description":"<p>Пример видеоклипа.</p>",
+    "note":"",
+    "state":0,
+    "language":"ru-RU",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"videos",
+        "video_poster":"1",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Демонстрации"
+}]

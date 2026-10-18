@@ -1,14 +1,13 @@
 [{
     "title":"Dàta Làraich",
-    "description":"<p>Is e seo buidheann de raointean anns a bheil dàta làraich dualchais.</p>",
+    "description":"<p>Seo buidheann de raointean anns a bheil dàta mu làraichean dualchais.</p>",
     "context":"com_content.article",
     "state":1,
     "id":0,
     "language":"gd-GB"
-},
-{
+},{
     "title":"Taisbeanaidhean",
-    "description":"<p>Is e seo buidheann de raointean a thathas a’ cleachdadh gus gach seòrsa raon a thaisbeanadh.</p>",
+    "description":"<p>Seo buidheann de raointean a thathar a’ cleachdadh gus gach seòrsa raoin a thaisbeanadh.</p>",
     "context":"com_content.article",
     "state":1,
     "id":0,
@@ -16,7 +15,7 @@
 },
 {
     "title":"Nàdar",
-    "description":"<p>Buidhnean airson taobhan de nàdar a tha a’ buntainn ri gach beathach is lus.</p>",
+    "description":"<p>Buidheann airson taobhan de nàdar a tha a’ buntainn ris a h-uile beathach agus lus.</p>",
     "context":"com_content.article",
     "state":1,
     "id":0,
@@ -24,7 +23,7 @@
 },
 {
     "title":"Flùraichean",
-    "description":"<p>Buidhnean airson feartan a tha a’ buntainn ri lusan flùranach a-mhàin.</p>",
+    "description":"<p>Raointean nach eil a’ buntainn ach ri lusan flùranach.</p>",
     "context":"com_content.article",
     "state":1,
     "id":0,

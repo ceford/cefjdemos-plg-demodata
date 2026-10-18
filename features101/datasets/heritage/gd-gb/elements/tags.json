@@ -1,7 +1,8 @@
-[{
-    "title":"Tagaichean Gàidhlig",
+[
+{
+    "title":"Tagaichean Beurla",
     "alias":"tags-gd-gb",
-    "description":"<p>Pàrant airson tagaichean Gàidhlig airson an cleachdadh ann am modalan.</p>",
+    "description":"<p>Pàrant airson tagaichean Beurla airson an cleachdadh ann am mòidealan.</p>",
     "parent_alias":"",
     "language":"gd-GB",
     "published":1,
@@ -12,9 +13,9 @@
     }
 },
 {
-    "title":"Làrach Cultarach",
+    "title":"Làrach Chultarach",
     "alias":"cultural-site-gd-gb",
-    "description":"<p>Làraichean a chaidh a sheòrsachadh mar làraichean luachmhor air sgàth an cultar.</p>",
+    "description":"<p>Làraichean a chaidh an seòrsachadh mar làraichean le luach airson an cultair.</p>",
     "parent_alias":"tags-gd-gb",
     "language":"gd-GB",
     "published":1,
@@ -27,7 +28,7 @@
 {
     "title":"Làrach Nàdarra",
     "alias":"natural-site-gd-gb",
-    "description":"<p>Làraichean a chaidh a sheòrsachadh mar làraichean luachmhor air sgàth an nàdair.</p>",
+    "description":"<p>Làraichean a chaidh an seòrsachadh mar làraichean le luach airson an nàdair.</p>",
     "parent_alias":"tags-gd-gb",
     "language":"gd-GB",
     "published":1,
@@ -40,7 +41,7 @@
 {
     "title":"Làrach Bholcànach",
     "alias":"volcanic-site-gd-gb",
-    "description":"<p>Làraichean a tha co-cheangailte ri gnìomhachd bholcànach an-dràsta no san àm a dh'fhalbh.</p>",
+    "description":"<p>Làraichean a tha co-cheangailte ri gnìomhachd bholcànach làithreach no san àm a dh’fhalbh.</p>",
     "parent_alias":"tags-gd-gb",
     "language":"gd-GB",
     "published":1,
@@ -53,7 +54,7 @@
 {
     "title":"Fiadh-bheatha",
     "alias":"wildlife-site-gd-gb",
-    "description":"<p>Làraichean a tha ainmeil airson am beathaichean fiadhaich.</p>",
+    "description":"<p>Làraichean a tha ainmeil airson am fiadh-bheatha.</p>",
     "parent_alias":"tags-gd-gb",
     "language":"gd-GB",
     "published":1,

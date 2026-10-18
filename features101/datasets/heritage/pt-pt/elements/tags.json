@@ -1,0 +1,66 @@
+[
+{
+    "title":"Etiquetas em inglês",
+    "alias":"tags-pt-pt",
+    "description":"<p>Categoria principal para etiquetas em inglês a utilizar em módulos.</p>",
+    "parent_alias":"",
+    "language":"pt-PT",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
+},
+{
+    "title":"Sítio cultural",
+    "alias":"cultural-site-pt-pt",
+    "description":"<p>Sítios classificados como tendo valor cultural.</p>",
+    "parent_alias":"tags-pt-pt",
+    "language":"pt-PT",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"Sítio natural",
+    "alias":"natural-site-pt-pt",
+    "description":"<p>Sítios classificados como tendo valor natural.</p>",
+    "parent_alias":"tags-pt-pt",
+    "language":"pt-PT",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"Sítio vulcânico",
+    "alias":"volcanic-site-pt-pt",
+    "description":"<p>Sítios relacionados com atividade vulcânica atual ou passada.</p>",
+    "parent_alias":"tags-pt-pt",
+    "language":"pt-PT",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"Vida selvagem",
+    "alias":"wildlife-site-pt-pt",
+    "description":"<p>Sítios conhecidos pela sua vida selvagem.</p>",
+    "parent_alias":"tags-pt-pt",
+    "language":"pt-PT",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
+}]

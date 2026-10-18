@@ -1,46 +1,4 @@
 [{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"featured-sites-blog-en-gb",
-        "ta-IN":"featured-sites-blog-ta-in"
-    }
-},
-{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"about-unesco-en-gb",
-        "ta-IN":"about-unesco-ta-in"
-    }
-},
-{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"africa-blog-en-gb",
-        "ta-IN":"africa-blog-ta-in"
-    }
-},
-{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"africa-list-en-gb",
-        "ta-IN":"africa-list-ta-in"
-    }
-},
-{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"serengeti-en-gb",
-        "ta-IN":"serengeti-ta-in"
-    }
-},
-{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"login-form-en-gb",
-        "ta-IN":"login-form-ta-in"
-    }
-},
-{
     "context":"com_content.item",
     "alias":{
         "en-GB":"sites-inscribed-in-1978-en-gb",
@@ -52,6 +10,48 @@
     "alias":{
         "en-GB":"bluebells-en-gb",
         "ta-IN":"bluebells-ta-in"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"bluebell-poetry-en-gb",
+        "ta-IN":"bluebell-poetry-ta-in"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"pop-stats-en-gb",
+        "ta-IN":"pop-stats-ta-in"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"leaving-party-en-gb",
+        "ta-IN":"leaving-party-ta-in"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"newsletter-gnats-or-lice-en-gb",
+        "ta-IN":"newsletter-gnats-or-lice-ta-in"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"newsletter-frogs-en-gb",
+        "ta-IN":"newsletter-frogs-ta-in"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"newsletter-water-turns-to-blood-en-gb",
+        "ta-IN":"newsletter-water-turns-to-blood-ta-in"
     }
 },
 {
@@ -227,5 +227,47 @@
     "alias":{
         "en-GB":"oceania-en-gb",
         "ta-IN":"oceania-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"featured-sites-blog-en-gb",
+        "ta-IN":"featured-sites-blog-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"about-unesco-en-gb",
+        "ta-IN":"about-unesco-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"africa-blog-en-gb",
+        "ta-IN":"africa-blog-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"africa-list-en-gb",
+        "ta-IN":"africa-list-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"serengeti-en-gb",
+        "ta-IN":"serengeti-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"login-form-en-gb",
+        "ta-IN":"login-form-ta-in"
     }
 }]

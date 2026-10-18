@@ -1,0 +1,442 @@
+[
+{
+    "state":1,
+    "title":"Ottobre: l'acqua si trasforma in sangue",
+    "alias":"newsletter-water-turns-to-blood-it-it",
+    "category_alias":"newsletter-it-it",
+    "language":"it-IT",
+    "text_source":"october-water-turns-to-blood.html",
+    "metadesc":"Un resoconto della prima delle dieci piaghe che colpirono l'antico Egitto ai tempi di Mosè.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":1,
+    "title":"Novembre: rane",
+    "alias":"newsletter-frogs-it-it",
+    "category_alias":"newsletter-it-it",
+    "language":"it-IT",
+    "text_source":"november-frogs.html",
+    "metadesc":"Un resoconto della seconda delle dieci piaghe che colpirono l'antico Egitto ai tempi di Mosè.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":0,
+    "title":"Dicembre: zanzare o pidocchi",
+    "alias":"newsletter-gnats-or-lice-it-it",
+    "category_alias":"newsletter-it-it",
+    "language":"it-IT",
+    "text_source":"december-gnats-or-lice.html",
+    "metadesc":"Un resoconto della terza delle dieci piaghe che colpirono l'antico Egitto ai tempi di Mosè.",
+    "created_by_name":"Eddie",
+    "created_by_alias":"Miriam",
+    "workflow":"Newsletter Workflow",
+    "stage":"Draft"
+},
+{
+    "state":1,
+    "title":"Festa d'addio",
+    "alias":"leaving-party-it-it",
+    "category_alias":"demonstrations-it-it",
+    "language":"it-IT",
+    "text_source":"leaving-party.html",
+    "metadesc":"Alcune citazioni e fotografie della festa d'addio di John."
+},
+{
+    "state":1,
+    "title":"Statistiche sulla popolazione",
+    "alias":"pop-stats-it-it",
+    "category_alias":"demonstrations-it-it",
+    "language":"it-IT",
+    "text_source":"pop-stats.html",
+    "metadesc":"Una breve descrizione delle statistiche sulla popolazione per continente."
+},
+{
+    "state":1,
+    "title":"Poesie sulle campanule",
+    "alias":"bluebell-poetry-it-it",
+    "category_alias":"demonstrations-it-it",
+    "language":"it-IT",
+    "text_source":"bluebell-poetry.html",
+    "hits":"17",
+    "metadesc":"Una poesia sulle campanule di John Clare (1793-1864)."
+},
+{
+    "state":1,
+    "title":"Campanule",
+    "alias":"bluebells-it-it",
+    "category_alias":"demonstrations-it-it",
+    "language":"it-IT",
+    "text_source":"bluebells.html",
+    "hits":"17",
+    "metadesc":"Una breve descrizione dell'aspetto, della distribuzione e del ruolo sociale dei fiori di campanula.",
+    "fields": {
+        "audio-it-it":"{\"file\":\"files\/demodata\/heritage\/one-summer.mp3\"}",
+        "calendar-it-it":"2024-04-01",
+        "checkboxes-it-it":{"0":"1","1":"3"},
+        "color-it-it":"#4e3ac2",
+        "document-it-it":"{\"file\":\"files\/demodata\/heritage\/lorem-ipsum.txt\"}",
+        "editor-it-it":"Le campanule crescono meglio in mezz'ombra, in un terreno umido, ben drenato e ricco di materia organica.",
+        "integer-it-it":"5",
+        "list-items-it-it":"3",
+        "images-list-it-it":{"0":"bluebell-flower-blue-128.png","1":"bluebell-flower-pink-128.png"},
+        "media-it-it":"{\"imagefile\":\"images\/demodata\/heritage\/bluebells-150.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-150.jpg?width=150&height=150\",\"alt_text\":\"Woodland scene with carpet of bluebells.\"}",
+        "number-it-it":"7.5",
+        "radio-it-it":"perennial",
+        "sql-it-it":"europe-it-it",
+        "subform-field-locations-it-it": {
+            "row0": {
+                    "demo-date-it-it":"2026-05-12 14:27:17",
+                    "w3w-it-it":"///camper.bandaged.slower (Dalkeith Country Park)",
+                    "rating-it-it":"5"
+                },
+            "row1": {
+                "demo-date-it-it":"2025-06-01 14:27:17",
+                "w3w-it-it":"ne///vehicle.cubic.played (Roslin Glen)",
+                "rating-it-it":"4"
+            }
+        },
+        "text-it-it":"Hyacinthoides non-scripta",
+        "textarea-it-it":"Le campanule sono una specie di piante da fiore del genere Hyacinthoides della famiglia delle Asparagaceae.",
+        "url-it-it":"https://en.wikipedia.org/wiki/Hyacinthoides_non-scripta",
+        "user-it-it":"playwright",
+        "usergrouplist-it-it":{"0":"7","1":"5"},
+        "video-it-it":"{\"file\":\"files\/demodata\/heritage\/badger-vs-fox-400-silent.mp4\", \"poster\":\"files\/demodata\/heritage\/badger-vs-fox-400.jpg#joomlaImage:\/\/local-files\/demodata\/heritage\/badger-vs-fox-400.jpg?width=400&height=226\"}"
+    },
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/bluebells-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-200.jpg?width=200&height=200",
+        "image_intro_alt":"Un paesaggio boschivo ricoperto da tappeti di campanule",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/bluebells-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"Un paesaggio boschivo ricoperto da tappeti di campanule",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Siti iscritti nel 1978",
+    "alias":"sites-inscribed-in-1978-it-it",
+    "category_alias":"demonstrations-it-it",
+    "language":"it-IT",
+    "text_source":"sites-table-1978.html"
+},
+{
+    "state":2,
+    "title":"Liverpool – Città mercantile marittima",
+    "alias":"liverpool-it-it",
+    "category_alias":"europe-it-it",
+    "language":"it-IT",
+    "text_source":"liverpool.html",
+    "metadesc":"La zona dei dock della città di Liverpool",
+    "fields": {
+        "location-it-it":"N53 24 24 W2 59 40",
+        "year-of-inscription-it-it":"2004"
+    },
+    "tags": ["cultural-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/liverpool-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-200.jpg?width=200&height=123",
+        "image_intro_alt":"Il lungomare di Liverpool e il Liver Building",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/liverpool-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-400.jpg?width=400&height=246",
+        "image_fulltext_alt":"Il lungomare di Liverpool e il Liver Building",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Teatro dell'Opera di Sydney",
+    "alias":"sydney-opera-house-it-it",
+    "category_alias":"oceania-it-it",
+    "language":"it-IT",
+    "text_source":"sydney-opera-house.html",
+    "fields": {
+        "location-it-it":"S33 51 24 E151 12 55",
+        "year-of-inscription-it-it":"2007"
+    },
+    "tags": ["cultural-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/sydney-opera-house-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-200.jpg?width=200&height=150",
+        "image_intro_alt":"Una veduta aerea del Teatro dell'Opera di Sydney",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/sydney-opera-house-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Una veduta aerea del Teatro dell'Opera di Sydney",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Grande barriera corallina",
+    "alias":"great-barrier-reef-it-it",
+    "category_alias":"oceania-it-it",
+    "language":"it-IT",
+    "text_source":"great-barrier-reef.html",
+    "featured": "1",
+    "metadesc":"Una breve descrizione di un sito dalla straordinaria varietà e bellezza sulla costa nord-orientale dell'Australia",
+    "fields": {
+        "location-it-it":"S18 17 10 E147 41 60",
+        "year-of-inscription-it-it":"1981"
+    },
+    "tags": ["natural-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-barrier-reef-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-200.jpg?width=200&height=133",
+        "image_intro_alt":"Un gruppo di coralli costruttori di barriera",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-barrier-reef-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Un gruppo di coralli costruttori di barriera",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Acropoli di Atene",
+    "alias":"acropolis-of-athens-it-it",
+    "category_alias":"europe-it-it",
+    "language":"it-IT",
+    "text_source":"acropolis-of-athens.html",
+    "metadesc":"Una panoramica dei simboli universali dello spirito e della civiltà classica.",
+    "fields": {
+        "location-it-it":" N37 58 15.132 E23 43 34.248 ",
+        "year-of-inscription-it-it":"1987"
+    },
+    "tags": ["cultural-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/acropolis-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-200.jpg?width=200&height=133",
+        "image_intro_alt":"Rovine originariamente costruite su una collina pianeggiante dominante",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/acropolis-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Rovine originariamente costruite su una collina pianeggiante dominante",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Taj Mahal",
+    "alias":"taj-mahal-it-it",
+    "category_alias":"asia-it-it",
+    "language":"it-IT",
+    "featured": "1",
+    "text_source":"taj-mahal.html",
+    "metadesc":"Un immenso mausoleo di marmo bianco...",
+    "fields": {
+        "location-it-it":"N27 10 27.012 E78 2 31.992",
+        "year-of-inscription-it-it":"1983"
+    },
+    "tags": ["cultural-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/taj-mahal-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-200.jpg?width=200&height=200",
+        "image_intro_alt":"Lo splendido accesso a un sontuoso palazzo",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/taj-mahal-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"Lo splendido accesso a un sontuoso palazzo",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Grande Muraglia cinese",
+    "alias":"great-wall-of-china-it-it",
+    "category_alias":"asia-it-it",
+    "language":"it-IT",
+    "text_source":"great-wall-of-china.html",
+    "metadesc":"Un'introduzione a un'enorme struttura militare difensiva.",
+    "fields": {
+        "location-it-it":"",
+        "year-of-inscription-it-it":"1987"
+    },
+    "tags": ["cultural-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-wall-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-200.jpg?width=200&height=279",
+        "image_intro_alt":"Una sezione della Grande Muraglia costruita in pietra su un terreno collinare",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-wall-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-400.jpg?width=400&height=558",
+        "image_fulltext_alt":"Una sezione della Grande Muraglia costruita in pietra su un terreno collinare",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Isole Galápagos",
+    "alias":"galapagos-islands-it-it",
+    "category_alias":"americas-it-it",
+    "language":"it-IT",
+    "text_source":"galapagos-islands.html",
+    "metadesc":"Le 19 isole e la riserva marina circostante sono state definite un <em>museo vivente unico e una vetrina dell'evoluzione</em>.",
+    "fields": {
+        "location-it-it":"N0 41 23.496 W90 30 4.748",
+        "year-of-inscription-it-it":"2001"
+    },
+    "tags": ["natural-site-it-it", "volcanic-site-it-it", "wildlife-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/galapagos-2-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-200.jpg?width=200&height=133",
+        "image_intro_alt":"Tartarughe giganti tipiche delle Galápagos",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/galapagos-2-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Tartarughe giganti tipiche delle Galápagos",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Machu Picchu",
+    "alias":"machu-picchu-it-it",
+    "category_alias":"americas-it-it",
+    "language":"it-IT",
+    "featured": "1",
+    "text_source":"machu-picchu.html",
+    "metadesc":"Una breve descrizione di questo sito situato a 2.430 m sul livello del mare, nel cuore di una foresta tropicale montana.",
+    "fields": {
+        "location-it-it":"S13 11 5.762 W72 32 0.395",
+        "year-of-inscription-it-it":"1983"
+    },
+    "tags": ["cultural-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/machu-picchu-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-200.jpg?width=200&height=150",
+        "image_intro_alt":"Veduta classica delle rovine sulla cima della collina",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/machu-picchu-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Veduta classica delle rovine sulla cima della collina",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Selciato del Gigante",
+    "alias":"giants-causeway-it-it",
+    "category_alias":"europe-it-it",
+    "language":"it-IT",
+    "text_source":"giants-causeway.html",
+    "featured": "1",
+    "metadesc":"Esplora le scogliere di basalto lungo la costa sul margine dell'altopiano di Antrim, nell'Irlanda del Nord",
+    "fields": {
+        "location-it-it":"N55 14 27 W6 30 42",
+        "year-of-inscription-it-it":"1986"
+    },
+    "tags": ["natural-site-it-it", "volcanic-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giants-causeway-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-200.jpg?width=200&height=143",
+        "image_intro_alt":"Colonne di basalto formatesi in uno spesso strato orizzontale di magma",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giants-causeway-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-400.jpg?width=400&height=286",
+        "image_fulltext_alt":"Colonne di basalto formatesi in uno spesso strato orizzontale di magma",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Piramidi di Giza",
+    "alias":"pyramids-of-giza-it-it",
+    "category_alias":"africa-it-it",
+    "language":"it-IT",
+    "featured": "0",
+    "text_source":"pyramids-of-giza.html",
+    "metadesc":"Ammira gli straordinari monumenti funerari dell'Antico Regno d'Egitto.",
+    "fields": {
+        "location-it-it":"",
+        "year-of-inscription-it-it":"1979"
+    },
+    "tags": ["cultural-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giza-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-200.jpg?width=200&height=133",
+        "image_intro_alt":"La Sfinge con la piramide di Giza sullo sfondo",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giza-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"La Sfinge con la piramide di Giza sullo sfondo",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Parco nazionale del Serengeti",
+    "alias":"serengeti-national-park-it-it",
+    "category_alias":"africa-it-it",
+    "language":"it-IT",
+    "text_source":"serengeti-national-park.html",
+    "metadesc":"Esplora le vaste pianure del Serengeti e osserva la migrazione annuale di immense mandrie di erbivori seguite dai loro predatori.",
+    "fields": {
+        "location-it-it":"S2 44 24 E34 51 32.4",
+        "year-of-inscription-it-it":"1981"
+    },
+    "tags": ["natural-site-it-it", "wildlife-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Elefanti e zebre",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Elefanti e zebre",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Area di conservazione di Ngorongoro",
+    "alias":"ngorongoro-conservation-area-it-it",
+    "category_alias":"africa-it-it",
+    "language":"it-IT",
+    "text_source":"ngorongoro-conservation-area.html",
+    "featured": "1",
+    "metadesc":"Vaste distese di pianure d'altopiano, savane, boschi e foreste, dove la fauna selvatica convive con i pastori masai seminomadi.",
+    "fields": {
+        "location-it-it":"S S3 11 13.992 E35 32 26.988",
+        "year-of-inscription-it-it":"1979"
+    },
+    "tags": ["natural-site-it-it", "volcanic-site-it-it", "wildlife-site-it-it"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/ngorongoro-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-200.jpg?width=200&height=133",
+        "image_intro_alt":"Gli animali si muovono sul fondo del cratere, con la parete del cratere sullo sfondo",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/ngorongoro-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Gli animali si muovono sul fondo del cratere, con la parete del cratere sullo sfondo",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Informazioni sui siti UNESCO",
+    "alias":"about-unesco-sites-it-it",
+    "category_alias":"about-unesco-it-it",
+    "language":"it-IT",
+    "text_source":"about-unesco-sites.html",
+    "hits":"135",
+    "metadesc":"Una breve introduzione ai siti patrimonio mondiale dell'UNESCO.",
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Elefanti e zebre",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Elefanti e zebre",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+}]

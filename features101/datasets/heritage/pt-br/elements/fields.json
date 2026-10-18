@@ -1,0 +1,647 @@
+[
+{
+    "title":"Data",
+    "category":"",
+    "name":"demo-date-pt-br",
+    "label":"Data",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>Um campo de data de uso geral para subformulários.</p>",
+    "note":"",
+    "state":1,
+    "language":"pt-BR",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"W3W",
+    "category":"",
+    "name":"w3w-pt-br",
+    "label":"W3W",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>A localização What3Words de um sítio.</p>",
+    "note":"",
+    "state":1,
+    "language":"pt-BR",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Classificação",
+    "category":"",
+    "name":"rating-pt-br",
+    "label":"Classificação",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>A classificação de um sítio em uma escala de 0 a 5.</p>",
+    "note":"",
+    "state":1,
+    "language":"pt-BR",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "first":"0",
+        "last":"5",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Campo de subformulário: Locais",
+    "category":"",
+    "name":"subform-field-locations-pt-br",
+    "label":"Campo de subformulário: Locais",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"subform",
+    "description":"Um campo para registrar dados de diferentes locais.",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "hint":"","class":"",
+        "label_class":"",
+        "show_on":"",
+        "showon":"",
+        "render_class":"",
+        "value_render_class":"",
+        "showlabel":"1",
+        "label_render_class":"",
+        "display":"2",
+        "prefix":"",
+        "suffix":"",
+        "layout":"",
+        "display_readonly":"2",
+        "searchindex":"0",
+        "form_layout":""
+    },
+    "fieldparams":{
+        "repeat":"1",
+        "max_rows":"",
+        "options":{
+            "option0":{"customfield":"Data","render_values":"1"},
+            "option1":{"customfield":"W3W","render_values":"1"},
+            "option2":{"customfield":"Classificação","render_values":"1"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Natureza"
+},
+{
+    "title":"Ano de inscrição",
+    "category":"heritage-pt-br",
+    "name":"year-of-inscription-pt-br",
+    "label":"Year Inscribed",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>O ano em que o sítio foi adicionado à lista da UNESCO.</p>",
+    "note":"",
+    "state":1,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1972",
+        "last":"2026",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Dados do sítio"
+},
+{
+    "title":"Localização",
+    "category":"heritage-pt-br",
+    "name":"location-pt-br",
+    "label":"Localização",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>A latitude e a longitude do sítio.</p>",
+    "note":"",
+    "state":1,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Dados do sítio"
+},
+{
+    "title":"Áudio: Faixa de exemplo",
+    "category":"demonstrations-pt-br",
+    "name":"audio-pt-br",
+    "label":"Áudio: Faixa de exemplo",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"audio",
+    "description":"<p>Uma descrição de áudio.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"audios",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Calendário: Data da fotografia",
+    "category":"demonstrations-pt-br",
+    "name":"calendar-pt-br",
+    "label":"Calendário: Data da fotografia",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>A data em que uma fotografia foi tirada pode ser importante para itens sazonais.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Caixas de seleção: Propagação",
+    "category":"demonstrations-pt-br",
+    "name":"checkboxes-pt-br",
+    "label":"Caixas de seleção: Propagação",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"checkboxes",
+    "description":"<p>Selecione um ou mais itens entre várias opções de caixas de seleção.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"Semente","value":"1"},
+            "options1":{"name":"Estaca","value":"2"},
+            "options2":{"name":"Bulbo","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Flores"
+},
+{
+    "title":"Cor: Cor da flor",
+    "category":"demonstrations-pt-br",
+    "name":"color-pt-br",
+    "label":"Colour: Flower",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"color",
+    "description":"<p>Select a colour with a widget.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "colour":"4e3ac2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Flores"
+},
+{
+    "title":"Documento: Download",
+    "category":"demonstrations-pt-br",
+    "name":"document-pt-br",
+    "label":"Documento: Download",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"document",
+    "description":"<p>Selecione um documento.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:\/",
+        "preview":"",
+        "css_class":"",
+        "types":"documents"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Editor: Cultivo",
+    "category":"demonstrations-pt-br",
+    "name":"editor-pt-br",
+    "label":"Editor: Cultivo",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"editor",
+    "description":"<p>Campo para observações sobre cultivo.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "cultivation-pt-br":"Os jacintos-dos-bosques crescem melhor à meia-sombra, em solo úmido, bem drenado e rico em matéria orgânica."
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Inteiro: Rusticidade da RHS",
+    "category":"demonstrations-pt-br",
+    "name":"integer-pt-br",
+    "label":"Inteiro: Rusticidade da RHS",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>Um número no intervalo de 1 a 7 que indica o índice de rusticidade da Royal Horticultural Society para esta flor.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1",
+        "last":"7",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Flores"
+},
+{
+    "title":"Lista: Distribuição",
+    "category":"demonstrations-pt-br",
+    "name":"list-items-pt-br",
+    "label":"Lista: Distribuição",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"list",
+    "description":"<p>Select one or more from a number of list items.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"África","value":"1"},
+            "options1":{"name":"Ásia","value":"2"},
+            "options2":{"name":"Europa","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Lista de imagens: Cores das flores",
+    "category":"demonstrations-pt-br",
+    "name":"images-list-pt-br",
+    "label":"Lista de imagens: Cores das flores",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"imagelist",
+    "description":"<p>Adicione uma ou mais imagens a uma lista.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"demodata/heritage",
+        "multiple":"1",
+        "image_class":"me-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Mídia: Ocorrência típica",
+    "category":"demonstrations-pt-br",
+    "name":"media-pt-br",
+    "label":"Mídia: Ocorrência típica",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"media",
+    "description":"<p>Selecione um item de uma pasta de mídia.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-images:/demodata/heritage",
+        "image_class":"ms-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Nota: Mais informações",
+    "category":"demonstrations-pt-br",
+    "name":"note-pt-br",
+    "label":"Nota: Mais informações",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"note",
+    "description":"<p>Redija informações para usuários do back-end ou do front-end.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1",
+        "display_frontend":"1"
+    },
+    "fieldparams":{
+        "label":"Informações legais",
+        "description":"Em algumas jurisdições, colher jacintos-dos-bosques pode ser crime!",
+        "class":"alert alert-info m-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Número: Peso da semente",
+    "category":"demonstrations-pt-br",
+    "name":"number-pt-br",
+    "label":"Número: Peso da semente",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"number",
+    "description":"<p>Informe o peso médio de uma semente.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "currency":"1",
+        "symbol":" milligrams",
+        "position":"1",
+        "decimals":"2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Botões de opção: Ciclo de vida",
+    "category":"demonstrations-pt-br",
+    "name":"radio-pt-br",
+    "label":"Botões de opção: Ciclo de vida",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"radio",
+    "description":"<p>Selecione o tipo de ciclo de vida.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"- Selecionar -","value":""},
+            "options1":{"name":"Anual","value":"annual"},
+            "options2":{"name":"Bienal","value":"biennial"},
+            "options3":{"name":"Perene","value":"perennial"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"SQL: Distribuição nativa",
+    "category":"demonstrations-pt-br",
+    "name":"sql-pt-br",
+    "label":"SQL: Distribuição nativa",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"sql",
+    "description":"<p>Selecione um ou mais continentes onde esta espécie é nativa.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `lje7b_categories` AS `a` \r\nLEFT JOIN `lje7b_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'pt-BR' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Texto: Nome latino",
+    "category":"demonstrations-pt-br",
+    "name":"text-pt-br",
+    "label":"Texto: Nome científico",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>O nome científico deste espécime.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Natureza"
+},
+{
+    "title":"Área de texto: Classificação",
+    "category":"demonstrations-pt-br",
+    "name":"textarea-pt-br",
+    "label":"Área de texto: Classificação",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"textarea",
+    "description":"<p>Uma descrição da classificação científica de um espécime.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "rows":"3",
+        "cols":"128"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"URL: Mais informações",
+    "category":"demonstrations-pt-br",
+    "name":"url-pt-br",
+    "label":"URL: Mais informações",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"url",
+    "description":"<p>Forneça uma URL para mais informações.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Usuário: Autor do relato",
+    "category":"demonstrations-pt-br",
+    "name":"user-pt-br",
+    "label":"Usuário: Autor do relato",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"user",
+    "description":"<p>Informações sobre o autor do relato deste artigo.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Lista de grupos de usuários: Supervisores",
+    "category":"demonstrations-pt-br",
+    "name":"usergrouplist-pt-br",
+    "label":"Lista de grupos de usuários: Supervisores",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"usergrouplist",
+    "description":"<p>Informações sobre grupos de usuários.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+},
+{
+    "title":"Vídeo: Clipe de exemplo",
+    "category":"demonstrations-pt-br",
+    "name":"video-pt-br",
+    "label":"Vídeo: Clipe de exemplo",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"video",
+    "description":"<p>Um videoclipe de exemplo.</p>",
+    "note":"",
+    "state":0,
+    "language":"pt-BR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"videos",
+        "video_poster":"1",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstrações"
+}]

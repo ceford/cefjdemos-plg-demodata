@@ -1,0 +1,18 @@
+[{
+    "id":"0",
+    "title":"Объекты наследия",
+    "description":"Меню объектов наследия",
+    "menutype":"heritage-sites-ru-ru"
+},
+{
+    "id":"0",
+    "title":"Демонстрации",
+    "description":"Меню для различных демонстраций Joomla",
+    "menutype":"demonstrations-ru-ru"
+},
+{
+    "id":"0",
+    "title":"Дерево меню",
+    "description":"Демонстрация постоянно открытого дерева меню",
+    "menutype":"menu-tree-ru-ru"
+}]

@@ -1,0 +1,18 @@
+[{
+    "id":"0",
+    "title":"Werelderfgoedlocaties",
+    "description":"Het menu Werelderfgoedlocaties",
+    "menutype":"heritage-sites-nl-nl"
+},
+{
+    "id":"0",
+    "title":"Demonstraties",
+    "description":"Menu voor verschillende Joomla-demonstraties",
+    "menutype":"demonstrations-nl-nl"
+},
+{
+    "id":"0",
+    "title":"Menustructuur",
+    "description":"Demonstratie van een permanent geopende menustructuur",
+    "menutype":"menu-tree-nl-nl"
+}]

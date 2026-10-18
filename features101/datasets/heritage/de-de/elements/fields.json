@@ -513,7 +513,7 @@
     "title":"Text: Lateinischer Name",
     "category":"demonstrations-de-de",
     "name":"text-de-de",
-    "label":"Text: Scientific Name",
+    "label":"Text: Wissenschaftlicher Name",
     "default_value":"",
     "context":"com_content.article",
     "type":"text",

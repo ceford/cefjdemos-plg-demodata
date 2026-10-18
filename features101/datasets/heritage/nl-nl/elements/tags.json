@@ -1,0 +1,66 @@
+[
+{
+    "title":"Engelse tags",
+    "alias":"tags-nl-nl",
+    "description":"<p>Een bovenliggende tag voor Engelse tags voor gebruik in modules.</p>",
+    "parent_alias":"",
+    "language":"nl-NL",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
+},
+{
+    "title":"Culturele locatie",
+    "alias":"cultural-site-nl-nl",
+    "description":"<p>Locaties die vanwege hun culturele waarde zijn geclassificeerd.</p>",
+    "parent_alias":"tags-nl-nl",
+    "language":"nl-NL",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"Natuurlijke locatie",
+    "alias":"natural-site-nl-nl",
+    "description":"<p>Locaties die vanwege hun natuurlijke waarde zijn geclassificeerd.</p>",
+    "parent_alias":"tags-nl-nl",
+    "language":"nl-NL",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"Vulkanische locatie",
+    "alias":"volcanic-site-nl-nl",
+    "description":"<p>Locaties die verband houden met huidige of vroegere vulkanische activiteit.</p>",
+    "parent_alias":"tags-nl-nl",
+    "language":"nl-NL",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"Wilde dieren",
+    "alias":"wildlife-site-nl-nl",
+    "description":"<p>Locaties die bekendstaan om hun wilde dieren.</p>",
+    "parent_alias":"tags-nl-nl",
+    "language":"nl-NL",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
+}]

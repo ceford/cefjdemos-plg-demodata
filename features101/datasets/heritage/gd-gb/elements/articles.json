@@ -1,26 +1,66 @@
-[{
+[
+{
+    "state":1,
+    "title":"Dàmhair: Uisge a’ Tionndadh gu Fuil",
+    "alias":"newsletter-water-turns-to-blood-gd-gb",
+    "category_alias":"newsletter-gd-gb",
+    "language":"gd-GB",
+    "text_source":"october-water-turns-to-blood.html",
+    "metadesc":"Cunntas air a’ chiad fhear de na 10 plàighean a bhuail an t-seann Èiphit ann an àm Mhaois.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":1,
+    "title":"Samhain: Losgannan",
+    "alias":"newsletter-frogs-gd-gb",
+    "category_alias":"newsletter-gd-gb",
+    "language":"gd-GB",
+    "text_source":"november-frogs.html",
+    "metadesc":"Cunntas air an dàrna fear de na 10 plàighean a bhuail an t-seann Èiphit ann an àm Mhaois.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":0,
+    "title":"Dùbhlachd: Meanbh-chuileagan no Mialan",
+    "alias":"newsletter-gnats-or-lice-gd-gb",
+    "category_alias":"newsletter-gd-gb",
+    "language":"gd-GB",
+    "text_source":"december-gnats-or-lice.html",
+    "metadesc":"Cunntas air an treas fear de na 10 plàighean a bhuail an t-seann Èiphit ann an àm Mhaois.",
+    "created_by_name":"Eddie",
+    "created_by_alias":"Miriam",
+    "workflow":"Newsletter Workflow",
+    "stage":"Draft"
+},
+{
     "state":1,
     "title":"Pàrtaidh Fàgail",
     "alias":"leaving-party-gd-gb",
     "category_alias":"demonstrations-gd-gb",
     "language":"gd-GB",
     "text_source":"leaving-party.html",
-    "metadesc":"Beagan luachan is dhealbhan bho phàrtaidh fàgail Iain."
+    "metadesc":"Cuid de na briathran agus na dealbhan bho phàrtaidh fàgail Iain."
 },
 {
     "state":1,
-    "title":"Staitistig Àireamh-shluaigh",
+    "title":"Staitistig Sluaigh",
     "alias":"pop-stats-gd-gb",
     "category_alias":"demonstrations-gd-gb",
     "language":"gd-GB",
     "text_source":"pop-stats.html",
-    "metadesc": "Tuairisgeul goirid air staitistig sluaigh a rèir mòr-thìr."
+    "metadesc":"Tuairisgeul goirid air staitistig sluaigh a rèir mòr-thìr."
 },
 {
     "state":1,
-    "title":"Bàrdachd a' Chluig-ghorm",
+    "title":"Bàrdachd nan Clag-gorm",
     "alias":"bluebell-poetry-gd-gb",
-    "category_alias":"demonstrations-en-gb",
+    "category_alias":"demonstrations-gd-gb",
     "language":"gd-GB",
     "text_source":"bluebell-poetry.html",
     "hits":"17",
@@ -28,27 +68,60 @@
 },
 {
     "state":1,
-    "title":"Cluig-ghorma",
+    "title":"Clagan-gorma",
     "alias":"bluebells-gd-gb",
     "category_alias":"demonstrations-gd-gb",
     "language":"gd-GB",
     "text_source":"bluebells.html",
-    "hits":"13",
+    "hits":"17",
     "metadesc":"Tuairisgeul goirid air coltas, sgaoileadh agus àite sòisealta fhlùraichean nan clag-gorm.",
+    "fields": {
+        "audio-gd-gb":"{\"file\":\"files\/demodata\/heritage\/one-summer.mp3\"}",
+        "calendar-gd-gb":"2024-04-01",
+        "checkboxes-gd-gb":{"0":"1","1":"3"},
+        "color-gd-gb":"#4e3ac2",
+        "document-gd-gb":"{\"file\":\"files\/demodata\/heritage\/lorem-ipsum.txt\"}",
+        "editor-gd-gb":"Bidh clagan-gorma a’ fàs as fheàrr ann an dubhar pàirteach le ùir tais, air a dheagh dhrèanadh, a tha beairteach ann an stuth organach.",
+        "integer-gd-gb":"5",
+        "list-items-gd-gb":"3",
+        "images-list-gd-gb":{"0":"bluebell-flower-blue-128.png","1":"bluebell-flower-pink-128.png"},
+        "media-gd-gb":"{\"imagefile\":\"images\/demodata\/heritage\/bluebells-150.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-150.jpg?width=150&height=150\",\"alt_text\":\"Woodland scene with carpet of bluebells.\"}",
+        "number-gd-gb":"7.5",
+        "radio-gd-gb":"perennial",
+        "sql-gd-gb":"europe-gd-gb",
+        "subform-field-locations-gd-gb": {
+            "row0": {
+                    "demo-date-gd-gb":"2026-05-12 14:27:17",
+                    "w3w-gd-gb":"///camper.bandaged.slower (Dalkeith Country Park)",
+                    "rating-gd-gb":"5"
+                },
+            "row1": {
+                "demo-date-gd-gb":"2025-06-01 14:27:17",
+                "w3w-gd-gb":"ne///vehicle.cubic.played (Roslin Glen)",
+                "rating-gd-gb":"4"
+            }
+        },
+        "text-gd-gb":"Hyacinthoides non-scripta",
+        "textarea-gd-gb":"FIELDS_TEXTAREA",
+        "url-gd-gb":"https://en.wikipedia.org/wiki/Hyacinthoides_non-scripta",
+        "user-gd-gb":"playwright",
+        "usergrouplist-gd-gb":{"0":"7","1":"5"},
+        "video-gd-gb":"{\"file\":\"files\/demodata\/heritage\/badger-vs-fox-400-silent.mp4\", \"poster\":\"files\/demodata\/heritage\/badger-vs-fox-400.jpg#joomlaImage:\/\/local-files\/demodata\/heritage\/badger-vs-fox-400.jpg?width=400&height=226\"}"
+    },
     "images": {
         "image_intro":"images\/demodata\/heritage\/bluebells-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-200.jpg?width=200&height=200",
-        "image_intro_alt":"Sealladh coille le brat-ùrlair de chluig-ghorma",
+        "image_intro_alt":"Sealladh coille le bratagan de chlagan-gorma",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/bluebells-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-400.jpg?width=400&height=400",
-        "image_fulltext_alt":"Sealladh coille le brat-ùrlair de chluig-ghorma",
+        "image_fulltext_alt":"Sealladh coille le bratagan de chlagan-gorma",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
 },
 {
     "state":1,
-    "title":"Làraichean a chaidh a chlàradh ann an 1978",
+    "title":"Làraichean air an Liostadh ann an 1978",
     "alias":"sites-inscribed-in-1978-gd-gb",
     "category_alias":"demonstrations-gd-gb",
     "language":"gd-GB",
@@ -56,7 +129,7 @@
 },
 {
     "state":2,
-    "title":"Liverpool – Maritime Mercantile City",
+    "title":"Liverpool – Baile Mara Malairt",
     "alias":"liverpool-gd-gb",
     "category_alias":"europe-gd-gb",
     "language":"gd-GB",
@@ -69,18 +142,18 @@
     "tags": ["cultural-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/liverpool-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-200.jpg?width=200&height=123",
-        "image_intro_alt":"The Liverpool waterfront and Liver Building",
+        "image_intro_alt":"Aghaidh-uisge Liverpool agus Togalach Liver",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/liverpool-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-400.jpg?width=400&height=246",
-        "image_fulltext_alt":"The Liverpool waterfront and Liver Building",
+        "image_fulltext_alt":"Aghaidh-uisge Liverpool agus Togalach Liver",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
 },
 {
     "state":1,
-    "title":"Sydney Opera House",
+    "title":"Taigh Opera Sydney",
     "alias":"sydney-opera-house-gd-gb",
     "category_alias":"oceania-gd-gb",
     "language":"gd-GB",
@@ -92,18 +165,18 @@
     "tags": ["cultural-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/sydney-opera-house-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-200.jpg?width=200&height=150",
-        "image_intro_alt":"An aerial view of Sydney Opera House",
+        "image_intro_alt":"Sealladh bhon adhar de Thaigh Opera Sydney",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/sydney-opera-house-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-400.jpg?width=400&height=300",
-        "image_fulltext_alt":"An aerial view of Sydney Opera House",
+        "image_fulltext_alt":"Sealladh bhon adhar de Thaigh Opera Sydney",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
 },
 {
     "state":1,
-    "title":"Great Barrier Reef",
+    "title":"Sgeir-mhòr a’ Chnap-starra",
     "alias":"great-barrier-reef-gd-gb",
     "category_alias":"oceania-gd-gb",
     "language":"gd-GB",
@@ -117,18 +190,18 @@
     "tags": ["natural-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/great-barrier-reef-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-200.jpg?width=200&height=133",
-        "image_intro_alt":"A group of reef building corals",
+        "image_intro_alt":"Buidheann de chorail a bhios a’ togail sgeirean",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/great-barrier-reef-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-400.jpg?width=400&height=267",
-        "image_fulltext_alt":"A group of reef building corals",
+        "image_fulltext_alt":"Buidheann de chorail a bhios a’ togail sgeirean",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
 },
 {
     "state":1,
-    "title":"Acropolis of Athens",
+    "title":"Acropolis na h-Aithne",
     "alias":"acropolis-of-athens-gd-gb",
     "category_alias":"europe-gd-gb",
     "language":"gd-GB",
@@ -141,11 +214,11 @@
     "tags": ["cultural-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/acropolis-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-200.jpg?width=200&height=133",
-        "image_intro_alt":"Ruins originally built on a commanding flat hilltop",
+        "image_intro_alt":"Tobhtaichean a chaidh a thogail an toiseach air mullach cnuic rèidh os cionn na sgìre",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/acropolis-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-400.jpg?width=400&height=267",
-        "image_fulltext_alt":"Ruins originally built on a commanding flat hilltop",
+        "image_fulltext_alt":"Tobhtaichean a chaidh a thogail an toiseach air mullach cnuic rèidh os cionn na sgìre",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
@@ -156,8 +229,8 @@
     "alias":"taj-mahal-gd-gb",
     "category_alias":"asia-gd-gb",
     "language":"gd-GB",
-    "text_source":"taj-mahal.html",
     "featured": "1",
+    "text_source":"taj-mahal.html",
     "metadesc":"Mausoleum mòr de mhàrbal geal...",
     "fields": {
         "location-gd-gb":"N27 10 27.012 E78 2 31.992",
@@ -166,18 +239,18 @@
     "tags": ["cultural-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/taj-mahal-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-200.jpg?width=200&height=200",
-        "image_intro_alt":"The stunning approach to a lavish palace",
+        "image_intro_alt":"An t-slighe eireachdail gu lùchairt shòghail",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/taj-mahal-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-400.jpg?width=400&height=400",
-        "image_fulltext_alt":"The stunning approach to a lavish palace",
+        "image_fulltext_alt":"An t-slighe eireachdail gu lùchairt shòghail",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
 },
 {
     "state":1,
-    "title":"Great Wall of China",
+    "title":"Balla Mòr Shìona",
     "alias":"great-wall-of-china-gd-gb",
     "category_alias":"asia-gd-gb",
     "language":"gd-GB",
@@ -190,18 +263,18 @@
     "tags": ["cultural-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/great-wall-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-200.jpg?width=200&height=279",
-        "image_intro_alt":"A section of the great wall built in stone over hilly terrain",
+        "image_intro_alt":"Earrann den Bhalla Mhòr air a thogail le clach thar talamh cnocach",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/great-wall-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-400.jpg?width=400&height=558",
-        "image_fulltext_alt":"A section of the great wall built in stone over hilly terrain",
+        "image_fulltext_alt":"Earrann den Bhalla Mhòr air a thogail le clach thar talamh cnocach",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
 },
 {
     "state":1,
-    "title":"Galapagos Islands",
+    "title":"Eileanan Galapagos",
     "alias":"galapagos-islands-gd-gb",
     "category_alias":"americas-gd-gb",
     "language":"gd-GB",
@@ -214,11 +287,11 @@
     "tags": ["natural-site-gd-gb", "volcanic-site-gd-gb", "wildlife-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/galapagos-2-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-200.jpg?width=200&height=133",
-        "image_intro_alt":"Giant tortoises unique to Galapagos",
+        "image_intro_alt":"Turtaran mòra a tha sònraichte do na Galapagos",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/galapagos-2-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-400.jpg?width=400&height=267",
-        "image_fulltext_alt":"Giant tortoises unique to Galapagos",
+        "image_fulltext_alt":"Turtaran mòra a tha sònraichte do na Galapagos",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
@@ -229,8 +302,8 @@
     "alias":"machu-picchu-gd-gb",
     "category_alias":"americas-gd-gb",
     "language":"gd-GB",
-    "text_source":"machu-picchu.html",
     "featured": "1",
+    "text_source":"machu-picchu.html",
     "metadesc":"Tuairisgeul goirid air an làrach seo, 2,430m os cionn ìre na mara, ann am meadhan coille bheanntach thropaigeach.",
     "fields": {
         "location-gd-gb":"S13 11 5.762 W72 32 0.395",
@@ -239,18 +312,18 @@
     "tags": ["cultural-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/machu-picchu-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-200.jpg?width=200&height=150",
-        "image_intro_alt":"Classic view of the hilltop ruins",
+        "image_intro_alt":"Sealladh clasaigeach de na tobhtaichean air mullach a’ chnuic",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/machu-picchu-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-400.jpg?width=400&height=300",
-        "image_fulltext_alt":"Classic view of the hilltop ruins",
+        "image_fulltext_alt":"Sealladh clasaigeach de na tobhtaichean air mullach a’ chnuic",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
 },
 {
     "state":1,
-    "title":"Giant's Causeway",
+    "title":"Cabhsair an Fhamhair",
     "alias":"giants-causeway-gd-gb",
     "category_alias":"europe-gd-gb",
     "language":"gd-GB",
@@ -264,18 +337,18 @@
     "tags": ["natural-site-gd-gb", "volcanic-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/giants-causeway-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-200.jpg?width=200&height=143",
-        "image_intro_alt":"Basalt columns formed in a thick horizontal sheet of magma",
+        "image_intro_alt":"Colbhan basalt a chaidh a chruthachadh ann an duilleag thiugh chòmhnard de mhagma",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/giants-causeway-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-400.jpg?width=400&height=286",
-        "image_fulltext_alt":"Basalt columns formed in a thick horizontal sheet of magma",
+        "image_fulltext_alt":"Colbhan basalt a chaidh a chruthachadh ann an duilleag thiugh chòmhnard de mhagma",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
 },
 {
     "state":1,
-    "title":"Pyramids of Giza",
+    "title":"Pioramaidean Giza",
     "alias":"pyramids-of-giza-gd-gb",
     "category_alias":"africa-gd-gb",
     "language":"gd-GB",
@@ -289,23 +362,22 @@
     "tags": ["cultural-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/giza-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-200.jpg?width=200&height=133",
-        "image_intro_alt":"The Sphinx with the Pyramid of Giza behind",
+        "image_intro_alt":"An Sphinx le Pioramaid Giza air a chùlaibh",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/giza-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-400.jpg?width=400&height=267",
-        "image_fulltext_alt":"The Sphinx with the Pyramid of Giza behind",
+        "image_fulltext_alt":"An Sphinx le Pioramaid Giza air a chùlaibh",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
 },
 {
     "state":1,
-    "title":"Serengeti National Park",
+    "title":"Pàirc Nàiseanta Serengeti",
     "alias":"serengeti-national-park-gd-gb",
     "category_alias":"africa-gd-gb",
     "language":"gd-GB",
     "text_source":"serengeti-national-park.html",
-    "featured": "0",
     "metadesc":"Rannsaich raointean mòra an Serengeti agus coimhead air imrich bhliadhnail nan treudan mòra de bheathaichean a bhios ag ithe lusan, agus an creachadairean gan leantainn.",
     "fields": {
         "location-gd-gb":"S2 44 24 E34 51 32.4",
@@ -314,18 +386,18 @@
     "tags": ["natural-site-gd-gb", "wildlife-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
-        "image_intro_alt":"Elephants and zebras",
+        "image_intro_alt":"Ailbhein agus seabras",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
-        "image_fulltext_alt":"Elephants and zebras",
+        "image_fulltext_alt":"Ailbhein agus seabras",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
 },
 {
     "state":1,
-    "title":"Ngorongoro Conservation Area",
+    "title":"Sgìre Glèidhteachais Ngorongoro",
     "alias":"ngorongoro-conservation-area-gd-gb",
     "category_alias":"africa-gd-gb",
     "language":"gd-GB",
@@ -339,11 +411,11 @@
     "tags": ["natural-site-gd-gb", "volcanic-site-gd-gb", "wildlife-site-gd-gb"],
     "images": {
         "image_intro":"images\/demodata\/heritage\/ngorongoro-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-200.jpg?width=200&height=133",
-        "image_intro_alt":"Animals roam the crater floor with the crater wall in the distance",
+        "image_intro_alt":"Bidh beathaichean a’ siubhal air làr a’ chraiteir leis a’ bhalla sa chraiteir air fàire",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/ngorongoro-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-400.jpg?width=400&height=267",
-        "image_fulltext_alt":"Animals roam the crater floor with the crater wall in the distance",
+        "image_fulltext_alt":"Bidh beathaichean a’ siubhal air làr a’ chraiteir leis a’ bhalla sa chraiteir air fàire",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }
@@ -355,15 +427,15 @@
     "category_alias":"about-unesco-gd-gb",
     "language":"gd-GB",
     "text_source":"about-unesco-sites.html",
-    "hits":"87",
-    "metadesc": "Ro-ràdh goirid mu Làraich Dhualchas na Cruinne UNESCO.",
+    "hits":"135",
+    "metadesc":"Ro-ràdh goirid do Làraichean Dualchas na Cruinne UNESCO.",
     "images": {
         "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
-        "image_intro_alt":"Elephants and zebras",
+        "image_intro_alt":"Ailbhein agus seabras",
         "float_intro":"",
         "image_intro_caption":"",
         "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
-        "image_fulltext_alt":"Elephants and zebras",
+        "image_fulltext_alt":"Ailbhein agus seabras",
         "float_fulltext":"float-end ms-3",
         "image_fulltext_caption":""
     }

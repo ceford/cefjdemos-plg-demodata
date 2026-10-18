@@ -1,0 +1,31 @@
+[{
+    "title":"Данные об объекте",
+    "description":"<p>Эта группа полей содержит данные об объекте наследия.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"ru-RU"
+},{
+    "title":"Демонстрации",
+    "description":"<p>Эта группа полей используется для демонстрации каждого типа поля.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"ru-RU"
+},
+{
+    "title":"Природа",
+    "description":"<p>Группа характеристик природы, применимых ко всем животным и растениям.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"ru-RU"
+},
+{
+    "title":"Цветы",
+    "description":"<p>Поля, применимые только к цветущим растениям.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"ru-RU"
+}]

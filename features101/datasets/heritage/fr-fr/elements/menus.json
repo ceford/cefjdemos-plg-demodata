@@ -1,0 +1,18 @@
+[{
+    "id":"0",
+    "title":"Sites du patrimoine",
+    "description":"Menu des sites du patrimoine",
+    "menutype":"heritage-sites-fr-fr"
+},
+{
+    "id":"0",
+    "title":"Démonstrations",
+    "description":"Menu pour diverses démonstrations Joomla",
+    "menutype":"demonstrations-fr-fr"
+},
+{
+    "id":"0",
+    "title":"Arborescence des menus",
+    "description":"Démonstration d’une arborescence de menus toujours ouverte",
+    "menutype":"menu-tree-fr-fr"
+}]

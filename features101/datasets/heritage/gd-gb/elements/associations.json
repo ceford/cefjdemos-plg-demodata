@@ -1,39 +1,4 @@
 [{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"featured-sites-blog-en-gb",
-        "gd-GB":"featured-sites-blog-gd-gb"
-    }
-},
-{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"about-unesco-en-gb",
-        "gd-GB":"about-unesco-gd-gb"
-    }
-},
-{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"africa-blog-en-gb",
-        "gd-GB":"africa-blog-gd-gb"
-    }
-},
-{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"africa-list-en-gb",
-        "gd-GB":"africa-list-gd-gb"
-    }
-},
-{
-    "context":"com_menus.item",
-    "alias":{
-        "en-GB":"serengeti-en-gb",
-        "gd-GB":"serengeti-gd-gb"
-    }
-},
-{
     "context":"com_content.item",
     "alias":{
         "en-GB":"sites-inscribed-in-1978-en-gb",
@@ -45,6 +10,48 @@
     "alias":{
         "en-GB":"bluebells-en-gb",
         "gd-GB":"bluebells-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"bluebell-poetry-en-gb",
+        "gd-GB":"bluebell-poetry-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"pop-stats-en-gb",
+        "gd-GB":"pop-stats-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"leaving-party-en-gb",
+        "gd-GB":"leaving-party-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"newsletter-gnats-or-lice-en-gb",
+        "gd-GB":"newsletter-gnats-or-lice-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"newsletter-frogs-en-gb",
+        "gd-GB":"newsletter-frogs-gd-gb"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"newsletter-water-turns-to-blood-en-gb",
+        "gd-GB":"newsletter-water-turns-to-blood-gd-gb"
     }
 },
 {
@@ -73,6 +80,13 @@
     "alias":{
         "en-GB":"edit-user-profile-en-gb",
         "gd-GB":"edit-user-profile-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"newsletter-en-gb",
+        "gd-GB":"newsletter-gd-gb"
     }
 },
 {
@@ -213,5 +227,54 @@
     "alias":{
         "en-GB":"oceania-en-gb",
         "gd-GB":"oceania-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"featured-sites-blog-en-gb",
+        "gd-GB":"featured-sites-blog-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"about-unesco-en-gb",
+        "gd-GB":"about-unesco-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"africa-blog-en-gb",
+        "gd-GB":"africa-blog-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"africa-list-en-gb",
+        "gd-GB":"africa-list-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"serengeti-en-gb",
+        "gd-GB":"serengeti-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"login-form-en-gb",
+        "gd-GB":"login-form-gd-gb"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"site-configuration-options-en-gb",
+        "gd-GB":"site-configuration-options-gd-gb"
     }
 }]

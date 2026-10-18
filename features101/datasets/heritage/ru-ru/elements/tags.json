@@ -1,0 +1,66 @@
+[
+{
+    "title":"Английские метки",
+    "alias":"tags-ru-ru",
+    "description":"<p>Родительская категория английских меток для использования в модулях.</p>",
+    "parent_alias":"",
+    "language":"ru-RU",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
+},
+{
+    "title":"Культурный объект",
+    "alias":"cultural-site-ru-ru",
+    "description":"<p>Объекты, признанные имеющими культурную ценность.</p>",
+    "parent_alias":"tags-ru-ru",
+    "language":"ru-RU",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"Природный объект",
+    "alias":"natural-site-ru-ru",
+    "description":"<p>Объекты, признанные имеющими природную ценность.</p>",
+    "parent_alias":"tags-ru-ru",
+    "language":"ru-RU",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"Вулканический объект",
+    "alias":"volcanic-site-ru-ru",
+    "description":"<p>Объекты, связанные с текущей или прошлой вулканической активностью.</p>",
+    "parent_alias":"tags-ru-ru",
+    "language":"ru-RU",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"Дикая природа",
+    "alias":"wildlife-site-ru-ru",
+    "description":"<p>Объекты, известные своей дикой природой.</p>",
+    "parent_alias":"tags-ru-ru",
+    "language":"ru-RU",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
+}]

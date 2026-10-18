@@ -1,0 +1,287 @@
+[{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"sites-inscribed-in-1978-en-gb",
+        "fr-FR":"sites-inscribed-in-1978-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"bluebells-en-gb",
+        "fr-FR":"bluebells-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"bluebell-poetry-en-gb",
+        "fr-FR":"bluebell-poetry-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"pop-stats-en-gb",
+        "fr-FR":"pop-stats-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"leaving-party-en-gb",
+        "fr-FR":"leaving-party-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"newsletter-gnats-or-lice-en-gb",
+        "fr-FR":"newsletter-gnats-or-lice-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"newsletter-frogs-en-gb",
+        "fr-FR":"newsletter-frogs-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"newsletter-water-turns-to-blood-en-gb",
+        "fr-FR":"newsletter-water-turns-to-blood-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"category-blog-en-gb",
+        "fr-FR":"category-blog-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"archived-articles-en-gb",
+        "fr-FR":"archived-articles-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"sites-inscribed-in-1978-en-gb",
+        "fr-FR":"sites-inscribed-in-1978-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"edit-user-profile-en-gb",
+        "fr-FR":"edit-user-profile-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"newsletter-en-gb",
+        "fr-FR":"newsletter-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"privacy-request-en-gb",
+        "fr-FR":"privacy-request-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"about-unesco-sites-en-gb",
+        "fr-FR":"about-unesco-sites-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"serengeti-national-park-en-gb",
+        "fr-FR":"serengeti-national-park-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"ngorongoro-conservation-area-en-gb",
+        "fr-FR":"ngorongoro-conservation-area-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"pyramids-of-giza-en-gb",
+        "fr-FR":"pyramids-of-giza-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"machu-picchu-en-gb",
+        "fr-FR":"machu-picchu-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"galapagos-islands-en-gb",
+        "fr-FR":"galapagos-islands-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"great-wall-of-china-en-gb",
+        "fr-FR":"great-wall-of-china-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"taj-mahal-en-gb",
+        "fr-FR":"taj-mahal-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"acropolis-of-athens-en-gb",
+        "fr-FR":"acropolis-of-athens-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"giants-causeway-en-gb",
+        "fr-FR":"giants-causeway-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"great-barrier-reef-en-gb",
+        "fr-FR":"great-barrier-reef-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"sydney-opera-house-en-gb",
+        "fr-FR":"sydney-opera-house-fr-fr"
+    }
+},
+{
+    "context":"com_content.item",
+    "alias":{
+        "en-GB":"liverpool-en-gb",
+        "fr-FR":"liverpool-fr-fr"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"heritage-en-gb",
+        "fr-FR":"heritage-fr-fr"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"africa-en-gb",
+        "fr-FR":"africa-fr-fr"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"americas-en-gb",
+        "fr-FR":"americas-fr-fr"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"asia-en-gb",
+        "fr-FR":"asia-fr-fr"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"europe-en-gb",
+        "fr-FR":"europe-fr-fr"
+    }
+},
+{
+    "context":"com_categories.item",
+    "alias":{
+        "en-GB":"oceania-en-gb",
+        "fr-FR":"oceania-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"featured-sites-blog-en-gb",
+        "fr-FR":"featured-sites-blog-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"about-unesco-en-gb",
+        "fr-FR":"about-unesco-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"africa-blog-en-gb",
+        "fr-FR":"africa-blog-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"africa-list-en-gb",
+        "fr-FR":"africa-list-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"serengeti-en-gb",
+        "fr-FR":"serengeti-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"login-form-en-gb",
+        "fr-FR":"login-form-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"site-configuration-options-en-gb",
+        "fr-FR":"site-configuration-options-fr-fr"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"display-template-options-en-gb",
+        "fr-FR":"display-template-options-fr-fr"
+    }
+}]

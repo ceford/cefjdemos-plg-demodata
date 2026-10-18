@@ -1,0 +1,66 @@
+[
+{
+    "title":"Tags anglais",
+    "alias":"tags-fr-fr",
+    "description":"<p>Catégorie parente des tags anglais à utiliser dans les modules.</p>",
+    "parent_alias":"",
+    "language":"fr-FR",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
+},
+{
+    "title":"Site culturel",
+    "alias":"cultural-site-fr-fr",
+    "description":"<p>Sites classés comme présentant une valeur culturelle.</p>",
+    "parent_alias":"tags-fr-fr",
+    "language":"fr-FR",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"Site naturel",
+    "alias":"natural-site-fr-fr",
+    "description":"<p>Sites classés comme présentant une valeur naturelle.</p>",
+    "parent_alias":"tags-fr-fr",
+    "language":"fr-FR",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"Site volcanique",
+    "alias":"volcanic-site-fr-fr",
+    "description":"<p>Sites liés à une activité volcanique actuelle ou passée.</p>",
+    "parent_alias":"tags-fr-fr",
+    "language":"fr-FR",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"Faune sauvage",
+    "alias":"wildlife-site-fr-fr",
+    "description":"<p>Sites réputés pour leur faune sauvage.</p>",
+    "parent_alias":"tags-fr-fr",
+    "language":"fr-FR",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
+}]

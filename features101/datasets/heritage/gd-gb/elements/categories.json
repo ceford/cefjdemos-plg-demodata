@@ -1,14 +1,41 @@
 [{
+    "title":"Blog",
+    "alias":"blog-gd-gb",
+    "level":1,
+    "path":"blog",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Roinn airson puist bhlogaichean a chleachdadh ann an sruth-obrach.</p>",
+    "params": {
+    }
+},
+{
+    "title":"Cuairt-litir",
+    "alias":"newsletter-gd-gb",
+    "level":1,
+    "path":"newsletter-gd-gb",
+    "extension":"com_content",
+    "language":"gd-GB",
+    "description":"<p>Roinn airson artaigilean cuairt-litir.</p>",
+    "workflow_title":"Newsletter Workflow",
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
     "title":"Mu UNESCO",
     "alias":"about-unesco-gd-gb",
     "level":1,
     "path":"about-unesco-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Fiosrachadh coitcheann mu Làraichean Dualchas na Cruinne aig UNESCO.</p>",
+    "description":"<p>Fiosrachadh coitcheann mu Làraichean Dualchas na Cruinne UNESCO.</p>",
     "params": {
         "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
-        "imag_alt": "A clipped map of the world showing a selection of World Heritage Sites sites."
+        "imag_alt": "Mapa gearraichte den t-saoghal a’ sealltainn taghadh de Làraichean Dualchas na Cruinne."
     }
 },
 {
@@ -18,10 +45,10 @@
     "path":"heritage-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Roinn phàrant airson fo-roinnean de Làraichean Dualchas na Cruinne aig UNESCO.</p>",
+    "description":"<p>Roinn phàrant airson fo-roinnean de Làraichean Dualchas na Cruinne UNESCO.</p>",
     "params": {
         "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
-        "imag_alt": "Mapa air a gheàrr-chunntas den t-saoghal a’ sealltainn taghadh de làraichean Dualchas na Cruinne."
+        "imag_alt": "Mapa gearraichte den t-saoghal a’ sealltainn taghadh de Làraichean Dualchas na Cruinne."
     }
 },
 {
@@ -32,10 +59,10 @@
     "path":"heritage/africa-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Liosta de Làraichean Dualchas na Cruinne aig UNESCO ann an Afraga.</p>",
+    "description":"<p>Liosta de Làraichean Dualchas na Cruinne UNESCO ann an Afraga.</p>",
     "params": {
         "image": "images/demodata/heritage/serengeti-crop.jpg#joomlaImage://local-images/demodata/heritage/serengeti-crop.jpg?width=1440&height=333",
-        "imag_alt": "Ìomhaigh air a chruthachadh le AI de bheathaichean a’ siubhal timcheall Serengeti"
+        "imag_alt": "Ìomhaigh air a chruthachadh le AI de bheathaichean a’ siubhal tron Serengeti"
     }
 },
 {
@@ -46,27 +73,27 @@
     "path":"heritage/americas-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Liosta de Làraichean Dualchas na Cruinne aig UNESCO anns na h-Ameireagan.</p>"
+    "description":"<p>Liosta de Làraichean Dualchas na Cruinne UNESCO ann an Ameireaga."
 },
 {
-    "title":"Asia",
+    "title":"Àisia",
     "alias":"asia-gd-gb",
     "parent_alias":"heritage-gd-gb",
     "level":2,
     "path":"heritage/asia-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Liosta de Làraichean Dualchas na Cruinne aig UNESCO ann an Àisia.</p>"
+    "description":"<p>Liosta de Làraichean Dualchas na Cruinne UNESCO ann an Àisia.</p>"
 },
 {
-    "title":"Europe",
+    "title":"An Roinn Eòrpa",
     "alias":"europe-gd-gb",
     "parent_alias":"heritage-gd-gb",
     "level":2,
     "path":"heritage/europe-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Liosta de Làraichean Dualchas na Cruinne aig UNESCO san Roinn Eòrpa.</p>"
+    "description":"<p>Liosta de Làraichean Dualchas na Cruinne UNESCO san Roinn Eòrpa.</p>"
 },
 {
     "title":"Oceania",
@@ -76,7 +103,7 @@
     "path":"heritage/oceania-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Liosta de Làraichean Dualchas na Cruinne aig UNESCO ann an Aigèine.</p>"
+    "description":"<p>Liosta de Làraichean Dualchas na Cruinne UNESCO ann an Oceania.</p>"
 },
 {
     "title":"Taisbeanaidhean",
@@ -86,7 +113,46 @@
     "path":"demonstrations-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Artaigilean air an sgrìobhadh gus feartan Joomla a shealltainn.</p>"
+    "description":"<p>Artaigilean air an dèanamh gus feartan Joomla a thaisbeanadh.</p>"
+},
+{
+    "title":"Naidheachdan Joomla",
+    "alias":"joomla-news-gd-gb",
+    "parent_alias":"",
+    "level":1,
+    "path":"joomla-news-gd-gb",
+    "extension":"com_newsfeeds",
+    "language":"gd-GB",
+    "description":"<p>Roinn airson iomadh biadh naidheachdan Joomla.</p>"
+},
+{
+    "title":"Luchd-obrach Taisbeanaidh",
+    "alias":"demo-staff-gd-gb",
+    "level":1,
+    "path":"demo-staff",
+    "extension":"com_contact",
+    "language":"gd-GB",
+    "description":"<p>Roinn phàrant airson luchd-obrach ann an luchd-conaltraidh an taisbeanaidh.</p>"
+},
+{
+    "title":"Bùth Taisbeanaidh",
+    "alias":"demo-shop-gd-gb",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-shop",
+    "extension":"com_contact",
+    "language":"gd-GB",
+    "description":"<p>Fo-roinn airson luchd-obrach Bùth an taisbeanaidh.</p>"
+},
+{
+    "title":"Demo Apiary",
+    "alias":"demo-apiary-gd-gb",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-apiary",
+    "extension":"com_contact",
+    "language":"gd-GB",
+    "description":"<p>Fo-roinn airson luchd-obrach Apiary ann an luchd-conaltraidh an taisbeanaidh.</p>"
 },
 {
     "title":"Nàdar",
@@ -95,17 +161,17 @@
     "path":"nature-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Roinn-seòrsa phàrantan airson artaigilean mun t-saoghal bheò.</p>"
+    "description":"<p>Parent category for articles about the living world.</p>"
 },
 {
-    "title":"Eòin",
+    "title":"Birds",
     "alias":"nature-birds-gd-gb",
     "parent_alias":"nature-gd-gb",
     "level":2,
     "path":"nature-gd-gb/nature-birds-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Roinn-seòrsa airson artaigilean mu dheidhinn eòin.</p>"
+    "description":"<p>Category for articles about birds.</p>"
 },
 {
     "title":"Flùraichean",
@@ -115,26 +181,26 @@
     "path":"nature-gd-gb/nature-flowers-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Roinn-seòrsa airson artaigilean mu dheidhinn flùraichean.</p>"
+    "description":"<p>Category for articles about flowers.</p>"
 },
 {
-    "title":"Mamalan",
+    "title":"Mammals",
     "alias":"nature-mammals-gd-gb",
     "parent_alias":"nature-gd-gb",
     "level":2,
     "path":"nature-gd-gb/nature-mammals-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Roinn-seòrsa airson artaigilean mu mamalan.</p>"
+    "description":"<p>Category for articles about mammals.</p>"
 },
 {
-    "title":"Craobhan",
+    "title":"Trees",
     "alias":"nature-trees-gd-gb",
     "parent_alias":"nature-gd-gb",
     "level":2,
     "path":"nature-gd-gb/nature-trees-gd-gb",
     "extension":"com_content",
     "language":"gd-GB",
-    "description":"<p>Roinn-seòrsa airson artaigilean mu chraobhan.</p>"
+    "description":"<p>Category for articles about trees.</p>"
 }
 ]

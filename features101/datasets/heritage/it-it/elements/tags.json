@@ -1,0 +1,66 @@
+[
+{
+    "title":"Tag inglesi",
+    "alias":"tags-it-it",
+    "description":"<p>Categoria principale per i tag inglesi da utilizzare nei moduli.</p>",
+    "parent_alias":"",
+    "language":"it-IT",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
+},
+{
+    "title":"Sito culturale",
+    "alias":"cultural-site-it-it",
+    "description":"<p>Siti classificati come di valore per la loro cultura.</p>",
+    "parent_alias":"tags-it-it",
+    "language":"it-IT",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"Sito naturale",
+    "alias":"natural-site-it-it",
+    "description":"<p>Siti classificati come di valore per la loro natura.</p>",
+    "parent_alias":"tags-it-it",
+    "language":"it-IT",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"Sito vulcanico",
+    "alias":"volcanic-site-it-it",
+    "description":"<p>Siti legati ad attività vulcanica attuale o passata.</p>",
+    "parent_alias":"tags-it-it",
+    "language":"it-IT",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"Fauna selvatica",
+    "alias":"wildlife-site-it-it",
+    "description":"<p>Siti noti per la loro fauna selvatica.</p>",
+    "parent_alias":"tags-it-it",
+    "language":"it-IT",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
+}]

@@ -1,0 +1,31 @@
+[{
+    "title":"Locatiegegevens",
+    "description":"<p>Dit is een groep velden met gegevens over erfgoedlocaties.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"nl-NL"
+},{
+    "title":"Demonstraties",
+    "description":"<p>Dit is een groep velden die wordt gebruikt om elk type veld te demonstreren.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"nl-NL"
+},
+{
+    "title":"Natuur",
+    "description":"<p>Groep voor aspecten van de natuur die van toepassing zijn op alle dieren en planten.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"nl-NL"
+},
+{
+    "title":"Bloemen",
+    "description":"<p>Velden die alleen van toepassing zijn op bloeiende planten.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"nl-NL"
+}]

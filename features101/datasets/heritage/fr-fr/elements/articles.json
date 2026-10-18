@@ -1,0 +1,442 @@
+[
+{
+    "state":1,
+    "title":"Octobre : l’eau changée en sang",
+    "alias":"newsletter-water-turns-to-blood-fr-fr",
+    "category_alias":"newsletter-fr-fr",
+    "language":"fr-FR",
+    "text_source":"october-water-turns-to-blood.html",
+    "metadesc":"Récit de la première des dix plaies qui frappèrent l’Égypte ancienne à l’époque de Moïse.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":1,
+    "title":"Novembre : les grenouilles",
+    "alias":"newsletter-frogs-fr-fr",
+    "category_alias":"newsletter-fr-fr",
+    "language":"fr-FR",
+    "text_source":"november-frogs.html",
+    "metadesc":"Récit de la deuxième des dix plaies qui frappèrent l’Égypte ancienne à l’époque de Moïse.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":0,
+    "title":"Décembre : les moustiques ou les poux",
+    "alias":"newsletter-gnats-or-lice-fr-fr",
+    "category_alias":"newsletter-fr-fr",
+    "language":"fr-FR",
+    "text_source":"december-gnats-or-lice.html",
+    "metadesc":"Récit de la troisième des dix plaies qui frappèrent l’Égypte ancienne à l’époque de Moïse.",
+    "created_by_name":"Eddie",
+    "created_by_alias":"Miriam",
+    "workflow":"Newsletter Workflow",
+    "stage":"Draft"
+},
+{
+    "state":1,
+    "title":"Fête de départ",
+    "alias":"leaving-party-fr-fr",
+    "category_alias":"demonstrations-fr-fr",
+    "language":"fr-FR",
+    "text_source":"leaving-party.html",
+    "metadesc":"Quelques citations et photographies de la fête de départ de John."
+},
+{
+    "state":1,
+    "title":"Statistiques démographiques",
+    "alias":"pop-stats-fr-fr",
+    "category_alias":"demonstrations-fr-fr",
+    "language":"fr-FR",
+    "text_source":"pop-stats.html",
+    "metadesc":"Une brève description des statistiques démographiques par continent."
+},
+{
+    "state":1,
+    "title":"Poésie sur les jacinthes des bois",
+    "alias":"bluebell-poetry-fr-fr",
+    "category_alias":"demonstrations-fr-fr",
+    "language":"fr-FR",
+    "text_source":"bluebell-poetry.html",
+    "hits":"17",
+    "metadesc":"Un poème sur les jacinthes des bois de John Clare (1793-1864)."
+},
+{
+    "state":1,
+    "title":"Jacinthes des bois",
+    "alias":"bluebells-fr-fr",
+    "category_alias":"demonstrations-fr-fr",
+    "language":"fr-FR",
+    "text_source":"bluebells.html",
+    "hits":"17",
+    "metadesc":"Une brève description de l’apparence, de la répartition et du rôle social des jacinthes des bois.",
+    "fields": {
+        "audio-fr-fr":"{\"file\":\"files\/demodata\/heritage\/one-summer.mp3\"}",
+        "calendar-fr-fr":"2024-04-01",
+        "checkboxes-fr-fr":{"0":"1","1":"3"},
+        "color-fr-fr":"#4e3ac2",
+        "document-fr-fr":"{\"file\":\"files\/demodata\/heritage\/lorem-ipsum.txt\"}",
+        "editor-fr-fr":"Les jacinthes des bois poussent mieux à mi-ombre, dans un sol humide et bien drainé, riche en matière organique.",
+        "integer-fr-fr":"5",
+        "list-items-fr-fr":"3",
+        "images-list-fr-fr":{"0":"bluebell-flower-blue-128.png","1":"bluebell-flower-pink-128.png"},
+        "media-fr-fr":"{\"imagefile\":\"images\/demodata\/heritage\/bluebells-150.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-150.jpg?width=150&height=150\",\"alt_text\":\"Woodland scene with carpet of bluebells.\"}",
+        "number-fr-fr":"7.5",
+        "radio-fr-fr":"perennial",
+        "sql-fr-fr":"europe-fr-fr",
+        "subform-field-locations-fr-fr": {
+            "row0": {
+                    "demo-date-fr-fr":"2026-05-12 14:27:17",
+                    "w3w-fr-fr":"///camper.bandaged.slower (Dalkeith Country Park)",
+                    "rating-fr-fr":"5"
+                },
+            "row1": {
+                "demo-date-fr-fr":"2025-06-01 14:27:17",
+                "w3w-fr-fr":"ne///vehicle.cubic.played (Roslin Glen)",
+                "rating-fr-fr":"4"
+            }
+        },
+        "text-fr-fr":"Hyacinthoides non-scripta",
+        "textarea-fr-fr":"Les jacinthes des bois sont une espèce de plantes à fleurs du genre Hyacinthoides, dans la famille des Asparagacées.",
+        "url-fr-fr":"https://en.wikipedia.org/wiki/Hyacinthoides_non-scripta",
+        "user-fr-fr":"playwright",
+        "usergrouplist-fr-fr":{"0":"7","1":"5"},
+        "video-fr-fr":"{\"file\":\"files\/demodata\/heritage\/badger-vs-fox-400-silent.mp4\", \"poster\":\"files\/demodata\/heritage\/badger-vs-fox-400.jpg#joomlaImage:\/\/local-files\/demodata\/heritage\/badger-vs-fox-400.jpg?width=400&height=226\"}"
+    },
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/bluebells-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-200.jpg?width=200&height=200",
+        "image_intro_alt":"Un paysage forestier recouvert de tapis de jacinthes des bois",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/bluebells-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"Un paysage forestier recouvert de tapis de jacinthes des bois",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Sites inscrits en 1978",
+    "alias":"sites-inscribed-in-1978-fr-fr",
+    "category_alias":"demonstrations-fr-fr",
+    "language":"fr-FR",
+    "text_source":"sites-table-1978.html"
+},
+{
+    "state":2,
+    "title":"Liverpool – ville maritime marchande",
+    "alias":"liverpool-fr-fr",
+    "category_alias":"europe-fr-fr",
+    "language":"fr-FR",
+    "text_source":"liverpool.html",
+    "metadesc":"Le quartier des docks de la ville de Liverpool",
+    "fields": {
+        "location-fr-fr":"N53 24 24 W2 59 40",
+        "year-of-inscription-fr-fr":"2004"
+    },
+    "tags": ["cultural-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/liverpool-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-200.jpg?width=200&height=123",
+        "image_intro_alt":"Le front de mer de Liverpool et le Liver Building",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/liverpool-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-400.jpg?width=400&height=246",
+        "image_fulltext_alt":"Le front de mer de Liverpool et le Liver Building",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Opéra de Sydney",
+    "alias":"sydney-opera-house-fr-fr",
+    "category_alias":"oceania-fr-fr",
+    "language":"fr-FR",
+    "text_source":"sydney-opera-house.html",
+    "fields": {
+        "location-fr-fr":"S33 51 24 E151 12 55",
+        "year-of-inscription-fr-fr":"2007"
+    },
+    "tags": ["cultural-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/sydney-opera-house-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-200.jpg?width=200&height=150",
+        "image_intro_alt":"Vue aérienne de l’opéra de Sydney",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/sydney-opera-house-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Vue aérienne de l’opéra de Sydney",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Grande Barrière de corail",
+    "alias":"great-barrier-reef-fr-fr",
+    "category_alias":"oceania-fr-fr",
+    "language":"fr-FR",
+    "text_source":"great-barrier-reef.html",
+    "featured": "1",
+    "metadesc":"Une brève description d’un site remarquable par sa variété et sa beauté sur la côte nord-est de l’Australie",
+    "fields": {
+        "location-fr-fr":"S18 17 10 E147 41 60",
+        "year-of-inscription-fr-fr":"1981"
+    },
+    "tags": ["natural-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-barrier-reef-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-200.jpg?width=200&height=133",
+        "image_intro_alt":"Un groupe de coraux constructeurs de récifs",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-barrier-reef-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Un groupe de coraux constructeurs de récifs",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Acropole d’Athènes",
+    "alias":"acropolis-of-athens-fr-fr",
+    "category_alias":"europe-fr-fr",
+    "language":"fr-FR",
+    "text_source":"acropolis-of-athens.html",
+    "metadesc":"Un aperçu des symboles universels de l’esprit et de la civilisation classiques.",
+    "fields": {
+        "location-fr-fr":" N37 58 15.132 E23 43 34.248 ",
+        "year-of-inscription-fr-fr":"1987"
+    },
+    "tags": ["cultural-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/acropolis-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-200.jpg?width=200&height=133",
+        "image_intro_alt":"Ruines construites à l’origine au sommet d’une colline plate et dominante",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/acropolis-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Ruines construites à l’origine au sommet d’une colline plate et dominante",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Taj Mahal",
+    "alias":"taj-mahal-fr-fr",
+    "category_alias":"asia-fr-fr",
+    "language":"fr-FR",
+    "featured": "1",
+    "text_source":"taj-mahal.html",
+    "metadesc":"Un immense mausolée de marbre blanc...",
+    "fields": {
+        "location-fr-fr":"N27 10 27.012 E78 2 31.992",
+        "year-of-inscription-fr-fr":"1983"
+    },
+    "tags": ["cultural-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/taj-mahal-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-200.jpg?width=200&height=200",
+        "image_intro_alt":"L’impressionnante entrée menant à un palais somptueux",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/taj-mahal-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"L’impressionnante entrée menant à un palais somptueux",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Grande Muraille de Chine",
+    "alias":"great-wall-of-china-fr-fr",
+    "category_alias":"asia-fr-fr",
+    "language":"fr-FR",
+    "text_source":"great-wall-of-china.html",
+    "metadesc":"Une introduction à une immense structure militaire défensive.",
+    "fields": {
+        "location-fr-fr":"",
+        "year-of-inscription-fr-fr":"1987"
+    },
+    "tags": ["cultural-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-wall-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-200.jpg?width=200&height=279",
+        "image_intro_alt":"Une section de la Grande Muraille construite en pierre sur un terrain vallonné",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-wall-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-400.jpg?width=400&height=558",
+        "image_fulltext_alt":"Une section de la Grande Muraille construite en pierre sur un terrain vallonné",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Îles Galápagos",
+    "alias":"galapagos-islands-fr-fr",
+    "category_alias":"americas-fr-fr",
+    "language":"fr-FR",
+    "text_source":"galapagos-islands.html",
+    "metadesc":"Les 19 îles et la réserve marine environnante ont été décrites comme un <em>musée vivant unique et une vitrine de l’évolution</em>.",
+    "fields": {
+        "location-fr-fr":"N0 41 23.496 W90 30 4.748",
+        "year-of-inscription-fr-fr":"2001"
+    },
+    "tags": ["natural-site-fr-fr", "volcanic-site-fr-fr", "wildlife-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/galapagos-2-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-200.jpg?width=200&height=133",
+        "image_intro_alt":"Tortues géantes endémiques des Galápagos",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/galapagos-2-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Tortues géantes endémiques des Galápagos",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Machu Picchu",
+    "alias":"machu-picchu-fr-fr",
+    "category_alias":"americas-fr-fr",
+    "language":"fr-FR",
+    "featured": "1",
+    "text_source":"machu-picchu.html",
+    "metadesc":"Une brève description de ce site situé à 2 430 m au-dessus du niveau de la mer, au cœur d’une forêt tropicale de montagne.",
+    "fields": {
+        "location-fr-fr":"S13 11 5.762 W72 32 0.395",
+        "year-of-inscription-fr-fr":"1983"
+    },
+    "tags": ["cultural-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/machu-picchu-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-200.jpg?width=200&height=150",
+        "image_intro_alt":"Vue classique des ruines au sommet de la colline",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/machu-picchu-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Vue classique des ruines au sommet de la colline",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Chaussée des Géants",
+    "alias":"giants-causeway-fr-fr",
+    "category_alias":"europe-fr-fr",
+    "language":"fr-FR",
+    "text_source":"giants-causeway.html",
+    "featured": "1",
+    "metadesc":"Explorez les falaises de basalte le long de la côte maritime, en bordure du plateau d’Antrim, en Irlande du Nord",
+    "fields": {
+        "location-fr-fr":"N55 14 27 W6 30 42",
+        "year-of-inscription-fr-fr":"1986"
+    },
+    "tags": ["natural-site-fr-fr", "volcanic-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giants-causeway-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-200.jpg?width=200&height=143",
+        "image_intro_alt":"Colonnes de basalte formées dans une épaisse nappe horizontale de magma",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giants-causeway-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-400.jpg?width=400&height=286",
+        "image_fulltext_alt":"Colonnes de basalte formées dans une épaisse nappe horizontale de magma",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Pyramides de Gizeh",
+    "alias":"pyramids-of-giza-fr-fr",
+    "category_alias":"africa-fr-fr",
+    "language":"fr-FR",
+    "featured": "0",
+    "text_source":"pyramids-of-giza.html",
+    "metadesc":"Admirez les extraordinaires monuments funéraires de l’Ancien Empire égyptien.",
+    "fields": {
+        "location-fr-fr":"",
+        "year-of-inscription-fr-fr":"1979"
+    },
+    "tags": ["cultural-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giza-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-200.jpg?width=200&height=133",
+        "image_intro_alt":"Le Sphinx avec la pyramide de Gizeh en arrière-plan",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giza-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Le Sphinx avec la pyramide de Gizeh en arrière-plan",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Parc national du Serengeti",
+    "alias":"serengeti-national-park-fr-fr",
+    "category_alias":"africa-fr-fr",
+    "language":"fr-FR",
+    "text_source":"serengeti-national-park.html",
+    "metadesc":"Explorez les vastes plaines du Serengeti et observez la migration annuelle d’immenses troupeaux d’herbivores suivis par leurs prédateurs.",
+    "fields": {
+        "location-fr-fr":"S2 44 24 E34 51 32.4",
+        "year-of-inscription-fr-fr":"1981"
+    },
+    "tags": ["natural-site-fr-fr", "wildlife-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Éléphants et zèbres",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Éléphants et zèbres",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Aire de conservation du Ngorongoro",
+    "alias":"ngorongoro-conservation-area-fr-fr",
+    "category_alias":"africa-fr-fr",
+    "language":"fr-FR",
+    "text_source":"ngorongoro-conservation-area.html",
+    "featured": "1",
+    "metadesc":"De vastes étendues de plaines d’altitude, de savanes, de zones boisées et de forêts où la faune coexiste avec les pasteurs massaïs semi-nomades.",
+    "fields": {
+        "location-fr-fr":"S S3 11 13.992 E35 32 26.988",
+        "year-of-inscription-fr-fr":"1979"
+    },
+    "tags": ["natural-site-fr-fr", "volcanic-site-fr-fr", "wildlife-site-fr-fr"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/ngorongoro-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-200.jpg?width=200&height=133",
+        "image_intro_alt":"Des animaux parcourent le fond du cratère, dont la paroi se détache au loin",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/ngorongoro-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Des animaux parcourent le fond du cratère, dont la paroi se détache au loin",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"À propos des sites de l’UNESCO",
+    "alias":"about-unesco-sites-fr-fr",
+    "category_alias":"about-unesco-fr-fr",
+    "language":"fr-FR",
+    "text_source":"about-unesco-sites.html",
+    "hits":"135",
+    "metadesc":"Une brève introduction aux sites du patrimoine mondial de l’UNESCO.",
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Éléphants et zèbres",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Éléphants et zèbres",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+}]

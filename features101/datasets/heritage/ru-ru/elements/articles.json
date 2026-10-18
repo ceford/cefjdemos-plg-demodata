@@ -1,0 +1,442 @@
+[
+{
+    "state":1,
+    "title":"Октябрь: вода превращается в кровь",
+    "alias":"newsletter-water-turns-to-blood-ru-ru",
+    "category_alias":"newsletter-ru-ru",
+    "language":"ru-RU",
+    "text_source":"october-water-turns-to-blood.html",
+    "metadesc":"Рассказ о первой из десяти казней, постигших Древний Египет во времена Моисея.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":1,
+    "title":"Ноябрь: лягушки",
+    "alias":"newsletter-frogs-ru-ru",
+    "category_alias":"newsletter-ru-ru",
+    "language":"ru-RU",
+    "text_source":"november-frogs.html",
+    "metadesc":"Рассказ о второй из десяти казней, постигших Древний Египет во времена Моисея.",
+    "created_by_name":"Arthur",
+    "created_by_alias":"Aaron",
+    "workflow":"Newsletter Workflow",
+    "stage":"Publish"
+},
+{
+    "state":0,
+    "title":"Декабрь: мошки или вши",
+    "alias":"newsletter-gnats-or-lice-ru-ru",
+    "category_alias":"newsletter-ru-ru",
+    "language":"ru-RU",
+    "text_source":"december-gnats-or-lice.html",
+    "metadesc":"Рассказ о третьей из десяти казней, постигших Древний Египет во времена Моисея.",
+    "created_by_name":"Eddie",
+    "created_by_alias":"Miriam",
+    "workflow":"Newsletter Workflow",
+    "stage":"Draft"
+},
+{
+    "state":1,
+    "title":"Прощальная вечеринка",
+    "alias":"leaving-party-ru-ru",
+    "category_alias":"demonstrations-ru-ru",
+    "language":"ru-RU",
+    "text_source":"leaving-party.html",
+    "metadesc":"Несколько цитат и фотографий с прощальной вечеринки Джона."
+},
+{
+    "state":1,
+    "title":"Статистика населения",
+    "alias":"pop-stats-ru-ru",
+    "category_alias":"demonstrations-ru-ru",
+    "language":"ru-RU",
+    "text_source":"pop-stats.html",
+    "metadesc":"Краткое описание статистики населения по континентам."
+},
+{
+    "state":1,
+    "title":"Стихи о колокольчиках",
+    "alias":"bluebell-poetry-ru-ru",
+    "category_alias":"demonstrations-ru-ru",
+    "language":"ru-RU",
+    "text_source":"bluebell-poetry.html",
+    "hits":"17",
+    "metadesc":"Стихотворение о колокольчиках Джона Клэра (1793–1864)."
+},
+{
+    "state":1,
+    "title":"Колокольчики",
+    "alias":"bluebells-ru-ru",
+    "category_alias":"demonstrations-ru-ru",
+    "language":"ru-RU",
+    "text_source":"bluebells.html",
+    "hits":"17",
+    "metadesc":"Краткое описание внешнего вида, распространения и социальной роли цветов колокольчика.",
+    "fields": {
+        "audio-ru-ru":"{\"file\":\"files\/demodata\/heritage\/one-summer.mp3\"}",
+        "calendar-ru-ru":"2024-04-01",
+        "checkboxes-ru-ru":{"0":"1","1":"3"},
+        "color-ru-ru":"#4e3ac2",
+        "document-ru-ru":"{\"file\":\"files\/demodata\/heritage\/lorem-ipsum.txt\"}",
+        "editor-ru-ru":"Колокольчики лучше всего растут в полутени, во влажной, хорошо дренированной почве, богатой органическими веществами.",
+        "integer-ru-ru":"5",
+        "list-items-ru-ru":"3",
+        "images-list-ru-ru":{"0":"bluebell-flower-blue-128.png","1":"bluebell-flower-pink-128.png"},
+        "media-ru-ru":"{\"imagefile\":\"images\/demodata\/heritage\/bluebells-150.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-150.jpg?width=150&height=150\",\"alt_text\":\"Woodland scene with carpet of bluebells.\"}",
+        "number-ru-ru":"7.5",
+        "radio-ru-ru":"perennial",
+        "sql-ru-ru":"europe-ru-ru",
+        "subform-field-locations-ru-ru": {
+            "row0": {
+                    "demo-date-ru-ru":"2026-05-12 14:27:17",
+                    "w3w-ru-ru":"///camper.bandaged.slower (Dalkeith Country Park)",
+                    "rating-ru-ru":"5"
+                },
+            "row1": {
+                "demo-date-ru-ru":"2025-06-01 14:27:17",
+                "w3w-ru-ru":"ne///vehicle.cubic.played (Roslin Glen)",
+                "rating-ru-ru":"4"
+            }
+        },
+        "text-ru-ru":"Hyacinthoides non-scripta",
+        "textarea-ru-ru":"Колокольчики — это виды цветковых растений рода Hyacinthoides семейства спаржевых.",
+        "url-ru-ru":"https://en.wikipedia.org/wiki/Hyacinthoides_non-scripta",
+        "user-ru-ru":"playwright",
+        "usergrouplist-ru-ru":{"0":"7","1":"5"},
+        "video-ru-ru":"{\"file\":\"files\/demodata\/heritage\/badger-vs-fox-400-silent.mp4\", \"poster\":\"files\/demodata\/heritage\/badger-vs-fox-400.jpg#joomlaImage:\/\/local-files\/demodata\/heritage\/badger-vs-fox-400.jpg?width=400&height=226\"}"
+    },
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/bluebells-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-200.jpg?width=200&height=200",
+        "image_intro_alt":"Лесной пейзаж с коврами колокольчиков",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/bluebells-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/bluebells-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"Лесной пейзаж с коврами колокольчиков",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Объекты, внесённые в список в 1978 году",
+    "alias":"sites-inscribed-in-1978-ru-ru",
+    "category_alias":"demonstrations-ru-ru",
+    "language":"ru-RU",
+    "text_source":"sites-table-1978.html"
+},
+{
+    "state":2,
+    "title":"Ливерпуль — морской торговый город",
+    "alias":"liverpool-ru-ru",
+    "category_alias":"europe-ru-ru",
+    "language":"ru-RU",
+    "text_source":"liverpool.html",
+    "metadesc":"Район доков города Ливерпуля",
+    "fields": {
+        "location-ru-ru":"N53 24 24 W2 59 40",
+        "year-of-inscription-ru-ru":"2004"
+    },
+    "tags": ["cultural-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/liverpool-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-200.jpg?width=200&height=123",
+        "image_intro_alt":"Набережная Ливерпуля и здание Лайвер",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/liverpool-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/liverpool-400.jpg?width=400&height=246",
+        "image_fulltext_alt":"Набережная Ливерпуля и здание Лайвер",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Сиднейский оперный театр",
+    "alias":"sydney-opera-house-ru-ru",
+    "category_alias":"oceania-ru-ru",
+    "language":"ru-RU",
+    "text_source":"sydney-opera-house.html",
+    "fields": {
+        "location-ru-ru":"S33 51 24 E151 12 55",
+        "year-of-inscription-ru-ru":"2007"
+    },
+    "tags": ["cultural-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/sydney-opera-house-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-200.jpg?width=200&height=150",
+        "image_intro_alt":"Вид на Сиднейский оперный театр с воздуха",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/sydney-opera-house-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/sydney-opera-house-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Вид на Сиднейский оперный театр с воздуха",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Большой Барьерный риф",
+    "alias":"great-barrier-reef-ru-ru",
+    "category_alias":"oceania-ru-ru",
+    "language":"ru-RU",
+    "text_source":"great-barrier-reef.html",
+    "featured": "1",
+    "metadesc":"Краткое описание объекта, примечательного своим разнообразием и красотой, на северо-восточном побережье Австралии",
+    "fields": {
+        "location-ru-ru":"S18 17 10 E147 41 60",
+        "year-of-inscription-ru-ru":"1981"
+    },
+    "tags": ["natural-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-barrier-reef-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-200.jpg?width=200&height=133",
+        "image_intro_alt":"Группа рифообразующих кораллов",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-barrier-reef-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-barrier-reef-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Группа рифообразующих кораллов",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Афинский акрополь",
+    "alias":"acropolis-of-athens-ru-ru",
+    "category_alias":"europe-ru-ru",
+    "language":"ru-RU",
+    "text_source":"acropolis-of-athens.html",
+    "metadesc":"Обзор универсальных символов классического духа и цивилизации.",
+    "fields": {
+        "location-ru-ru":" N37 58 15.132 E23 43 34.248 ",
+        "year-of-inscription-ru-ru":"1987"
+    },
+    "tags": ["cultural-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/acropolis-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-200.jpg?width=200&height=133",
+        "image_intro_alt":"Руины, первоначально построенные на господствующей плоской вершине холма",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/acropolis-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/acropolis-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Руины, первоначально построенные на господствующей плоской вершине холма",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Тадж-Махал",
+    "alias":"taj-mahal-ru-ru",
+    "category_alias":"asia-ru-ru",
+    "language":"ru-RU",
+    "featured": "1",
+    "text_source":"taj-mahal.html",
+    "metadesc":"Огромный мавзолей из белого мрамора...",
+    "fields": {
+        "location-ru-ru":"N27 10 27.012 E78 2 31.992",
+        "year-of-inscription-ru-ru":"1983"
+    },
+    "tags": ["cultural-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/taj-mahal-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-200.jpg?width=200&height=200",
+        "image_intro_alt":"Великолепный вид на роскошный дворец",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/taj-mahal-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/taj-mahal-400.jpg?width=400&height=400",
+        "image_fulltext_alt":"Великолепный вид на роскошный дворец",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Великая китайская стена",
+    "alias":"great-wall-of-china-ru-ru",
+    "category_alias":"asia-ru-ru",
+    "language":"ru-RU",
+    "text_source":"great-wall-of-china.html",
+    "metadesc":"Введение в грандиозное оборонительное военное сооружение.",
+    "fields": {
+        "location-ru-ru":"",
+        "year-of-inscription-ru-ru":"1987"
+    },
+    "tags": ["cultural-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/great-wall-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-200.jpg?width=200&height=279",
+        "image_intro_alt":"Участок Великой стены, построенный из камня на холмистой местности",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/great-wall-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/great-wall-400.jpg?width=400&height=558",
+        "image_fulltext_alt":"Участок Великой стены, построенный из камня на холмистой местности",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Галапагосские острова",
+    "alias":"galapagos-islands-ru-ru",
+    "category_alias":"americas-ru-ru",
+    "language":"ru-RU",
+    "text_source":"galapagos-islands.html",
+    "metadesc":"19 островов и окружающий их морской заповедник называют уникальным <em>живым музеем и витриной эволюции</em>.",
+    "fields": {
+        "location-ru-ru":"N0 41 23.496 W90 30 4.748",
+        "year-of-inscription-ru-ru":"2001"
+    },
+    "tags": ["natural-site-ru-ru", "volcanic-site-ru-ru", "wildlife-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/galapagos-2-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-200.jpg?width=200&height=133",
+        "image_intro_alt":"Гигантские черепахи, обитающие только на Галапагосских островах",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/galapagos-2-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/galapagos-2-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Гигантские черепахи, обитающие только на Галапагосских островах",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Мачу-Пикчу",
+    "alias":"machu-picchu-ru-ru",
+    "category_alias":"americas-ru-ru",
+    "language":"ru-RU",
+    "featured": "1",
+    "text_source":"machu-picchu.html",
+    "metadesc":"Краткое описание объекта, расположенного на высоте 2430 м над уровнем моря, в центре тропического горного леса.",
+    "fields": {
+        "location-ru-ru":"S13 11 5.762 W72 32 0.395",
+        "year-of-inscription-ru-ru":"1983"
+    },
+    "tags": ["cultural-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/machu-picchu-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-200.jpg?width=200&height=150",
+        "image_intro_alt":"Классический вид на руины на вершине холма",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/machu-picchu-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/machu-picchu-400.jpg?width=400&height=300",
+        "image_fulltext_alt":"Классический вид на руины на вершине холма",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Дорога гигантов",
+    "alias":"giants-causeway-ru-ru",
+    "category_alias":"europe-ru-ru",
+    "language":"ru-RU",
+    "text_source":"giants-causeway.html",
+    "featured": "1",
+    "metadesc":"Исследуйте базальтовые утёсы вдоль морского побережья на краю плато Антрим в Северной Ирландии",
+    "fields": {
+        "location-ru-ru":"N55 14 27 W6 30 42",
+        "year-of-inscription-ru-ru":"1986"
+    },
+    "tags": ["natural-site-ru-ru", "volcanic-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giants-causeway-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-200.jpg?width=200&height=143",
+        "image_intro_alt":"Базальтовые колонны, образовавшиеся в толще горизонтального слоя магмы",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giants-causeway-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giants-causeway-400.jpg?width=400&height=286",
+        "image_fulltext_alt":"Базальтовые колонны, образовавшиеся в толще горизонтального слоя магмы",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Пирамиды Гизы",
+    "alias":"pyramids-of-giza-ru-ru",
+    "category_alias":"africa-ru-ru",
+    "language":"ru-RU",
+    "featured": "0",
+    "text_source":"pyramids-of-giza.html",
+    "metadesc":"Полюбуйтесь необыкновенными погребальными памятниками Древнего царства Египта.",
+    "fields": {
+        "location-ru-ru":"",
+        "year-of-inscription-ru-ru":"1979"
+    },
+    "tags": ["cultural-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/giza-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-200.jpg?width=200&height=133",
+        "image_intro_alt":"Сфинкс на фоне пирамиды Гизы",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/giza-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/giza-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Сфинкс на фоне пирамиды Гизы",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Национальный парк Серенгети",
+    "alias":"serengeti-national-park-ru-ru",
+    "category_alias":"africa-ru-ru",
+    "language":"ru-RU",
+    "text_source":"serengeti-national-park.html",
+    "metadesc":"Исследуйте бескрайние равнины Серенгети и наблюдайте ежегодную миграцию огромных стад травоядных, за которыми следуют хищники.",
+    "fields": {
+        "location-ru-ru":"S2 44 24 E34 51 32.4",
+        "year-of-inscription-ru-ru":"1981"
+    },
+    "tags": ["natural-site-ru-ru", "wildlife-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Слоны и зебры",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Слоны и зебры",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Природоохранная зона Нгоронгоро",
+    "alias":"ngorongoro-conservation-area-ru-ru",
+    "category_alias":"africa-ru-ru",
+    "language":"ru-RU",
+    "text_source":"ngorongoro-conservation-area.html",
+    "featured": "1",
+    "metadesc":"Обширные пространства высокогорных равнин, саванн, редколесий и лесов, где дикая природа соседствует с полукочевыми скотоводами-масаи.",
+    "fields": {
+        "location-ru-ru":"S S3 11 13.992 E35 32 26.988",
+        "year-of-inscription-ru-ru":"1979"
+    },
+    "tags": ["natural-site-ru-ru", "volcanic-site-ru-ru", "wildlife-site-ru-ru"],
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/ngorongoro-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-200.jpg?width=200&height=133",
+        "image_intro_alt":"Животные бродят по дну кратера, а вдали видна его стена",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/ngorongoro-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/ngorongoro-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Животные бродят по дну кратера, а вдали видна его стена",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+},
+{
+    "state":1,
+    "title":"Об объектах ЮНЕСКО",
+    "alias":"about-unesco-sites-ru-ru",
+    "category_alias":"about-unesco-ru-ru",
+    "language":"ru-RU",
+    "text_source":"about-unesco-sites.html",
+    "hits":"135",
+    "metadesc":"Краткое введение в объекты Всемирного наследия ЮНЕСКО.",
+    "images": {
+        "image_intro":"images\/demodata\/heritage\/serengeti-200.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-200.jpg?width=200&height=133",
+        "image_intro_alt":"Слоны и зебры",
+        "float_intro":"",
+        "image_intro_caption":"",
+        "image_fulltext":"images\/demodata\/heritage\/serengeti-400.jpg#joomlaImage:\/\/local-images\/demodata\/heritage\/serengeti-400.jpg?width=400&height=267",
+        "image_fulltext_alt":"Слоны и зебры",
+        "float_fulltext":"float-end ms-3",
+        "image_fulltext_caption":""
+    }
+}]

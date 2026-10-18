@@ -1,0 +1,647 @@
+[
+{
+    "title":"Datum",
+    "category":"",
+    "name":"demo-date-nl-nl",
+    "label":"Datum",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>Een datumveld voor algemeen gebruik in subformulieren.</p>",
+    "note":"",
+    "state":1,
+    "language":"nl-NL",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"W3W",
+    "category":"",
+    "name":"w3w-nl-nl",
+    "label":"W3W",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>De What3words-locatie van een locatie.</p>",
+    "note":"",
+    "state":1,
+    "language":"nl-NL",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Beoordeling",
+    "category":"",
+    "name":"rating-nl-nl",
+    "label":"Beoordeling",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>De beoordeling van een locatie op een schaal van 0 tot 5.</p>",
+    "note":"",
+    "state":1,
+    "language":"nl-NL",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "first":"0",
+        "last":"5",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"Subformulier: Locaties",
+    "category":"",
+    "name":"subform-field-locations-nl-nl",
+    "label":"Subformulier: Locaties",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"subform",
+    "description":"Een veld om gegevens van verschillende locaties vast te leggen.",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "hint":"","class":"",
+        "label_class":"",
+        "show_on":"",
+        "showon":"",
+        "render_class":"",
+        "value_render_class":"",
+        "showlabel":"1",
+        "label_render_class":"",
+        "display":"2",
+        "prefix":"",
+        "suffix":"",
+        "layout":"",
+        "display_readonly":"2",
+        "searchindex":"0",
+        "form_layout":""
+    },
+    "fieldparams":{
+        "repeat":"1",
+        "max_rows":"",
+        "options":{
+            "option0":{"customfield":"Datum","render_values":"1"},
+            "option1":{"customfield":"W3W","render_values":"1"},
+            "option2":{"customfield":"Beoordeling","render_values":"1"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Natuur"
+},
+{
+    "title":"Jaar van inschrijving",
+    "category":"heritage-nl-nl",
+    "name":"year-of-inscription-nl-nl",
+    "label":"Year Inscribed",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>Het jaar waarin de locatie aan de UNESCO-lijst werd toegevoegd.</p>",
+    "note":"",
+    "state":1,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1972",
+        "last":"2026",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Locatiegegevens"
+},
+{
+    "title":"Locatie",
+    "category":"heritage-nl-nl",
+    "name":"location-nl-nl",
+    "label":"Locatie",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>De breedte- en lengtegraad van de locatie.</p>",
+    "note":"",
+    "state":1,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Locatiegegevens"
+},
+{
+    "title":"Audio: Voorbeeldtrack",
+    "category":"demonstrations-nl-nl",
+    "name":"audio-nl-nl",
+    "label":"Audio: Voorbeeldtrack",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"audio",
+    "description":"<p>Een audiobeschrijving.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"audios",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Kalender: Datum van foto",
+    "category":"demonstrations-nl-nl",
+    "name":"calendar-nl-nl",
+    "label":"Kalender: Datum van foto",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>De datum waarop een foto is gemaakt, kan belangrijk zijn voor seizoensgebonden items.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Keuzevakjes: Vermeerdering",
+    "category":"demonstrations-nl-nl",
+    "name":"checkboxes-nl-nl",
+    "label":"Keuzevakjes: Vermeerdering",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"checkboxes",
+    "description":"<p>Selecteer een of meer opties uit een aantal keuzevakjes.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"Zaad","value":"1"},
+            "options1":{"name":"Stek","value":"2"},
+            "options2":{"name":"Bol","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Bloemen"
+},
+{
+    "title":"Kleur: Bloemkleur",
+    "category":"demonstrations-nl-nl",
+    "name":"color-nl-nl",
+    "label":"Colour: Flower",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"color",
+    "description":"<p>Select a colour with a widget.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "colour":"4e3ac2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Bloemen"
+},
+{
+    "title":"Document: Downloaden",
+    "category":"demonstrations-nl-nl",
+    "name":"document-nl-nl",
+    "label":"Document: Downloaden",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"document",
+    "description":"<p>Selecteer een document.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:\/",
+        "preview":"",
+        "css_class":"",
+        "types":"documents"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Editor: Teelt",
+    "category":"demonstrations-nl-nl",
+    "name":"editor-nl-nl",
+    "label":"Editor: Teelt",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"editor",
+    "description":"<p>Veld voor teeltnotities.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "cultivation-nl-nl":"Boshyacinten groeien het best in halfschaduw met vochtige, goed doorlatende grond die rijk is aan organisch materiaal."
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Geheel getal: RHS-winterhardheid",
+    "category":"demonstrations-nl-nl",
+    "name":"integer-nl-nl",
+    "label":"Geheel getal: RHS-winterhardheid",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>Een getal van 1-7 dat de winterhardheidswaarde van deze bloem volgens de Royal Horticultural Society aangeeft.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1",
+        "last":"7",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Bloemen"
+},
+{
+    "title":"Lijst: Verspreiding",
+    "category":"demonstrations-nl-nl",
+    "name":"list-items-nl-nl",
+    "label":"Lijst: Verspreiding",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"list",
+    "description":"<p>Select one or more from a number of list items.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"Afrika","value":"1"},
+            "options1":{"name":"Azië","value":"2"},
+            "options2":{"name":"Europa","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Afbeeldingenlijst: Bloemkleuren",
+    "category":"demonstrations-nl-nl",
+    "name":"images-list-nl-nl",
+    "label":"Afbeeldingenlijst: Bloemkleuren",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"imagelist",
+    "description":"<p>Voeg een of meer afbeeldingen toe aan een lijst.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"demodata/heritage",
+        "multiple":"1",
+        "image_class":"me-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Media: Typisch voorkomen",
+    "category":"demonstrations-nl-nl",
+    "name":"media-nl-nl",
+    "label":"Media: Typisch voorkomen",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"media",
+    "description":"<p>Selecteer een item uit een mediamap.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-images:/demodata/heritage",
+        "image_class":"ms-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Notitie: Verdere informatie",
+    "category":"demonstrations-nl-nl",
+    "name":"note-nl-nl",
+    "label":"Notitie: Verdere informatie",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"note",
+    "description":"<p>Stel informatie samen voor gebruikers van de backend of frontend.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1",
+        "display_frontend":"1"
+    },
+    "fieldparams":{
+        "label":"Juridische informatie",
+        "description":"In sommige rechtsgebieden kan het plukken van boshyacinten een strafbaar feit zijn!",
+        "class":"alert alert-info m-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Getal: Zaadgewicht",
+    "category":"demonstrations-nl-nl",
+    "name":"number-nl-nl",
+    "label":"Getal: Zaadgewicht",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"number",
+    "description":"<p>Geef het gemiddelde gewicht van een zaad op.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "currency":"1",
+        "symbol":" milligrams",
+        "position":"1",
+        "decimals":"2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Keuzerondjes: Levenscyclus",
+    "category":"demonstrations-nl-nl",
+    "name":"radio-nl-nl",
+    "label":"Keuzerondjes: Levenscyclus",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"radio",
+    "description":"<p>Selecteer het type levenscyclus.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"- Selecteren -","value":""},
+            "options1":{"name":"Eenjarig","value":"annual"},
+            "options2":{"name":"Tweejarig","value":"biennial"},
+            "options3":{"name":"Overblijvend","value":"perennial"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"SQL: Inheemse verspreiding",
+    "category":"demonstrations-nl-nl",
+    "name":"sql-nl-nl",
+    "label":"SQL: Inheemse verspreiding",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"sql",
+    "description":"<p>Selecteer een of meer continenten waar deze soort inheems is.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `lje7b_categories` AS `a` \r\nLEFT JOIN `lje7b_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'nl-NL' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Tekst: Latijnse naam",
+    "category":"demonstrations-nl-nl",
+    "name":"text-nl-nl",
+    "label":"Tekst: Wetenschappelijke naam",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>De wetenschappelijke naam van dit exemplaar.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Natuur"
+},
+{
+    "title":"Tekstvak: Classificatie",
+    "category":"demonstrations-nl-nl",
+    "name":"textarea-nl-nl",
+    "label":"Tekstvak: Classificatie",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"textarea",
+    "description":"<p>Een beschrijving van de wetenschappelijke classificatie van een exemplaar.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "rows":"3",
+        "cols":"128"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"URL: Verdere informatie",
+    "category":"demonstrations-nl-nl",
+    "name":"url-nl-nl",
+    "label":"URL: Verdere informatie",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"url",
+    "description":"<p>Geef een URL voor meer informatie op.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Gebruiker: Melder",
+    "category":"demonstrations-nl-nl",
+    "name":"user-nl-nl",
+    "label":"Gebruiker: Melder",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"user",
+    "description":"<p>Informatie over de melder van dit artikel.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Gebruikersgroepenlijst: Begeleiders",
+    "category":"demonstrations-nl-nl",
+    "name":"usergrouplist-nl-nl",
+    "label":"Gebruikersgroepenlijst: Begeleiders",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"usergrouplist",
+    "description":"<p>Informatie over gebruikersgroepen.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+},
+{
+    "title":"Video: Voorbeeldclip",
+    "category":"demonstrations-nl-nl",
+    "name":"video-nl-nl",
+    "label":"Video: Voorbeeldclip",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"video",
+    "description":"<p>Een voorbeeldvideoclip.</p>",
+    "note":"",
+    "state":0,
+    "language":"nl-NL",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"videos",
+        "video_poster":"1",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"Demonstraties"
+}]

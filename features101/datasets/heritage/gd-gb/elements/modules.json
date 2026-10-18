@@ -1,13 +1,13 @@
 [{
-    "title"     : "Teachdaireachd an t-siostaim",
+    "title"     : "Teachdaireachd an t-Siostaim",
     "client_id" : 1,
     "ordering"  : 1,
     "position"  : "top",
     "module"    : "mod_custom",
     "showtitle" : 1,
-    "language":"en-GB",
+    "language":"gd-GB",
     "published":0,
-    "content":"<p class=\"p1-2\">A Houston, tha trioblaid againn!</p>",
+    "content":"<p class=\"p1-2\">Houston, tha duilgheadas againn!</p>",
     "params": {
         "prepare_content":0,
         "backgroundimage":"",
@@ -24,7 +24,7 @@
     }
 },
 {
-    "title"     : "Teachdaireachd na Làraich",
+    "title"     : "Teachdaireachd Làraich",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_custom",
@@ -48,7 +48,7 @@
     }
 },
 {
-    "title"     : "Ìomhaigh air thuaiream",
+    "title"     : "Ìomhaigh Air Thuaiream",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_random_image",
@@ -71,7 +71,7 @@
     }
 },
 {
-    "title"     : "Tagaichean Mòr-chòrdte",
+    "title"     : "Tagaichean Sònraichte",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_tags_popular",
@@ -102,7 +102,7 @@
     }
 },
 {
-    "title"     : "Tagaichean coltach ris",
+    "title"     : "Tagaichean Coltach",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_tags_similar",
@@ -125,7 +125,7 @@
     }
 },
 {
-    "title"     : "Biadhan Siondacachaidh",
+    "title"     : "Biadhan Siondacaidh",
     "ordering"  : 1,
     "position"  : "sidebar-left",
     "module"    : "mod_syndicate",
@@ -228,6 +228,7 @@
     "showtitle" : 1,
     "menu-base-alias":"",
     "language":"gd-GB",
+    "published": 1,
     "params"    : {
         "menutype"        : "demonstrations-gd-gb",
         "layout"          : "_:collapse-default",
@@ -246,7 +247,33 @@
     }
 },
 {
-    "title"     : "Foirm Log a-steach",
+    "title"     : "Craobh-chlàr-bìdh",
+    "ordering"  : 1,
+    "position"  : "sidebar-left",
+    "module"    : "mod_menu",
+    "showtitle" : 1,
+    "menu-base-alias":"",
+    "language":"gd-GB",
+    "published": 0,
+    "params"    : {
+        "menutype"        : "menu-tree-gd-gb",
+        "layout"          : "cassiopeia:treedefault",
+        "base"            : 0,
+        "startLevel"      : 1,
+        "endLevel"        : 0,
+        "showAllChildren" : 1,
+        "class_sfx"       : "nav-active-open",
+        "cache"           : 1,
+        "cache_time"      : 900,
+        "cachemode"       : "itemid",
+        "module_tag"      : "nav",
+        "bootstrap_size"  : 0,
+        "header_tag"      : "h3",
+        "style"           : 0
+    }
+},
+{
+    "title"     : "Foirm Logaidh a-steach",
     "ordering"  : 1,
     "position"  : "sidebar-right",
     "module"    : "mod_login",
@@ -257,7 +284,7 @@
     }
 },
 {
-    "title"     : "Foirm Log a-mach",
+    "title"     : "Foirm Logaidh a-mach",
     "ordering"  : 1,
     "position"  : "sidebar-right",
     "module"    : "mod_login",
