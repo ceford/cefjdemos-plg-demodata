@@ -1,7 +1,7 @@
 [{
     "menutype":"demonstrations-ta-in",
     "title":"நாடாளுமன்றக் குழுக்கள்",
-    "alias":"parliament-committees-ta-in",
+    "alias":"parliamentary-committees-ta-in",
     "category-alias":"parliament",
     "component":"com_contact",
     "link":"index.php?option=com_contact&view=categories&id=",
@@ -13,7 +13,7 @@
 {
     "menutype":"demonstrations-ta-in",
     "title":"சிறப்புத் தொடர்புகள்",
-    "alias":"featured-contacts",
+    "alias":"featured-contacts-ta-in",
     "component":"com_contact",
     "link":"index.php?option=com_contact&view=featured",
     "type":"Featured Contacts",
@@ -512,7 +512,7 @@
 {
     "menutype":"demonstrations-ta-in",
     "title":"ஜூம்லா! அறிவிப்புகள்",
-    "alias":"joomla-announcements",
+    "alias":"joomla-announcements-ta-in",
     "component":"com_newsfeeds",
     "link":"index.php?option=com_newsfeeds&view=newsfeed&id=",
     "component_id":"",

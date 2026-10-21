@@ -1,7 +1,7 @@
 [{
     "menutype":"demonstrations-pt-br",
     "title":"Comitês parlamentares",
-    "alias":"parliament-committees-pt-br",
+    "alias":"parliamentary-committees-pt-br",
     "category-alias":"parliament",
     "component":"com_contact",
     "link":"index.php?option=com_contact&view=categories&id=",
@@ -13,7 +13,7 @@
 {
     "menutype":"demonstrations-pt-br",
     "title":"Contatos em destaque",
-    "alias":"featured-contacts",
+    "alias":"featured-contacts-pt-br",
     "component":"com_contact",
     "link":"index.php?option=com_contact&view=featured",
     "type":"Featured Contacts",
@@ -512,7 +512,7 @@
 {
     "menutype":"demonstrations-pt-br",
     "title":"Anúncios do Joomla!",
-    "alias":"joomla-announcements",
+    "alias":"joomla-announcements-pt-br",
     "component":"com_newsfeeds",
     "link":"index.php?option=com_newsfeeds&view=newsfeed&id=",
     "component_id":"",

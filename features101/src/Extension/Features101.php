@@ -1358,6 +1358,43 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $id = $db->loadResult();
                     $ids[$itemlanguage] = $id;
                 }
+                // Find any existing entries in the associations table
+                $query = $db->createQuery()
+                    ->select($db->quoteName('id'))
+                    ->select($db->quoteName('key'))
+                    ->from($db->quoteName('#__associations'))
+                    ->where($db->quoteName('id') . '=' . $ids['en-GB']);
+                $db->setQuery($query);
+                $item = $db->loadObject();
+
+                if (!empty($item)) {
+                    $key = $item->key;
+                    // Refetch the items using the hash
+                    $query = $db->createQuery()
+                        ->select($db->quoteName('id'))
+                        ->from($db->quoteName('#__associations'))
+                        ->where($db->quoteName('key') . '=' . $db->quote($item->key));
+                    $db->setQuery($query);
+                    $items = $db->loadObjectList();
+
+                    // Get the language for each item from the item table rcord
+                    foreach($items as $item) {
+                        $query = $db->createQuery()
+                            ->select($db->quoteName('language'))
+                            ->from($db->quoteName($table))
+                            ->where($db->quoteName('id') . ' = ' . $item->id);
+                        $db->setQuery($query);
+                        $lang = $db->loadResult();
+                        $ids[$lang] = $item->id;
+                    }
+                    // Delete the existing associations
+                    $query = $db->createQuery()
+                        ->delete($db->quoteName('#__associations'))
+                        ->where($db->quoteName('key') . ' = ' . $db->quote($key));
+                    $db->setQuery($query);
+                    $db->execute();
+                }
+
                 $groupedAssociations[$association['context']] = $ids;
                 if (!$this->addAssociations($groupedAssociations)) {
                     $response            = [];

@@ -512,7 +512,7 @@
 {
     "menutype":"demonstrations-en-gb",
     "title":"Joomla! Announcements",
-    "alias":"joomla-announcements",
+    "alias":"joomla-announcements-en-gb",
     "component":"com_newsfeeds",
     "link":"index.php?option=com_newsfeeds&view=newsfeed&id=",
     "component_id":"",
