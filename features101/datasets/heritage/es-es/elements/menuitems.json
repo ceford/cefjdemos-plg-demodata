@@ -512,7 +512,7 @@
 {
     "menutype":"demonstrations-es-es",
     "title":"Anuncios de Joomla!",
-    "alias":"joomla-announcementses-es",
+    "alias":"joomla-announcements-es-es",
     "component":"com_newsfeeds",
     "link":"index.php?option=com_newsfeeds&view=newsfeed&id=",
     "newsfeedsalias": "joomla-announcements",
