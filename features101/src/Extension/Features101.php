@@ -2020,7 +2020,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                         ->select($db->quoteName('id'))
                         ->from($db->quoteName('#__newsfeeds'))
                         ->where($db->quoteName('alias') . '=:alias')
-                        ->bind(':alias', $menuitem['alias'], ParameterType::STRING);
+                        ->bind(':alias', $menuitem['newsfeedsalias'], ParameterType::STRING);
                     $db->setQuery($query);
                     $feed_id = $db->loadResult();
                     $menuitem['link'] .= $feed_id;

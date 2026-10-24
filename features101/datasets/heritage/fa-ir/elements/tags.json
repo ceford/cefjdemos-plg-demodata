@@ -1,0 +1,66 @@
+[
+{
+    "title":"برچسب‌های انگلیسی",
+    "alias":"tags-fa-ir",
+    "description":"<p>والدی برای برچسب‌های انگلیسی مورد استفاده در ماژول‌ها.</p>",
+    "parent_alias":"",
+    "language":"fa-IR",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-secondary-subtle border border-secondary"
+    }
+},
+{
+    "title":"سایت فرهنگی",
+    "alias":"cultural-site-fa-ir",
+    "description":"<p>سایت‌هایی که به‌دلیل ارزش فرهنگی طبقه‌بندی شده‌اند.</p>",
+    "parent_alias":"tags-fa-ir",
+    "language":"fa-IR",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-warning-subtle border border-warning"
+    }
+},
+{
+    "title":"سایت طبیعی",
+    "alias":"natural-site-fa-ir",
+    "description":"<p>سایت‌هایی که به‌دلیل ارزش طبیعی طبقه‌بندی شده‌اند.</p>",
+    "parent_alias":"tags-fa-ir",
+    "language":"fa-IR",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-success-subtle border border-success"
+    }
+},
+{
+    "title":"سایت آتشفشانی",
+    "alias":"volcanic-site-fa-ir",
+    "description":"<p>سایت‌هایی مرتبط با فعالیت‌های آتشفشانی کنونی یا گذشته.</p>",
+    "parent_alias":"tags-fa-ir",
+    "language":"fa-IR",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-danger-subtle border border-danger"
+    }
+},
+{
+    "title":"حیات‌وحش",
+    "alias":"wildlife-site-fa-ir",
+    "description":"<p>سایت‌هایی که به‌خاطر حیات‌وحش جانوری خود شناخته می‌شوند.</p>",
+    "parent_alias":"tags-fa-ir",
+    "language":"fa-IR",
+    "published":1,
+    "id":0,
+    "params":{
+        "tag_layout":"",
+        "tag_link_class":"bg-info-subtle border border-info"
+    }
+}]

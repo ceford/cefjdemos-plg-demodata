@@ -515,6 +515,7 @@
     "alias":"joomla-announcements-fr-fr",
     "component":"com_newsfeeds",
     "link":"index.php?option=com_newsfeeds&view=newsfeed&id=",
+    "newsfeedsalias": "joomla-announcements",
     "component_id":"",
     "parent_id":"1",
     "level":"1",

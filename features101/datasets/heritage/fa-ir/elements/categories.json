@@ -1,0 +1,206 @@
+[{
+    "title":"وبلاگ",
+    "alias":"blog-fa-ir",
+    "level":1,
+    "path":"blog",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>دسته‌ای برای پست‌های وبلاگ جهت استفاده در یک گردش‌کار.</p>",
+    "params": {
+    }
+},
+{
+    "title":"خبرنامه",
+    "alias":"newsletter-fa-ir",
+    "level":1,
+    "path":"newsletter-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>دسته‌ای برای مقالات خبرنامه.</p>",
+    "workflow_title":"Newsletter Workflow",
+    "params": {
+        "category_layout":"",
+        "image":"",
+        "image_alt":"",
+        "workflow_id":""
+    }
+},
+{
+    "title":"دربارهٔ یونسکو",
+    "alias":"about-unesco-fa-ir",
+    "level":1,
+    "path":"about-unesco-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>اطلاعات عمومی دربارهٔ سایت‌های میراث جهانی یونسکو.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "نقشه‌ای بریده‌شده از جهان که منتخبی از سایت‌های میراث جهانی را نشان می‌دهد."
+    }
+},
+{
+    "title":"سایت‌های میراث جهانی",
+    "alias":"heritage-fa-ir",
+    "level":1,
+    "path":"heritage-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>دستهٔ والد برای زیردسته‌های سایت‌های میراث جهانی یونسکو.</p>",
+    "params": {
+        "image": "images/demodata/heritage/world-heritage-sites-crop.jpg#joomlaImage://local-images/demodata/heritage/world-heritage-sites-crop.jpg?width=1440&height=333",
+        "imag_alt": "نقشه‌ای بریده‌شده از جهان که منتخبی از سایت‌های میراث جهانی را نشان می‌دهد."
+    }
+},
+{
+    "title":"آفریقا",
+    "alias":"africa-fa-ir",
+    "parent_alias":"heritage-fa-ir",
+    "level":2,
+    "path":"heritage/africa-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>فهرستی از سایت‌های میراث جهانی یونسکو در آفریقا.</p>",
+    "params": {
+        "image": "images/demodata/heritage/serengeti-crop.jpg#joomlaImage://local-images/demodata/heritage/serengeti-crop.jpg?width=1440&height=333",
+        "imag_alt": "تصویری تولیدشده با هوش مصنوعی از حیواناتی که در سرنگتی پرسه می‌زنند"
+    }
+},
+{
+    "title":"Americas",
+    "alias":"americas-fa-ir",
+    "parent_alias":"heritage-fa-ir",
+    "level":2,
+    "path":"heritage/americas-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>فهرستی از سایت‌های میراث جهانی یونسکو در قارهٔ آمریکا.</p>"
+},
+{
+    "title":"آسیا",
+    "alias":"asia-fa-ir",
+    "parent_alias":"heritage-fa-ir",
+    "level":2,
+    "path":"heritage/asia-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>فهرستی از سایت‌های میراث جهانی یونسکو در آسیا.</p>"
+},
+{
+    "title":"اروپا",
+    "alias":"europe-fa-ir",
+    "parent_alias":"heritage-fa-ir",
+    "level":2,
+    "path":"heritage/europe-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>فهرستی از سایت‌های میراث جهانی یونسکو در اروپا.</p>"
+},
+{
+    "title":"اقیانوسیه",
+    "alias":"oceania-fa-ir",
+    "parent_alias":"heritage-fa-ir",
+    "level":2,
+    "path":"heritage/oceania-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>فهرستی از سایت‌های میراث جهانی یونسکو در اقیانوسیه.</p>"
+},
+{
+    "title":"نمونه‌ها",
+    "alias":"demonstrations-fa-ir",
+    "parent_alias":"",
+    "level":1,
+    "path":"demonstrations-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>مقالاتی که برای نمایش قابلیت‌های جوملا تهیه شده‌اند.</p>"
+},
+{
+    "title":"اخبار جوملا",
+    "alias":"joomla-news-fa-ir",
+    "parent_alias":"",
+    "level":1,
+    "path":"joomla-news-fa-ir",
+    "extension":"com_newsfeeds",
+    "language":"fa-IR",
+    "description":"<p>دسته‌ای برای چندین خوراک خبری جوملا.</p>"
+},
+{
+    "title":"کارکنان نمونه",
+    "alias":"demo-staff-fa-ir",
+    "level":1,
+    "path":"demo-staff",
+    "extension":"com_contact",
+    "language":"fa-IR",
+    "description":"<p>دستهٔ والد برای کارکنان در مخاطبان نمونه.</p>"
+},
+{
+    "title":"فروشگاه نمونه",
+    "alias":"demo-shop-fa-ir",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-shop",
+    "extension":"com_contact",
+    "language":"fa-IR",
+    "description":"<p>زیردسته‌ای برای کارکنان فروشگاه در مخاطبان نمونه.</p>"
+},
+{
+    "title":"Demo Apiary",
+    "alias":"demo-apiary-fa-ir",
+    "parent_alias":"demo-staff",
+    "level":2,
+    "path":"demo-staff/demo-apiary",
+    "extension":"com_contact",
+    "language":"fa-IR",
+    "description":"<p>زیردسته‌ای برای کارکنان Apiary در مخاطبان نمونه.</p>"
+},
+{
+    "title":"طبیعت",
+    "alias":"nature-fa-ir",
+    "level":1,
+    "path":"nature-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>Parent category for articles about the living world.</p>"
+},
+{
+    "title":"Birds",
+    "alias":"nature-birds-fa-ir",
+    "parent_alias":"nature-fa-ir",
+    "level":2,
+    "path":"nature-fa-ir/nature-birds-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>Category for articles about birds.</p>"
+},
+{
+    "title":"گل‌ها",
+    "alias":"nature-flowers-fa-ir",
+    "parent_alias":"nature-fa-ir",
+    "level":2,
+    "path":"nature-fa-ir/nature-flowers-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>Category for articles about flowers.</p>"
+},
+{
+    "title":"Mammals",
+    "alias":"nature-mammals-fa-ir",
+    "parent_alias":"nature-fa-ir",
+    "level":2,
+    "path":"nature-fa-ir/nature-mammals-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>Category for articles about mammals.</p>"
+},
+{
+    "title":"Trees",
+    "alias":"nature-trees-fa-ir",
+    "parent_alias":"nature-fa-ir",
+    "level":2,
+    "path":"nature-fa-ir/nature-trees-fa-ir",
+    "extension":"com_content",
+    "language":"fa-IR",
+    "description":"<p>Category for articles about trees.</p>"
+}
+]

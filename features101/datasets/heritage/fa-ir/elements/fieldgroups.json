@@ -1,0 +1,31 @@
+[{
+    "title":"داده‌های سایت",
+    "description":"<p>این گروهی از فیلدهاست که داده‌های سایت میراثی را دربر می‌گیرد.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"fa-IR"
+},{
+    "title":"نمونه‌ها",
+    "description":"<p>این گروهی از فیلدهاست که برای نمایش هر نوع فیلد استفاده می‌شود.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"fa-IR"
+},
+{
+    "title":"طبیعت",
+    "description":"<p>گروهی برای جنبه‌های طبیعت که دربارهٔ همهٔ جانوران و گیاهان کاربرد دارد.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"fa-IR"
+},
+{
+    "title":"گل‌ها",
+    "description":"<p>فیلدهایی که فقط برای گیاهان گل‌دار کاربرد دارند.</p>",
+    "context":"com_content.article",
+    "state":1,
+    "id":0,
+    "language":"fa-IR"
+}]

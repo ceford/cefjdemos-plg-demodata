@@ -1,0 +1,647 @@
+[
+{
+    "title":"تاریخ",
+    "category":"",
+    "name":"demo-date-fa-ir",
+    "label":"تاریخ",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>یک فیلد تاریخ عمومی برای استفاده در زیرفرم‌ها.</p>",
+    "note":"",
+    "state":1,
+    "language":"fa-IR",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"W3W",
+    "category":"",
+    "name":"w3w-fa-ir",
+    "label":"W3W",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>موقعیت سایت بر اساس What3Words.</p>",
+    "note":"",
+    "state":1,
+    "language":"fa-IR",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"امتیاز",
+    "category":"",
+    "name":"rating-fa-ir",
+    "label":"امتیاز",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>امتیاز یک سایت در مقیاس ۰ تا ۵.</p>",
+    "note":"",
+    "state":1,
+    "language":"fa-IR",
+    "only_use_in_subform":"1",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "first":"0",
+        "last":"5",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":""
+},
+{
+    "title":"فیلد زیرفرم: مکان‌ها",
+    "category":"",
+    "name":"subform-field-locations-fa-ir",
+    "label":"فیلد زیرفرم: مکان‌ها",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"subform",
+    "description":"فیلدی برای ثبت داده‌ها از مکان‌های مختلف.",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "hint":"","class":"",
+        "label_class":"",
+        "show_on":"",
+        "showon":"",
+        "render_class":"",
+        "value_render_class":"",
+        "showlabel":"1",
+        "label_render_class":"",
+        "display":"2",
+        "prefix":"",
+        "suffix":"",
+        "layout":"",
+        "display_readonly":"2",
+        "searchindex":"0",
+        "form_layout":""
+    },
+    "fieldparams":{
+        "repeat":"1",
+        "max_rows":"",
+        "options":{
+            "option0":{"customfield":"تاریخ","render_values":"1"},
+            "option1":{"customfield":"W3W","render_values":"1"},
+            "option2":{"customfield":"امتیاز","render_values":"1"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"طبیعت"
+},
+{
+    "title":"سال ثبت",
+    "category":"heritage-fa-ir",
+    "name":"year-of-inscription-fa-ir",
+    "label":"Year Inscribed",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>سال افزوده‌شدن سایت به فهرست یونسکو.</p>",
+    "note":"",
+    "state":1,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1972",
+        "last":"2026",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"داده‌های سایت"
+},
+{
+    "title":"موقعیت",
+    "category":"heritage-fa-ir",
+    "name":"location-fa-ir",
+    "label":"موقعیت",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>عرض جغرافیایی و طول جغرافیایی سایت.</p>",
+    "note":"",
+    "state":1,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"داده‌های سایت"
+},
+{
+    "title":"صوتی: قطعهٔ نمونه",
+    "category":"demonstrations-fa-ir",
+    "name":"audio-fa-ir",
+    "label":"صوتی: قطعهٔ نمونه",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"audio",
+    "description":"<p>توضیحات صوتی.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"audios",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"تقویم: تاریخ عکس",
+    "category":"demonstrations-fa-ir",
+    "name":"calendar-fa-ir",
+    "label":"تقویم: تاریخ عکس",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"calendar",
+    "description":"<p>تاریخ گرفته‌شدن عکس ممکن است برای موارد فصلی مهم باشد.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"چک‌باکس‌ها: تکثیر",
+    "category":"demonstrations-fa-ir",
+    "name":"checkboxes-fa-ir",
+    "label":"چک‌باکس‌ها: تکثیر",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"checkboxes",
+    "description":"<p>یک یا چند مورد را از میان تعدادی گزینهٔ چک‌باکس انتخاب کنید.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"بذر","value":"1"},
+            "options1":{"name":"قلمه","value":"2"},
+            "options2":{"name":"پیاز","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"گل‌ها"
+},
+{
+    "title":"رنگ: رنگ گل",
+    "category":"demonstrations-fa-ir",
+    "name":"color-fa-ir",
+    "label":"Colour: Flower",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"color",
+    "description":"<p>Select a colour with a widget.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "colour":"4e3ac2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"گل‌ها"
+},
+{
+    "title":"سند: بارگیری",
+    "category":"demonstrations-fa-ir",
+    "name":"document-fa-ir",
+    "label":"سند: بارگیری",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"document",
+    "description":"<p>یک سند انتخاب کنید.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:\/",
+        "preview":"",
+        "css_class":"",
+        "types":"documents"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"ویرایشگر: پرورش",
+    "category":"demonstrations-fa-ir",
+    "name":"editor-fa-ir",
+    "label":"ویرایشگر: پرورش",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"editor",
+    "description":"<p>فیلدی برای یادداشت‌های مربوط به پرورش.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "cultivation-fa-ir":"گل‌های زنگوله‌ای در سایهٔ جزئی و خاک مرطوب، با زهکشی مناسب و غنی از مواد آلی، بهترین رشد را دارند."
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"عدد صحیح: مقاومت RHS",
+    "category":"demonstrations-fa-ir",
+    "name":"integer-fa-ir",
+    "label":"عدد صحیح: مقاومت RHS",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"integer",
+    "description":"<p>عددی در بازهٔ ۱ تا ۷ که میزان مقاومت این گل را بر اساس مقیاس انجمن سلطنتی باغبانی نشان می‌دهد.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"",
+        "first":"1",
+        "last":"7",
+        "step":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"گل‌ها"
+},
+{
+    "title":"فهرست: پراکندگی",
+    "category":"demonstrations-fa-ir",
+    "name":"list-items-fa-ir",
+    "label":"فهرست: پراکندگی",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"list",
+    "description":"<p>Select one or more from a number of list items.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"آفریقا","value":"1"},
+            "options1":{"name":"آسیا","value":"2"},
+            "options2":{"name":"اروپا","value":"3"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"فهرست تصاویر: رنگ‌های گل",
+    "category":"demonstrations-fa-ir",
+    "name":"images-list-fa-ir",
+    "label":"فهرست تصاویر: رنگ‌های گل",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"imagelist",
+    "description":"<p>یک یا چند تصویر به فهرست اضافه کنید.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"demodata/heritage",
+        "multiple":"1",
+        "image_class":"me-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"رسانه: زیستگاه معمول",
+    "category":"demonstrations-fa-ir",
+    "name":"media-fa-ir",
+    "label":"رسانه: زیستگاه معمول",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"media",
+    "description":"<p>یک مورد را از پوشهٔ رسانه انتخاب کنید.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-images:/demodata/heritage",
+        "image_class":"ms-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"یادداشت: اطلاعات بیشتر",
+    "category":"demonstrations-fa-ir",
+    "name":"note-fa-ir",
+    "label":"یادداشت: اطلاعات بیشتر",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"note",
+    "description":"<p>اطلاعاتی برای کاربران بخش مدیریت یا سایت تهیه کنید.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1",
+        "display_frontend":"1"
+    },
+    "fieldparams":{
+        "label":"اطلاعات حقوقی",
+        "description":"در برخی نظام‌های حقوقی، چیدن گل‌های زنگوله‌ای ممکن است جرم باشد!",
+        "class":"alert alert-info m-2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"عدد: وزن بذر",
+    "category":"demonstrations-fa-ir",
+    "name":"number-fa-ir",
+    "label":"عدد: وزن بذر",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"number",
+    "description":"<p>میانگین وزن یک بذر را وارد کنید.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "currency":"1",
+        "symbol":" milligrams",
+        "position":"1",
+        "decimals":"2"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"رادیویی: چرخهٔ زندگی",
+    "category":"demonstrations-fa-ir",
+    "name":"radio-fa-ir",
+    "label":"رادیویی: چرخهٔ زندگی",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"radio",
+    "description":"<p>نوع چرخهٔ زندگی را انتخاب کنید.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "options":{
+            "options0":{"name":"- انتخاب -","value":""},
+            "options1":{"name":"یک‌ساله","value":"annual"},
+            "options2":{"name":"دوساله","value":"biennial"},
+            "options3":{"name":"چندساله","value":"perennial"}
+        }
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"SQL: پراکندگی بومی",
+    "category":"demonstrations-fa-ir",
+    "name":"sql-fa-ir",
+    "label":"SQL: پراکندگی بومی",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"sql",
+    "description":"<p>یک یا چند قاره را که این گونه بومی آن‌هاست انتخاب کنید.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "query":"SELECT a.alias AS value, a.title AS text \r\nFROM `lje7b_categories` AS `a` \r\nLEFT JOIN `lje7b_languages` AS `l` ON `l`.`lang_code` = `a`.`language` \r\nWHERE `a`.`path` \r\nLIKE 'heritage-%\/%' AND `l`.`lang_code` = 'fa-IR' \r\nORDER BY a.lft; ","header":"- Select Continent -","multiple":1
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"متن: نام لاتین",
+    "category":"demonstrations-fa-ir",
+    "name":"text-fa-ir",
+    "label":"متن: نام علمی",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"text",
+    "description":"<p>نام علمی این نمونه.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"طبیعت"
+},
+{
+    "title":"ناحیهٔ متنی: رده‌بندی",
+    "category":"demonstrations-fa-ir",
+    "name":"textarea-fa-ir",
+    "label":"ناحیهٔ متنی: رده‌بندی",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"textarea",
+    "description":"<p>توصیفی از رده‌بندی علمی یک نمونه.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "rows":"3",
+        "cols":"128"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"نشانی اینترنتی: اطلاعات بیشتر",
+    "category":"demonstrations-fa-ir",
+    "name":"url-fa-ir",
+    "label":"نشانی اینترنتی: اطلاعات بیشتر",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"url",
+    "description":"<p>یک نشانی اینترنتی برای اطلاعات بیشتر وارد کنید.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"کاربر: گزارش‌دهنده",
+    "category":"demonstrations-fa-ir",
+    "name":"user-fa-ir",
+    "label":"کاربر: گزارش‌دهنده",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"user",
+    "description":"<p>اطلاعات مربوط به گزارش‌دهندهٔ این مقاله.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":"",
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"فهرست گروه‌های کاربری: ناظران",
+    "category":"demonstrations-fa-ir",
+    "name":"usergrouplist-fa-ir",
+    "label":"فهرست گروه‌های کاربری: ناظران",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"usergrouplist",
+    "description":"<p>اطلاعات مربوط به گروه‌های کاربری.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "multiple":"1"
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+},
+{
+    "title":"ویدیو: کلیپ نمونه",
+    "category":"demonstrations-fa-ir",
+    "name":"video-fa-ir",
+    "label":"ویدیو: کلیپ نمونه",
+    "default_value":"",
+    "context":"com_content.article",
+    "type":"video",
+    "description":"<p>یک کلیپ ویدیویی نمونه.</p>",
+    "note":"",
+    "state":0,
+    "language":"fa-IR",
+    "params":{
+        "showlabel":"1"
+    },
+    "fieldparams":{
+        "directory":"local-files:/demodata/heritage",
+        "types":"videos",
+        "video_poster":"1",
+        "css_class":""
+    },
+    "created_time":"NOW()",
+    "modified_time":"NOW()",
+    "id":0,
+    "parent_fieldgroup":"نمونه‌ها"
+}]

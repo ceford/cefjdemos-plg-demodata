@@ -1,0 +1,18 @@
+[{
+    "id":"0",
+    "title":"سایت‌های میراثی",
+    "description":"منوی سایت‌های میراثی",
+    "menutype":"heritage-sites-fa-ir"
+},
+{
+    "id":"0",
+    "title":"نمونه‌ها",
+    "description":"منویی برای نمونه‌های مختلف جوملا",
+    "menutype":"demonstrations-fa-ir"
+},
+{
+    "id":"0",
+    "title":"درخت منو",
+    "description":"نمایشی از یک درخت منوی همیشه‌باز",
+    "menutype":"menu-tree-fa-ir"
+}]
