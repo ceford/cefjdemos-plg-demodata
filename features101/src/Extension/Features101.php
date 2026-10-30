@@ -2496,7 +2496,18 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     ->where($db->quoteName('title') . '=:title')
                     ->bind(':title', $user['groups'], ParameterType::STRING);
                 $db->setQuery($query);
-                $user['groups'] = (array) $db->loadResult();
+                $group_id = $db->loadResult();
+
+                if (empty($group_id)) {
+                    $response            = [];
+                    $response['success'] = false;
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_FEATURES101_ERROR_UNKNOWN_USERGROUP', $step, $user['groups'], $user['username']);
+
+                    $event->addResult($response);
+                    return;
+                }
+
+                $user['groups'] = (array) $group_id;
 
                 // Log the saved passwords if required?
                 $creds[] = $user['username'] . ':' . $user['password'];
