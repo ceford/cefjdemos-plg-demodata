@@ -2237,7 +2237,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $db = $this->getDatabase();
 
         $mvcFactory = $this->getApplication()->bootComponent('com_newsfeeds')->getMVCFactory();
-        $newsfeedModel = $mvcFactory->createModel('NewsFeed', 'Administrator', ['ignore_request' => true]);
+        $newsfeedModel = $mvcFactory->createModel('Newsfeed', 'Administrator', ['ignore_request' => true]);
         $ids = [];
 
         // Get the dataset to be installed
