@@ -284,4 +284,116 @@
         "en-GB":"display-template-options-en-gb",
         "nl-NL":"display-template-options-nl-nl"
     }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"bluebells-en-gb",
+        "nl-NL":"bluebells-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"africa-en-gb",
+        "nl-NL":"africa-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"egypt-en-gb",
+        "nl-NL":"egypt-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-pyramids-of-giza-en-gb",
+        "nl-NL":"tree-pyramids-of-giza-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tanzania-en-gb",
+        "nl-NL":"tanzania-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-ngorongoro-en-gb",
+        "nl-NL":"tree-ngorongoro-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-serengeti-en-gb",
+        "nl-NL":"tree-serengeti-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"europe-en-gb",
+        "nl-NL":"europe-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"greece-en-gb",
+        "nl-NL":"greece-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-acropolis-of-athens-en-gb",
+        "nl-NL":"tree-acropolis-of-athens-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"ireland-en-gb",
+        "nl-NL":"ireland-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-giants-causeway-en-gb",
+        "nl-NL":"tree-giants-causeway-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"logout-en-gb",
+        "nl-NL":"logout-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"joomla-announcements-en-gb",
+        "nl-NL":"joomla-announcements-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"joomla-news-en-gb",
+        "nl-NL":"joomla-news-nl-nl"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"committee-papers-en-gb",
+        "nl-NL":"committee-papers-nl-nl"
+    }
 }]

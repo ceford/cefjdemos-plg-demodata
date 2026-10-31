@@ -472,7 +472,7 @@
     "parent_id":"1",
     "level":"1",
     "type":"Category List",
-    "language":"*",
+    "language":"en-GB",
     "view-level":"Committee",
     "params": {
     }
@@ -804,7 +804,7 @@
     "parent_alias":"africa-en-gb",
     "level":"2",
     "type":"Single Article",
-    "article-alias":"ngorongoro-conservation-aria-en-gb",
+    "article-alias":"ngorongoro-conservation-area-en-gb",
     "language":"en-GB",
     "params": {
         "show_page_heading":"",

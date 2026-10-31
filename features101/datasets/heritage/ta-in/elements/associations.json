@@ -270,4 +270,116 @@
         "en-GB":"login-form-en-gb",
         "ta-IN":"login-form-ta-in"
     }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"bluebells-en-gb",
+        "ta-IN":"bluebells-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"africa-en-gb",
+        "ta-IN":"africa-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"egypt-en-gb",
+        "ta-IN":"egypt-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-pyramids-of-giza-en-gb",
+        "ta-IN":"tree-pyramids-of-giza-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tanzania-en-gb",
+        "ta-IN":"tanzania-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-ngorongoro-en-gb",
+        "ta-IN":"tree-ngorongoro-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-serengeti-en-gb",
+        "ta-IN":"tree-serengeti-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"europe-en-gb",
+        "ta-IN":"europe-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"greece-en-gb",
+        "ta-IN":"greece-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-acropolis-of-athens-en-gb",
+        "ta-IN":"tree-acropolis-of-athens-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"ireland-en-gb",
+        "ta-IN":"ireland-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-giants-causeway-en-gb",
+        "ta-IN":"tree-giants-causeway-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"logout-en-gb",
+        "ta-IN":"logout-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"joomla-announcements-en-gb",
+        "ta-IN":"joomla-announcements-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"joomla-news-en-gb",
+        "ta-IN":"joomla-news-ta-in"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"committee-papers-en-gb",
+        "ta-IN":"committee-papers-ta-in"
+    }
 }]

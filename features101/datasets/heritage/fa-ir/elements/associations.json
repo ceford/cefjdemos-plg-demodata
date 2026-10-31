@@ -284,4 +284,116 @@
         "en-GB":"display-template-options-en-gb",
         "fa-IR":"display-template-options-fa-ir"
     }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"bluebells-en-gb",
+        "fa-IR":"bluebells-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"africa-en-gb",
+        "fa-IR":"africa-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"egypt-en-gb",
+        "fa-IR":"egypt-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-pyramids-of-giza-en-gb",
+        "fa-IR":"tree-pyramids-of-giza-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tanzania-en-gb",
+        "fa-IR":"tanzania-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-ngorongoro-en-gb",
+        "fa-IR":"tree-ngorongoro-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-serengeti-en-gb",
+        "fa-IR":"tree-serengeti-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"europe-en-gb",
+        "fa-IR":"europe-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"greece-en-gb",
+        "fa-IR":"greece-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-acropolis-of-athens-en-gb",
+        "fa-IR":"tree-acropolis-of-athens-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"ireland-en-gb",
+        "fa-IR":"ireland-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"tree-giants-causeway-en-gb",
+        "fa-IR":"tree-giants-causeway-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"logout-en-gb",
+        "fa-IR":"logout-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"joomla-announcements-en-gb",
+        "fa-IR":"joomla-announcements-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"joomla-news-en-gb",
+        "fa-IR":"joomla-news-fa-ir"
+    }
+},
+{
+    "context":"com_menus.item",
+    "alias":{
+        "en-GB":"committee-papers-en-gb",
+        "fa-IR":"committee-papers-fa-ir"
+    }
 }]
