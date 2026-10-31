@@ -774,17 +774,16 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     }
     
     /**
-     * Edit Global Configuration: set Administrator login to Allowed for oddjob101
+     * Edit Global Configuration: set Administrator login to Allowed for oddjob
      * Edit Media / Options: set Access Admin Interface, Create, Delete and Edit to Allowed.
      */
     protected function setOddjobPermissions($is_installed) {
         $db = $this->getDatabase();
          
-        // Get the id for oddjob101 group
         $query = $db->createQuery();
         $query->select($db->quoteName('id'))
             ->from($db->quoteName('#__usergroups'))
-            ->where($db->quoteName('title') . ' = ' . $db->quote('Oddjob101'));
+            ->where($db->quoteName('title') . ' = ' . $db->quote('Oddjob'));
         $db->setQuery($query);
         $oddjob_id = $db->loadResult();
 
@@ -866,7 +865,6 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $db->setQuery($query);
         $viewlevels_row = $db->loadObject();
 
-        // Get the id of the Oddjob101 group
         $query = $db->createQuery();
         $query->select($db->quoteName('id'))
             ->from($db->quoteName('#__usergroups'))
