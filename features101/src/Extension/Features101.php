@@ -914,6 +914,11 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $db->setQuery($query);
         $playwright_id = $db->loadResult();
 
+        // Not every dataset has these users
+        if (empty($superman_id) || empty($playwright_id)) {
+            return;
+        }
+
         if (empty($is_installed)) {
             // Add a record
             $query = $db->createQuery();
