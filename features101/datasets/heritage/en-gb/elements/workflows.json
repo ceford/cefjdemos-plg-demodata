@@ -27,7 +27,7 @@
             "description" :"The article is reviewed, checked for text, illustration, HTML."
         },
         {
-            "title" : "Article published!",
+            "title" : "Published",
             "description" :"Online and Published."
         },
         {
@@ -90,7 +90,7 @@
         {
             "title" : "Set on Hold",
             "description":"",
-            "from_stage_id" : "-1",
+            "from_stage_id" : "All",
             "to_stage_id"   : "On Hold",
             "options" : {
                 "publishing" : "2",
@@ -120,8 +120,8 @@
         {
             "title" : "Unpublish",
             "description":"A published article is unpublished.",
-            "from_stage_id" : "Article published!",
-            "to_stage_id"   : "Trashed",
+            "from_stage_id" : "Published",
+            "to_stage_id"   : "Unpublished",
             "options" : {
             }
         },
@@ -129,7 +129,7 @@
             "title" : "Trash",
             "description":"Trash a published article.",
             "from_stage_id" : "Published",
-            "to_stage_id"   : "Not accepted",
+            "to_stage_id"   : "Trashed",
             "options" : {
             }
         },
