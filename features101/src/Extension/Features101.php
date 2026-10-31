@@ -1361,7 +1361,10 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     ->select($db->quoteName('id'))
                     ->select($db->quoteName('key'))
                     ->from($db->quoteName('#__associations'))
-                    ->where($db->quoteName('id') . '=' . $ids['en-GB']);
+                    ->where($db->quoteName('context') . ' = :context')
+                    ->where($db->quoteName('id') . ' = :id')
+                    ->bind(':context', $association['context'], ParameterType::STRING)
+                    ->bind(':id', $ids['en-GB'], ParameterType::INTEGER);
                 $db->setQuery($query);
                 $item = $db->loadObject();
 
@@ -1371,7 +1374,10 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     $query = $db->createQuery()
                         ->select($db->quoteName('id'))
                         ->from($db->quoteName('#__associations'))
-                        ->where($db->quoteName('key') . '=' . $db->quote($item->key));
+                        ->where($db->quoteName('context') . ' = :context')
+                        ->where($db->quoteName('key') . ' = :key')
+                        ->bind(':context', $association['context'], ParameterType::STRING)
+                        ->bind(':key', $item->key, ParameterType::STRING);
                     $db->setQuery($query);
                     $items = $db->loadObjectList();
 
