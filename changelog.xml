@@ -4,10 +4,11 @@
 		<type>plugin</type>
 		<version>0.3.2</version>
         <fix>
-            <item>Bug in assignment of newsfeed to single nesfeed item item.</item>
+            <item>Bug in assignment of newsfeed to single newsfeed item item.</item>
 			<add>The aliasses required in the heritage dataset beacuse of the oforesaid bug</add>
 			<add>Dataset for Farsi as an example of a right to left language.</add>
-        </fix>	</changelog>
+        </fix>	
+	</changelog>
 	<changelog>
 		<element>plg_demodata_features101</element>
 		<type>plugin</type>
