@@ -874,17 +874,21 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $db->setQuery($query);
         $oddjob_id = $db->loadResult();
 
+        // Not every dataset has an Oddjob group
+        if (empty($oddjob_id)) {
+            return;
+        }
+
         // Example rule: [6,3,8,933]
-        $current = $viewlevels_row->rules;
+        $rules = json_decode($viewlevels_row->rules, true) ?: [];
         if (empty($is_installed)) {
             // Add to the record
-            str_replace(']', ",{$oddjob_id}]", $viewlevels_row->rules);
-            $replacement = str_replace(']', ',' . $oddjob_id . ']', $current);
+            $rules[] = (int) $oddjob_id;
         } else {
             // Remove from the record
-            str_replace(",{$oddjob_id}", '', $viewlevels_row->rules);
-            $replacement = str_replace(',' . $oddjob_id, '', $current);
+            $rules = array_diff($rules, [(int) $oddjob_id]);
         }
+        $replacement = json_encode(array_values(array_unique($rules)));
         $query = $db->createQuery();
         $query->update($db->quoteName('#__viewlevels'))
             ->set($db->quoteName('rules') . ' = ' . $db->quote($replacement))
