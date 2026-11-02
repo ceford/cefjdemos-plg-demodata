@@ -679,6 +679,11 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $db->setQuery($query);
         $email = $db->loadResult();
 
+        // Not every dataset has this user
+        if (empty($email)) {
+            return;
+        }
+
         $query = $db->createQuery();
         if (empty($is_installed)) {
             // Add a record
@@ -712,6 +717,11 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
             ->where($db->quoteName('username') . ' = ' . $db->quote('johndoe'));
         $db->setQuery($query);
         $johndoe_id = $db->loadResult();
+
+        // Not every dataset has this user
+        if (empty($johndoe_id)) {
+            return;
+        }
 
         $query = $db->createQuery();
         if (empty($is_installed)) {
