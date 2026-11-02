@@ -10,4 +10,8 @@
 {
     "title":"Secretary",
     "parent":"Committee"
+},
+{
+    "title":"Magazine Reviewers",
+    "parent":"Registered"
 }]
