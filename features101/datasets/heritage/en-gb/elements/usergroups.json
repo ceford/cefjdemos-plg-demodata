@@ -12,6 +12,16 @@
     "parent":"Committee"
 },
 {
-    "title":"Magazine Reviewers",
+    "title":"Magazine Reviewer",
     "parent":"Registered"
+},
+{
+    "title":"Article Administrator",
+    "parent":"Public",
+    "access_level":"Special"
+},
+{
+    "title":"Media Manager",
+    "parent":"Public",
+    "access_level":"Special"
 }]

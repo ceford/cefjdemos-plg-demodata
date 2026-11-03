@@ -591,8 +591,8 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     protected function doExtras($is_installed) {
         $this->doPrivateMessages($is_installed);
         $this->doSpecialAccess($is_installed);
-        //$this->setOddjobPermissions($is_installed);
-        //$this->doUsernotes($is_installed);
+        $this->setMediaManagerPermissions($is_installed);
+        $this->doUsernotes($is_installed);
         $this->doPrivacyConsents($is_installed);
         $this->doPrivacyRequests($is_installed);
         $this->doSchemaOrg($is_installed);
@@ -784,18 +784,18 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
     }
     
     /**
-     * Edit Global Configuration: set Administrator login to Allowed for oddjob
+     * Edit Global Configuration: set Administrator login to Allowed for Media Manager
      * Edit Media / Options: set Access Admin Interface, Create, Delete and Edit to Allowed.
      */
-    protected function setOddjobPermissions($is_installed) {
+    protected function setMediaManagerPermissions($is_installed) {
         $db = $this->getDatabase();
          
         $query = $db->createQuery();
         $query->select($db->quoteName('id'))
             ->from($db->quoteName('#__usergroups'))
-            ->where($db->quoteName('title') . ' = ' . $db->quote('Oddjob'));
+            ->where($db->quoteName('title') . ' = ' . $db->quote('Media Manager'));
         $db->setQuery($query);
-        $oddjob_id = $db->loadResult();
+        $mediaman_id = $db->loadResult();
 
         // Get the id and rules of the root asset
         $query = $db->createQuery();
@@ -810,9 +810,9 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
         if (empty($is_installed)) {
             // Add to the record
-            $rules['core.login.admin'][$oddjob_id] = 1;
+            $rules['core.login.admin'][$mediaman_id] = 1;
         } else {
-            unset($rules['core.login.admin'][$oddjob_id]);
+            unset($rules['core.login.admin'][$mediaman_id]);
         }
         // Put the update array back in the database
         $rules = json_encode($rules);
@@ -836,19 +836,19 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
 
         if (empty($is_installed)) {
             // Add to the record
-            $rules['core.manage'][$oddjob_id] = 1;
-            $rules['core.create'][$oddjob_id] = 1;
-            $rules['core.delete'][$oddjob_id] = 1;
+            $rules['core.manage'][$mediaman_id] = 1;
+            $rules['core.create'][$mediaman_id] = 1;
+            $rules['core.delete'][$mediaman_id] = 1;
             if (!isset($rules['core.edit'])) {
                 $rules['core.edit'] = [];
             }
-            $rules['core.edit'][$oddjob_id] = 1;
+            $rules['core.edit'][$mediaman_id] = 1;
         } else {
             // Remove from the record
-            unset($rules['core.manage'][$oddjob_id]);
-            unset($rules['core.create'][$oddjob_id]);
-            unset($rules['core.delete'][$oddjob_id]);
-            unset($rules['core.edit'][$oddjob_id]);
+            unset($rules['core.manage'][$mediaman_id]);
+            unset($rules['core.create'][$mediaman_id]);
+            unset($rules['core.delete'][$mediaman_id]);
+            unset($rules['core.edit'][$mediaman_id]);
         }
         // Put the update array back in the database
         $rules = json_encode($rules);
@@ -878,12 +878,12 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $query = $db->createQuery();
         $query->select($db->quoteName('id'))
             ->from($db->quoteName('#__usergroups'))
-            ->where($db->quoteName('title') . ' = ' . $db->quote('Oddjob'));
+            ->where($db->quoteName('title') . ' = ' . $db->quote('Media Manager'));
         $db->setQuery($query);
-        $oddjob_id = $db->loadResult();
+        $mediaman_id = $db->loadResult();
 
-        // Not every dataset has an Oddjob group
-        if (empty($oddjob_id)) {
+        // Not every dataset has an Media Manager group
+        if (empty($mediaman_id)) {
             return;
         }
 
@@ -891,10 +891,10 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
         $rules = json_decode($viewlevels_row->rules, true) ?: [];
         if (empty($is_installed)) {
             // Add to the record
-            $rules[] = (int) $oddjob_id;
+            $rules[] = (int) $mediaman_id;
         } else {
             // Remove from the record
-            $rules = array_diff($rules, [(int) $oddjob_id]);
+            $rules = array_diff($rules, [(int) $mediaman_id]);
         }
         $replacement = json_encode(array_values(array_unique($rules)));
         $query = $db->createQuery();
@@ -2460,6 +2460,10 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                         $db->execute();
                     }
                 }
+                // If permissions are needed do it here.
+                //if (!empty($group['permissions'])) {
+                // permissions would be a json array structure, e.g. 'com_content':{'core.manage':'1', ...}, 'com_media':...
+                //}
             }
         }
 

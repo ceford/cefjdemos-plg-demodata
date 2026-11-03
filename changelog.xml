@@ -2,6 +2,18 @@
 	<changelog>
 		<element>plg_demodata_features101</element>
 		<type>plugin</type>
+		<version>0.3.3</version>
+        <fix>
+            <item>Several installation bugs fixed.</item>
+			<item>Better integration with the Playwright scripts used for screen capture</item>
+        </fix>
+		<remove>
+			<item>The Bees data set - an experiment not worth pursuing</item>
+		</remove>
+	</changelog>
+	<changelog>
+		<element>plg_demodata_features101</element>
+		<type>plugin</type>
 		<version>0.3.2</version>
         <fix>
             <item>Bug in assignment of newsfeed to single newsfeed item item.</item>

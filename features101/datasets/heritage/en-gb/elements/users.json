@@ -68,7 +68,40 @@
     "name": "Maggie",
     "username": "maggie",
     "email": "maggie@example.com",
-    "groups": "Magazine Reviewers",
+    "groups": "Magazine Reviewer",
+    "id": "0",
+    "block": "0",
+    "params": {
+        "allowTourAutoStart":"0"
+    }
+},
+{
+    "name": "Arti",
+    "username": "artiadmin",
+    "email": "artiadmin@example.com",
+    "groups": "Article Administrator",
+    "id": "0",
+    "block": "0",
+    "params": {
+        "allowTourAutoStart":"0"
+    }
+},
+{
+    "name": "Oddjob",
+    "username": "oddjob",
+    "email": "oddjob@example.com",
+    "groups": "Media Manager",
+    "id": "0",
+    "block": "0",
+    "params": {
+        "allowTourAutoStart":"0"
+    }
+},
+{
+    "name": "John Doe",
+    "username": "johndoe",
+    "email": "johndoe@example.com",
+    "groups": "Registered",
     "id": "0",
     "block": "0",
     "params": {
