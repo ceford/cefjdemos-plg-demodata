@@ -1192,7 +1192,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$articleModel->save($article)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_ARTICLES_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($articleModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_ARTICLES_STEP_FAILED', $step, $article['title']);
                     file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $response['message'] . "\n", FILE_APPEND);
                     file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $article['alias'] . "\n", FILE_APPEND);
 
@@ -1472,7 +1472,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$clientModel->save($client)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_BANNERS_CLIENTS_STEP_FAILED', $step, $clientModel->getError());
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_BANNERS_CLIENTS_STEP_FAILED', $step, $client['name']);
                     file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $response['message'], FILE_APPEND);
 
                     $event->addResult($response);
@@ -1513,7 +1513,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$bannerModel->save($banner)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_BANNERS_STEP_FAILED', $step, $bannerModel->getError());
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_BANNERS_STEP_FAILED', $step, $banner['name']);
                     file_put_contents(JPATH_ADMINISTRATOR . '/logs/features101.log', $response['message'], FILE_APPEND);
 
                     $event->addResult($response);
@@ -1610,7 +1610,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$categoryModel->save($category)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_CATEGORIES_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($categoryModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_CATEGORIES_STEP_FAILED', $step, $category['title']);
 
                     $event->addResult($response);
                     return;
@@ -1699,7 +1699,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 } catch (\RuntimeException $e){
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_CONTACTS_STEP_FAILED', $step, $contactModel->getError());
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_CONTACTS_STEP_FAILED', $step, $contact['name']);
 
                     $event->addResult($response);
                     return;
@@ -1754,7 +1754,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$fieldgroupModel->save($fieldgroup)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_FIELDGROUPS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($fieldgroupModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_FIELDGROUPS_STEP_FAILED', $step, $fieldgroups['title']);
 
                     $event->addResult($response);
                     return;
@@ -1847,7 +1847,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$fieldModel->save($field)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_FIELDS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($fieldModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_FIELDS_STEP_FAILED', $step, $field['title']);
 
                     $event->addResult($response);
                     return;
@@ -1899,7 +1899,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$menuModel->save($menu)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_MENUS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($menuModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_MENUS_STEP_FAILED', $step, $menu['title']);
 
                     $event->addResult($response);
                     return;
@@ -2107,7 +2107,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$menuitemModel->save($menuitem)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_MENUITEMS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($menuitemModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_MENUITEMS_STEP_FAILED', $step, $menuitem['title']);
 
                     $event->addResult($response);
                     return;
@@ -2228,7 +2228,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$moduleModel->save($module)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_MODULES_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($moduleModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_MODULES_STEP_FAILED', $step, $module['title']);
 
                     $event->addResult($response);
                     return;
@@ -2285,7 +2285,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$newsfeedModel->save($newsfeed)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_NEWSFEED_STEP_FAILED', $step, $newsfeedModel->getError());
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_NEWSFEED_STEP_FAILED', $step, $newsfeed['name']);
 
                     $event->addResult($response);
                     return;
@@ -2341,7 +2341,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     if (!$tagModel->save($tag)) {
                         $response            = [];
                         $response['success'] = false;
-                        $response['message'] = Text::sprintf('PLG_DEMODATA_PARENT_TAG_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($tagModel->getError()));
+                        $response['message'] = Text::sprintf('PLG_DEMODATA_PARENT_TAG_STEP_FAILED', $step, $tag['title']);
 
                         $event->addResult($response);
                         return;
@@ -2361,7 +2361,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                     if (!$tagModel->save($tag)) {
                         $response            = [];
                         $response['success'] = false;
-                        $response['message'] = Text::sprintf('PLG_DEMODATA_CHILD_TAG_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($tagModel->getError()));
+                        $response['message'] = Text::sprintf('PLG_DEMODATA_CHILD_TAG_STEP_FAILED', $step, $tag['title']);
 
                         $event->addResult($response);
                         return;
@@ -2424,7 +2424,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$groupModel->save($group)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_USERGROUPS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($groupModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_USERGROUPS_STEP_FAILED', $step, $group['titlr']);
 
                     $event->addResult($response);
                     return;
@@ -2542,7 +2542,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$userModel->save($user)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_USER_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($userModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_USER_STEP_FAILED', $step, $user['name']);
 
                     $event->addResult($response);
                     return;
@@ -2608,7 +2608,7 @@ final class Features101 extends CMSPlugin implements SubscriberInterface
                 if (!$wfModel->save($workflow)) {
                     $response            = [];
                     $response['success'] = false;
-                    $response['message'] = Text::sprintf('PLG_DEMODATA_WORKFLOWS_STEP_FAILED', $step, $this->getApplication()->getLanguage()->_($wfModel->getError()));
+                    $response['message'] = Text::sprintf('PLG_DEMODATA_WORKFLOWS_STEP_FAILED', $step, $workflow['title']);
 
                     $event->addResult($response);
                     return;
