@@ -12,10 +12,10 @@
 	<namespace path="src">Cefjdemos\Plugin\DemoData\Features101</namespace>
 	<files>
 		<folder plugin="features101">datasets</folder>
-		<folder plugin="features101">language</folder>
-		<folder plugin="features101">services</folder>
-		<folder plugin="features101">src</folder>
-		<file plugin="features101">features101.xml</file>
+		<folder>language</folder>
+		<folder>services</folder>
+		<folder>src</folder>
+		<file>features101.xml</file>
 	</files>
 	<config>
 		<fields name="params">
